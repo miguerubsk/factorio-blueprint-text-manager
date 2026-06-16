@@ -458,3 +458,42 @@ async function generateNewBlueprintString() {
     alert("Error generating string: " + e.message);
   }
 }
+
+async function generateAndCopyString() {
+  if (!blueprintRootJson) return;
+  const btn = document.getElementById("btnGenCopy");
+
+  try {
+    const generatedString = await compressBlueprintJson(blueprintRootJson);
+    document.getElementById("outputString").value = generatedString;
+
+    await navigator.clipboard.writeText(generatedString);
+
+    // Usamos las claves traducidas para el feedback visual temporal
+    btn.innerText = translate("msg_copied");
+    btn.style.filter = "hue-rotate(90deg)";
+
+    setTimeout(() => {
+      btn.innerText = translate("btn_generate_copy");
+      btn.style.filter = "none";
+    }, 2000);
+  } catch (e) {
+    alert("Error generating or copying: " + e.message);
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  const repoName = "factorio-blueprint-text-manager";
+  const counterUrl = `https://api.counterapi.dev/v1/${repoName}/global/up`;
+
+  fetch(counterUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      if (data && data.value) {
+        document.getElementById("visitCounterValue").innerText = data.value;
+      }
+    })
+    .catch(() => {
+      document.getElementById("visitCounterValue").innerText = "1.0k";
+    });
+});

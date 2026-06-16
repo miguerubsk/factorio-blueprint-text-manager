@@ -4,84 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Factorio Blueprint Text Manager</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.factorio.com/assets/img/favicon.ico"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="locales/es.js"></script>
     <script src="locales/en.js"></script>
   </head>
   <body>
-    <div class="lang-selector-container">
-      <label for="langSelect">🌐 Language: </label>
-      <select id="langSelect" onchange="changeLanguage(this.value)">
-        <option value="es">Español</option>
-        <option value="en">English</option>
-      </select>
-    </div>
-
-    <h2 data-i18n="ui_step1_title"></h2>
-    <textarea
-      id="inputString"
-      class="raw-string"
-      data-i18n-ph="ph_raw_string"
-    ></textarea>
-
-    <div class="button-panel">
-      <button
-        class="primary"
-        onclick="processBlueprintString()"
-        data-i18n="btn_scan_book"
-      ></button>
-      <button
-        class="secondary"
-        onclick="exportRawJsonFile()"
-        data-i18n="btn_export_json"
-      ></button>
-    </div>
-
-    <hr />
-
-    <div class="block-section">
-      <h2 data-i18n="ui_option_a_title"></h2>
-      <p class="instructions" data-i18n="ui_option_a_instructions"></p>
-      <textarea
-        id="batchTextarea"
-        class="batch-box"
-        data-i18n-ph="ph_batch_box"
-      ></textarea>
-      <div class="button-panel">
+    <div class="factorio-top-bar">
+      <div class="top-bar-left">
+        <span class="brand-title">FBP Text Manager</span>
         <button
-          class="success"
+          class="primary font-compact"
+          onclick="processBlueprintString()"
+          data-i18n="btn_scan_book"
+        ></button>
+        <button
+          class="secondary font-compact"
+          onclick="exportRawJsonFile()"
+          data-i18n="btn_export_json"
+        ></button>
+        <button
+          class="success font-compact"
           onclick="applyBatchChanges()"
           data-i18n="btn_apply_batch"
         ></button>
       </div>
-    </div>
+      <div class="top-bar-right">
+        <div class="factory-stats">
+          <span class="stats-label" data-i18n="lbl_visits"></span>
+          <span id="visitCounterValue" class="stats-number">...</span>
+        </div>
 
-    <hr />
+        <button
+          class="accent-btn font-compact"
+          onclick="generateAndCopyString()"
+          id="btnGenCopy"
+          data-i18n="btn_generate_copy"
+        ></button>
 
-    <div class="block-section">
-      <h2 data-i18n="ui_option_b_title"></h2>
-      <p class="instructions" data-i18n="ui_option_b_instructions"></p>
-      <div id="treeViewContainer">
-        <p class="empty-tree-msg" data-i18n="ui_empty_tree_msg"></p>
+        <div class="lang-selector-container">
+          <select id="langSelect" onchange="changeLanguage(this.value)">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+          </select>
+        </div>
       </div>
     </div>
 
-    <hr />
+    <div class="main-content-wrapper">
+      <div class="block-section">
+        <h2 data-i18n="ui_step1_title"></h2>
+        <textarea
+          id="inputString"
+          class="raw-string compact-input"
+          data-i18n-ph="ph_raw_string"
+        ></textarea>
+      </div>
 
-    <h2 data-i18n="ui_step3_title"></h2>
-    <div class="button-panel">
-      <button
-        class="primary"
-        onclick="generateNewBlueprintString()"
-        data-i18n="btn_generate_string"
-      ></button>
+      <div class="block-section">
+        <h2 data-i18n="ui_option_a_title"></h2>
+        <p class="instructions" data-i18n="ui_option_a_instructions"></p>
+        <textarea
+          id="batchTextarea"
+          class="batch-box"
+          data-i18n-ph="ph_batch_box"
+        ></textarea>
+      </div>
+
+      <div class="block-section">
+        <h2 data-i18n="ui_option_b_title"></h2>
+        <p class="instructions" data-i18n="ui_option_b_instructions"></p>
+        <div id="treeViewContainer">
+          <p class="empty-tree-msg" data-i18n="ui_empty_tree_msg"></p>
+        </div>
+      </div>
     </div>
-    <textarea
-      id="outputString"
-      class="raw-string"
-      readonly
-      data-i18n-ph="ph_output_string"
-    ></textarea>
+
+    <textarea id="outputString" style="display: none"></textarea>
 
     <script src="app.js"></script>
   </body>
