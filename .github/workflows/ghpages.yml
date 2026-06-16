@@ -9,6 +9,7 @@ on:
       - 'LICENSE'
       - '.gitignore'
       - 'images/**'
+      - '.github/**'
       - '*.png'
       - '*.jpg'
       - '*.jpeg'
