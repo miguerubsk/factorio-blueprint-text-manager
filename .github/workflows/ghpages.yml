@@ -1,9 +1,17 @@
 name: Deploy to GitHub Pages
 
 on:
-  workflow_dispatch:
   push:
-    branches: ["master"]
+    branches:
+      - master
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
+      - '.gitignore'
+      - 'images/**'
+      - '*.png'
+      - '*.jpg'
+      - '*.jpeg'
     
 permissions:
   contents: read
