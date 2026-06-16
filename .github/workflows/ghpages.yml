@@ -1,20 +1,15 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Se ejecuta automáticamente cada vez que haces un 'push' a la rama principal
-  push:
-    branches: ["main"]
-
-  # Te permite ejecutar el despliegue a mano desde la pestaña "Actions" de GitHub
   workflow_dispatch:
-
-# Permisos mínimos necesarios para que el bot de GitHub pueda escribir en Pages
+  push:
+    branches: ["master"]
+    
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Evita que se pisen despliegues simultáneos si haces varios commits seguidos
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -35,7 +30,6 @@ jobs:
       - name: Subir artefactos de la Web
         uses: actions/upload-pages-artifact@v3
         with:
-          # Sube todo el contenido de la raíz del repositorio
           path: '.'
 
       - name: Desplegar en GitHub Pages
