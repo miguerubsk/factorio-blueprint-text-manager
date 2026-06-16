@@ -1,0 +1,27 @@
+const locale_en = {
+  ui_step1_title: "1. Paste your blueprint string (Factorio Blueprint String)",
+  btn_scan_book: "Scan Full Book",
+  btn_export_json: "📥 Export Clean JSON",
+  ui_option_a_title: "📝 Option A: Batch Mass Editing (Key = Value)",
+  ui_option_a_instructions:
+    "Ideal for copying all text at once to external machine translators.",
+  btn_apply_batch: "📥 Apply Batch Changes to Blueprint",
+  ui_option_b_title: "🔍 Option B: Direct Manual Editing in Structured Tree",
+  ui_option_b_instructions:
+    "Modify any cell below; it will sync automatically with the top block in real-time.",
+  ui_empty_tree_msg:
+    "Enter a string above to display the manual translation tree.",
+  ui_step3_title: "3. Export new modified string",
+  btn_generate_string: "Generate New Factorio String",
+  ph_raw_string: "0eN...",
+  ph_batch_box: "Translatable texts will appear here after scanning...",
+  ph_output_string: "Your new string will appear here...",
+  tag_libro: "Book",
+  tag_plano: "Blueprint",
+  lbl_descripcion: "DESCRIPTION",
+  lbl_parametro: "Parameter variable",
+  lbl_sirena: "Speaker Alert",
+  lbl_grupo_logistico: "Logistic Group",
+  lbl_estacion: "Station / Train stop",
+  msg_sincronizado: "Synced! {count} variables have been updated.",
+};

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorio Blueprint Text Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="locales/es.js"></script>
+    <script src="locales/en.js"></script>
+  </head>
+  <body>
+    <div class="lang-selector-container">
+      <label for="langSelect">🌐 Language: </label>
+      <select id="langSelect" onchange="changeLanguage(this.value)">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+
+    <h2 data-i18n="ui_step1_title"></h2>
+    <textarea
+      id="inputString"
+      class="raw-string"
+      data-i18n-ph="ph_raw_string"
+    ></textarea>
+
+    <div class="button-panel">
+      <button
+        class="primary"
+        onclick="processBlueprintString()"
+        data-i18n="btn_scan_book"
+      ></button>
+      <button
+        class="secondary"
+        onclick="exportRawJsonFile()"
+        data-i18n="btn_export_json"
+      ></button>
+    </div>
+
+    <hr />
+
+    <div class="block-section">
+      <h2 data-i18n="ui_option_a_title"></h2>
+      <p class="instructions" data-i18n="ui_option_a_instructions"></p>
+      <textarea
+        id="batchTextarea"
+        class="batch-box"
+        data-i18n-ph="ph_batch_box"
+      ></textarea>
+      <div class="button-panel">
+        <button
+          class="success"
+          onclick="applyBatchChanges()"
+          data-i18n="btn_apply_batch"
+        ></button>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="block-section">
+      <h2 data-i18n="ui_option_b_title"></h2>
+      <p class="instructions" data-i18n="ui_option_b_instructions"></p>
+      <div id="treeViewContainer">
+        <p class="empty-tree-msg" data-i18n="ui_empty_tree_msg"></p>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2 data-i18n="ui_step3_title"></h2>
+    <div class="button-panel">
+      <button
+        class="primary"
+        onclick="generateNewBlueprintString()"
+        data-i18n="btn_generate_string"
+      ></button>
+    </div>
+    <textarea
+      id="outputString"
+      class="raw-string"
+      readonly
+      data-i18n-ph="ph_output_string"
+    ></textarea>
+
+    <script src="app.js"></script>
+  </body>
+</html>
