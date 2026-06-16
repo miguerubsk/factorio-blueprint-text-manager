@@ -23,7 +23,16 @@ on:
       - '*.jpeg'
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ "master" ]
+    branches:
+      - master
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
+      - '.gitignore'
+      - 'images/**'
+      - '*.png'
+      - '*.jpg'
+      - '*.jpeg'
   schedule:
     - cron: '19 16 * * 4'
 
