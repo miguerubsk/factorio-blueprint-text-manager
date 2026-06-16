@@ -482,16 +482,23 @@ async function generateAndCopyString() {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const counterUrl = `https://api.counterapi.dev/v1/factorio-blueprint-text-manager/global/up`;
+  const user = "miguerubsk";
+  const repo = "factorio-blueprint-text-manager";
+  const url = `https://img.shields.io/github/search/counter/${user}/${repo}/visits.json`;
 
-  fetch(counterUrl)
-    .then((response) => response.json())
+  fetch(url)
+    .then((response) => {
+      if (!response.ok) throw new Error("Network error");
+      return response.json();
+    })
     .then((data) => {
-      if (data && data.count) {
-        document.getElementById("visitCounterValue").innerText = data.count;
+      if (data && data.value) {
+        const count = parseInt(data.value.replace(/\D/g, ""), 10) || 1;
+
+        document.getElementById("visitCounterValue").innerText = count;
       }
     })
     .catch(() => {
-      document.getElementById("visitCounterValue").innerText = "1.0k";
+      document.getElementById("visitCounterValue").innerText = "1";
     });
 });
