@@ -27,4 +27,9 @@ const locale_es = {
   lbl_estacion: "Estación / Parada de tren",
   msg_sincronizado: "¡Sincronizado! Se han actualizado {count} variables.",
   lbl_visits: "VISITAS:",
+  err_invalid_string:
+    "La cadena de plano introducida no es válida (debe empezar por 0).",
+  err_scan: "Error al escanear el libro de planos: {message}",
+  err_generate: "Error al generar la nueva cadena de Factorio: {message}",
+  err_no_data: "No hay datos de planos cargados en memoria.",
 };

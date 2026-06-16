@@ -75,7 +75,7 @@ async function compressBlueprintJson(jsonObj) {
 }
 
 function exportRawJsonFile() {
-  if (!blueprintRootJson) return alert("No data loaded.");
+  if (!blueprintRootJson) return alert(translate("err_no_data"));
   const blob = new Blob([JSON.stringify(blueprintRootJson, null, 2)], {
     type: "application/json",
   });
@@ -91,7 +91,7 @@ function exportRawJsonFile() {
 
 async function processBlueprintString() {
   const input = document.getElementById("inputString").value.trim();
-  if (!input.startsWith("0")) return alert("Invalid blueprint string.");
+  if (!input.startsWith("0")) return alert(translate("err_invalid_string"));
 
   try {
     blueprintRootJson = await decompressBlueprintString(input.substring(1));
@@ -99,7 +99,7 @@ async function processBlueprintString() {
     globalIdCounter = 0;
     renderFailsafeTreeAndMapping(blueprintRootJson);
   } catch (error) {
-    alert("Scan error: " + error.message);
+    alert(translate("err_scan", { message: error.message }));
   }
 }
 
@@ -450,17 +450,17 @@ function synchronizeTreeToBatchField() {
 }
 
 async function generateNewBlueprintString() {
-  if (!blueprintRootJson) return;
+  if (!blueprintRootJson) return alert(translate("err_no_data"));
   try {
     const generatedString = await compressBlueprintJson(blueprintRootJson);
     document.getElementById("outputString").value = generatedString;
   } catch (e) {
-    alert("Error generating string: " + e.message);
+    alert(translate("err_generate", { message: e.message }));
   }
 }
 
 async function generateAndCopyString() {
-  if (!blueprintRootJson) return;
+  if (!blueprintRootJson) return alert(translate("err_no_data"));
   const btn = document.getElementById("btnGenCopy");
 
   try {
@@ -469,7 +469,6 @@ async function generateAndCopyString() {
 
     await navigator.clipboard.writeText(generatedString);
 
-    // Usamos las claves traducidas para el feedback visual temporal
     btn.innerText = translate("msg_copied");
     btn.style.filter = "hue-rotate(90deg)";
 
@@ -478,19 +477,18 @@ async function generateAndCopyString() {
       btn.style.filter = "none";
     }, 2000);
   } catch (e) {
-    alert("Error generating or copying: " + e.message);
+    alert(translate("err_generate", { message: e.message }));
   }
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const repoName = "factorio-blueprint-text-manager";
-  const counterUrl = `https://api.counterapi.dev/v1/${repoName}/global/up`;
+  const counterUrl = `https://api.counterapi.dev/v1/factorio-blueprint-text-manager/global/up`;
 
   fetch(counterUrl)
     .then((response) => response.json())
     .then((data) => {
-      if (data && data.value) {
-        document.getElementById("visitCounterValue").innerText = data.value;
+      if (data && data.count) {
+        document.getElementById("visitCounterValue").innerText = data.count;
       }
     })
     .catch(() => {

@@ -26,4 +26,8 @@ const locale_en = {
   lbl_estacion: "Station / Train stop",
   msg_sincronizado: "Synced! {count} variables have been updated.",
   lbl_visits: "VISITS:",
+  err_invalid_string: "Invalid blueprint string (must start with 0).",
+  err_scan: "Error scanning blueprint book: {message}",
+  err_generate: "Error generating new Factorio string: {message}",
+  err_no_data: "No blueprint data loaded in memory.",
 };
