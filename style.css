@@ -150,8 +150,7 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
 }
 
 .stats-counter-badge {
-    height: 16px;
+    height: 18px;
     display: block;
     border-radius: 2px;
-    filter: brightness(1.1) contrast(1.1);
 }

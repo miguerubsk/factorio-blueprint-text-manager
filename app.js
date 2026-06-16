@@ -28,6 +28,21 @@ function translateStaticUi() {
     const key = el.getAttribute("data-i18n-ph");
     el.placeholder = translate(key);
   });
+
+  if (translate("ui_page_title")) {
+    document.title = translate("ui_page_title");
+  }
+
+  const badgeImg = document.getElementById("globalVisitorBadge");
+  if (badgeImg) {
+    const textLeft = (translate("lbl_visits") || "VISITS") + "%20";
+    const pageId = "miguerubsk.factorio-blueprint-text-manager";
+
+    const colorLeft = "%23141313";
+    const colorRight = "%23ff9f1c";
+
+    badgeImg.src = `https://visitor-badge.laobi.icu/badge?page_id=${pageId}&left_text=${textLeft}&left_color=${colorLeft}&right_color=${colorRight}&radius=0&height=20`;
+  }
 }
 
 function changeLanguage(newLang) {
@@ -480,25 +495,3 @@ async function generateAndCopyString() {
     alert(translate("err_generate", { message: e.message }));
   }
 }
-
-window.addEventListener("DOMContentLoaded", () => {
-  const user = "miguerubsk";
-  const repo = "factorio-blueprint-text-manager";
-  const url = `https://img.shields.io/github/search/counter/${user}/${repo}/visits.json`;
-
-  fetch(url)
-    .then((response) => {
-      if (!response.ok) throw new Error("Network error");
-      return response.json();
-    })
-    .then((data) => {
-      if (data && data.value) {
-        const count = parseInt(data.value.replace(/\D/g, ""), 10) || 1;
-
-        document.getElementById("visitCounterValue").innerText = count;
-      }
-    })
-    .catch(() => {
-      document.getElementById("visitCounterValue").innerText = "1";
-    });
-});

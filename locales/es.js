@@ -32,4 +32,5 @@ const locale_es = {
   err_scan: "Error al escanear el libro de planos: {message}",
   err_generate: "Error al generar la nueva cadena de Factorio: {message}",
   err_no_data: "No hay datos de planos cargados en memoria.",
+  ui_page_title: "Factorio Blueprint Text Manager",
 };

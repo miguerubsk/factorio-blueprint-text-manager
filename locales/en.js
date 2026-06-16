@@ -30,4 +30,5 @@ const locale_en = {
   err_scan: "Error scanning blueprint book: {message}",
   err_generate: "Error generating new Factorio string: {message}",
   err_no_data: "No blueprint data loaded in memory.",
+  ui_page_title: "Factorio Blueprint Text Manager",
 };
