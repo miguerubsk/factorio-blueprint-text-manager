@@ -89,6 +89,143 @@
 
     <textarea id="outputString" style="display: none"></textarea>
 
-    <script src="app.js"></script>
+    <div id="factorioCatalog" class="catalog-drawer">
+      <div class="catalog-header">
+        <h3 data-i18n="lbl_catalog_title">CATÁLOGO DE ICONOS</h3>
+        <button id="btnCloseCatalog" class="secondary">X</button>
+      </div>
+      <div class="catalog-search-container">
+        <input
+          type="text"
+          id="catalogSearch"
+          data-i18n-ph="ph_search_icon"
+          oninput="renderCatalogCategory(currentCatalogTab, this.value)"
+        />
+      </div>
+
+      <div class="catalog-tabs">
+        <button
+          class="catalog-tab-link active"
+          onclick="switchCatalogTab('logistics')"
+          data-i18n-title="lbl_tab_logistics"
+        >
+          <img
+            src="https://wiki.factorio.com/images/Item-group_logistics.png"
+            alt="L"
+          />
+        </button>
+        <button
+          class="catalog-tab-link"
+          onclick="switchCatalogTab('production')"
+          data-i18n-title="lbl_tab_production"
+        >
+          <img
+            src="https://wiki.factorio.com/images/Item-group_production.png"
+            alt="P"
+          />
+        </button>
+        <button
+          class="catalog-tab-link"
+          onclick="switchCatalogTab('intermediates')"
+          data-i18n-title="lbl_tab_intermediates"
+        >
+          <img
+            src="https://wiki.factorio.com/images/Item-group_intermediate_products.png"
+            alt="I"
+          />
+        </button>
+        <button
+          class="catalog-tab-link"
+          onclick="switchCatalogTab('space')"
+          data-i18n-title="lbl_tab_space"
+        >
+          <img
+            src="https://wiki.factorio.com/images/Item-group_space.png"
+            alt="S"
+          />
+        </button>
+        <button
+          class="catalog-tab-link"
+          onclick="switchCatalogTab('combat')"
+          data-i18n-title="lbl_tab_military"
+        >
+          <img
+            src="https://wiki.factorio.com/images/Item-group_military.png"
+            alt="M"
+          />
+        </button>
+        <button
+          class="catalog-tab-link"
+          onclick="switchCatalogTab('fluids')"
+          data-i18n-title="lbl_tab_fluids"
+        >
+          <img
+            src="https://wiki.factorio.com/images/Item-group_fluids.png"
+            alt="F"
+          />
+        </button>
+        <button
+          class="catalog-tab-link"
+          onclick="switchCatalogTab('enemies')"
+          data-i18n-title="lbl_tab_enemies"
+        >
+          <img
+            src="https://wiki.factorio.com/images/Item-group_enemies.png"
+            alt="E"
+          />
+        </button>
+        <button
+          class="catalog-tab-link"
+          onclick="switchCatalogTab('signals')"
+          data-i18n-title="lbl_tab_signals"
+        >
+          <img
+            src="https://wiki.factorio.com/images/Signal_anything.png"
+            alt="X"
+          />
+        </button>
+      </div>
+
+      <div id="catalogGrid" class="catalog-grid"></div>
+    </div>
+
+    <div
+      id="btnOpenCatalog"
+      class="catalog-floating-trigger"
+      data-i18n-title="lbl_catalog_btn"
+    >
+      ⚙️
+    </div>
+
+    <script src="./factorio-content.js"></script>
+    <script src="./app.js"></script>
+
+    <footer class="factory-footer font-compact">
+      <span>
+        <span data-i18n="lbl_footer_author">Desarrollado con ⚙️ por</span>
+        <a
+          href="https://github.com/miguerubsk"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-link"
+          >miguerubsk</a
+        >
+      </span>
+      <span class="footer-separator">|</span>
+      <a
+        href="https://github.com/miguerubsk/factorio-blueprint-text-manager"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-link footer-repo"
+      >
+        <svg class="github-icon" viewBox="0 0 16 16" width="14" height="14">
+          <path
+            fill="currentColor"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+          ></path>
+        </svg>
+        GitHub Repository
+      </a>
+    </footer>
   </body>
 </html>
