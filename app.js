@@ -29,6 +29,11 @@ function translateStaticUi() {
     el.placeholder = translate(key);
   });
 
+  document.querySelectorAll("[data-i18n-title]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-title");
+    el.title = translate(key);
+  });
+
   if (translate("ui_page_title")) {
     document.title = translate("ui_page_title");
   }
@@ -37,11 +42,15 @@ function translateStaticUi() {
   if (badgeImg) {
     const textLeft = (translate("lbl_visits") || "VISITS") + "%20";
     const pageId = "miguerubsk.factorio-blueprint-text-manager";
-
     const colorLeft = "%23141313";
     const colorRight = "%23ff9f1c";
-
     badgeImg.src = `https://visitor-badge.laobi.icu/badge?page_id=${pageId}&left_text=${textLeft}&left_color=${colorLeft}&right_color=${colorRight}&radius=0&height=20`;
+  }
+
+  if (
+    document.getElementById("factorioCatalog")?.classList.contains("active")
+  ) {
+    renderCatalogCategory(currentCatalogTab);
   }
 }
 
@@ -495,3 +504,168 @@ async function generateAndCopyString() {
     alert(translate("err_generate", { message: e.message }));
   }
 }
+
+let currentCatalogTab = "logistics";
+let lastFocusedInput = null;
+
+document.addEventListener("focusin", (e) => {
+  if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") {
+    if (e.target.id !== "catalogSearch") {
+      lastFocusedInput = e.target;
+    }
+  }
+});
+
+document.getElementById("btnOpenCatalog")?.addEventListener("click", () => {
+  const catalog = document.getElementById("factorioCatalog");
+  catalog.classList.toggle("active");
+
+  if (catalog.classList.contains("active")) {
+    renderCatalogCategory(currentCatalogTab);
+  }
+});
+
+document.getElementById("btnCloseCatalog")?.addEventListener("click", () => {
+  document.getElementById("factorioCatalog").classList.remove("active");
+});
+
+function switchCatalogTab(tabId) {
+  currentCatalogTab = tabId;
+  document
+    .querySelectorAll(".catalog-tab-link")
+    .forEach((btn) => btn.classList.remove("active"));
+
+  if (event && event.currentTarget) {
+    event.currentTarget.classList.add("active");
+  }
+  document.getElementById("catalogSearch").value = "";
+  renderCatalogCategory(tabId);
+}
+
+function renderCatalogCategory(category, filterText = "") {
+  const grid = document.getElementById("catalogGrid");
+  if (!grid) return;
+  grid.innerHTML = "";
+
+  const groups = FACTORIO_ICONS_DATA[category] || [];
+  const lang = typeof currentLanguage !== "undefined" ? currentLanguage : "es";
+
+  groups.forEach((rowItems) => {
+    // Creamos una fila visual de Factorio
+    const rowContainer = document.createElement("div");
+    rowContainer.className = "catalog-row";
+
+    let itemsInRowAdded = 0;
+
+    rowItems.forEach((item) => {
+      const displayName = lang === "es" ? item.es : item.en;
+
+      if (
+        filterText &&
+        !displayName.toLowerCase().includes(filterText.toLowerCase()) &&
+        !item.id.toLowerCase().includes(filterText.toLowerCase())
+      ) {
+        return;
+      }
+
+      itemsInRowAdded++;
+
+      const card = document.createElement("div");
+      card.className = "icon-card";
+
+      let tagPrefix = "item";
+      if (category === "signals") tagPrefix = "virtual-signal";
+      if (category === "enemies") tagPrefix = "entity";
+      if (category === "fluids") tagPrefix = "fluid";
+
+      const fullTag = `[${tagPrefix}=${item.id}]`;
+      card.title = fullTag;
+
+      let wikiName = "";
+      const chestOverrides = {
+        "logistic-chest-active-provider": "Active_provider_chest",
+        "logistic-chest-passive-provider": "Passive_provider_chest",
+        "logistic-chest-storage": "Storage_chest",
+        "logistic-chest-buffer": "Buffer_chest",
+        "logistic-chest-requester": "Requester_chest",
+      };
+
+      if (chestOverrides[item.id]) {
+        wikiName = chestOverrides[item.id];
+      } else if (item.id === "long-handed-inserter") {
+        wikiName = "Long-handed_inserter";
+      } else {
+        let processed = item.id.replace(/-/g, "_");
+        wikiName = processed.charAt(0).toUpperCase() + processed.slice(1);
+      }
+
+      if (item.id === "signal-everything") wikiName = "Everything_signal";
+      if (item.id === "signal-anything") wikiName = "Anything_signal";
+      if (item.id === "signal-each") wikiName = "Each_signal";
+
+      if (item.id.startsWith("signal-") && item.id.length === 8) {
+        const char = item.id.charAt(7).toUpperCase();
+        wikiName = `Signal_${char}`;
+      }
+
+      const imgUrl = `https://wiki.factorio.com/images/${wikiName}.png`;
+
+      card.innerHTML = `
+        <img src="${imgUrl}" alt="${displayName}" loading="lazy" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 fill=%22%23242322%22 stroke=%22%23413f3e%22 stroke-width=%221%22/><text x=%2250%%22 y=%2260%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23ff9f1c%22 font-size=%2214%22 font-family=%22monospace%22 font-weight=%22bold%22>⚙️</text></svg>';">
+      `;
+
+      card.addEventListener("click", () => {
+        navigator.clipboard.writeText(fullTag);
+
+        if (lastFocusedInput) {
+          const input = lastFocusedInput;
+          const startPos = input.selectionStart;
+          const endPos = input.selectionEnd;
+          const text = input.value;
+
+          input.value =
+            text.substring(0, startPos) + fullTag + text.substring(endPos);
+
+          const newCursorPos = startPos + fullTag.length;
+          input.setSelectionRange(newCursorPos, newCursorPos);
+
+          input.focus();
+
+          if (input.id === "batchTextarea") {
+          } else if (input.id.startsWith("tree-")) {
+            if (typeof input.oninput === "function") {
+              input.oninput();
+            }
+          }
+        }
+
+        card.classList.add("copied");
+        setTimeout(() => {
+          card.classList.remove("copied");
+        }, 800);
+      });
+
+      rowContainer.appendChild(card);
+    });
+
+    if (itemsInRowAdded > 0) {
+      grid.appendChild(rowContainer);
+    }
+  });
+}
+
+function filterCatalog() {
+  const text = document.getElementById("catalogSearch").value;
+  renderCatalogCategory(currentCatalogTab, text);
+}
+
+document.addEventListener("click", (e) => {
+  const catalog = document.getElementById("factorioCatalog");
+  const btnOpen = document.getElementById("btnOpenCatalog");
+
+  if (catalog && catalog.classList.contains("active")) {
+    if (!catalog.contains(e.target) && !btnOpen.contains(e.target)) {
+      catalog.classList.remove("active");
+    }
+  }
+});

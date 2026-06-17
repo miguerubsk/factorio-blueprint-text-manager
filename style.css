@@ -136,7 +136,7 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
     border-bottom: 1px solid var(--border-light);
     padding: 0 8px;
     border-radius: 3px;
-    height: 26px;
+    height: 100%;
     box-sizing: border-box;
     box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
 }
@@ -150,7 +150,210 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
 }
 
 .stats-counter-badge {
-    height: 18px;
+    height: 22px;
     display: block;
+    vertical-align: middle;
+}
+
+:root {
+    /* Un slot mide 44px + 2px de gap = 46px por columna. 
+       12 columnas * 46px = 552px de espacio neto para items.
+       Sumando paddings (24px totales), el ancho ideal fijo es 576px. */
+    --catalog-width: 576px; 
+}
+
+.catalog-drawer {
+    position: fixed;
+    top: 0;
+    right: calc(-1 * var(--catalog-width) - 20px); /* Oculto perfectamente */
+    width: var(--catalog-width) !important;       /* ¡ANCHO FIJO! Jamás volverá a cambiar entre pestañas */
+    height: 100vh;
+    background: #242322;
+    border-left: 3px solid #141313;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.7);
+    z-index: 2000;
+    transition: right 0.25s ease-out, visibility 0.25s ease-out;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.catalog-drawer.active {
+    right: 0;
+    visibility: visible;
+}
+
+.catalog-header {
+    background: #1a1918;
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #141313;
+}
+
+.catalog-header h3 {
+    margin: 0;
+    font-size: 0.85em;
+    color: #e2b17a;
+    font-family: 'Consolas', monospace;
+    letter-spacing: 1px;
+}
+
+.catalog-search-container {
+    padding: 8px;
+    background: #1c1b1a;
+    border-bottom: 2px solid #141313;
+}
+
+.catalog-search-container input {
+    width: 100%;
+    padding: 6px 8px;
+    background: #0f0e0e;
+    border: 1px solid #4d4b49;
+    color: #fff;
+    font-family: monospace;
     border-radius: 2px;
+    box-sizing: border-box;
+}
+
+/* Pestañas de categorías superiores (Ancladas estáticamente) */
+.catalog-tabs {
+    display: flex; 
+    flex-direction: row;
+    background: #141313;
+    padding: 4px;
+    gap: 3px;
+    border-bottom: 3px solid #141313;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.catalog-tab-link {
+    background: #302f2e;
+    border: 1px solid #575553;
+    border-bottom: 2px solid #1f1e1e;
+    width: 44px; /* Las pestañas miden exactamente lo mismo que un slot */
+    height: 38px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    box-sizing: border-box;
+    flex-shrink: 0; /* Impide que se deformen o cambien de tamaño */
+}
+
+.catalog-tab-link:hover {
+    background: #474543;
+}
+
+.catalog-tab-link img {
+    width: 24px;
+    height: 24px;
+    image-rendering: pixelated;
+}
+
+.catalog-tab-link.active {
+    background: #242322;
+    border-color: #ff9f1c;
+    border-bottom-color: #242322;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
+}
+
+/* Contenedor principal de items */
+.catalog-grid {
+    flex: 1;
+    overflow-y: auto;   /* Scroll vertical si hay muchas filas */
+    overflow-x: hidden;  /* Prohibido el scroll horizontal */
+    padding: 12px;
+    display: flex;
+    flex-direction: column; 
+    gap: 6px; 
+    background: #1c1b1a;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Filas de objetos */
+.catalog-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ranuras de inventario */
+.icon-card {
+    background: #292827;
+    border: 1px solid #403e3d;
+    border-radius: 2px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    flex-shrink: 0; /* Prohíbe que las celdas se encojan si la fila es larga */
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
+}
+
+.icon-card:hover {
+    background: #3d3b3a;
+    border-color: #ff9f1c;
+}
+
+.icon-card img {
+    width: 32px;
+    height: 32px;
+    image-rendering: pixelated;
+}
+
+.icon-card.copied {
+    background: #1e3d22 !important;
+    border-color: #28a745 !important;
+    box-shadow: inset 0 0 4px #28a745;
+}
+
+.icon-name {
+    display: none;
+}
+
+.catalog-floating-trigger {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: #181717 !important;
+    border: 2px solid #111010 !important;
+    border-top-color: #413f3e !important;
+    border-left-color: #413f3e !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8), inset 0 2px 4px rgba(0,0,0,0.5) !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    z-index: 9999 !important; /* Por encima de cualquier interfaz */
+    
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 24px !important;
+    user-select: none !important;
+    box-sizing: border-box !important;
+    transition: background-color 0.15s, border-color 0.15s, transform 0.1s ease !important;
+}
+
+.catalog-floating-trigger:hover {
+    background-color: #2b2a29 !important;
+    border-color: #ff9f1c !important;
+    transform: scale(1.05);
+}
+
+.catalog-floating-trigger:active {
+    transform: scale(0.95);
 }
