@@ -203,10 +203,23 @@ function renderFailsafeTreeAndMapping(rootObj) {
       inputTitle.placeholder = isBook
         ? `[${translate("tag_libro")} sin nombre]`
         : `[${translate("tag_plano")} sin nombre]`;
-      inputTitle.oninput = function () {
+// Helpers
+function debounce(func, timeout = 300) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func.apply(this, args);
+    }, timeout);
+  };
+}
+
+// ... existing code
+
+      inputTitle.oninput = debounce(function () {
         factorioNode.label = inputTitle.value;
         synchronizeTreeToBatchField();
-      };
+      });
       divHeader.appendChild(inputTitle);
       divNode.appendChild(divHeader);
 
@@ -221,10 +234,10 @@ function renderFailsafeTreeAndMapping(rootObj) {
       textareaDesc.value = factorioNode.description;
       textareaDesc.id = `tree-${descRefId}`;
       textareaDesc.placeholder = "...";
-      textareaDesc.oninput = function () {
+      textareaDesc.oninput = debounce(function () {
         factorioNode.description = textareaDesc.value;
         synchronizeTreeToBatchField();
-      };
+      });
       divDescSection.appendChild(textareaDesc);
       divNode.appendChild(divDescSection);
 
@@ -256,10 +269,10 @@ function renderFailsafeTreeAndMapping(rootObj) {
           inputParam.type = "text";
           inputParam.value = param.name;
           inputParam.id = `tree-${paramRefId}`;
-          inputParam.oninput = function () {
+          inputParam.oninput = debounce(function () {
             param.name = inputParam.value;
             synchronizeTreeToBatchField();
-          };
+          });
 
           divParamItem.appendChild(inputParam);
           divSublist.appendChild(divParamItem);
@@ -405,10 +418,10 @@ function createEntityTreeBlock(
   inputEntity.type = "text";
   inputEntity.value = refObj[property] || "";
   inputEntity.id = `tree-${uniqueId}`;
-  inputEntity.oninput = function () {
+  inputEntity.oninput = debounce(function () {
     refObj[property] = inputEntity.value;
     synchronizeTreeToBatchField();
-  };
+  });
 
   divItem.appendChild(inputEntity);
   return divItem;
@@ -551,7 +564,6 @@ function renderCatalogCategory(category, filterText = "") {
   const lang = typeof currentLanguage !== "undefined" ? currentLanguage : "es";
 
   groups.forEach((rowItems) => {
-    // Creamos una fila visual de Factorio
     const rowContainer = document.createElement("div");
     rowContainer.className = "catalog-row";
 
