@@ -62,7 +62,7 @@ h2 { color: #ffffff; font-weight: 600; font-size: 1.1em; margin-top: 0; margin-b
 
 textarea {
     width: 100%;
-    background-color: var(--bg-input) !important; /* Forzamos el color oscuro de Factorio */
+    background-color: var(--bg-input) !important;
     color: #ffffff !important;
     border: 2px solid var(--border-dark);
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.8), 0 1px 0 var(--border-light);
@@ -156,17 +156,14 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
 }
 
 :root {
-    /* Un slot mide 44px + 2px de gap = 46px por columna. 
-       12 columnas * 46px = 552px de espacio neto para items.
-       Sumando paddings (24px totales), el ancho ideal fijo es 576px. */
     --catalog-width: 576px; 
 }
 
 .catalog-drawer {
     position: fixed;
     top: 0;
-    right: calc(-1 * var(--catalog-width) - 20px); /* Oculto perfectamente */
-    width: var(--catalog-width) !important;       /* ¡ANCHO FIJO! Jamás volverá a cambiar entre pestañas */
+    right: calc(-1 * var(--catalog-width) - 20px);
+    width: var(--catalog-width) !important;
     height: 100vh;
     background: #242322;
     border-left: 3px solid #141313;
@@ -219,7 +216,6 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
     box-sizing: border-box;
 }
 
-/* Pestañas de categorías superiores (Ancladas estáticamente) */
 .catalog-tabs {
     display: flex; 
     flex-direction: row;
@@ -235,7 +231,7 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
     background: #302f2e;
     border: 1px solid #575553;
     border-bottom: 2px solid #1f1e1e;
-    width: 44px; /* Las pestañas miden exactamente lo mismo que un slot */
+    width: 44px;
     height: 38px;
     cursor: pointer;
     display: flex;
@@ -243,7 +239,7 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
     justify-content: center;
     border-radius: 2px;
     box-sizing: border-box;
-    flex-shrink: 0; /* Impide que se deformen o cambien de tamaño */
+    flex-shrink: 0;
 }
 
 .catalog-tab-link:hover {
@@ -263,11 +259,10 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
 }
 
-/* Contenedor principal de items */
 .catalog-grid {
     flex: 1;
-    overflow-y: auto;   /* Scroll vertical si hay muchas filas */
-    overflow-x: hidden;  /* Prohibido el scroll horizontal */
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 12px;
     display: flex;
     flex-direction: column; 
@@ -277,7 +272,6 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
     width: 100%;
 }
 
-/* Filas de objetos */
 .catalog-row {
     display: flex;
     flex-direction: row;
@@ -287,7 +281,6 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
     box-sizing: border-box;
 }
 
-/* Ranuras de inventario */
 .icon-card {
     background: #292827;
     border: 1px solid #403e3d;
@@ -299,7 +292,7 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
     justify-content: center;
     cursor: pointer;
     box-sizing: border-box;
-    flex-shrink: 0; /* Prohíbe que las celdas se encojan si la fila es larga */
+    flex-shrink: 0;
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
 }
 
@@ -337,7 +330,7 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8), inset 0 2px 4px rgba(0,0,0,0.5) !important;
     border-radius: 6px !important;
     cursor: pointer !important;
-    z-index: 9999 !important; /* Por encima de cualquier interfaz */
+    z-index: 9999 !important;
     
     display: flex !important;
     align-items: center !important;

@@ -99,7 +99,7 @@
           type="text"
           id="catalogSearch"
           data-i18n-ph="ph_search_icon"
-          oninput="renderCatalogCategory(currentCatalogTab, this.value)"
+          oninput="filterCatalog()"
         />
       </div>
 
@@ -146,7 +146,7 @@
         </button>
         <button
           class="catalog-tab-link"
-          onclick="switchCatalogTab('combat')"
+          onclick="switchCatalogTab('military')"
           data-i18n-title="lbl_tab_military"
         >
           <img

@@ -1,0 +1,7 @@
+{
+  "fluids": [
+    [ { "id": "water", "en": "Water", "es": "Agua" }, { "id": "steam", "en": "Steam", "es": "Vapor" }, { "id": "crude-oil", "en": "Crude oil", "es": "Petróleo crudo" }, { "id": "petroleum-gas", "en": "Petroleum gas", "es": "Gas de petróleo" }, { "id": "light-oil", "en": "Light oil", "es": "Petróleo ligero" }, { "id": "heavy-oil", "en": "Heavy oil", "es": "Petróleo pesado" }, { "id": "lubricant", "en": "Lubricant", "es": "Lubricante" }, { "id": "sulfuric-acid", "en": "Sulfuric acid", "es": "Ácido sulfúrico" } ],
+    [ { "id": "thruster-fuel", "en": "Thruster fuel", "es": "Combustible de propulsor" }, { "id": "thruster-oxidizer", "en": "Thruster oxidizer", "es": "Oxidante de propulsor" } ],
+    [ { "id": "lava", "en": "Lava", "es": "Lava" }, { "id": "molten-iron", "en": "Molten iron", "es": "Hierro fundido" }, { "id": "molten-copper", "en": "Molten copper", "es": "Cobre fundido" }, { "id": "holmium-solution", "en": "Holmium solution", "es": "Solución de holmio" }, { "id": "electrolyte", "en": "Electrolyte", "es": "Electrolito" }, { "id": "ammoniacal-solution", "en": "Ammoniacal solution", "es": "Solución de amoníaco" }, { "id": "ammonia", "en": "Ammonia", "es": "Amoníaco" }, { "id": "fluorine", "en": "Fluorine", "es": "Flúor" }, { "id": "lithium-brine", "en": "Lithium brine", "es": "Solucción de litio" }, { "id": "plasma", "en": "Plasma", "es": "Plasma" } ]
+  ]
+}
