@@ -1,12 +1,95 @@
 {
   "military": [
-    [ { "id": "pistol", "en": "Pistol", "es": "Pistola" }, { "id": "submachine-gun", "en": "Submachine gun", "es": "Subfusil" }, { "id": "railgun", "en": "Railgun", "es": "Railgun" }, { "id": "tesla-gun", "en": "Tesla gun", "es": "Tesla gun" }, { "id": "shotgun", "en": "Shotgun", "es": "Escopeta" }, { "id": "combat-shotgun", "en": "Combat shotgun", "es": "Escopeta de combate" }, { "id": "rocket-launcher", "en": "Rocket launcher", "es": "Lanzamisiles" }, { "id": "flamethrower", "en": "Flamethrower", "es": "Lanzallamas" } ],
-    [ { "id": "firearm-magazine", "en": "Firearm magazine", "es": "Munición" }, { "id": "piercing-rounds-magazine", "en": "Piercing rounds magazine", "es": "Munición penetrante" }, { "id": "uranium-rounds-magazine", "en": "Uranium rounds magazine", "es": "Munición de uranio" }, { "id": "shotgun-shells", "en": "Shotgun shells", "es": "Cartuchos de escopeta" }, { "id": "piercing-shotgun-shells", "en": "Piercing shotgun shells", "es": "Cartuchos penetrantes de escopeta" }, { "id": "cannon-shell", "en": "Cannon shell", "es": "Proyectil de cañón" }, { "id": "explosive-cannon-shell", "en": "Explosive cannon shell", "es": "Proyectil de cañon explosivo" }, { "id": "uranium-cannon-shell", "en": "Uranium cannon shell", "es": "Proyectil de cañón de uranio" }, { "id": "explosive-uranium-cannon-shell", "en": "Explosive uranium cannon shell", "es": "Casquillo explosivo de uranio de cañón" } ],
-    [ { "id": "artillery-shell", "en": "Artillery shell", "es": "Proyectil de artillería" }, { "id": "rocket", "en": "Rocket", "es": "Cohete" }, { "id": "explosive-rocket", "en": "Explosive rocket", "es": "Cohete explosivo" }, { "id": "atomic-bomb", "en": "Atomic bomb", "es": "Bomba atómica" }, { "id": "capture-bot-rocket", "en": "Capture bot rocket", "es": "Cohete de robot capturador" }, { "id": "flamethrower-ammo", "en": "Flamethrower ammo", "es": "Munición de lanzallamas" }, { "id": "railgun-ammo", "en": "Railgun ammo", "es": "Munición de railgun" }, { "id": "tesla-ammo", "en": "Tesla ammo", "es": "Munición tesla" } ],
-    [ { "id": "grenade", "en": "Grenade", "es": "Granada" }, { "id": "cluster-grenade", "en": "Cluster grenade", "es": "Granada de racimo" }, { "id": "poison-capsule", "en": "Poison capsule", "es": "Cápsula de veneno" }, { "id": "slowdown-capsule", "en": "Slowdown capsule", "es": "Cápsula de ralentizamiento" }, { "id": "defender-capsule", "en": "Defender capsule", "es": "Cápsula de defensor" }, { "id": "distractor-capsule", "en": "Distractor capsule", "es": "Cápsula de distractor" }, { "id": "destroyer-capsule", "en": "Destroyer capsule", "es": "Cápsula de destructor" } ],
-    [ { "id": "light-armor", "en": "Light armor", "es": "Armadura ligera" }, { "id": "heavy-armor", "en": "Heavy armor", "es": "Armadura pesada" }, { "id": "modular-armor", "en": "Modular armor", "es": "Armadura modular" }, { "id": "power-armor", "en": "Power armor", "es": "Nanoarmadura" }, { "id": "power-armor-mk2", "en": "Power armor MK2", "es": "Servo-armadura MK2" }, { "id": "mech-armor", "en": "Mech armor", "es": "Mecarmadura" } ],
-    [ { "id": "portable-solar-panel", "en": "Portable solar panel", "es": "Panel solar portátil" }, { "id": "portable-fission-reactor", "en": "Portable fission reactor", "es": "Reactor de fisión portátil" }, { "id": "portable-fusion-reactor", "en": "Portable fusion reactor", "es": "Reactor de fusión portátil" }, { "id": "personal-battery", "en": "Personal battery", "es": "Batería personal" }, { "id": "personal-battery-mk2", "en": "Personal battery MK2", "es": "Batería personal MK2" }, { "id": "personal-battery-mk3", "en": "Personal battery MK3", "es": "Batería personal MK3" }, { "id": "belt-immunity-equipment", "en": "Belt immunity equipment", "es": "Equioi de inmunidad a las cintas" }, { "id": "exoskeleton", "en": "Exoskeleton", "es": "Exoesqueleto" } ],
-    [ { "id": "personal-roboport", "en": "Personal roboport", "es": "Robopuerto personal" }, { "id": "personal-roboport-mk2", "en": "Personal roboport MK2", "es": "Robopuerto personal MK2" }, { "id": "nightvision", "en": "Nightvision", "es": "Visión nocturna" }, { "id": "toolbelt-equipment", "en": "Toolbelt equipment", "es": "Cinturón de herramientas" }, { "id": "energy-shield", "en": "Energy shield", "es": "Escudo de energía" }, { "id": "energy-shield-mk2", "en": "Energy shield MK2", "es": "Escudo de energía MK2" }, { "id": "personal-laser-defense", "en": "Personal laser defense", "es": "Láser de defensa personal" }, { "id": "discharge-defense", "en": "Discharge defense", "es": "Defensa eléctrica" }, { "id": "discharge-defense-remote", "en": "Discharge defense remote", "es": "Control remoto de defensa eléctrica" } ],
-    [ { "id": "wall", "en": "Wall", "es": "Muro" }, { "id": "gate", "en": "Gate", "es": "Puerta" }, { "id": "radar", "en": "Radar", "es": "Radar" }, { "id": "land-mine", "en": "Land mine", "es": "Mina" }, { "id": "gun-turret", "en": "Gun turret", "es": "Torreta" }, { "id": "laser-turret", "en": "Laser turret", "es": "Torreta láser" }, { "id": "flamethrower-turret", "en": "Flamethrower turret", "es": "Torreta lanzallamas" }, { "id": "artillery-turret", "en": "Artillery turret", "es": "Torreta de artillería" }, { "id": "artillery-targeting-remote", "en": "Artillery targeting remote", "es": "Control remoto de artillería" }, { "id": "rocket-turret", "en": "Rocket turret", "es": "Torreta de misiles" }, { "id": "tesla-turret", "en": "Tesla turret", "es": "Torre de Tesla" }, { "id": "railgun-turret", "en": "Railgun turret", "es": "Torreta de railgun" } ]
+    [
+      { "id": "pistol", "en": "Pistol", "es": "Pistola" },
+      { "id": "submachine-gun", "en": "Submachine gun", "es": "Subfusil" },
+      { "id": "railgun", "en": "Railgun", "es": "Fusil de riel" },
+      { "id": "tesla-gun", "en": "Tesla gun", "es": "Arma Tesla" },
+      { "id": "shotgun", "en": "Shotgun", "es": "Escopeta" },
+      { "id": "combat-shotgun", "en": "Combat shotgun", "es": "Escopeta de combate" },
+      { "id": "rocket-launcher", "en": "Rocket launcher", "es": "Lanzacohetes" },
+      { "id": "flamethrower", "en": "Flamethrower", "es": "Lanzallamas" }
+    ],
+    [
+      { "id": "firearm-magazine", "en": "Firearm magazine", "es": "Cargador de munición" },
+      { "id": "piercing-rounds-magazine", "en": "Piercing rounds magazine", "es": "Munición penetrante" },
+      { "id": "uranium-rounds-magazine", "en": "Uranium rounds magazine", "es": "Munición de uranio" },
+      { "id": "shotgun-shell", "en": "Shotgun shells", "es": "Cartuchos de escopeta" },
+      { "id": "piercing-shotgun-shell", "en": "Piercing shotgun shells", "es": "Cartuchos penetrantes de escopeta" }
+    ],
+    [
+      { "id": "cannon-shell", "en": "Cannon shell", "es": "Proyectil de cañón" },
+      { "id": "explosive-cannon-shell", "en": "Explosive cannon shell", "es": "Proyectil explosivo de cañón" },
+      { "id": "uranium-cannon-shell", "en": "Uranium cannon shell", "es": "Proyectil de cañón de uranio" },
+      { "id": "explosive-uranium-cannon-shell", "en": "Explosive uranium cannon shell", "es": "Proyectil de cañón de uranio explosivo" }
+    ],
+    [
+      { "id": "artillery-shell", "en": "Artillery shell", "es": "Proyectil de artillería" },
+      { "id": "rocket", "en": "Rocket", "es": "Cohete" },
+      { "id": "explosive-rocket", "en": "Explosive rocket", "es": "Cohete explosivo" },
+      { "id": "atomic-bomb", "en": "Atomic bomb", "es": "Bomba nuclear" },
+      { "id": "capture-bot-rocket", "en": "Capture bot rocket", "es": "Cohete de robot capturador" },
+      { "id": "flamethrower-ammo", "en": "Flamethrower ammo", "es": "Munición de lanzallamas" },
+      { "id": "railgun-ammo", "en": "Railgun ammo", "es": "Munición de fusil de riel" },
+      { "id": "tesla-ammo", "en": "Tesla ammo", "es": "Munición Tesla" }
+    ],
+    [
+      { "id": "grenade", "en": "Grenade", "es": "Granada" },
+      { "id": "cluster-grenade", "en": "Cluster grenade", "es": "Granada de racimo" },
+      { "id": "poison-capsule", "en": "Poison capsule", "es": "Cápsula de veneno" },
+      { "id": "slowdown-capsule", "en": "Slowdown capsule", "es": "Cápsula de ralentización" },
+      { "id": "defender-capsule", "en": "Defender capsule", "es": "Cápsula de defensor" },
+      { "id": "distractor-capsule", "en": "Distractor capsule", "es": "Cápsula de distractor" },
+      { "id": "destroyer-capsule", "en": "Destroyer capsule", "es": "Cápsula de destructor" }
+    ],
+    [
+      { "id": "light-armor", "en": "Light armor", "es": "Armadura ligera" },
+      { "id": "heavy-armor", "en": "Heavy armor", "es": "Armadura pesada" },
+      { "id": "modular-armor", "en": "Modular armor", "es": "Armadura modular" },
+      { "id": "power-armor", "en": "Power armor", "es": "Servo-armadura" },
+      { "id": "power-armor-mk2", "en": "Power armor MK2", "es": "Servo-armadura MK2" },
+      { "id": "mech-armor", "en": "Mech armor", "es": "Mecarmadura" }
+    ],
+    [
+      { "id": "solar-panel-equipment", "en": "Solar panel equipment", "es": "Panel solar portátil" },
+      { "id": "fission-reactor-equipment", "en": "Fission reactor equipment", "es": "Reactor de fisión portátil" },
+      { "id": "fusion-reactor-equipment", "en": "Fusion reactor equipment", "es": "Reactor de fusión portátil" },
+      { "id": "battery-equipment", "en": "Battery equipment", "es": "Batería personal" },
+      { "id": "battery-mk2-equipment", "en": "Battery mk2 equipment", "es": "Batería personal MK2" },
+      { "id": "battery-mk3-equipment", "en": "Battery mk3 equipment", "es": "Batería personal MK3" }
+    ],
+    [
+      { "id": "belt-immunity-equipment", "en": "Belt immunity equipment", "es": "Equipamiento de inmunidad a cintas" },
+      { "id": "exoskeleton-equipment", "en": "Exoskeleton equipment", "es": "Exoesqueleto" },
+      { "id": "personal-roboport-equipment", "en": "Personal roboport equipment", "es": "Robopuerto personal" },
+      { "id": "personal-roboport-mk2-equipment", "en": "Personal roboport mk2 equipment", "es": "Robopuerto personal MK2" },
+      { "id": "night-vision-equipment", "en": "Night vision equipment", "es": "Visión nocturna" },
+      { "id": "toolbelt-equipment", "en": "Toolbelt equipment", "es": "Cinturón de herramientas" }
+    ],
+    [
+      { "id": "energy-shield-equipment", "en": "Energy shield equipment", "es": "Escudo de energía" },
+      { "id": "energy-shield-mk2-equipment", "en": "Energy shield mk2 equipment", "es": "Escudo de energía MK2" },
+      { "id": "personal-laser-defense-equipment", "en": "Personal laser defense equipment", "es": "Láser de defensa personal" },
+      { "id": "discharge-defense-equipment", "en": "Discharge defense equipment", "es": "Defensa eléctrica" },
+      { "id": "discharge-defense-remote", "en": "Discharge defense remote", "es": "Control remoto de defensa eléctrica" }
+    ],
+    [
+      { "id": "stone-wall", "en": "Stone wall", "es": "Muro" },
+      { "id": "gate", "en": "Gate", "es": "Puerta" },
+      { "id": "radar", "en": "Radar", "es": "Radar" },
+      { "id": "land-mine", "en": "Land mine", "es": "Mina terrestre" }
+    ],
+    [
+      { "id": "gun-turret", "en": "Gun turret", "es": "Torreta ametralladora" },
+      { "id": "laser-turret", "en": "Laser turret", "es": "Torreta láser" },
+      { "id": "flamethrower-turret", "en": "Flamethrower turret", "es": "Torreta lanzallamas" },
+      { "id": "artillery-turret", "en": "Artillery turret", "es": "Torreta de artillería" },
+      { "id": "artillery-targeting-remote", "en": "Artillery targeting remote", "es": "Objetivo remoto de artillería" }
+    ],
+    [
+      { "id": "rocket-turret", "en": "Rocket turret", "es": "Torreta de misiles" },
+      { "id": "tesla-turret", "en": "Tesla turret", "es": "Torre de Tesla" },
+      { "id": "railgun-turret", "en": "Railgun turret", "es": "Torreta de fusil de riel" }
+    ]
   ]
 }
