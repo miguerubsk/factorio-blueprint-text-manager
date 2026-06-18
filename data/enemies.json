@@ -1,0 +1,6 @@
+{
+  "enemies": [
+    [ { "id": "small-biter", "es": "Mordedor pequeño", "en": "Small biter" }, { "id": "medium-biter", "es": "Mordedor mediano", "en": "Medium biter" }, { "id": "big-biter", "es": "Mordedor grande", "en": "Big biter" }, { "id": "behemoth-biter", "es": "Mordedor behemoth", "en": "Behemoth biter" } ],
+    [ { "id": "small-spitter", "es": "Escupidor pequeño", "en": "Small spitter" }, { "id": "medium-spitter", "es": "Escupidor mediano", "en": "Medium spitter" }, { "id": "big-spitter", "es": "Escupidor grande", "en": "Big spitter" }, { "id": "behemoth-spitter", "es": "Escupidor behemoth", "en": "Behemoth spitter" }, { "id": "demolisher", "es": "Demoledor", "en": "Demolisher" }, { "id": "Stomper", "es": "Acechador", "en": "Stomper" } ]
+  ]
+}
