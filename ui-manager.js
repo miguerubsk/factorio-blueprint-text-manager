@@ -1,4 +1,7 @@
-import { decompressBlueprintString, compressBlueprintJson } from './blueprint-processor.js';
+import {
+  decompressBlueprintString,
+  compressBlueprintJson,
+} from "./blueprint-processor.js";
 
 // --- Estado Global (Exportable para otros módulos) ---
 export let blueprintRootJson = null;
@@ -88,7 +91,12 @@ export async function renderCatalogCategory(category, filterText = "") {
     let itemsInRowAdded = 0;
     rowItems.forEach((item) => {
       const displayName = lang === "es" ? item.es : item.en;
-      if (filterText && !displayName.toLowerCase().includes(filterText.toLowerCase()) && !item.id.toLowerCase().includes(filterText.toLowerCase())) return;
+      if (
+        filterText &&
+        !displayName.toLowerCase().includes(filterText.toLowerCase()) &&
+        !item.id.toLowerCase().includes(filterText.toLowerCase())
+      )
+        return;
 
       itemsInRowAdded++;
       const card = document.createElement("div");
@@ -98,17 +106,28 @@ export async function renderCatalogCategory(category, filterText = "") {
       if (category === "enemies") tagPrefix = "entity";
       if (category === "fluids") tagPrefix = "fluid";
       const fullTag = `[${tagPrefix}=${item.id}]`;
-      card.title = fullTag;
+      card.title = displayName;
 
       let wikiName = "";
-      const chestOverrides = { "logistic-chest-active-provider": "Active_provider_chest", "logistic-chest-passive-provider": "Passive_provider_chest", "logistic-chest-storage": "Storage_chest", "logistic-chest-buffer": "Buffer_chest", "logistic-chest-requester": "Requester_chest" };
+      const chestOverrides = {
+        "logistic-chest-active-provider": "Active_provider_chest",
+        "logistic-chest-passive-provider": "Passive_provider_chest",
+        "logistic-chest-storage": "Storage_chest",
+        "logistic-chest-buffer": "Buffer_chest",
+        "logistic-chest-requester": "Requester_chest",
+      };
       if (chestOverrides[item.id]) wikiName = chestOverrides[item.id];
-      else if (item.id === "long-handed-inserter") wikiName = "Long-handed_inserter";
-      else { let processed = item.id.replace(/-/g, "_"); wikiName = processed.charAt(0).toUpperCase() + processed.slice(1); }
+      else if (item.id === "long-handed-inserter")
+        wikiName = "Long-handed_inserter";
+      else {
+        let processed = item.id.replace(/-/g, "_");
+        wikiName = processed.charAt(0).toUpperCase() + processed.slice(1);
+      }
       if (item.id === "signal-everything") wikiName = "Everything_signal";
       if (item.id === "signal-anything") wikiName = "Anything_signal";
       if (item.id === "signal-each") wikiName = "Each_signal";
-      if (item.id.startsWith("signal-") && item.id.length === 8) wikiName = `Signal_${item.id.charAt(7).toUpperCase()}`;
+      if (item.id.startsWith("signal-") && item.id.length === 8)
+        wikiName = `Signal_${item.id.charAt(7).toUpperCase()}`;
 
       const imgUrl = `https://wiki.factorio.com/images/${wikiName}.png`;
       card.innerHTML = `<img src="${imgUrl}" alt="${displayName}" loading="lazy" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 fill=%22%23242322%22 stroke=%22%23413f3e%22 stroke-width=%221%22/><text x=%2250%%22 y=%2260%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23ff9f1c%22 font-size=%2214%22 font-family=%22monospace%22 font-weight=%22bold%22>⚙️</text></svg>';">`;
@@ -119,11 +138,16 @@ export async function renderCatalogCategory(category, filterText = "") {
           const startPos = input.selectionStart;
           const endPos = input.selectionEnd;
           const text = input.value;
-          input.value = text.substring(0, startPos) + fullTag + text.substring(endPos);
+          input.value =
+            text.substring(0, startPos) + fullTag + text.substring(endPos);
           const newCursorPos = startPos + fullTag.length;
           input.setSelectionRange(newCursorPos, newCursorPos);
           input.focus();
-          if (input.id.startsWith("tree-") && typeof input.oninput === "function") input.oninput();
+          if (
+            input.id.startsWith("tree-") &&
+            typeof input.oninput === "function"
+          )
+            input.oninput();
         }
         card.classList.add("copied");
         setTimeout(() => card.classList.remove("copied"), 800);
@@ -135,12 +159,24 @@ export async function renderCatalogCategory(category, filterText = "") {
 }
 
 // --- Funciones de Lógica de UI ---
-export function setBlueprintRootJson(value) { blueprintRootJson = value; }
-export function setGlobalReferenceMap(value) { globalReferenceMap = value; }
-export function setGlobalIdCounter(value) { globalIdCounter = value; }
-export function setCurrentLanguage(value) { currentLanguage = value; }
-export function setCurrentCatalogTab(value) { currentCatalogTab = value; }
-export function setLastFocusedInput(value) { lastFocusedInput = value; }
+export function setBlueprintRootJson(value) {
+  blueprintRootJson = value;
+}
+export function setGlobalReferenceMap(value) {
+  globalReferenceMap = value;
+}
+export function setGlobalIdCounter(value) {
+  globalIdCounter = value;
+}
+export function setCurrentLanguage(value) {
+  currentLanguage = value;
+}
+export function setCurrentCatalogTab(value) {
+  currentCatalogTab = value;
+}
+export function setLastFocusedInput(value) {
+  lastFocusedInput = value;
+}
 
 export function registerTextReference(type, objectRef, key) {
   globalIdCounter++;
@@ -244,7 +280,9 @@ export function renderFailsafeTreeAndMapping(rootObj) {
         ? `[${translate("tag_libro")} sin nombre]`
         : `[${translate("tag_plano")} sin nombre]`;
 
-      inputTitle.onfocus = () => { lastFocusedInput = inputTitle; };
+      inputTitle.onfocus = () => {
+        lastFocusedInput = inputTitle;
+      };
       inputTitle.oninput = debounce(function () {
         factorioNode.label = inputTitle.value;
         synchronizeTreeToBatchField();
@@ -263,7 +301,9 @@ export function renderFailsafeTreeAndMapping(rootObj) {
       textareaDesc.value = factorioNode.description;
       textareaDesc.id = `tree-${descRefId}`;
       textareaDesc.placeholder = "...";
-      textareaDesc.onfocus = () => { lastFocusedInput = textareaDesc; };
+      textareaDesc.onfocus = () => {
+        lastFocusedInput = textareaDesc;
+      };
       textareaDesc.oninput = debounce(function () {
         factorioNode.description = textareaDesc.value;
         synchronizeTreeToBatchField();
