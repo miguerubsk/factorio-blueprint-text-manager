@@ -1,16 +1,102 @@
 {
   "logistics": [
-    [ { "id": "wooden-chest", "en": "Wooden chest", "es": "Cofre de madera" }, { "id": "iron-chest", "en": "Iron chest", "es": "Cofre de hierro" }, { "id": "steel-chest", "en": "Steel chest", "es": "Cofre de acero" }, { "id": "storage-tank", "en": "Storage tank", "es": "Tanque de almacenaje" } ],
-    [ { "id": "transport-belt", "en": "Transport belt", "es": "Cinta transportadora" }, { "id": "fast-transport-belt", "en": "Fast transport belt", "es": "Cinta transportadora rápida" }, { "id": "express-transport-belt", "en": "Express transport belt", "es": "Cinta transportadora exprés" }, { "id": "turbo-transport-belt", "en": "Turbo transport belt", "es": "Cinta transportadora turbo" } ],
-    [ { "id": "underground-belt", "en": "Underground belt", "es": "Cinta transportadora subterránea" }, { "id": "fast-underground-belt", "en": "Fast underground belt", "es": "Cinta transportadora subterránea rápida" }, { "id": "express-underground-belt", "en": "Express underground belt", "es": "Cinta transportadora subterránea exprés" }, { "id": "turbo-underground-belt", "en": "Turbo underground belt", "es": "Cinta transportadora subterránea turbo" } ],
-    [ { "id": "splitter", "en": "Splitter", "es": "Divisor" }, { "id": "fast-splitter", "en": "Fast splitter", "es": "Divisor rápido" }, { "id": "express-splitter", "en": "Express splitter", "es": "Divisor exprés" }, { "id": "turbo-splitter", "en": "Turbo splitter", "es": "Divisor turbo" } ],
-    [ { "id": "burner-inserter", "en": "Burner inserter", "es": "Insertador a vapor" }, { "id": "inserter", "en": "Inserter", "es": "Insertador" }, { "id": "long-handed-inserter", "en": "Long-handed inserter", "es": "Insertador largo" }, { "id": "fast-inserter", "en": "Fast inserter", "es": "Insertador rápido" }, { "id": "bulk-inserter", "en": "Bulk inserter", "es": "Insertador por lotes" }, { "id": "stack-inserter", "en": "Stack inserter", "es": "Insertador de apilamiento" } ],
-    [ { "id": "small-electric-pole", "en": "Small electric pole", "es": "Poste eléctrico pequeño" }, { "id": "medium-electric-pole", "en": "Medium electric pole", "es": "Poste eléctrico mediano" }, { "id": "big-electric-pole", "en": "Big electric pole", "es": "Poste eléctrico grande" }, { "id": "substation", "en": "Substation", "es": "Subestación eléctrica" }, { "id": "pipe", "en": "Pipe", "es": "Tubería" }, { "id": "pipe-to-ground", "en": "Pipe to ground", "es": "Tubería subterránea" }, { "id": "pump", "en": "Pump", "es": "Bomba" } ],
-    [ { "id": "rail", "en": "Rail", "es": "Raíl" }, { "id": "rail-ramp", "en": "Rail ramp", "es": "Rampa de vía" }, { "id": "rail-support", "en": "Rail support", "es": "Soporte de vía" }, { "id": "train-stop", "en": "Train stop", "es": "Parada de tren" }, { "id": "rail-signal", "en": "Rail signal", "es": "Semáforo ferroviario" }, { "id": "rail-chain-signal", "en": "Rail chain signal", "es": "Semáforo ferroviario de cadena" }, { "id": "locomotive", "en": "Locomotive", "es": "Locomotora" }, { "id": "cargo-wagon", "en": "Cargo wagon", "es": "Vagón de carga" }, { "id": "fluid-wagon", "en": "Fluid wagon", "es": "Vagón de fluidos" }, { "id": "artillery-wagon", "en": "Artillery wagon", "es": "Vagón de artillería" } ],
-    [ { "id": "car", "en": "Car", "es": "Coche" }, { "id": "tank", "en": "Tank", "es": "Tanque" }, { "id": "spidertron", "en": "Spidertron", "es": "Mecanoaraña" }, { "id": "spidertron-remote", "en": "Spidertron remote", "es": "Control remoto de Mecanoaraña" } ],
-    [ { "id": "logistic-robot", "en": "Logistic robot", "es": "Robot logístico" }, { "id": "construction-robot", "en": "Construction robot", "es": "Robot de construcción" }, { "id": "active-provider-chest", "en": "Active provider chest", "es": "Cofre proveedor activo" }, { "id": "passive-provider-chest", "en": "Passive provider chest", "es": "Cofre proveedor pasivo" }, { "id": "storage-chest", "en": "Storage chest", "es": "Cofre de almacenamiento logístico" }, { "id": "buffer-chest", "en": "Buffer chest", "es": "Cofre de buffer" }, { "id": "requester-chest", "en": "Requester chest", "es": "Cofre solicitador logístico" }, { "id": "roboport", "en": "Roboport", "es": "Robopuerto" } ],
-    [ { "id": "lamp", "en": "Lamp", "es": "Lámpara" }, { "id": "red-wire", "en": "Red wire", "es": "Cable rojo" }, { "id": "green-wire", "en": "Green wire", "es": "Cable verde" }, { "id": "arithmetic-combinator", "en": "Arithmetic combinator", "es": "Combinador aritmético" }, { "id": "decider-combinator", "en": "Decider combinator", "es": "Combinador comparador" }, { "id": "selector-combinator", "en": "Selector combinator", "es": "Combinador selector" }, { "id": "constant-combinator", "en": "Constant combinator", "es": "Combinador constante" }, { "id": "power-switch", "en": "Power switch", "es": "Interruptor" }, { "id": "programmable-speaker", "en": "Programmable speaker", "es": "Sirena programable" }, { "id": "display-panel", "en": "Display panel", "es": "Panel de visualización" } ],
-    [ { "id": "stone-brick", "en": "Stone brick", "es": "Ladrillo de piedra" }, { "id": "concrete", "en": "Concrete", "es": "Hormigón" }, { "id": "hazard-concrete", "en": "Hazard concrete", "es": "Hormigón con señal de peligro" }, { "id": "refined-concrete", "en": "Refined concrete", "es": "Hormigón refinado" }, { "id": "refined-hazard-concrete", "en": "Refined hazard concrete", "es": "Hormigón refinado con señal de peligro" }, { "id": "landfill", "en": "Landfill", "es": "Relleno de tierra" }, { "id": "cliff-explosives", "en": "Cliff explosives", "es": "Explosivos de acantilado" } ],
-    [ { "id": "artificial-yumako-soil", "en": "Artificial yumako soil", "es": "Tierra artificial de yumako" }, { "id": "overgrowth-yumako-soil", "en": "Overgrowth yumako soil", "es": "Tierra de yumako en crecimiento excesivo" }, { "id": "artificial-jellynut-soil", "en": "Artificial jellynut soil", "es": "Tierra artificial de jellynut" }, { "id": "overgrowth-jellynut-soil", "en": "Overgrowth jellynut soil", "es": "Tierra de jellynut en crecimiento excesivo" }, { "id": "ice-platform", "en": "Ice platform", "es": "Plataforma de hielo" }, { "id": "foundation", "en": "Foundation", "es": "Cimiento" } ]
+    [
+      { "id": "wooden-chest", "en": "Wooden chest", "es": "Cofre de madera" },
+      { "id": "iron-chest", "en": "Iron chest", "es": "Cofre de hierro" },
+      { "id": "steel-chest", "en": "Steel chest", "es": "Cofre de acero" },
+      { "id": "storage-tank", "en": "Storage tank", "es": "Cisterna" }
+    ],
+    [
+      { "id": "transport-belt", "en": "Transport belt", "es": "Cinta transportadora" },
+      { "id": "fast-transport-belt", "en": "Fast transport belt", "es": "Cinta transportadora rápida" },
+      { "id": "express-transport-belt", "en": "Express transport belt", "es": "Cinta transportadora exprés" },
+      { "id": "turbo-transport-belt", "en": "Turbo transport belt", "es": "Cinta transportadora turbo" }
+    ],
+    [
+      { "id": "underground-belt", "en": "Underground belt", "es": "Cinta transportadora subterránea" },
+      { "id": "fast-underground-belt", "en": "Fast underground belt", "es": "Cinta transportadora subterránea rápida" },
+      { "id": "express-underground-belt", "en": "Express underground belt", "es": "Cinta transportadora subterránea exprés" },
+      { "id": "turbo-underground-belt", "en": "Turbo underground belt", "es": "Cinta transportadora subterránea turbo" }
+    ],
+    [
+      { "id": "splitter", "en": "Splitter", "es": "Divisor" },
+      { "id": "fast-splitter", "en": "Fast splitter", "es": "Divisor rápido" },
+      { "id": "express-splitter", "en": "Express splitter", "es": "Divisor exprés" },
+      { "id": "turbo-splitter", "en": "Turbo splitter", "es": "Divisor turbo" }
+    ],
+    [
+      { "id": "burner-inserter", "en": "Burner inserter", "es": "Insertador a combustión" },
+      { "id": "inserter", "en": "Inserter", "es": "Insertador" },
+      { "id": "long-handed-inserter", "en": "Long-handed inserter", "es": "Insertador largo" },
+      { "id": "fast-inserter", "en": "Fast inserter", "es": "Insertador rápido" },
+      { "id": "bulk-inserter", "en": "Bulk inserter", "es": "Insertador de lotes" },
+      { "id": "stack-inserter", "en": "Stack inserter", "es": "Insertador de apilamiento" }
+    ],
+    [
+      { "id": "small-electric-pole", "en": "Small electric pole", "es": "Poste eléctrico pequeño" },
+      { "id": "medium-electric-pole", "en": "Medium electric pole", "es": "Poste eléctrico mediano" },
+      { "id": "big-electric-pole", "en": "Big electric pole", "es": "Poste eléctrico grande" },
+      { "id": "substation", "en": "Substation", "es": "Subestación eléctrica" },
+      { "id": "pipe", "en": "Pipe", "es": "Tubería" },
+      { "id": "pipe-to-ground", "en": "Pipe to ground", "es": "Tubería subterránea" },
+      { "id": "pump", "en": "Pump", "es": "Bomba de fluidos" }
+    ],
+    [
+      { "id": "rail", "en": "Rail", "es": "Vía" },
+      { "id": "rail-ramp", "en": "Rail ramp", "es": "Rampa de vía" },
+      { "id": "rail-support", "en": "Rail support", "es": "Soporte de vía" },
+      { "id": "train-stop", "en": "Train stop", "es": "Parada de tren" },
+      { "id": "rail-signal", "en": "Rail signal", "es": "Semáforo ferroviario" },
+      { "id": "rail-chain-signal", "en": "Rail chain signal", "es": "Semáforo ferroviario en cadena" },
+      { "id": "locomotive", "en": "Locomotive", "es": "Locomotora" },
+      { "id": "cargo-wagon", "en": "Cargo wagon", "es": "Vagón de carga" },
+      { "id": "fluid-wagon", "en": "Fluid wagon", "es": "Vagón cisterna" },
+      { "id": "artillery-wagon", "en": "Artillery wagon", "es": "Vagón de artillería" }
+    ],
+    [
+      { "id": "car", "en": "Car", "es": "Coche" },
+      { "id": "tank", "en": "Tank", "es": "Tanque" },
+      { "id": "spidertron", "en": "Spidertron", "es": "Mecanoaraña" },
+      { "id": "spidertron-remote", "en": "Spidertron remote", "es": "Control remoto de la mecanoaraña" }
+    ],
+    [
+      { "id": "logistic-robot", "en": "Logistic robot", "es": "Robot logístico" },
+      { "id": "construction-robot", "en": "Construction robot", "es": "Robot de construcción" },
+      { "id": "active-provider-chest", "en": "Active provider chest", "es": "Cofre proveedor activo" },
+      { "id": "passive-provider-chest", "en": "Passive provider chest", "es": "Cofre proveedor pasivo" },
+      { "id": "storage-chest", "en": "Storage chest", "es": "Cofre de almacenamiento" },
+      { "id": "buffer-chest", "en": "Buffer chest", "es": "Cofre de reserva" },
+      { "id": "requester-chest", "en": "Requester chest", "es": "Cofre solicitador" },
+      { "id": "roboport", "en": "Roboport", "es": "Robopuerto" }
+    ],
+    [
+      { "id": "small-lamp", "en": "Lamp", "es": "Lámpara" },
+      { "id": "red-wire", "en": "Red wire", "es": "Cable rojo" },
+      { "id": "green-wire", "en": "Green wire", "es": "Cable verde" },
+      { "id": "arithmetic-combinator", "en": "Arithmetic combinator", "es": "Combinador aritmético" },
+      { "id": "decider-combinator", "en": "Decider combinator", "es": "Combinador comparador" },
+      { "id": "selector-combinator", "en": "Selector combinator", "es": "Combinador selector" },
+      { "id": "constant-combinator", "en": "Constant combinator", "es": "Combinador constante" },
+      { "id": "power-switch", "en": "Power switch", "es": "Interruptor" },
+      { "id": "programmable-speaker", "en": "Programmable speaker", "es": "Altavoz programable" },
+      { "id": "display-panel", "en": "Display panel", "es": "Panel de visualización" }
+    ],
+    [
+      { "id": "stone-brick", "en": "Stone brick", "es": "Ladrillo de piedra" },
+      { "id": "concrete", "en": "Concrete", "es": "Hormigón" },
+      { "id": "hazard-concrete", "en": "Hazard concrete", "es": "Hormigón con señal de peligro" },
+      { "id": "refined-concrete", "en": "Refined concrete", "es": "Hormigón refinado" },
+      { "id": "refined-hazard-concrete", "en": "Refined hazard concrete", "es": "Hormigón refinado con señal de peligro" },
+      { "id": "landfill", "en": "Landfill", "es": "Relleno de tierra" },
+      { "id": "cliff-explosives", "en": "Cliff explosives", "es": "Explosivos para acantilados" }
+    ],
+    [
+      { "id": "artificial-yumako-soil", "en": "Artificial yumako soil", "es": "Tierra artificial de yumako" },
+      { "id": "overgrowth-yumako-soil", "en": "Overgrowth yumako soil", "es": "Tierra de yumako en crecimiento excesivo" },
+      { "id": "artificial-jellynut-soil", "en": "Artificial jellynut soil", "es": "Tierra artificial de jellynut" },
+      { "id": "overgrowth-jellynut-soil", "en": "Overgrowth jellynut soil", "es": "Tierra de jellynut en crecimiento excesivo" },
+      { "id": "ice-platform", "en": "Ice platform", "es": "Plataforma de hielo" },
+      { "id": "foundation", "en": "Foundation", "es": "Cimiento" }
+    ]
   ]
 }
