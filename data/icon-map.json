@@ -1,0 +1,4488 @@
+{
+  "sheets": {
+    "base": {
+      "file": "assets/sprites/sprite-sheet-base.png",
+      "width": 832,
+      "height": 896,
+      "cell": 32
+    },
+    "ext": {
+      "file": "assets/sprites/sprite-sheet-ext.png",
+      "width": 1024,
+      "height": 1024,
+      "cell": 64
+    }
+  },
+  "icons": {
+    "item:accumulator": {
+      "sheet": "base",
+      "col": 0,
+      "row": 0
+    },
+    "recipe:accumulator": {
+      "sheet": "base",
+      "col": 0,
+      "row": 0
+    },
+    "recipe:acid-neutralisation": {
+      "sheet": "base",
+      "col": 2,
+      "row": 0
+    },
+    "item:active-provider-chest": {
+      "sheet": "base",
+      "col": 3,
+      "row": 0
+    },
+    "recipe:active-provider-chest": {
+      "sheet": "base",
+      "col": 3,
+      "row": 0
+    },
+    "recipe:advanced-carbonic-asteroid-crushing": {
+      "sheet": "base",
+      "col": 4,
+      "row": 0
+    },
+    "item:advanced-circuit": {
+      "sheet": "base",
+      "col": 5,
+      "row": 0
+    },
+    "recipe:advanced-circuit": {
+      "sheet": "base",
+      "col": 5,
+      "row": 0
+    },
+    "recipe:advanced-metallic-asteroid-crushing": {
+      "sheet": "base",
+      "col": 6,
+      "row": 0
+    },
+    "recipe:advanced-oil-processing": {
+      "sheet": "base",
+      "col": 7,
+      "row": 0
+    },
+    "recipe:advanced-oxide-asteroid-crushing": {
+      "sheet": "base",
+      "col": 8,
+      "row": 0
+    },
+    "recipe:advanced-thruster-fuel": {
+      "sheet": "base",
+      "col": 9,
+      "row": 0
+    },
+    "recipe:advanced-thruster-oxidizer": {
+      "sheet": "base",
+      "col": 10,
+      "row": 0
+    },
+    "item:agricultural-science-pack": {
+      "sheet": "base",
+      "col": 11,
+      "row": 0
+    },
+    "recipe:agricultural-science-pack": {
+      "sheet": "base",
+      "col": 11,
+      "row": 0
+    },
+    "item:agricultural-tower": {
+      "sheet": "base",
+      "col": 12,
+      "row": 0
+    },
+    "recipe:agricultural-tower": {
+      "sheet": "base",
+      "col": 12,
+      "row": 0
+    },
+    "fluid:ammonia": {
+      "sheet": "base",
+      "col": 13,
+      "row": 0
+    },
+    "recipe:ammonia-rocket-fuel": {
+      "sheet": "base",
+      "col": 14,
+      "row": 0
+    },
+    "fluid:ammoniacal-solution": {
+      "sheet": "base",
+      "col": 15,
+      "row": 0
+    },
+    "recipe:ammoniacal-solution-separation": {
+      "sheet": "base",
+      "col": 16,
+      "row": 0
+    },
+    "item:arithmetic-combinator": {
+      "sheet": "base",
+      "col": 18,
+      "row": 0
+    },
+    "recipe:arithmetic-combinator": {
+      "sheet": "base",
+      "col": 18,
+      "row": 0
+    },
+    "item:artificial-jellynut-soil": {
+      "sheet": "base",
+      "col": 19,
+      "row": 0
+    },
+    "recipe:artificial-jellynut-soil": {
+      "sheet": "base",
+      "col": 19,
+      "row": 0
+    },
+    "item:artificial-yumako-soil": {
+      "sheet": "base",
+      "col": 20,
+      "row": 0
+    },
+    "recipe:artificial-yumako-soil": {
+      "sheet": "base",
+      "col": 20,
+      "row": 0
+    },
+    "item:artillery-shell": {
+      "sheet": "base",
+      "col": 21,
+      "row": 0
+    },
+    "recipe:artillery-shell": {
+      "sheet": "base",
+      "col": 21,
+      "row": 0
+    },
+    "item:artillery-targeting-remote": {
+      "sheet": "base",
+      "col": 22,
+      "row": 0
+    },
+    "item:artillery-turret": {
+      "sheet": "base",
+      "col": 23,
+      "row": 0
+    },
+    "recipe:artillery-turret": {
+      "sheet": "base",
+      "col": 23,
+      "row": 0
+    },
+    "item:artillery-wagon": {
+      "sheet": "base",
+      "col": 24,
+      "row": 0
+    },
+    "recipe:artillery-wagon": {
+      "sheet": "base",
+      "col": 24,
+      "row": 0
+    },
+    "item:artillery-wagon-cannon": {
+      "sheet": "base",
+      "col": 23,
+      "row": 25
+    },
+    "item:assembling-machine-1": {
+      "sheet": "base",
+      "col": 25,
+      "row": 0
+    },
+    "recipe:assembling-machine-1": {
+      "sheet": "base",
+      "col": 25,
+      "row": 0
+    },
+    "item:assembling-machine-2": {
+      "sheet": "base",
+      "col": 0,
+      "row": 1
+    },
+    "recipe:assembling-machine-2": {
+      "sheet": "base",
+      "col": 0,
+      "row": 1
+    },
+    "item:assembling-machine-3": {
+      "sheet": "base",
+      "col": 1,
+      "row": 1
+    },
+    "recipe:assembling-machine-3": {
+      "sheet": "base",
+      "col": 1,
+      "row": 1
+    },
+    "item:asteroid-collector": {
+      "sheet": "base",
+      "col": 2,
+      "row": 1
+    },
+    "recipe:asteroid-collector": {
+      "sheet": "base",
+      "col": 2,
+      "row": 1
+    },
+    "item:atomic-bomb": {
+      "sheet": "base",
+      "col": 3,
+      "row": 1
+    },
+    "recipe:atomic-bomb": {
+      "sheet": "base",
+      "col": 3,
+      "row": 1
+    },
+    "item:automation-science-pack": {
+      "sheet": "base",
+      "col": 4,
+      "row": 1
+    },
+    "recipe:automation-science-pack": {
+      "sheet": "base",
+      "col": 4,
+      "row": 1
+    },
+    "item:barrel": {
+      "sheet": "base",
+      "col": 19,
+      "row": 4
+    },
+    "recipe:barrel": {
+      "sheet": "base",
+      "col": 19,
+      "row": 4
+    },
+    "recipe:basic-oil-processing": {
+      "sheet": "base",
+      "col": 5,
+      "row": 1
+    },
+    "item:battery": {
+      "sheet": "base",
+      "col": 6,
+      "row": 1
+    },
+    "recipe:battery": {
+      "sheet": "base",
+      "col": 6,
+      "row": 1
+    },
+    "item:battery-equipment": {
+      "sheet": "base",
+      "col": 7,
+      "row": 1
+    },
+    "recipe:battery-equipment": {
+      "sheet": "base",
+      "col": 7,
+      "row": 1
+    },
+    "item:battery-mk2-equipment": {
+      "sheet": "base",
+      "col": 8,
+      "row": 1
+    },
+    "recipe:battery-mk2-equipment": {
+      "sheet": "base",
+      "col": 8,
+      "row": 1
+    },
+    "item:battery-mk3-equipment": {
+      "sheet": "base",
+      "col": 9,
+      "row": 1
+    },
+    "recipe:battery-mk3-equipment": {
+      "sheet": "base",
+      "col": 9,
+      "row": 1
+    },
+    "item:beacon": {
+      "sheet": "base",
+      "col": 10,
+      "row": 1
+    },
+    "recipe:beacon": {
+      "sheet": "base",
+      "col": 10,
+      "row": 1
+    },
+    "item:belt-immunity-equipment": {
+      "sheet": "base",
+      "col": 11,
+      "row": 1
+    },
+    "recipe:belt-immunity-equipment": {
+      "sheet": "base",
+      "col": 11,
+      "row": 1
+    },
+    "item:big-electric-pole": {
+      "sheet": "base",
+      "col": 12,
+      "row": 1
+    },
+    "recipe:big-electric-pole": {
+      "sheet": "base",
+      "col": 12,
+      "row": 1
+    },
+    "item:big-mining-drill": {
+      "sheet": "base",
+      "col": 13,
+      "row": 1
+    },
+    "recipe:big-mining-drill": {
+      "sheet": "base",
+      "col": 13,
+      "row": 1
+    },
+    "item:biochamber": {
+      "sheet": "base",
+      "col": 14,
+      "row": 1
+    },
+    "recipe:biochamber": {
+      "sheet": "base",
+      "col": 14,
+      "row": 1
+    },
+    "item:bioflux": {
+      "sheet": "base",
+      "col": 15,
+      "row": 1
+    },
+    "recipe:bioflux": {
+      "sheet": "base",
+      "col": 15,
+      "row": 1
+    },
+    "item:biolab": {
+      "sheet": "base",
+      "col": 16,
+      "row": 1
+    },
+    "recipe:biolab": {
+      "sheet": "base",
+      "col": 16,
+      "row": 1
+    },
+    "recipe:biolubricant": {
+      "sheet": "base",
+      "col": 17,
+      "row": 1
+    },
+    "recipe:bioplastic": {
+      "sheet": "base",
+      "col": 18,
+      "row": 1
+    },
+    "recipe:biosulfur": {
+      "sheet": "base",
+      "col": 19,
+      "row": 1
+    },
+    "item:biter-egg": {
+      "sheet": "base",
+      "col": 20,
+      "row": 1
+    },
+    "recipe:biter-egg": {
+      "sheet": "base",
+      "col": 20,
+      "row": 1
+    },
+    "item:blueprint": {
+      "sheet": "base",
+      "col": 21,
+      "row": 1
+    },
+    "item:blueprint-book": {
+      "sheet": "base",
+      "col": 22,
+      "row": 1
+    },
+    "item:boiler": {
+      "sheet": "base",
+      "col": 23,
+      "row": 1
+    },
+    "recipe:boiler": {
+      "sheet": "base",
+      "col": 23,
+      "row": 1
+    },
+    "item:buffer-chest": {
+      "sheet": "base",
+      "col": 24,
+      "row": 1
+    },
+    "recipe:buffer-chest": {
+      "sheet": "base",
+      "col": 24,
+      "row": 1
+    },
+    "item:bulk-inserter": {
+      "sheet": "base",
+      "col": 25,
+      "row": 1
+    },
+    "recipe:bulk-inserter": {
+      "sheet": "base",
+      "col": 25,
+      "row": 1
+    },
+    "item:burner-generator": {
+      "sheet": "base",
+      "col": 5,
+      "row": 25
+    },
+    "item:burner-inserter": {
+      "sheet": "base",
+      "col": 0,
+      "row": 2
+    },
+    "recipe:burner-inserter": {
+      "sheet": "base",
+      "col": 0,
+      "row": 2
+    },
+    "item:burner-mining-drill": {
+      "sheet": "base",
+      "col": 1,
+      "row": 2
+    },
+    "recipe:burner-mining-drill": {
+      "sheet": "base",
+      "col": 1,
+      "row": 2
+    },
+    "recipe:burnt-spoilage": {
+      "sheet": "base",
+      "col": 2,
+      "row": 2
+    },
+    "item:calcite": {
+      "sheet": "base",
+      "col": 3,
+      "row": 2
+    },
+    "item:cannon-shell": {
+      "sheet": "base",
+      "col": 4,
+      "row": 2
+    },
+    "recipe:cannon-shell": {
+      "sheet": "base",
+      "col": 4,
+      "row": 2
+    },
+    "item:captive-biter-spawner": {
+      "sheet": "base",
+      "col": 5,
+      "row": 2
+    },
+    "recipe:captive-biter-spawner": {
+      "sheet": "base",
+      "col": 5,
+      "row": 2
+    },
+    "item:capture-robot-rocket": {
+      "sheet": "base",
+      "col": 6,
+      "row": 2
+    },
+    "recipe:capture-robot-rocket": {
+      "sheet": "base",
+      "col": 6,
+      "row": 2
+    },
+    "item:car": {
+      "sheet": "base",
+      "col": 7,
+      "row": 2
+    },
+    "recipe:car": {
+      "sheet": "base",
+      "col": 7,
+      "row": 2
+    },
+    "item:carbon": {
+      "sheet": "base",
+      "col": 8,
+      "row": 2
+    },
+    "recipe:carbon": {
+      "sheet": "base",
+      "col": 8,
+      "row": 2
+    },
+    "item:carbon-fiber": {
+      "sheet": "base",
+      "col": 9,
+      "row": 2
+    },
+    "recipe:carbon-fiber": {
+      "sheet": "base",
+      "col": 9,
+      "row": 2
+    },
+    "item:carbonic-asteroid-chunk": {
+      "sheet": "base",
+      "col": 10,
+      "row": 2
+    },
+    "recipe:carbonic-asteroid-crushing": {
+      "sheet": "base",
+      "col": 11,
+      "row": 2
+    },
+    "recipe:carbonic-asteroid-reprocessing": {
+      "sheet": "base",
+      "col": 12,
+      "row": 2
+    },
+    "item:cargo-bay": {
+      "sheet": "base",
+      "col": 13,
+      "row": 2
+    },
+    "recipe:cargo-bay": {
+      "sheet": "base",
+      "col": 13,
+      "row": 2
+    },
+    "item:cargo-landing-pad": {
+      "sheet": "base",
+      "col": 14,
+      "row": 2
+    },
+    "recipe:cargo-landing-pad": {
+      "sheet": "base",
+      "col": 14,
+      "row": 2
+    },
+    "item:cargo-wagon": {
+      "sheet": "base",
+      "col": 15,
+      "row": 2
+    },
+    "recipe:cargo-wagon": {
+      "sheet": "base",
+      "col": 15,
+      "row": 2
+    },
+    "recipe:casting-copper": {
+      "sheet": "base",
+      "col": 17,
+      "row": 2
+    },
+    "recipe:casting-copper-cable": {
+      "sheet": "base",
+      "col": 18,
+      "row": 2
+    },
+    "recipe:casting-iron": {
+      "sheet": "base",
+      "col": 19,
+      "row": 2
+    },
+    "recipe:casting-iron-gear-wheel": {
+      "sheet": "base",
+      "col": 20,
+      "row": 2
+    },
+    "recipe:casting-iron-stick": {
+      "sheet": "base",
+      "col": 21,
+      "row": 2
+    },
+    "recipe:casting-low-density-structure": {
+      "sheet": "base",
+      "col": 22,
+      "row": 2
+    },
+    "recipe:casting-pipe": {
+      "sheet": "base",
+      "col": 23,
+      "row": 2
+    },
+    "recipe:casting-pipe-to-ground": {
+      "sheet": "base",
+      "col": 24,
+      "row": 2
+    },
+    "recipe:casting-steel": {
+      "sheet": "base",
+      "col": 25,
+      "row": 2
+    },
+    "item:centrifuge": {
+      "sheet": "base",
+      "col": 0,
+      "row": 3
+    },
+    "recipe:centrifuge": {
+      "sheet": "base",
+      "col": 0,
+      "row": 3
+    },
+    "item:chemical-plant": {
+      "sheet": "base",
+      "col": 1,
+      "row": 3
+    },
+    "recipe:chemical-plant": {
+      "sheet": "base",
+      "col": 1,
+      "row": 3
+    },
+    "item:chemical-science-pack": {
+      "sheet": "base",
+      "col": 2,
+      "row": 3
+    },
+    "recipe:chemical-science-pack": {
+      "sheet": "base",
+      "col": 2,
+      "row": 3
+    },
+    "item:cliff-explosives": {
+      "sheet": "base",
+      "col": 3,
+      "row": 3
+    },
+    "recipe:cliff-explosives": {
+      "sheet": "base",
+      "col": 3,
+      "row": 3
+    },
+    "item:cluster-grenade": {
+      "sheet": "base",
+      "col": 5,
+      "row": 3
+    },
+    "recipe:cluster-grenade": {
+      "sheet": "base",
+      "col": 5,
+      "row": 3
+    },
+    "item:coal": {
+      "sheet": "base",
+      "col": 6,
+      "row": 3
+    },
+    "recipe:coal-liquefaction": {
+      "sheet": "base",
+      "col": 7,
+      "row": 3
+    },
+    "recipe:coal-synthesis": {
+      "sheet": "base",
+      "col": 8,
+      "row": 3
+    },
+    "item:coin": {
+      "sheet": "base",
+      "col": 9,
+      "row": 3
+    },
+    "item:combat-shotgun": {
+      "sheet": "base",
+      "col": 10,
+      "row": 3
+    },
+    "recipe:combat-shotgun": {
+      "sheet": "base",
+      "col": 10,
+      "row": 3
+    },
+    "item:concrete": {
+      "sheet": "base",
+      "col": 11,
+      "row": 3
+    },
+    "recipe:concrete": {
+      "sheet": "base",
+      "col": 11,
+      "row": 3
+    },
+    "recipe:concrete-from-molten-iron": {
+      "sheet": "base",
+      "col": 12,
+      "row": 3
+    },
+    "item:constant-combinator": {
+      "sheet": "base",
+      "col": 13,
+      "row": 3
+    },
+    "recipe:constant-combinator": {
+      "sheet": "base",
+      "col": 13,
+      "row": 3
+    },
+    "item:construction-robot": {
+      "sheet": "base",
+      "col": 14,
+      "row": 3
+    },
+    "recipe:construction-robot": {
+      "sheet": "base",
+      "col": 14,
+      "row": 3
+    },
+    "item:copper-bacteria": {
+      "sheet": "base",
+      "col": 15,
+      "row": 3
+    },
+    "recipe:copper-bacteria": {
+      "sheet": "base",
+      "col": 15,
+      "row": 3
+    },
+    "recipe:copper-bacteria-cultivation": {
+      "sheet": "base",
+      "col": 16,
+      "row": 3
+    },
+    "item:copper-cable": {
+      "sheet": "base",
+      "col": 17,
+      "row": 3
+    },
+    "recipe:copper-cable": {
+      "sheet": "base",
+      "col": 17,
+      "row": 3
+    },
+    "item:copper-ore": {
+      "sheet": "base",
+      "col": 18,
+      "row": 3
+    },
+    "item:copper-plate": {
+      "sheet": "base",
+      "col": 20,
+      "row": 3
+    },
+    "recipe:copper-plate": {
+      "sheet": "base",
+      "col": 20,
+      "row": 3
+    },
+    "fluid:crude-oil": {
+      "sheet": "base",
+      "col": 21,
+      "row": 3
+    },
+    "item:crusher": {
+      "sheet": "base",
+      "col": 23,
+      "row": 3
+    },
+    "recipe:crusher": {
+      "sheet": "base",
+      "col": 23,
+      "row": 3
+    },
+    "item:cryogenic-plant": {
+      "sheet": "base",
+      "col": 24,
+      "row": 3
+    },
+    "recipe:cryogenic-plant": {
+      "sheet": "base",
+      "col": 24,
+      "row": 3
+    },
+    "item:cryogenic-science-pack": {
+      "sheet": "base",
+      "col": 25,
+      "row": 3
+    },
+    "recipe:cryogenic-science-pack": {
+      "sheet": "base",
+      "col": 25,
+      "row": 3
+    },
+    "item:decider-combinator": {
+      "sheet": "base",
+      "col": 0,
+      "row": 4
+    },
+    "recipe:decider-combinator": {
+      "sheet": "base",
+      "col": 0,
+      "row": 4
+    },
+    "item:deconstruction-planner": {
+      "sheet": "base",
+      "col": 1,
+      "row": 4
+    },
+    "item:defender-capsule": {
+      "sheet": "base",
+      "col": 2,
+      "row": 4
+    },
+    "recipe:defender-capsule": {
+      "sheet": "base",
+      "col": 2,
+      "row": 4
+    },
+    "item:depleted-uranium-fuel-cell": {
+      "sheet": "base",
+      "col": 3,
+      "row": 4
+    },
+    "item:destroyer-capsule": {
+      "sheet": "base",
+      "col": 4,
+      "row": 4
+    },
+    "recipe:destroyer-capsule": {
+      "sheet": "base",
+      "col": 4,
+      "row": 4
+    },
+    "item:discharge-defense-equipment": {
+      "sheet": "base",
+      "col": 5,
+      "row": 4
+    },
+    "recipe:discharge-defense-equipment": {
+      "sheet": "base",
+      "col": 5,
+      "row": 4
+    },
+    "item:discharge-defense-remote": {
+      "sheet": "base",
+      "col": 6,
+      "row": 4
+    },
+    "item:display-panel": {
+      "sheet": "base",
+      "col": 7,
+      "row": 4
+    },
+    "recipe:display-panel": {
+      "sheet": "base",
+      "col": 7,
+      "row": 4
+    },
+    "item:distractor-capsule": {
+      "sheet": "base",
+      "col": 8,
+      "row": 4
+    },
+    "recipe:distractor-capsule": {
+      "sheet": "base",
+      "col": 8,
+      "row": 4
+    },
+    "item:efficiency-module": {
+      "sheet": "base",
+      "col": 9,
+      "row": 4
+    },
+    "recipe:efficiency-module": {
+      "sheet": "base",
+      "col": 9,
+      "row": 4
+    },
+    "item:efficiency-module-2": {
+      "sheet": "base",
+      "col": 10,
+      "row": 4
+    },
+    "recipe:efficiency-module-2": {
+      "sheet": "base",
+      "col": 10,
+      "row": 4
+    },
+    "item:efficiency-module-3": {
+      "sheet": "base",
+      "col": 11,
+      "row": 4
+    },
+    "recipe:efficiency-module-3": {
+      "sheet": "base",
+      "col": 11,
+      "row": 4
+    },
+    "item:electric-energy-interface": {
+      "sheet": "base",
+      "col": 1,
+      "row": 0
+    },
+    "item:electric-engine-unit": {
+      "sheet": "base",
+      "col": 12,
+      "row": 4
+    },
+    "recipe:electric-engine-unit": {
+      "sheet": "base",
+      "col": 12,
+      "row": 4
+    },
+    "item:electric-furnace": {
+      "sheet": "base",
+      "col": 13,
+      "row": 4
+    },
+    "recipe:electric-furnace": {
+      "sheet": "base",
+      "col": 13,
+      "row": 4
+    },
+    "item:electric-mining-drill": {
+      "sheet": "base",
+      "col": 14,
+      "row": 4
+    },
+    "recipe:electric-mining-drill": {
+      "sheet": "base",
+      "col": 14,
+      "row": 4
+    },
+    "fluid:electrolyte": {
+      "sheet": "base",
+      "col": 15,
+      "row": 4
+    },
+    "recipe:electrolyte": {
+      "sheet": "base",
+      "col": 15,
+      "row": 4
+    },
+    "item:electromagnetic-plant": {
+      "sheet": "base",
+      "col": 16,
+      "row": 4
+    },
+    "recipe:electromagnetic-plant": {
+      "sheet": "base",
+      "col": 16,
+      "row": 4
+    },
+    "item:electromagnetic-science-pack": {
+      "sheet": "base",
+      "col": 17,
+      "row": 4
+    },
+    "recipe:electromagnetic-science-pack": {
+      "sheet": "base",
+      "col": 17,
+      "row": 4
+    },
+    "item:electronic-circuit": {
+      "sheet": "base",
+      "col": 18,
+      "row": 4
+    },
+    "recipe:electronic-circuit": {
+      "sheet": "base",
+      "col": 18,
+      "row": 4
+    },
+    "item:empty-module-slot": {
+      "sheet": "base",
+      "col": 3,
+      "row": 5
+    },
+    "item:energy-shield-equipment": {
+      "sheet": "base",
+      "col": 4,
+      "row": 5
+    },
+    "recipe:energy-shield-equipment": {
+      "sheet": "base",
+      "col": 4,
+      "row": 5
+    },
+    "item:energy-shield-mk2-equipment": {
+      "sheet": "base",
+      "col": 5,
+      "row": 5
+    },
+    "recipe:energy-shield-mk2-equipment": {
+      "sheet": "base",
+      "col": 5,
+      "row": 5
+    },
+    "item:engine-unit": {
+      "sheet": "base",
+      "col": 6,
+      "row": 5
+    },
+    "recipe:engine-unit": {
+      "sheet": "base",
+      "col": 6,
+      "row": 5
+    },
+    "item:exoskeleton-equipment": {
+      "sheet": "base",
+      "col": 7,
+      "row": 5
+    },
+    "recipe:exoskeleton-equipment": {
+      "sheet": "base",
+      "col": 7,
+      "row": 5
+    },
+    "item:explosive-cannon-shell": {
+      "sheet": "base",
+      "col": 8,
+      "row": 5
+    },
+    "recipe:explosive-cannon-shell": {
+      "sheet": "base",
+      "col": 8,
+      "row": 5
+    },
+    "item:explosive-rocket": {
+      "sheet": "base",
+      "col": 9,
+      "row": 5
+    },
+    "recipe:explosive-rocket": {
+      "sheet": "base",
+      "col": 9,
+      "row": 5
+    },
+    "item:explosive-uranium-cannon-shell": {
+      "sheet": "base",
+      "col": 10,
+      "row": 5
+    },
+    "recipe:explosive-uranium-cannon-shell": {
+      "sheet": "base",
+      "col": 10,
+      "row": 5
+    },
+    "item:explosives": {
+      "sheet": "base",
+      "col": 11,
+      "row": 5
+    },
+    "recipe:explosives": {
+      "sheet": "base",
+      "col": 11,
+      "row": 5
+    },
+    "item:express-loader": {
+      "sheet": "base",
+      "col": 12,
+      "row": 5
+    },
+    "recipe:express-loader": {
+      "sheet": "base",
+      "col": 12,
+      "row": 5
+    },
+    "item:express-splitter": {
+      "sheet": "base",
+      "col": 13,
+      "row": 5
+    },
+    "recipe:express-splitter": {
+      "sheet": "base",
+      "col": 13,
+      "row": 5
+    },
+    "item:express-transport-belt": {
+      "sheet": "base",
+      "col": 14,
+      "row": 5
+    },
+    "recipe:express-transport-belt": {
+      "sheet": "base",
+      "col": 14,
+      "row": 5
+    },
+    "item:express-underground-belt": {
+      "sheet": "base",
+      "col": 15,
+      "row": 5
+    },
+    "recipe:express-underground-belt": {
+      "sheet": "base",
+      "col": 15,
+      "row": 5
+    },
+    "item:fast-inserter": {
+      "sheet": "base",
+      "col": 16,
+      "row": 5
+    },
+    "recipe:fast-inserter": {
+      "sheet": "base",
+      "col": 16,
+      "row": 5
+    },
+    "item:fast-loader": {
+      "sheet": "base",
+      "col": 17,
+      "row": 5
+    },
+    "recipe:fast-loader": {
+      "sheet": "base",
+      "col": 17,
+      "row": 5
+    },
+    "item:fast-splitter": {
+      "sheet": "base",
+      "col": 18,
+      "row": 5
+    },
+    "recipe:fast-splitter": {
+      "sheet": "base",
+      "col": 18,
+      "row": 5
+    },
+    "item:fast-transport-belt": {
+      "sheet": "base",
+      "col": 19,
+      "row": 5
+    },
+    "recipe:fast-transport-belt": {
+      "sheet": "base",
+      "col": 19,
+      "row": 5
+    },
+    "item:fast-underground-belt": {
+      "sheet": "base",
+      "col": 20,
+      "row": 5
+    },
+    "recipe:fast-underground-belt": {
+      "sheet": "base",
+      "col": 20,
+      "row": 5
+    },
+    "item:firearm-magazine": {
+      "sheet": "base",
+      "col": 21,
+      "row": 5
+    },
+    "recipe:firearm-magazine": {
+      "sheet": "base",
+      "col": 21,
+      "row": 5
+    },
+    "recipe:fish-breeding": {
+      "sheet": "base",
+      "col": 23,
+      "row": 5
+    },
+    "item:fission-reactor-equipment": {
+      "sheet": "base",
+      "col": 24,
+      "row": 5
+    },
+    "recipe:fission-reactor-equipment": {
+      "sheet": "base",
+      "col": 24,
+      "row": 5
+    },
+    "item:flamethrower": {
+      "sheet": "base",
+      "col": 25,
+      "row": 5
+    },
+    "recipe:flamethrower": {
+      "sheet": "base",
+      "col": 25,
+      "row": 5
+    },
+    "item:flamethrower-ammo": {
+      "sheet": "base",
+      "col": 0,
+      "row": 6
+    },
+    "recipe:flamethrower-ammo": {
+      "sheet": "base",
+      "col": 0,
+      "row": 6
+    },
+    "item:flamethrower-turret": {
+      "sheet": "base",
+      "col": 1,
+      "row": 6
+    },
+    "recipe:flamethrower-turret": {
+      "sheet": "base",
+      "col": 1,
+      "row": 6
+    },
+    "item:fluid-wagon": {
+      "sheet": "base",
+      "col": 2,
+      "row": 6
+    },
+    "recipe:fluid-wagon": {
+      "sheet": "base",
+      "col": 2,
+      "row": 6
+    },
+    "fluid:fluorine": {
+      "sheet": "base",
+      "col": 3,
+      "row": 6
+    },
+    "recipe:fluoroketone": {
+      "sheet": "base",
+      "col": 7,
+      "row": 6
+    },
+    "fluid:fluoroketone-cold": {
+      "sheet": "base",
+      "col": 5,
+      "row": 6
+    },
+    "recipe:fluoroketone-cooling": {
+      "sheet": "base",
+      "col": 6,
+      "row": 6
+    },
+    "fluid:fluoroketone-hot": {
+      "sheet": "base",
+      "col": 7,
+      "row": 6
+    },
+    "item:flying-robot-frame": {
+      "sheet": "base",
+      "col": 8,
+      "row": 6
+    },
+    "recipe:flying-robot-frame": {
+      "sheet": "base",
+      "col": 8,
+      "row": 6
+    },
+    "item:foundation": {
+      "sheet": "base",
+      "col": 9,
+      "row": 6
+    },
+    "recipe:foundation": {
+      "sheet": "base",
+      "col": 9,
+      "row": 6
+    },
+    "item:foundry": {
+      "sheet": "base",
+      "col": 10,
+      "row": 6
+    },
+    "recipe:foundry": {
+      "sheet": "base",
+      "col": 10,
+      "row": 6
+    },
+    "item:fusion-generator": {
+      "sheet": "base",
+      "col": 12,
+      "row": 6
+    },
+    "recipe:fusion-generator": {
+      "sheet": "base",
+      "col": 12,
+      "row": 6
+    },
+    "fluid:fusion-plasma": {
+      "sheet": "base",
+      "col": 13,
+      "row": 6
+    },
+    "item:fusion-power-cell": {
+      "sheet": "base",
+      "col": 14,
+      "row": 6
+    },
+    "recipe:fusion-power-cell": {
+      "sheet": "base",
+      "col": 14,
+      "row": 6
+    },
+    "item:fusion-reactor": {
+      "sheet": "base",
+      "col": 15,
+      "row": 6
+    },
+    "recipe:fusion-reactor": {
+      "sheet": "base",
+      "col": 15,
+      "row": 6
+    },
+    "item:fusion-reactor-equipment": {
+      "sheet": "base",
+      "col": 16,
+      "row": 6
+    },
+    "recipe:fusion-reactor-equipment": {
+      "sheet": "base",
+      "col": 16,
+      "row": 6
+    },
+    "item:gate": {
+      "sheet": "base",
+      "col": 17,
+      "row": 6
+    },
+    "recipe:gate": {
+      "sheet": "base",
+      "col": 17,
+      "row": 6
+    },
+    "item:grenade": {
+      "sheet": "base",
+      "col": 19,
+      "row": 6
+    },
+    "recipe:grenade": {
+      "sheet": "base",
+      "col": 19,
+      "row": 6
+    },
+    "item:gun-turret": {
+      "sheet": "base",
+      "col": 20,
+      "row": 6
+    },
+    "recipe:gun-turret": {
+      "sheet": "base",
+      "col": 20,
+      "row": 6
+    },
+    "item:hazard-concrete": {
+      "sheet": "base",
+      "col": 21,
+      "row": 6
+    },
+    "recipe:hazard-concrete": {
+      "sheet": "base",
+      "col": 21,
+      "row": 6
+    },
+    "item:heat-exchanger": {
+      "sheet": "base",
+      "col": 22,
+      "row": 6
+    },
+    "recipe:heat-exchanger": {
+      "sheet": "base",
+      "col": 22,
+      "row": 6
+    },
+    "item:heat-interface": {
+      "sheet": "base",
+      "col": 23,
+      "row": 6
+    },
+    "recipe:heat-interface": {
+      "sheet": "base",
+      "col": 23,
+      "row": 6
+    },
+    "item:heat-pipe": {
+      "sheet": "base",
+      "col": 24,
+      "row": 6
+    },
+    "recipe:heat-pipe": {
+      "sheet": "base",
+      "col": 24,
+      "row": 6
+    },
+    "item:heating-tower": {
+      "sheet": "base",
+      "col": 25,
+      "row": 6
+    },
+    "recipe:heating-tower": {
+      "sheet": "base",
+      "col": 25,
+      "row": 6
+    },
+    "item:heavy-armor": {
+      "sheet": "base",
+      "col": 0,
+      "row": 7
+    },
+    "recipe:heavy-armor": {
+      "sheet": "base",
+      "col": 0,
+      "row": 7
+    },
+    "fluid:heavy-oil": {
+      "sheet": "base",
+      "col": 1,
+      "row": 7
+    },
+    "recipe:heavy-oil-cracking": {
+      "sheet": "base",
+      "col": 2,
+      "row": 7
+    },
+    "item:holmium-ore": {
+      "sheet": "base",
+      "col": 3,
+      "row": 7
+    },
+    "item:holmium-plate": {
+      "sheet": "base",
+      "col": 4,
+      "row": 7
+    },
+    "recipe:holmium-plate": {
+      "sheet": "base",
+      "col": 4,
+      "row": 7
+    },
+    "fluid:holmium-solution": {
+      "sheet": "base",
+      "col": 5,
+      "row": 7
+    },
+    "recipe:holmium-solution": {
+      "sheet": "base",
+      "col": 5,
+      "row": 7
+    },
+    "item:ice": {
+      "sheet": "base",
+      "col": 6,
+      "row": 7
+    },
+    "recipe:ice-melting": {
+      "sheet": "base",
+      "col": 7,
+      "row": 7
+    },
+    "item:ice-platform": {
+      "sheet": "base",
+      "col": 8,
+      "row": 7
+    },
+    "recipe:ice-platform": {
+      "sheet": "base",
+      "col": 8,
+      "row": 7
+    },
+    "item:infinity-cargo-wagon": {
+      "sheet": "base",
+      "col": 16,
+      "row": 2
+    },
+    "item:infinity-chest": {
+      "sheet": "base",
+      "col": 9,
+      "row": 7
+    },
+    "recipe:infinity-chest": {
+      "sheet": "base",
+      "col": 9,
+      "row": 7
+    },
+    "item:infinity-pipe": {
+      "sheet": "base",
+      "col": 23,
+      "row": 10
+    },
+    "recipe:infinity-pipe": {
+      "sheet": "base",
+      "col": 23,
+      "row": 10
+    },
+    "item:inserter": {
+      "sheet": "base",
+      "col": 10,
+      "row": 7
+    },
+    "recipe:inserter": {
+      "sheet": "base",
+      "col": 10,
+      "row": 7
+    },
+    "item:iron-bacteria": {
+      "sheet": "base",
+      "col": 11,
+      "row": 7
+    },
+    "recipe:iron-bacteria": {
+      "sheet": "base",
+      "col": 11,
+      "row": 7
+    },
+    "recipe:iron-bacteria-cultivation": {
+      "sheet": "base",
+      "col": 12,
+      "row": 7
+    },
+    "item:iron-chest": {
+      "sheet": "base",
+      "col": 13,
+      "row": 7
+    },
+    "recipe:iron-chest": {
+      "sheet": "base",
+      "col": 13,
+      "row": 7
+    },
+    "item:iron-gear-wheel": {
+      "sheet": "base",
+      "col": 14,
+      "row": 7
+    },
+    "recipe:iron-gear-wheel": {
+      "sheet": "base",
+      "col": 14,
+      "row": 7
+    },
+    "item:iron-ore": {
+      "sheet": "base",
+      "col": 15,
+      "row": 7
+    },
+    "item:iron-plate": {
+      "sheet": "base",
+      "col": 17,
+      "row": 7
+    },
+    "recipe:iron-plate": {
+      "sheet": "base",
+      "col": 17,
+      "row": 7
+    },
+    "item:iron-stick": {
+      "sheet": "base",
+      "col": 18,
+      "row": 7
+    },
+    "recipe:iron-stick": {
+      "sheet": "base",
+      "col": 18,
+      "row": 7
+    },
+    "item:jelly": {
+      "sheet": "base",
+      "col": 19,
+      "row": 7
+    },
+    "item:jellynut": {
+      "sheet": "base",
+      "col": 20,
+      "row": 7
+    },
+    "recipe:jellynut-processing": {
+      "sheet": "base",
+      "col": 21,
+      "row": 7
+    },
+    "item:jellynut-seed": {
+      "sheet": "base",
+      "col": 22,
+      "row": 7
+    },
+    "recipe:kovarex-enrichment-process": {
+      "sheet": "base",
+      "col": 24,
+      "row": 7
+    },
+    "item:lab": {
+      "sheet": "base",
+      "col": 25,
+      "row": 7
+    },
+    "recipe:lab": {
+      "sheet": "base",
+      "col": 25,
+      "row": 7
+    },
+    "item:land-mine": {
+      "sheet": "base",
+      "col": 0,
+      "row": 8
+    },
+    "recipe:land-mine": {
+      "sheet": "base",
+      "col": 0,
+      "row": 8
+    },
+    "item:landfill": {
+      "sheet": "base",
+      "col": 1,
+      "row": 8
+    },
+    "recipe:landfill": {
+      "sheet": "base",
+      "col": 1,
+      "row": 8
+    },
+    "item:lane-splitter": {
+      "sheet": "base",
+      "col": 0,
+      "row": 25
+    },
+    "item:laser-turret": {
+      "sheet": "base",
+      "col": 2,
+      "row": 8
+    },
+    "recipe:laser-turret": {
+      "sheet": "base",
+      "col": 2,
+      "row": 8
+    },
+    "fluid:lava": {
+      "sheet": "base",
+      "col": 3,
+      "row": 8
+    },
+    "item:light-armor": {
+      "sheet": "base",
+      "col": 4,
+      "row": 8
+    },
+    "recipe:light-armor": {
+      "sheet": "base",
+      "col": 4,
+      "row": 8
+    },
+    "fluid:light-oil": {
+      "sheet": "base",
+      "col": 5,
+      "row": 8
+    },
+    "recipe:light-oil-cracking": {
+      "sheet": "base",
+      "col": 6,
+      "row": 8
+    },
+    "item:lightning-collector": {
+      "sheet": "base",
+      "col": 7,
+      "row": 8
+    },
+    "recipe:lightning-collector": {
+      "sheet": "base",
+      "col": 7,
+      "row": 8
+    },
+    "item:lightning-rod": {
+      "sheet": "base",
+      "col": 8,
+      "row": 8
+    },
+    "recipe:lightning-rod": {
+      "sheet": "base",
+      "col": 8,
+      "row": 8
+    },
+    "item:linked-belt": {
+      "sheet": "base",
+      "col": 9,
+      "row": 8
+    },
+    "item:linked-chest": {
+      "sheet": "base",
+      "col": 10,
+      "row": 8
+    },
+    "item:lithium": {
+      "sheet": "base",
+      "col": 12,
+      "row": 8
+    },
+    "recipe:lithium": {
+      "sheet": "base",
+      "col": 12,
+      "row": 8
+    },
+    "fluid:lithium-brine": {
+      "sheet": "base",
+      "col": 13,
+      "row": 8
+    },
+    "item:lithium-plate": {
+      "sheet": "base",
+      "col": 15,
+      "row": 8
+    },
+    "recipe:lithium-plate": {
+      "sheet": "base",
+      "col": 15,
+      "row": 8
+    },
+    "item:loader": {
+      "sheet": "base",
+      "col": 16,
+      "row": 8
+    },
+    "recipe:loader": {
+      "sheet": "base",
+      "col": 16,
+      "row": 8
+    },
+    "item:locomotive": {
+      "sheet": "base",
+      "col": 17,
+      "row": 8
+    },
+    "recipe:locomotive": {
+      "sheet": "base",
+      "col": 17,
+      "row": 8
+    },
+    "item:logistic-robot": {
+      "sheet": "base",
+      "col": 18,
+      "row": 8
+    },
+    "recipe:logistic-robot": {
+      "sheet": "base",
+      "col": 18,
+      "row": 8
+    },
+    "item:logistic-science-pack": {
+      "sheet": "base",
+      "col": 19,
+      "row": 8
+    },
+    "recipe:logistic-science-pack": {
+      "sheet": "base",
+      "col": 19,
+      "row": 8
+    },
+    "item:long-handed-inserter": {
+      "sheet": "base",
+      "col": 20,
+      "row": 8
+    },
+    "recipe:long-handed-inserter": {
+      "sheet": "base",
+      "col": 20,
+      "row": 8
+    },
+    "item:low-density-structure": {
+      "sheet": "base",
+      "col": 21,
+      "row": 8
+    },
+    "recipe:low-density-structure": {
+      "sheet": "base",
+      "col": 21,
+      "row": 8
+    },
+    "fluid:lubricant": {
+      "sheet": "base",
+      "col": 22,
+      "row": 8
+    },
+    "recipe:lubricant": {
+      "sheet": "base",
+      "col": 22,
+      "row": 8
+    },
+    "item:mech-armor": {
+      "sheet": "base",
+      "col": 23,
+      "row": 8
+    },
+    "recipe:mech-armor": {
+      "sheet": "base",
+      "col": 23,
+      "row": 8
+    },
+    "item:medium-electric-pole": {
+      "sheet": "base",
+      "col": 24,
+      "row": 8
+    },
+    "recipe:medium-electric-pole": {
+      "sheet": "base",
+      "col": 24,
+      "row": 8
+    },
+    "item:metallic-asteroid-chunk": {
+      "sheet": "base",
+      "col": 25,
+      "row": 8
+    },
+    "recipe:metallic-asteroid-crushing": {
+      "sheet": "base",
+      "col": 0,
+      "row": 9
+    },
+    "recipe:metallic-asteroid-reprocessing": {
+      "sheet": "base",
+      "col": 1,
+      "row": 9
+    },
+    "item:metallurgic-science-pack": {
+      "sheet": "base",
+      "col": 2,
+      "row": 9
+    },
+    "recipe:metallurgic-science-pack": {
+      "sheet": "base",
+      "col": 2,
+      "row": 9
+    },
+    "item:military-science-pack": {
+      "sheet": "base",
+      "col": 3,
+      "row": 9
+    },
+    "recipe:military-science-pack": {
+      "sheet": "base",
+      "col": 3,
+      "row": 9
+    },
+    "item:modular-armor": {
+      "sheet": "base",
+      "col": 4,
+      "row": 9
+    },
+    "recipe:modular-armor": {
+      "sheet": "base",
+      "col": 4,
+      "row": 9
+    },
+    "fluid:molten-copper": {
+      "sheet": "base",
+      "col": 5,
+      "row": 9
+    },
+    "recipe:molten-copper": {
+      "sheet": "base",
+      "col": 19,
+      "row": 3
+    },
+    "recipe:molten-copper-from-lava": {
+      "sheet": "base",
+      "col": 6,
+      "row": 9
+    },
+    "fluid:molten-iron": {
+      "sheet": "base",
+      "col": 7,
+      "row": 9
+    },
+    "recipe:molten-iron": {
+      "sheet": "base",
+      "col": 16,
+      "row": 7
+    },
+    "recipe:molten-iron-from-lava": {
+      "sheet": "base",
+      "col": 8,
+      "row": 9
+    },
+    "item:night-vision-equipment": {
+      "sheet": "base",
+      "col": 10,
+      "row": 9
+    },
+    "recipe:night-vision-equipment": {
+      "sheet": "base",
+      "col": 10,
+      "row": 9
+    },
+    "item:nuclear-fuel": {
+      "sheet": "base",
+      "col": 11,
+      "row": 9
+    },
+    "recipe:nuclear-fuel": {
+      "sheet": "base",
+      "col": 11,
+      "row": 9
+    },
+    "recipe:nuclear-fuel-reprocessing": {
+      "sheet": "base",
+      "col": 12,
+      "row": 9
+    },
+    "item:nuclear-reactor": {
+      "sheet": "base",
+      "col": 13,
+      "row": 9
+    },
+    "recipe:nuclear-reactor": {
+      "sheet": "base",
+      "col": 13,
+      "row": 9
+    },
+    "item:nutrients": {
+      "sheet": "base",
+      "col": 14,
+      "row": 9
+    },
+    "recipe:nutrients-from-bioflux": {
+      "sheet": "base",
+      "col": 15,
+      "row": 9
+    },
+    "recipe:nutrients-from-biter-egg": {
+      "sheet": "base",
+      "col": 16,
+      "row": 9
+    },
+    "recipe:nutrients-from-fish": {
+      "sheet": "base",
+      "col": 17,
+      "row": 9
+    },
+    "recipe:nutrients-from-spoilage": {
+      "sheet": "base",
+      "col": 18,
+      "row": 9
+    },
+    "recipe:nutrients-from-yumako-mash": {
+      "sheet": "base",
+      "col": 19,
+      "row": 9
+    },
+    "item:offshore-pump": {
+      "sheet": "base",
+      "col": 20,
+      "row": 9
+    },
+    "recipe:offshore-pump": {
+      "sheet": "base",
+      "col": 20,
+      "row": 9
+    },
+    "item:oil-refinery": {
+      "sheet": "base",
+      "col": 21,
+      "row": 9
+    },
+    "recipe:oil-refinery": {
+      "sheet": "base",
+      "col": 21,
+      "row": 9
+    },
+    "item:one-way-valve": {
+      "sheet": "base",
+      "col": 22,
+      "row": 9
+    },
+    "item:overflow-valve": {
+      "sheet": "base",
+      "col": 23,
+      "row": 9
+    },
+    "item:overgrowth-jellynut-soil": {
+      "sheet": "base",
+      "col": 24,
+      "row": 9
+    },
+    "recipe:overgrowth-jellynut-soil": {
+      "sheet": "base",
+      "col": 24,
+      "row": 9
+    },
+    "item:overgrowth-yumako-soil": {
+      "sheet": "base",
+      "col": 25,
+      "row": 9
+    },
+    "recipe:overgrowth-yumako-soil": {
+      "sheet": "base",
+      "col": 25,
+      "row": 9
+    },
+    "item:oxide-asteroid-chunk": {
+      "sheet": "base",
+      "col": 0,
+      "row": 10
+    },
+    "recipe:oxide-asteroid-crushing": {
+      "sheet": "base",
+      "col": 1,
+      "row": 10
+    },
+    "recipe:oxide-asteroid-reprocessing": {
+      "sheet": "base",
+      "col": 2,
+      "row": 10
+    },
+    "item:passive-provider-chest": {
+      "sheet": "base",
+      "col": 13,
+      "row": 10
+    },
+    "recipe:passive-provider-chest": {
+      "sheet": "base",
+      "col": 13,
+      "row": 10
+    },
+    "item:pentapod-egg": {
+      "sheet": "base",
+      "col": 14,
+      "row": 10
+    },
+    "recipe:pentapod-egg": {
+      "sheet": "base",
+      "col": 15,
+      "row": 10
+    },
+    "item:personal-laser-defense-equipment": {
+      "sheet": "base",
+      "col": 16,
+      "row": 10
+    },
+    "recipe:personal-laser-defense-equipment": {
+      "sheet": "base",
+      "col": 16,
+      "row": 10
+    },
+    "item:personal-roboport-equipment": {
+      "sheet": "base",
+      "col": 17,
+      "row": 10
+    },
+    "recipe:personal-roboport-equipment": {
+      "sheet": "base",
+      "col": 17,
+      "row": 10
+    },
+    "item:personal-roboport-mk2-equipment": {
+      "sheet": "base",
+      "col": 18,
+      "row": 10
+    },
+    "recipe:personal-roboport-mk2-equipment": {
+      "sheet": "base",
+      "col": 18,
+      "row": 10
+    },
+    "fluid:petroleum-gas": {
+      "sheet": "base",
+      "col": 19,
+      "row": 10
+    },
+    "item:piercing-rounds-magazine": {
+      "sheet": "base",
+      "col": 20,
+      "row": 10
+    },
+    "recipe:piercing-rounds-magazine": {
+      "sheet": "base",
+      "col": 20,
+      "row": 10
+    },
+    "item:piercing-shotgun-shell": {
+      "sheet": "base",
+      "col": 21,
+      "row": 10
+    },
+    "recipe:piercing-shotgun-shell": {
+      "sheet": "base",
+      "col": 21,
+      "row": 10
+    },
+    "item:pipe": {
+      "sheet": "base",
+      "col": 22,
+      "row": 10
+    },
+    "recipe:pipe": {
+      "sheet": "base",
+      "col": 22,
+      "row": 10
+    },
+    "item:pipe-to-ground": {
+      "sheet": "base",
+      "col": 24,
+      "row": 10
+    },
+    "recipe:pipe-to-ground": {
+      "sheet": "base",
+      "col": 24,
+      "row": 10
+    },
+    "item:pistol": {
+      "sheet": "base",
+      "col": 25,
+      "row": 10
+    },
+    "recipe:pistol": {
+      "sheet": "base",
+      "col": 25,
+      "row": 10
+    },
+    "item:plastic-bar": {
+      "sheet": "base",
+      "col": 0,
+      "row": 11
+    },
+    "recipe:plastic-bar": {
+      "sheet": "base",
+      "col": 0,
+      "row": 11
+    },
+    "item:poison-capsule": {
+      "sheet": "base",
+      "col": 1,
+      "row": 11
+    },
+    "recipe:poison-capsule": {
+      "sheet": "base",
+      "col": 1,
+      "row": 11
+    },
+    "item:power-armor": {
+      "sheet": "base",
+      "col": 2,
+      "row": 11
+    },
+    "recipe:power-armor": {
+      "sheet": "base",
+      "col": 2,
+      "row": 11
+    },
+    "item:power-armor-mk2": {
+      "sheet": "base",
+      "col": 3,
+      "row": 11
+    },
+    "recipe:power-armor-mk2": {
+      "sheet": "base",
+      "col": 3,
+      "row": 11
+    },
+    "item:power-switch": {
+      "sheet": "base",
+      "col": 4,
+      "row": 11
+    },
+    "recipe:power-switch": {
+      "sheet": "base",
+      "col": 4,
+      "row": 11
+    },
+    "item:processing-unit": {
+      "sheet": "base",
+      "col": 5,
+      "row": 11
+    },
+    "recipe:processing-unit": {
+      "sheet": "base",
+      "col": 5,
+      "row": 11
+    },
+    "item:production-science-pack": {
+      "sheet": "base",
+      "col": 6,
+      "row": 11
+    },
+    "recipe:production-science-pack": {
+      "sheet": "base",
+      "col": 6,
+      "row": 11
+    },
+    "item:productivity-module": {
+      "sheet": "base",
+      "col": 7,
+      "row": 11
+    },
+    "recipe:productivity-module": {
+      "sheet": "base",
+      "col": 7,
+      "row": 11
+    },
+    "item:productivity-module-2": {
+      "sheet": "base",
+      "col": 8,
+      "row": 11
+    },
+    "recipe:productivity-module-2": {
+      "sheet": "base",
+      "col": 8,
+      "row": 11
+    },
+    "item:productivity-module-3": {
+      "sheet": "base",
+      "col": 9,
+      "row": 11
+    },
+    "recipe:productivity-module-3": {
+      "sheet": "base",
+      "col": 9,
+      "row": 11
+    },
+    "item:programmable-speaker": {
+      "sheet": "base",
+      "col": 10,
+      "row": 11
+    },
+    "recipe:programmable-speaker": {
+      "sheet": "base",
+      "col": 10,
+      "row": 11
+    },
+    "item:promethium-asteroid-chunk": {
+      "sheet": "base",
+      "col": 11,
+      "row": 11
+    },
+    "item:promethium-science-pack": {
+      "sheet": "base",
+      "col": 12,
+      "row": 11
+    },
+    "recipe:promethium-science-pack": {
+      "sheet": "base",
+      "col": 12,
+      "row": 11
+    },
+    "item:proxy-container": {
+      "sheet": "base",
+      "col": 11,
+      "row": 8
+    },
+    "item:pump": {
+      "sheet": "base",
+      "col": 13,
+      "row": 11
+    },
+    "recipe:pump": {
+      "sheet": "base",
+      "col": 13,
+      "row": 11
+    },
+    "item:pumpjack": {
+      "sheet": "base",
+      "col": 14,
+      "row": 11
+    },
+    "recipe:pumpjack": {
+      "sheet": "base",
+      "col": 14,
+      "row": 11
+    },
+    "item:quality-module": {
+      "sheet": "base",
+      "col": 15,
+      "row": 11
+    },
+    "recipe:quality-module": {
+      "sheet": "base",
+      "col": 15,
+      "row": 11
+    },
+    "item:quality-module-2": {
+      "sheet": "base",
+      "col": 16,
+      "row": 11
+    },
+    "recipe:quality-module-2": {
+      "sheet": "base",
+      "col": 16,
+      "row": 11
+    },
+    "item:quality-module-3": {
+      "sheet": "base",
+      "col": 17,
+      "row": 11
+    },
+    "recipe:quality-module-3": {
+      "sheet": "base",
+      "col": 17,
+      "row": 11
+    },
+    "item:quantum-processor": {
+      "sheet": "base",
+      "col": 18,
+      "row": 11
+    },
+    "recipe:quantum-processor": {
+      "sheet": "base",
+      "col": 18,
+      "row": 11
+    },
+    "item:radar": {
+      "sheet": "base",
+      "col": 19,
+      "row": 11
+    },
+    "recipe:radar": {
+      "sheet": "base",
+      "col": 19,
+      "row": 11
+    },
+    "item:rail": {
+      "sheet": "base",
+      "col": 20,
+      "row": 11
+    },
+    "recipe:rail": {
+      "sheet": "base",
+      "col": 20,
+      "row": 11
+    },
+    "item:rail-chain-signal": {
+      "sheet": "base",
+      "col": 21,
+      "row": 11
+    },
+    "recipe:rail-chain-signal": {
+      "sheet": "base",
+      "col": 21,
+      "row": 11
+    },
+    "item:rail-signal": {
+      "sheet": "base",
+      "col": 23,
+      "row": 11
+    },
+    "recipe:rail-signal": {
+      "sheet": "base",
+      "col": 23,
+      "row": 11
+    },
+    "item:railgun": {
+      "sheet": "base",
+      "col": 25,
+      "row": 11
+    },
+    "recipe:railgun": {
+      "sheet": "base",
+      "col": 25,
+      "row": 11
+    },
+    "item:railgun-ammo": {
+      "sheet": "base",
+      "col": 0,
+      "row": 12
+    },
+    "recipe:railgun-ammo": {
+      "sheet": "base",
+      "col": 0,
+      "row": 12
+    },
+    "item:railgun-turret": {
+      "sheet": "base",
+      "col": 1,
+      "row": 12
+    },
+    "recipe:railgun-turret": {
+      "sheet": "base",
+      "col": 1,
+      "row": 12
+    },
+    "item:raw-fish": {
+      "sheet": "base",
+      "col": 22,
+      "row": 5
+    },
+    "item:recycler": {
+      "sheet": "base",
+      "col": 2,
+      "row": 12
+    },
+    "recipe:recycler": {
+      "sheet": "base",
+      "col": 2,
+      "row": 12
+    },
+    "item:refined-concrete": {
+      "sheet": "base",
+      "col": 16,
+      "row": 23
+    },
+    "recipe:refined-concrete": {
+      "sheet": "base",
+      "col": 16,
+      "row": 23
+    },
+    "item:refined-hazard-concrete": {
+      "sheet": "base",
+      "col": 17,
+      "row": 23
+    },
+    "recipe:refined-hazard-concrete": {
+      "sheet": "base",
+      "col": 17,
+      "row": 23
+    },
+    "item:repair-pack": {
+      "sheet": "base",
+      "col": 18,
+      "row": 23
+    },
+    "recipe:repair-pack": {
+      "sheet": "base",
+      "col": 18,
+      "row": 23
+    },
+    "item:requester-chest": {
+      "sheet": "base",
+      "col": 19,
+      "row": 23
+    },
+    "recipe:requester-chest": {
+      "sheet": "base",
+      "col": 19,
+      "row": 23
+    },
+    "item:roboport": {
+      "sheet": "base",
+      "col": 20,
+      "row": 23
+    },
+    "recipe:roboport": {
+      "sheet": "base",
+      "col": 20,
+      "row": 23
+    },
+    "item:rocket": {
+      "sheet": "base",
+      "col": 21,
+      "row": 23
+    },
+    "recipe:rocket": {
+      "sheet": "base",
+      "col": 21,
+      "row": 23
+    },
+    "item:rocket-fuel": {
+      "sheet": "base",
+      "col": 22,
+      "row": 23
+    },
+    "recipe:rocket-fuel": {
+      "sheet": "base",
+      "col": 22,
+      "row": 23
+    },
+    "recipe:rocket-fuel-from-jelly": {
+      "sheet": "base",
+      "col": 23,
+      "row": 23
+    },
+    "item:rocket-launcher": {
+      "sheet": "base",
+      "col": 24,
+      "row": 23
+    },
+    "recipe:rocket-launcher": {
+      "sheet": "base",
+      "col": 24,
+      "row": 23
+    },
+    "item:rocket-part": {
+      "sheet": "base",
+      "col": 25,
+      "row": 23
+    },
+    "recipe:rocket-part": {
+      "sheet": "base",
+      "col": 25,
+      "row": 23
+    },
+    "item:rocket-silo": {
+      "sheet": "base",
+      "col": 0,
+      "row": 24
+    },
+    "recipe:rocket-silo": {
+      "sheet": "base",
+      "col": 0,
+      "row": 24
+    },
+    "item:rocket-turret": {
+      "sheet": "base",
+      "col": 1,
+      "row": 24
+    },
+    "recipe:rocket-turret": {
+      "sheet": "base",
+      "col": 1,
+      "row": 24
+    },
+    "item:science": {
+      "sheet": "base",
+      "col": 2,
+      "row": 24
+    },
+    "item:scrap": {
+      "sheet": "base",
+      "col": 3,
+      "row": 24
+    },
+    "recipe:scrap-recycling": {
+      "sheet": "base",
+      "col": 18,
+      "row": 22
+    },
+    "item:selector-combinator": {
+      "sheet": "base",
+      "col": 4,
+      "row": 24
+    },
+    "recipe:selector-combinator": {
+      "sheet": "base",
+      "col": 4,
+      "row": 24
+    },
+    "item:shotgun": {
+      "sheet": "base",
+      "col": 5,
+      "row": 24
+    },
+    "recipe:shotgun": {
+      "sheet": "base",
+      "col": 5,
+      "row": 24
+    },
+    "item:shotgun-shell": {
+      "sheet": "base",
+      "col": 6,
+      "row": 24
+    },
+    "recipe:shotgun-shell": {
+      "sheet": "base",
+      "col": 6,
+      "row": 24
+    },
+    "recipe:simple-coal-liquefaction": {
+      "sheet": "base",
+      "col": 7,
+      "row": 24
+    },
+    "item:simple-entity-with-force": {
+      "sheet": "base",
+      "col": 7,
+      "row": 25
+    },
+    "item:simple-entity-with-owner": {
+      "sheet": "base",
+      "col": 4,
+      "row": 27
+    },
+    "item:slowdown-capsule": {
+      "sheet": "base",
+      "col": 8,
+      "row": 24
+    },
+    "recipe:slowdown-capsule": {
+      "sheet": "base",
+      "col": 8,
+      "row": 24
+    },
+    "item:small-electric-pole": {
+      "sheet": "base",
+      "col": 9,
+      "row": 24
+    },
+    "recipe:small-electric-pole": {
+      "sheet": "base",
+      "col": 9,
+      "row": 24
+    },
+    "item:small-lamp": {
+      "sheet": "base",
+      "col": 10,
+      "row": 24
+    },
+    "recipe:small-lamp": {
+      "sheet": "base",
+      "col": 10,
+      "row": 24
+    },
+    "item:solar-panel": {
+      "sheet": "base",
+      "col": 11,
+      "row": 24
+    },
+    "recipe:solar-panel": {
+      "sheet": "base",
+      "col": 11,
+      "row": 24
+    },
+    "item:solar-panel-equipment": {
+      "sheet": "base",
+      "col": 12,
+      "row": 24
+    },
+    "recipe:solar-panel-equipment": {
+      "sheet": "base",
+      "col": 12,
+      "row": 24
+    },
+    "item:solid-fuel": {
+      "sheet": "base",
+      "col": 13,
+      "row": 24
+    },
+    "recipe:solid-fuel-from-ammonia": {
+      "sheet": "base",
+      "col": 14,
+      "row": 24
+    },
+    "recipe:solid-fuel-from-heavy-oil": {
+      "sheet": "base",
+      "col": 15,
+      "row": 24
+    },
+    "recipe:solid-fuel-from-light-oil": {
+      "sheet": "base",
+      "col": 16,
+      "row": 24
+    },
+    "recipe:solid-fuel-from-petroleum-gas": {
+      "sheet": "base",
+      "col": 17,
+      "row": 24
+    },
+    "item:space-platform-foundation": {
+      "sheet": "base",
+      "col": 18,
+      "row": 24
+    },
+    "recipe:space-platform-foundation": {
+      "sheet": "base",
+      "col": 18,
+      "row": 24
+    },
+    "item:space-science-pack": {
+      "sheet": "base",
+      "col": 20,
+      "row": 24
+    },
+    "recipe:space-science-pack": {
+      "sheet": "base",
+      "col": 20,
+      "row": 24
+    },
+    "item:speed-module": {
+      "sheet": "base",
+      "col": 21,
+      "row": 24
+    },
+    "recipe:speed-module": {
+      "sheet": "base",
+      "col": 21,
+      "row": 24
+    },
+    "item:speed-module-2": {
+      "sheet": "base",
+      "col": 22,
+      "row": 24
+    },
+    "recipe:speed-module-2": {
+      "sheet": "base",
+      "col": 22,
+      "row": 24
+    },
+    "item:speed-module-3": {
+      "sheet": "base",
+      "col": 23,
+      "row": 24
+    },
+    "recipe:speed-module-3": {
+      "sheet": "base",
+      "col": 23,
+      "row": 24
+    },
+    "item:spidertron": {
+      "sheet": "base",
+      "col": 24,
+      "row": 24
+    },
+    "recipe:spidertron": {
+      "sheet": "base",
+      "col": 24,
+      "row": 24
+    },
+    "item:spidertron-rocket-launcher-1": {
+      "sheet": "base",
+      "col": 24,
+      "row": 23
+    },
+    "item:spidertron-rocket-launcher-2": {
+      "sheet": "base",
+      "col": 24,
+      "row": 23
+    },
+    "item:spidertron-rocket-launcher-3": {
+      "sheet": "base",
+      "col": 24,
+      "row": 23
+    },
+    "item:spidertron-rocket-launcher-4": {
+      "sheet": "base",
+      "col": 24,
+      "row": 23
+    },
+    "item:splitter": {
+      "sheet": "base",
+      "col": 25,
+      "row": 24
+    },
+    "recipe:splitter": {
+      "sheet": "base",
+      "col": 25,
+      "row": 24
+    },
+    "item:spoilage": {
+      "sheet": "base",
+      "col": 1,
+      "row": 25
+    },
+    "item:stack-inserter": {
+      "sheet": "base",
+      "col": 2,
+      "row": 25
+    },
+    "recipe:stack-inserter": {
+      "sheet": "base",
+      "col": 2,
+      "row": 25
+    },
+    "fluid:steam": {
+      "sheet": "base",
+      "col": 3,
+      "row": 25
+    },
+    "recipe:steam-condensation": {
+      "sheet": "base",
+      "col": 4,
+      "row": 25
+    },
+    "item:steam-engine": {
+      "sheet": "base",
+      "col": 5,
+      "row": 25
+    },
+    "recipe:steam-engine": {
+      "sheet": "base",
+      "col": 5,
+      "row": 25
+    },
+    "item:steam-turbine": {
+      "sheet": "base",
+      "col": 6,
+      "row": 25
+    },
+    "recipe:steam-turbine": {
+      "sheet": "base",
+      "col": 6,
+      "row": 25
+    },
+    "item:steel-chest": {
+      "sheet": "base",
+      "col": 7,
+      "row": 25
+    },
+    "recipe:steel-chest": {
+      "sheet": "base",
+      "col": 7,
+      "row": 25
+    },
+    "item:steel-furnace": {
+      "sheet": "base",
+      "col": 8,
+      "row": 25
+    },
+    "recipe:steel-furnace": {
+      "sheet": "base",
+      "col": 8,
+      "row": 25
+    },
+    "item:steel-plate": {
+      "sheet": "base",
+      "col": 9,
+      "row": 25
+    },
+    "recipe:steel-plate": {
+      "sheet": "base",
+      "col": 9,
+      "row": 25
+    },
+    "item:stone": {
+      "sheet": "base",
+      "col": 10,
+      "row": 25
+    },
+    "item:stone-brick": {
+      "sheet": "base",
+      "col": 11,
+      "row": 25
+    },
+    "recipe:stone-brick": {
+      "sheet": "base",
+      "col": 11,
+      "row": 25
+    },
+    "item:stone-furnace": {
+      "sheet": "base",
+      "col": 12,
+      "row": 25
+    },
+    "recipe:stone-furnace": {
+      "sheet": "base",
+      "col": 12,
+      "row": 25
+    },
+    "item:stone-wall": {
+      "sheet": "base",
+      "col": 1,
+      "row": 27
+    },
+    "recipe:stone-wall": {
+      "sheet": "base",
+      "col": 1,
+      "row": 27
+    },
+    "item:storage-chest": {
+      "sheet": "base",
+      "col": 13,
+      "row": 25
+    },
+    "recipe:storage-chest": {
+      "sheet": "base",
+      "col": 13,
+      "row": 25
+    },
+    "item:storage-tank": {
+      "sheet": "base",
+      "col": 14,
+      "row": 25
+    },
+    "recipe:storage-tank": {
+      "sheet": "base",
+      "col": 14,
+      "row": 25
+    },
+    "item:submachine-gun": {
+      "sheet": "base",
+      "col": 15,
+      "row": 25
+    },
+    "recipe:submachine-gun": {
+      "sheet": "base",
+      "col": 15,
+      "row": 25
+    },
+    "item:substation": {
+      "sheet": "base",
+      "col": 16,
+      "row": 25
+    },
+    "recipe:substation": {
+      "sheet": "base",
+      "col": 16,
+      "row": 25
+    },
+    "item:sulfur": {
+      "sheet": "base",
+      "col": 17,
+      "row": 25
+    },
+    "recipe:sulfur": {
+      "sheet": "base",
+      "col": 17,
+      "row": 25
+    },
+    "fluid:sulfuric-acid": {
+      "sheet": "base",
+      "col": 18,
+      "row": 25
+    },
+    "recipe:sulfuric-acid": {
+      "sheet": "base",
+      "col": 18,
+      "row": 25
+    },
+    "item:supercapacitor": {
+      "sheet": "base",
+      "col": 20,
+      "row": 25
+    },
+    "recipe:supercapacitor": {
+      "sheet": "base",
+      "col": 20,
+      "row": 25
+    },
+    "item:superconductor": {
+      "sheet": "base",
+      "col": 21,
+      "row": 25
+    },
+    "recipe:superconductor": {
+      "sheet": "base",
+      "col": 21,
+      "row": 25
+    },
+    "item:tank": {
+      "sheet": "base",
+      "col": 22,
+      "row": 25
+    },
+    "recipe:tank": {
+      "sheet": "base",
+      "col": 22,
+      "row": 25
+    },
+    "item:tank-cannon": {
+      "sheet": "base",
+      "col": 23,
+      "row": 25
+    },
+    "item:tank-flamethrower": {
+      "sheet": "base",
+      "col": 25,
+      "row": 5
+    },
+    "item:tank-machine-gun": {
+      "sheet": "base",
+      "col": 15,
+      "row": 25
+    },
+    "item:tesla-ammo": {
+      "sheet": "base",
+      "col": 24,
+      "row": 25
+    },
+    "recipe:tesla-ammo": {
+      "sheet": "base",
+      "col": 24,
+      "row": 25
+    },
+    "item:tesla-turret": {
+      "sheet": "base",
+      "col": 25,
+      "row": 25
+    },
+    "recipe:tesla-turret": {
+      "sheet": "base",
+      "col": 25,
+      "row": 25
+    },
+    "item:teslagun": {
+      "sheet": "base",
+      "col": 0,
+      "row": 26
+    },
+    "recipe:teslagun": {
+      "sheet": "base",
+      "col": 0,
+      "row": 26
+    },
+    "item:thruster": {
+      "sheet": "base",
+      "col": 1,
+      "row": 26
+    },
+    "recipe:thruster": {
+      "sheet": "base",
+      "col": 1,
+      "row": 26
+    },
+    "fluid:thruster-fuel": {
+      "sheet": "base",
+      "col": 2,
+      "row": 26
+    },
+    "recipe:thruster-fuel": {
+      "sheet": "base",
+      "col": 2,
+      "row": 26
+    },
+    "fluid:thruster-oxidizer": {
+      "sheet": "base",
+      "col": 3,
+      "row": 26
+    },
+    "recipe:thruster-oxidizer": {
+      "sheet": "base",
+      "col": 3,
+      "row": 26
+    },
+    "item:toolbelt-equipment": {
+      "sheet": "base",
+      "col": 4,
+      "row": 26
+    },
+    "recipe:toolbelt-equipment": {
+      "sheet": "base",
+      "col": 4,
+      "row": 26
+    },
+    "item:top-up-valve": {
+      "sheet": "base",
+      "col": 5,
+      "row": 26
+    },
+    "item:train-stop": {
+      "sheet": "base",
+      "col": 6,
+      "row": 26
+    },
+    "recipe:train-stop": {
+      "sheet": "base",
+      "col": 6,
+      "row": 26
+    },
+    "item:transport-belt": {
+      "sheet": "base",
+      "col": 7,
+      "row": 26
+    },
+    "recipe:transport-belt": {
+      "sheet": "base",
+      "col": 7,
+      "row": 26
+    },
+    "item:tree-seed": {
+      "sheet": "base",
+      "col": 9,
+      "row": 26
+    },
+    "item:tungsten-carbide": {
+      "sheet": "base",
+      "col": 10,
+      "row": 26
+    },
+    "recipe:tungsten-carbide": {
+      "sheet": "base",
+      "col": 10,
+      "row": 26
+    },
+    "item:tungsten-ore": {
+      "sheet": "base",
+      "col": 11,
+      "row": 26
+    },
+    "item:tungsten-plate": {
+      "sheet": "base",
+      "col": 12,
+      "row": 26
+    },
+    "recipe:tungsten-plate": {
+      "sheet": "base",
+      "col": 12,
+      "row": 26
+    },
+    "item:turbo-loader": {
+      "sheet": "base",
+      "col": 13,
+      "row": 26
+    },
+    "recipe:turbo-loader": {
+      "sheet": "base",
+      "col": 13,
+      "row": 26
+    },
+    "item:turbo-splitter": {
+      "sheet": "base",
+      "col": 14,
+      "row": 26
+    },
+    "recipe:turbo-splitter": {
+      "sheet": "base",
+      "col": 14,
+      "row": 26
+    },
+    "item:turbo-transport-belt": {
+      "sheet": "base",
+      "col": 15,
+      "row": 26
+    },
+    "recipe:turbo-transport-belt": {
+      "sheet": "base",
+      "col": 15,
+      "row": 26
+    },
+    "item:turbo-underground-belt": {
+      "sheet": "base",
+      "col": 16,
+      "row": 26
+    },
+    "recipe:turbo-underground-belt": {
+      "sheet": "base",
+      "col": 16,
+      "row": 26
+    },
+    "item:underground-belt": {
+      "sheet": "base",
+      "col": 17,
+      "row": 26
+    },
+    "recipe:underground-belt": {
+      "sheet": "base",
+      "col": 17,
+      "row": 26
+    },
+    "item:uranium-235": {
+      "sheet": "base",
+      "col": 18,
+      "row": 26
+    },
+    "item:uranium-238": {
+      "sheet": "base",
+      "col": 19,
+      "row": 26
+    },
+    "item:uranium-cannon-shell": {
+      "sheet": "base",
+      "col": 20,
+      "row": 26
+    },
+    "recipe:uranium-cannon-shell": {
+      "sheet": "base",
+      "col": 20,
+      "row": 26
+    },
+    "item:uranium-fuel-cell": {
+      "sheet": "base",
+      "col": 21,
+      "row": 26
+    },
+    "recipe:uranium-fuel-cell": {
+      "sheet": "base",
+      "col": 21,
+      "row": 26
+    },
+    "item:uranium-ore": {
+      "sheet": "base",
+      "col": 22,
+      "row": 26
+    },
+    "recipe:uranium-processing": {
+      "sheet": "base",
+      "col": 23,
+      "row": 26
+    },
+    "item:uranium-rounds-magazine": {
+      "sheet": "base",
+      "col": 24,
+      "row": 26
+    },
+    "recipe:uranium-rounds-magazine": {
+      "sheet": "base",
+      "col": 24,
+      "row": 26
+    },
+    "item:utility-science-pack": {
+      "sheet": "base",
+      "col": 25,
+      "row": 26
+    },
+    "recipe:utility-science-pack": {
+      "sheet": "base",
+      "col": 25,
+      "row": 26
+    },
+    "item:vehicle-machine-gun": {
+      "sheet": "base",
+      "col": 15,
+      "row": 25
+    },
+    "fluid:water": {
+      "sheet": "base",
+      "col": 2,
+      "row": 27
+    },
+    "item:wood": {
+      "sheet": "base",
+      "col": 3,
+      "row": 27
+    },
+    "recipe:wood-processing": {
+      "sheet": "base",
+      "col": 8,
+      "row": 26
+    },
+    "item:wooden-chest": {
+      "sheet": "base",
+      "col": 4,
+      "row": 27
+    },
+    "recipe:wooden-chest": {
+      "sheet": "base",
+      "col": 4,
+      "row": 27
+    },
+    "item:yumako": {
+      "sheet": "base",
+      "col": 5,
+      "row": 27
+    },
+    "item:yumako-mash": {
+      "sheet": "base",
+      "col": 6,
+      "row": 27
+    },
+    "recipe:yumako-processing": {
+      "sheet": "base",
+      "col": 7,
+      "row": 27
+    },
+    "item:yumako-seed": {
+      "sheet": "base",
+      "col": 8,
+      "row": 27
+    },
+    "entity:ashland-lichen-tree": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 0
+    },
+    "entity:ashland-lichen-tree-flaming": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 0
+    },
+    "entity:ashland-lichen-tree-stump": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 0
+    },
+    "entity:atomic-nuke-shockwave": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 0
+    },
+    "entity:behemoth-biter": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 0
+    },
+    "entity:behemoth-spitter": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 0
+    },
+    "entity:behemoth-worm-turret": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 0
+    },
+    "entity:big-biter": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 0
+    },
+    "entity:big-mining-drill-remnants": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 0
+    },
+    "entity:big-spitter": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 0
+    },
+    "entity:big-worm-turret": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 0
+    },
+    "entity:biolab": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 0
+    },
+    "entity:biter-spawner": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 0
+    },
+    "entity:biter-spawner-corpse": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 0
+    },
+    "entity:boompuff": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 0
+    },
+    "item:bottomless-chest": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 0
+    },
+    "entity:captive-biter-spawner": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 1
+    },
+    "entity:character": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 1
+    },
+    "entity:cluster-nuke-explosion": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 1
+    },
+    "item:copper-wire": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 1
+    },
+    "entity:crude-oil": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 1
+    },
+    "item:crude-oil-barrel": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 1
+    },
+    "recipe:crude-oil-barrel": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 1
+    },
+    "entity:cuttlepop": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 1
+    },
+    "entity:dead-dry-hairy-tree": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 1
+    },
+    "entity:dead-grey-trunk": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 1
+    },
+    "entity:dead-tree-desert": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 1
+    },
+    "virtual-signal:down-arrow": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 1
+    },
+    "virtual-signal:down-left-arrow": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 1
+    },
+    "virtual-signal:down-right-arrow": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 1
+    },
+    "entity:dry-hairy-tree": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 1
+    },
+    "entity:dry-tree": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 1
+    },
+    "entity:electric-energy-interface": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 2
+    },
+    "recipe:empty-crude-oil-barrel": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 2
+    },
+    "recipe:empty-fluoroketone-cold-barrel": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 2
+    },
+    "recipe:empty-fluoroketone-hot-barrel": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 2
+    },
+    "recipe:empty-heavy-oil-barrel": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 2
+    },
+    "recipe:empty-light-oil-barrel": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 2
+    },
+    "recipe:empty-lubricant-barrel": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 2
+    },
+    "recipe:empty-petroleum-gas-barrel": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 2
+    },
+    "recipe:empty-sulfuric-acid-barrel": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 2
+    },
+    "recipe:empty-water-barrel": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 2
+    },
+    "entity:fish": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 2
+    },
+    "entity:fluorine-vent": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 2
+    },
+    "item:fluoroketone-cold-barrel": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 2
+    },
+    "recipe:fluoroketone-cold-barrel": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 2
+    },
+    "item:fluoroketone-hot-barrel": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 2
+    },
+    "recipe:fluoroketone-hot-barrel": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 2
+    },
+    "entity:funneltrunk": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 3
+    },
+    "entity:gleba-spawner": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 3
+    },
+    "entity:gleba-spawner-corpse": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 3
+    },
+    "entity:gleba-spawner-corpse-small": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 3
+    },
+    "entity:gleba-spawner-small": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 3
+    },
+    "item:green-wire": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 3
+    },
+    "entity:hairyclubnub": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 3
+    },
+    "item:heavy-oil-barrel": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 3
+    },
+    "recipe:heavy-oil-barrel": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 3
+    },
+    "entity:jellystem": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 3
+    },
+    "virtual-signal:left-arrow": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 3
+    },
+    "entity:lickmaw": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 3
+    },
+    "item:light-oil-barrel": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 3
+    },
+    "recipe:light-oil-barrel": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 3
+    },
+    "entity:lithium-brine": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 3
+    },
+    "item:lubricant-barrel": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 3
+    },
+    "recipe:lubricant-barrel": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 4
+    },
+    "entity:market": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 4
+    },
+    "entity:medium-biter": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 4
+    },
+    "entity:medium-spitter": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 4
+    },
+    "entity:medium-worm-turret": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 4
+    },
+    "item:no-item": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 4
+    },
+    "entity:nuclear-smouldering-smoke-source": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 4
+    },
+    "item:petroleum-gas-barrel": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 4
+    },
+    "recipe:petroleum-gas-barrel": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 4
+    },
+    "item:red-wire": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 4
+    },
+    "virtual-signal:right-arrow": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 4
+    },
+    "item:satellite": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 4
+    },
+    "recipe:satellite": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 4
+    },
+    "item:selection-tool": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 4
+    },
+    "virtual-signal:shape-circle": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 4
+    },
+    "virtual-signal:shape-corner": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 4
+    },
+    "virtual-signal:shape-corner-2": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 5
+    },
+    "virtual-signal:shape-corner-3": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 5
+    },
+    "virtual-signal:shape-corner-4": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 5
+    },
+    "virtual-signal:shape-cross": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 5
+    },
+    "virtual-signal:shape-curve": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 5
+    },
+    "virtual-signal:shape-curve-2": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 5
+    },
+    "virtual-signal:shape-curve-3": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 5
+    },
+    "virtual-signal:shape-curve-4": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 5
+    },
+    "virtual-signal:shape-diagonal": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 5
+    },
+    "virtual-signal:shape-diagonal-2": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 5
+    },
+    "virtual-signal:shape-diagonal-cross": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 5
+    },
+    "virtual-signal:shape-horizontal": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 5
+    },
+    "virtual-signal:shape-t": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 5
+    },
+    "virtual-signal:shape-t-2": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 5
+    },
+    "virtual-signal:shape-t-3": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 5
+    },
+    "virtual-signal:shape-t-4": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 5
+    },
+    "virtual-signal:shape-vertical": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 6
+    },
+    "virtual-signal:signal-0": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 6
+    },
+    "virtual-signal:signal-1": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 6
+    },
+    "virtual-signal:signal-2": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 6
+    },
+    "virtual-signal:signal-3": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 6
+    },
+    "virtual-signal:signal-4": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 6
+    },
+    "virtual-signal:signal-5": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 6
+    },
+    "virtual-signal:signal-6": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 6
+    },
+    "virtual-signal:signal-7": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 6
+    },
+    "virtual-signal:signal-8": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 6
+    },
+    "virtual-signal:signal-9": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 6
+    },
+    "virtual-signal:signal-A": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 6
+    },
+    "virtual-signal:signal-B": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 6
+    },
+    "virtual-signal:signal-C": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 6
+    },
+    "virtual-signal:signal-D": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 6
+    },
+    "virtual-signal:signal-E": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 6
+    },
+    "virtual-signal:signal-F": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 7
+    },
+    "virtual-signal:signal-G": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 7
+    },
+    "virtual-signal:signal-H": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 7
+    },
+    "virtual-signal:signal-I": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 7
+    },
+    "virtual-signal:signal-J": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 7
+    },
+    "virtual-signal:signal-K": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 7
+    },
+    "virtual-signal:signal-L": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 7
+    },
+    "virtual-signal:signal-M": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 7
+    },
+    "virtual-signal:signal-N": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 7
+    },
+    "virtual-signal:signal-O": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 7
+    },
+    "virtual-signal:signal-P": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 7
+    },
+    "virtual-signal:signal-Q": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 7
+    },
+    "virtual-signal:signal-R": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 7
+    },
+    "virtual-signal:signal-S": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 7
+    },
+    "virtual-signal:signal-T": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 7
+    },
+    "virtual-signal:signal-U": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 7
+    },
+    "virtual-signal:signal-V": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 8
+    },
+    "virtual-signal:signal-W": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 8
+    },
+    "virtual-signal:signal-X": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 8
+    },
+    "virtual-signal:signal-Y": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 8
+    },
+    "virtual-signal:signal-Z": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 8
+    },
+    "virtual-signal:signal-alarm": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 8
+    },
+    "virtual-signal:signal-alert": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 8
+    },
+    "virtual-signal:signal-ampersand": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 8
+    },
+    "virtual-signal:signal-anticlockwise-circle-arrow": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 8
+    },
+    "virtual-signal:signal-any-quality": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 8
+    },
+    "virtual-signal:signal-anything": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 8
+    },
+    "virtual-signal:signal-apostrophe": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 8
+    },
+    "virtual-signal:signal-battery-full": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 8
+    },
+    "virtual-signal:signal-battery-low": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 8
+    },
+    "virtual-signal:signal-battery-mid-level": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 8
+    },
+    "virtual-signal:signal-black": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 8
+    },
+    "virtual-signal:signal-blue": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 9
+    },
+    "virtual-signal:signal-check": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 9
+    },
+    "virtual-signal:signal-circumflex-accent": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 9
+    },
+    "virtual-signal:signal-clock": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 9
+    },
+    "virtual-signal:signal-clockwise-circle-arrow": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 9
+    },
+    "virtual-signal:signal-colon": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 9
+    },
+    "virtual-signal:signal-comma": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 9
+    },
+    "virtual-signal:signal-cyan": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 9
+    },
+    "virtual-signal:signal-damage": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 9
+    },
+    "virtual-signal:signal-deny": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 9
+    },
+    "virtual-signal:signal-division": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 9
+    },
+    "virtual-signal:signal-dot": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 9
+    },
+    "virtual-signal:signal-each": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 9
+    },
+    "virtual-signal:signal-equal": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 9
+    },
+    "virtual-signal:signal-everything": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 9
+    },
+    "virtual-signal:signal-exclamation-mark": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 9
+    },
+    "virtual-signal:signal-explosion": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 10
+    },
+    "virtual-signal:signal-fire": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 10
+    },
+    "virtual-signal:signal-fluid-parameter": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 10
+    },
+    "virtual-signal:signal-fuel": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 10
+    },
+    "virtual-signal:signal-fuel-parameter": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 10
+    },
+    "virtual-signal:signal-ghost": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 10
+    },
+    "virtual-signal:signal-greater-than": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 10
+    },
+    "virtual-signal:signal-greater-than-or-equal-to": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 10
+    },
+    "virtual-signal:signal-green": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 10
+    },
+    "virtual-signal:signal-grey": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 10
+    },
+    "virtual-signal:signal-heart": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 10
+    },
+    "virtual-signal:signal-hourglass": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 10
+    },
+    "virtual-signal:signal-info": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 10
+    },
+    "virtual-signal:signal-input": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 10
+    },
+    "virtual-signal:signal-item-parameter": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 10
+    },
+    "virtual-signal:signal-left-parenthesis": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 10
+    },
+    "virtual-signal:signal-left-right-arrow": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 11
+    },
+    "virtual-signal:signal-left-square-bracket": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 11
+    },
+    "virtual-signal:signal-less-than": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 11
+    },
+    "virtual-signal:signal-less-than-or-equal-to": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 11
+    },
+    "virtual-signal:signal-letter-dot": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 11
+    },
+    "virtual-signal:signal-lightning": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 11
+    },
+    "virtual-signal:signal-liquid": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 11
+    },
+    "virtual-signal:signal-lock": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 11
+    },
+    "virtual-signal:signal-map-marker": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 11
+    },
+    "virtual-signal:signal-mining": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 11
+    },
+    "virtual-signal:signal-minus": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 11
+    },
+    "virtual-signal:signal-moon": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 11
+    },
+    "virtual-signal:signal-multiplication": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 11
+    },
+    "virtual-signal:signal-no-entry": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 11
+    },
+    "virtual-signal:signal-not-equal": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 11
+    },
+    "virtual-signal:signal-number-sign": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 11
+    },
+    "virtual-signal:signal-output": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 12
+    },
+    "virtual-signal:signal-percent": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 12
+    },
+    "virtual-signal:signal-pink": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 12
+    },
+    "virtual-signal:signal-plus": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 12
+    },
+    "virtual-signal:signal-question-mark": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 12
+    },
+    "virtual-signal:signal-quotation-mark": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 12
+    },
+    "virtual-signal:signal-radioactivity": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 12
+    },
+    "virtual-signal:signal-recycle": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 12
+    },
+    "virtual-signal:signal-red": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 12
+    },
+    "virtual-signal:signal-right-parenthesis": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 12
+    },
+    "virtual-signal:signal-right-square-bracket": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 12
+    },
+    "virtual-signal:signal-rightwards-leftwards-arrow": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 12
+    },
+    "virtual-signal:signal-science-pack": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 12
+    },
+    "virtual-signal:signal-shuffle": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 12
+    },
+    "virtual-signal:signal-signal-parameter": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 12
+    },
+    "virtual-signal:signal-skull": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 12
+    },
+    "virtual-signal:signal-slash": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 13
+    },
+    "virtual-signal:signal-snowflake": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 13
+    },
+    "virtual-signal:signal-speed": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 13
+    },
+    "virtual-signal:signal-stack-size": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 13
+    },
+    "virtual-signal:signal-star": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 13
+    },
+    "virtual-signal:signal-sun": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 13
+    },
+    "virtual-signal:signal-thermometer-blue": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 13
+    },
+    "virtual-signal:signal-thermometer-red": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 13
+    },
+    "virtual-signal:signal-trash-bin": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 13
+    },
+    "virtual-signal:signal-unlock": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 13
+    },
+    "virtual-signal:signal-up-down-arrow": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 13
+    },
+    "virtual-signal:signal-upwards-downwards-arrow": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 13
+    },
+    "virtual-signal:signal-weapon": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 13
+    },
+    "virtual-signal:signal-white": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 13
+    },
+    "virtual-signal:signal-white-flag": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 13
+    },
+    "virtual-signal:signal-yellow": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 13
+    },
+    "entity:slipstack": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 14
+    },
+    "entity:small-biter": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 14
+    },
+    "entity:small-spitter": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 14
+    },
+    "entity:small-worm-turret": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 14
+    },
+    "item:space-platform-hub": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 14
+    },
+    "entity:space-platform-hub": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 14
+    },
+    "item:space-platform-starter-pack": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 14
+    },
+    "recipe:space-platform-starter-pack": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 14
+    },
+    "item:spidertron-remote": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 14
+    },
+    "entity:spitter-spawner": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 14
+    },
+    "entity:spitter-spawner-corpse": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 14
+    },
+    "entity:stingfrond": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 14
+    },
+    "item:sulfuric-acid-barrel": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 14
+    },
+    "recipe:sulfuric-acid-barrel": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 14
+    },
+    "entity:sulfuric-acid-geyser": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 14
+    },
+    "entity:sunnycomb": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 14
+    },
+    "entity:teflilly": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 15
+    },
+    "virtual-signal:up-arrow": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 15
+    },
+    "virtual-signal:up-left-arrow": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 15
+    },
+    "virtual-signal:up-right-arrow": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 15
+    },
+    "item:upgrade-planner": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 15
+    },
+    "item:water-barrel": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 15
+    },
+    "recipe:water-barrel": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 15
+    },
+    "entity:water-cane": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 15
+    },
+    "entity:yumako-tree": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 15
+    }
+  }
+}

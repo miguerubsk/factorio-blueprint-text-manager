@@ -1,7 +1,1811 @@
 {
   "signals": [
-    [ { "id": "signal-everything", "es": "Señal todos", "en": "Signal everything" }, { "id": "signal-anything", "es": "Señal Cualquiera", "en": "Signal anything" }, { "id": "signal-each", "es": "Señal Cada uno", "en": "Signal each" } ],
-    [ { "id": "signal-A", "es": "Señal A", "en": "Signal A" }, { "id": "signal-B", "es": "Señal B", "en": "Signal B" }, { "id": "signal-C", "es": "Señal C", "en": "Signal C" }, { "id": "signal-D", "es": "Señal D", "en": "Signal D" }, { "id": "signal-E", "es": "Señal E", "en": "Signal E" }, { "id": "signal-F", "es": "Señal F", "en": "Signal F" }, { "id": "signal-G", "es": "Señal G", "en": "Signal G" }, { "id": "signal-H", "es": "Señal H", "en": "Signal H" }, { "id": "signal-I", "es": "Señal I", "en": "Signal I" }, { "id": "signal-J", "es": "Señal J", "en": "Signal J" }, { "id": "signal-K", "es": "Señal K", "en": "Signal K" }, { "id": "signal-L", "es": "Señal L", "en": "Signal L" }, { "id": "signal-M", "es": "Señal M", "en": "Signal M" }, { "id": "signal-N", "es": "Señal N", "en": "Signal N" }, { "id": "signal-O", "es": "Señal O", "en": "Signal O" }, { "id": "signal-P", "es": "Señal P", "en": "Signal P" }, { "id": "signal-Q", "es": "Señal Q", "en": "Signal Q" }, { "id": "signal-R", "es": "Señal R", "en": "Signal R" }, { "id": "signal-S", "es": "Señal S", "en": "Signal S" }, { "id": "signal-T", "es": "Señal T", "en": "Signal T" }, { "id": "signal-U", "es": "Señal U", "en": "Signal U" }, { "id": "signal-V", "es": "Señal V", "en": "Signal V" }, { "id": "signal-W", "es": "Señal W", "en": "Signal W" }, { "id": "signal-X", "es": "Señal X", "en": "Signal X" }, { "id": "signal-Y", "es": "Señal Y", "en": "Signal Y" }, { "id": "signal-Z", "es": "Señal Z", "en": "Signal Z" } ],
-    [ { "id": "signal-0", "es": "Señal 0", "en": "Signal 0" }, { "id": "signal-1", "es": "Señal 1", "en": "Signal 1" }, { "id": "signal-2", "es": "Señal 2", "en": "Signal 2" }, { "id": "signal-3", "es": "Señal 3", "en": "Signal 3" }, { "id": "signal-4", "es": "Señal 4", "en": "Signal 4" }, { "id": "signal-5", "es": "Señal 5", "en": "Signal 5" }, { "id": "signal-6", "es": "Señal 6", "en": "Signal 6" }, { "id": "signal-7", "es": "Señal 7", "en": "Signal 7" }, { "id": "signal-8", "es": "Señal 8", "en": "Signal 8" }, { "id": "signal-9", "es": "Señal 9", "en": "Signal 9" } ]
+    {
+      "subgroup": "virtual-signal-special",
+      "items": [
+        {
+          "id": "signal-everything",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-everything]",
+          "en": "Everything",
+          "es": "Todo",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-each",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-each]",
+          "en": "Each",
+          "es": "Por cada",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-anything",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-anything]",
+          "en": "Anything",
+          "es": "Cualquiera",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 8
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "virtual-signal-number",
+      "items": [
+        {
+          "id": "signal-0",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-0]",
+          "en": "Signal 0",
+          "es": "Señal 0",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-1",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-1]",
+          "en": "Signal 1",
+          "es": "Señal 1",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-2",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-2]",
+          "en": "Signal 2",
+          "es": "Señal 2",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-3",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-3]",
+          "en": "Signal 3",
+          "es": "Señal 3",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-4",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-4]",
+          "en": "Signal 4",
+          "es": "Señal 4",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-5",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-5]",
+          "en": "Signal 5",
+          "es": "Señal 5",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-6",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-6]",
+          "en": "Signal 6",
+          "es": "Señal 6",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-7",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-7]",
+          "en": "Signal 7",
+          "es": "Señal 7",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-8",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-8]",
+          "en": "Signal 8",
+          "es": "Señal 8",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-9",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-9]",
+          "en": "Signal 9",
+          "es": "Señal 9",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 6
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "virtual-signal-letter",
+      "items": [
+        {
+          "id": "signal-A",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-A]",
+          "en": "Signal A",
+          "es": "Señal A",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-B",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-B]",
+          "en": "Signal B",
+          "es": "Señal B",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-C",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-C]",
+          "en": "Signal C",
+          "es": "Señal C",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-D",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-D]",
+          "en": "Signal D",
+          "es": "Señal D",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-E",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-E]",
+          "en": "Signal E",
+          "es": "Señal E",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 6
+          }
+        },
+        {
+          "id": "signal-F",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-F]",
+          "en": "Signal F",
+          "es": "Señal F",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-G",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-G]",
+          "en": "Signal G",
+          "es": "Señal G",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-H",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-H]",
+          "en": "Signal H",
+          "es": "Señal H",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-I",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-I]",
+          "en": "Signal I",
+          "es": "Señal I",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-J",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-J]",
+          "en": "Signal J",
+          "es": "Señal J",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-K",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-K]",
+          "en": "Signal K",
+          "es": "Señal K",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-L",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-L]",
+          "en": "Signal L",
+          "es": "Señal L",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-M",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-M]",
+          "en": "Signal M",
+          "es": "Señal M",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-N",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-N]",
+          "en": "Signal N",
+          "es": "Señal N",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-O",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-O]",
+          "en": "Signal O",
+          "es": "Señal O",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-P",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-P]",
+          "en": "Signal P",
+          "es": "Señal P",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-Q",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-Q]",
+          "en": "Signal Q",
+          "es": "Señal Q",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-R",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-R]",
+          "en": "Signal R",
+          "es": "Señal R",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-S",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-S]",
+          "en": "Signal S",
+          "es": "Señal S",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-T",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-T]",
+          "en": "Signal T",
+          "es": "Señal T",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-U",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-U]",
+          "en": "Signal U",
+          "es": "Señal U",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 7
+          }
+        },
+        {
+          "id": "signal-V",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-V]",
+          "en": "Signal V",
+          "es": "Señal V",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-W",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-W]",
+          "en": "Signal W",
+          "es": "Señal W",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-X",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-X]",
+          "en": "Signal X",
+          "es": "Señal X",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-Y",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-Y]",
+          "en": "Signal Y",
+          "es": "Señal Y",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-Z",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-Z]",
+          "en": "Signal Z",
+          "es": "Señal Z",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-comma",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-comma]",
+          "en": "Comma",
+          "es": "Coma",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-letter-dot",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-letter-dot]",
+          "en": "Dot",
+          "es": "Punto",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-exclamation-mark",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-exclamation-mark]",
+          "en": "Exclamation mark",
+          "es": "Signo de exclamación",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-question-mark",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-question-mark]",
+          "en": "Question mark",
+          "es": "Signo de interrogación",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 12
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "virtual-signal-punctuation",
+      "items": [
+        {
+          "id": "signal-colon",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-colon]",
+          "en": "Colon",
+          "es": "Dos puntos",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-slash",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-slash]",
+          "en": "Slash",
+          "es": "Barra inclinada",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-apostrophe",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-apostrophe]",
+          "en": "Apostrophe",
+          "es": "Apóstrofe",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-quotation-mark",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-quotation-mark]",
+          "en": "Quotation mark",
+          "es": "Comillas",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 12
+          }
+        },
+        {
+          "id": "signal-ampersand",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-ampersand]",
+          "en": "Ampersand",
+          "es": "Ampersand",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-circumflex-accent",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-circumflex-accent]",
+          "en": "Circumflex accent",
+          "es": "Acento circunflejo",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 9
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "virtual-signal-math",
+      "items": [
+        {
+          "id": "signal-plus",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-plus]",
+          "en": "Plus",
+          "es": "Más",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 12
+          }
+        },
+        {
+          "id": "signal-minus",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-minus]",
+          "en": "Minus",
+          "es": "Menos",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-multiplication",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-multiplication]",
+          "en": "Multiplication",
+          "es": "Multiplicación",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-division",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-division]",
+          "en": "Division",
+          "es": "División",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-equal",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-equal]",
+          "en": "Equal",
+          "es": "Igual",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-not-equal",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-not-equal]",
+          "en": "Not equal",
+          "es": "No es igual",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-less-than",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-less-than]",
+          "en": "Less than",
+          "es": "Menor",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-greater-than",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-greater-than]",
+          "en": "Greater than",
+          "es": "Mayor",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-less-than-or-equal-to",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-less-than-or-equal-to]",
+          "en": "Less than or equal to",
+          "es": "Menor o igual",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-greater-than-or-equal-to",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-greater-than-or-equal-to]",
+          "en": "Greater than or equal to",
+          "es": "Mayor o igual",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-left-parenthesis",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-left-parenthesis]",
+          "en": "Left parenthesis",
+          "es": "Paréntesis izquierdo",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-right-parenthesis",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-right-parenthesis]",
+          "en": "Right parenthesis",
+          "es": "Paréntesis derecho",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 12
+          }
+        },
+        {
+          "id": "signal-left-square-bracket",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-left-square-bracket]",
+          "en": "Left square bracket",
+          "es": "Corchete izquierdo",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 11
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "virtual-signal-color",
+      "items": [
+        {
+          "id": "signal-red",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-red]",
+          "en": "Red signal",
+          "es": "Señal roja",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 12
+          }
+        },
+        {
+          "id": "signal-green",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-green]",
+          "en": "Green signal",
+          "es": "Señal verde",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-blue",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-blue]",
+          "en": "Blue signal",
+          "es": "Señal azul",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-cyan",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-cyan]",
+          "en": "Cyan signal",
+          "es": "Señal cian",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-pink",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-pink]",
+          "en": "Pink signal",
+          "es": "Señal rosa",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 12
+          }
+        },
+        {
+          "id": "signal-yellow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-yellow]",
+          "en": "Yellow signal",
+          "es": "Señal amarilla",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-white",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-white]",
+          "en": "White signal",
+          "es": "Señal blanca",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-grey",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-grey]",
+          "en": "Grey signal",
+          "es": "Señal gris",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-black",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-black]",
+          "en": "Black signal",
+          "es": "Señal negra",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 8
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "virtual-signal",
+      "items": [
+        {
+          "id": "signal-check",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-check]",
+          "en": "Check signal",
+          "es": "Señal 'comprobado'",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-deny",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-deny]",
+          "en": "Deny signal",
+          "es": "Señal 'denegado'",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-no-entry",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-no-entry]",
+          "en": "No entry",
+          "es": "Prohibido",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-heart",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-heart]",
+          "en": "Heart",
+          "es": "Corazón",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-alert",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-alert]",
+          "en": "Alert",
+          "es": "Alerta",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-star",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-star]",
+          "en": "Star",
+          "es": "Estrella",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-info",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-info]",
+          "en": "Info signal",
+          "es": "Señal de información",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 10
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "shapes",
+      "items": [
+        {
+          "id": "shape-vertical",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-vertical]",
+          "en": "Vertical",
+          "es": "Vertical",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 6
+          }
+        },
+        {
+          "id": "shape-horizontal",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-horizontal]",
+          "en": "Horizontal",
+          "es": "Horizontal",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-curve",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-curve]",
+          "en": "Curve",
+          "es": "Curva",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-curve-2",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-curve-2]",
+          "en": "Curve",
+          "es": "Curva",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-corner",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-corner]",
+          "en": "Corner",
+          "es": "Esquina",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 4
+          }
+        },
+        {
+          "id": "shape-corner-2",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-corner-2]",
+          "en": "Corner",
+          "es": "Esquina",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-t",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-t]",
+          "en": "T cross",
+          "es": "Cruce T",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-t-2",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-t-2]",
+          "en": "T cross",
+          "es": "Cruce T",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-cross",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-cross]",
+          "en": "Cross",
+          "es": "Cruce",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-diagonal-cross",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-diagonal-cross]",
+          "en": "Diagonal Cross",
+          "es": "Cruce diagonal",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-diagonal",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-diagonal]",
+          "en": "Diagonal",
+          "es": "Diagonal",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-diagonal-2",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-diagonal-2]",
+          "en": "Diagonal",
+          "es": "Diagonal",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-curve-3",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-curve-3]",
+          "en": "Curve",
+          "es": "Curva",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-curve-4",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-curve-4]",
+          "en": "Curve",
+          "es": "Curva",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-corner-4",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-corner-4]",
+          "en": "Corner",
+          "es": "Esquina",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-corner-3",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-corner-3]",
+          "en": "Corner",
+          "es": "Esquina",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-t-4",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-t-4]",
+          "en": "T cross",
+          "es": "Cruce T",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-t-3",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-t-3]",
+          "en": "T cross",
+          "es": "Cruce T",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 5
+          }
+        },
+        {
+          "id": "shape-circle",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=shape-circle]",
+          "en": "Circle",
+          "es": "Círculo",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 4
+          }
+        },
+        {
+          "id": "signal-dot",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-dot]",
+          "en": "Dot signal",
+          "es": "Señal de punto",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 9
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "arrows",
+      "items": [
+        {
+          "id": "up-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=up-arrow]",
+          "en": "Up arrow",
+          "es": "Flecha arriba",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 15
+          }
+        },
+        {
+          "id": "up-right-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=up-right-arrow]",
+          "en": "Up right arrow",
+          "es": "Flecha arriba a la derecha",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 15
+          }
+        },
+        {
+          "id": "right-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=right-arrow]",
+          "en": "Right arrow",
+          "es": "Flecha derecha",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 4
+          }
+        },
+        {
+          "id": "down-right-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=down-right-arrow]",
+          "en": "Down right arrow",
+          "es": "Flecha abajo a la derecha",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 1
+          }
+        },
+        {
+          "id": "down-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=down-arrow]",
+          "en": "Down arrow",
+          "es": "Flecha abajo",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 1
+          }
+        },
+        {
+          "id": "down-left-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=down-left-arrow]",
+          "en": "Down left arrow",
+          "es": "Flecha abajo a la izquierda",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 1
+          }
+        },
+        {
+          "id": "left-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=left-arrow]",
+          "en": "Left arrow",
+          "es": "Flecha izquierda",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 3
+          }
+        },
+        {
+          "id": "up-left-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=up-left-arrow]",
+          "en": "Up left arrow",
+          "es": "Flecha arriba a la izquierda",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 15
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "arrows-misc",
+      "items": [
+        {
+          "id": "signal-rightwards-leftwards-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-rightwards-leftwards-arrow]",
+          "en": "Rightwards-leftwards arrow",
+          "es": "Flechas hacia izquierda y derecha",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 12
+          }
+        },
+        {
+          "id": "signal-upwards-downwards-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-upwards-downwards-arrow]",
+          "en": "Upwards-downwards arrow",
+          "es": "Flechas hacia arriba y abajo",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-shuffle",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-shuffle]",
+          "en": "Shuffle",
+          "es": "Mezclar",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 12
+          }
+        },
+        {
+          "id": "signal-left-right-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-left-right-arrow]",
+          "en": "Left-right arrow",
+          "es": "Flecha doble horizontal",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-up-down-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-up-down-arrow]",
+          "en": "Up-down arrow",
+          "es": "Flecha doble vertical",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-clockwise-circle-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-clockwise-circle-arrow]",
+          "en": "Clockwise circle arrow",
+          "es": "Flecha giro horario",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-anticlockwise-circle-arrow",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-anticlockwise-circle-arrow]",
+          "en": "Anticlockwise circle arrow",
+          "es": "Flecha giro antihorario",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-input",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-input]",
+          "en": "Input",
+          "es": "Entrada",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-output",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-output]",
+          "en": "Output",
+          "es": "Salida",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 12
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "pictographs",
+      "items": [
+        {
+          "id": "signal-fuel",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-fuel]",
+          "en": "Fuel",
+          "es": "Combustible",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-lightning",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-lightning]",
+          "en": "Electricity",
+          "es": "Electricidad",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-battery-low",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-battery-low]",
+          "en": "Low battery",
+          "es": "Nivel de batería bajo",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-battery-mid-level",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-battery-mid-level]",
+          "en": "Mid-level battery",
+          "es": "Batería a media carga",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-battery-full",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-battery-full]",
+          "en": "Full battery",
+          "es": "Batería cargada",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-radioactivity",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-radioactivity]",
+          "en": "Radioactivity",
+          "es": "Radiactividad",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 12
+          }
+        },
+        {
+          "id": "signal-thermometer-blue",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-thermometer-blue]",
+          "en": "Thermometer Low",
+          "es": "Baja temperatura",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-thermometer-red",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-thermometer-red]",
+          "en": "Thermometer High",
+          "es": "Alta temperatura",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-fire",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-fire]",
+          "en": "Fire",
+          "es": "Fuego",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-snowflake",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-snowflake]",
+          "en": "Snowflake",
+          "es": "Copo de nieve",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-explosion",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-explosion]",
+          "en": "Explosion",
+          "es": "Explosión",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-liquid",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-liquid]",
+          "en": "Liquid",
+          "es": "Líquido",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-stack-size",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-stack-size]",
+          "en": "Stack size",
+          "es": "Tamaño de la pila",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-recycle",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-recycle]",
+          "en": "Recycle",
+          "es": "Reciclar",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 12
+          }
+        },
+        {
+          "id": "signal-trash-bin",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-trash-bin]",
+          "en": "Trash bin",
+          "es": "Papelera",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-science-pack",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-science-pack]",
+          "en": "Science pack",
+          "es": "Paquete de ciencia",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 12
+          }
+        },
+        {
+          "id": "signal-map-marker",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-map-marker]",
+          "en": "Map marker",
+          "es": "Marcador de mapa",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-white-flag",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-white-flag]",
+          "en": "Flag",
+          "es": "Bandera",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-lock",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-lock]",
+          "en": "Lock",
+          "es": "Cerrado",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-unlock",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-unlock]",
+          "en": "Unlock",
+          "es": "Abierto",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-speed",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-speed]",
+          "en": "Speed",
+          "es": "Velocidad",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-clock",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-clock]",
+          "en": "Clock",
+          "es": "Reloj",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-hourglass",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-hourglass]",
+          "en": "Wait",
+          "es": "Esperar",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-alarm",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-alarm]",
+          "en": "Alarm",
+          "es": "Alarma",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 8
+          }
+        },
+        {
+          "id": "signal-sun",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-sun]",
+          "en": "Sun",
+          "es": "Sol",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-moon",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-moon]",
+          "en": "Moon",
+          "es": "Luna",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-mining",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-mining]",
+          "en": "Pick",
+          "es": "Pico",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 11
+          }
+        },
+        {
+          "id": "signal-skull",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-skull]",
+          "en": "Skull",
+          "es": "Cráneo",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 12
+          }
+        },
+        {
+          "id": "signal-damage",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-damage]",
+          "en": "Damage",
+          "es": "Daño",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 9
+          }
+        },
+        {
+          "id": "signal-weapon",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-weapon]",
+          "en": "Weapon",
+          "es": "Arma",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 13
+          }
+        },
+        {
+          "id": "signal-ghost",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-ghost]",
+          "en": "Ghost",
+          "es": "Fantasma",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 10
+          }
+        }
+      ]
+    }
   ]
 }

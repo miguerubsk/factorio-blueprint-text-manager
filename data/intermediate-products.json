@@ -1,0 +1,1879 @@
+{
+  "intermediate-products": [
+    {
+      "subgroup": "fluid-recipes",
+      "items": [
+        {
+          "id": "basic-oil-processing",
+          "type": "recipe",
+          "tag": "[recipe=basic-oil-processing]",
+          "en": "Basic oil processing",
+          "es": "Procesamiento básico de petróleo",
+          "icon": {
+            "sheet": "base",
+            "col": 5,
+            "row": 1
+          }
+        },
+        {
+          "id": "advanced-oil-processing",
+          "type": "recipe",
+          "tag": "[recipe=advanced-oil-processing]",
+          "en": "Advanced oil processing",
+          "es": "Procesamiento avanzado de petróleo",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 0
+          }
+        },
+        {
+          "id": "simple-coal-liquefaction",
+          "type": "recipe",
+          "tag": "[recipe=simple-coal-liquefaction]",
+          "en": "Simple coal liquefaction",
+          "es": "Licuefacción simple de carbón",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 24
+          }
+        },
+        {
+          "id": "coal-liquefaction",
+          "type": "recipe",
+          "tag": "[recipe=coal-liquefaction]",
+          "en": "Coal liquefaction",
+          "es": "Licuefacción de carbón",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 3
+          }
+        },
+        {
+          "id": "heavy-oil-cracking",
+          "type": "recipe",
+          "tag": "[recipe=heavy-oil-cracking]",
+          "en": "Heavy oil cracking to light oil",
+          "es": "Destilar petróleo pesado a petróleo ligero",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 7
+          }
+        },
+        {
+          "id": "light-oil-cracking",
+          "type": "recipe",
+          "tag": "[recipe=light-oil-cracking]",
+          "en": "Light oil cracking to petroleum gas",
+          "es": "Destilar petróleo ligero a gas natural",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 8
+          }
+        },
+        {
+          "id": "solid-fuel-from-petroleum-gas",
+          "type": "recipe",
+          "tag": "[recipe=solid-fuel-from-petroleum-gas]",
+          "en": "Solid fuel from petroleum gas",
+          "es": "Combustible sólido a partir de gas de petróleo",
+          "icon": {
+            "sheet": "base",
+            "col": 17,
+            "row": 24
+          }
+        },
+        {
+          "id": "solid-fuel-from-light-oil",
+          "type": "recipe",
+          "tag": "[recipe=solid-fuel-from-light-oil]",
+          "en": "Solid fuel from light oil",
+          "es": "Combustible sólido a partir de petróleo ligero",
+          "icon": {
+            "sheet": "base",
+            "col": 16,
+            "row": 24
+          }
+        },
+        {
+          "id": "solid-fuel-from-heavy-oil",
+          "type": "recipe",
+          "tag": "[recipe=solid-fuel-from-heavy-oil]",
+          "en": "Solid fuel from heavy oil",
+          "es": "Combustible sólido a partir de petróleo pesado",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 24
+          }
+        },
+        {
+          "id": "acid-neutralisation",
+          "type": "recipe",
+          "tag": "[recipe=acid-neutralisation]",
+          "en": "Acid neutralisation",
+          "es": "Neutralización de Ácido",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 0
+          }
+        },
+        {
+          "id": "steam-condensation",
+          "type": "recipe",
+          "tag": "[recipe=steam-condensation]",
+          "en": "Steam condensation",
+          "es": "Condensación de vapor",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 25
+          }
+        },
+        {
+          "id": "ice-melting",
+          "type": "recipe",
+          "tag": "[recipe=ice-melting]",
+          "en": "Ice melting",
+          "es": "Derretimiento de hielo",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 7
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "raw-resource",
+      "items": [
+        {
+          "id": "wood",
+          "type": "item",
+          "tag": "[item=wood]",
+          "en": "Wood",
+          "es": "Madera",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 27
+          }
+        },
+        {
+          "id": "coal",
+          "type": "item",
+          "tag": "[item=coal]",
+          "en": "Coal",
+          "es": "Carbón",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 3
+          }
+        },
+        {
+          "id": "stone",
+          "type": "item",
+          "tag": "[item=stone]",
+          "en": "Stone",
+          "es": "Piedra",
+          "icon": {
+            "sheet": "base",
+            "col": 10,
+            "row": 25
+          }
+        },
+        {
+          "id": "iron-ore",
+          "type": "item",
+          "tag": "[item=iron-ore]",
+          "en": "Iron ore",
+          "es": "Mena de hierro",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 7
+          }
+        },
+        {
+          "id": "copper-ore",
+          "type": "item",
+          "tag": "[item=copper-ore]",
+          "en": "Copper ore",
+          "es": "Mena de cobre",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 3
+          }
+        },
+        {
+          "id": "uranium-ore",
+          "type": "item",
+          "tag": "[item=uranium-ore]",
+          "en": "Uranium ore",
+          "es": "Mena de uranio",
+          "icon": {
+            "sheet": "base",
+            "col": 22,
+            "row": 26
+          }
+        },
+        {
+          "id": "raw-fish",
+          "type": "item",
+          "tag": "[item=raw-fish]",
+          "en": "Raw fish",
+          "es": "Pescado crudo",
+          "icon": {
+            "sheet": "base",
+            "col": 22,
+            "row": 5
+          }
+        },
+        {
+          "id": "ice",
+          "type": "item",
+          "tag": "[item=ice]",
+          "en": "Ice",
+          "es": "Hielo",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 7
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "raw-material",
+      "items": [
+        {
+          "id": "iron-plate",
+          "type": "item",
+          "tag": "[item=iron-plate]",
+          "en": "Iron plate",
+          "es": "Placa de hierro",
+          "icon": {
+            "sheet": "base",
+            "col": 17,
+            "row": 7
+          }
+        },
+        {
+          "id": "copper-plate",
+          "type": "item",
+          "tag": "[item=copper-plate]",
+          "en": "Copper plate",
+          "es": "Placa de cobre",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 3
+          }
+        },
+        {
+          "id": "steel-plate",
+          "type": "item",
+          "tag": "[item=steel-plate]",
+          "en": "Steel plate",
+          "es": "Barra de acero",
+          "icon": {
+            "sheet": "base",
+            "col": 9,
+            "row": 25
+          }
+        },
+        {
+          "id": "solid-fuel",
+          "type": "item",
+          "tag": "[item=solid-fuel]",
+          "en": "Solid fuel",
+          "es": "Combustible sólido",
+          "icon": {
+            "sheet": "base",
+            "col": 13,
+            "row": 24
+          }
+        },
+        {
+          "id": "plastic-bar",
+          "type": "item",
+          "tag": "[item=plastic-bar]",
+          "en": "Plastic bar",
+          "es": "Barra de plástico",
+          "icon": {
+            "sheet": "base",
+            "col": 0,
+            "row": 11
+          }
+        },
+        {
+          "id": "sulfur",
+          "type": "item",
+          "tag": "[item=sulfur]",
+          "en": "Sulfur",
+          "es": "Azufre",
+          "icon": {
+            "sheet": "base",
+            "col": 17,
+            "row": 25
+          }
+        },
+        {
+          "id": "battery",
+          "type": "item",
+          "tag": "[item=battery]",
+          "en": "Battery",
+          "es": "Batería",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 1
+          }
+        },
+        {
+          "id": "explosives",
+          "type": "item",
+          "tag": "[item=explosives]",
+          "en": "Explosives",
+          "es": "Explosivos",
+          "icon": {
+            "sheet": "base",
+            "col": 11,
+            "row": 5
+          }
+        },
+        {
+          "id": "carbon",
+          "type": "item",
+          "tag": "[item=carbon]",
+          "en": "Carbon",
+          "es": "Carbono",
+          "icon": {
+            "sheet": "base",
+            "col": 8,
+            "row": 2
+          }
+        },
+        {
+          "id": "coal-synthesis",
+          "type": "recipe",
+          "tag": "[recipe=coal-synthesis]",
+          "en": "Coal synthesis",
+          "es": "Síntesis de carbón",
+          "icon": {
+            "sheet": "base",
+            "col": 8,
+            "row": 3
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "barrel",
+      "items": [
+        {
+          "id": "water-barrel",
+          "type": "item",
+          "tag": "[item=water-barrel]",
+          "en": "Water barrel",
+          "es": "Barril de Agua",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 15
+          }
+        },
+        {
+          "id": "crude-oil-barrel",
+          "type": "item",
+          "tag": "[item=crude-oil-barrel]",
+          "en": "Crude oil barrel",
+          "es": "Barril de Petróleo crudo",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 1
+          }
+        },
+        {
+          "id": "petroleum-gas-barrel",
+          "type": "item",
+          "tag": "[item=petroleum-gas-barrel]",
+          "en": "Petroleum gas barrel",
+          "es": "Barril de Gas de petróleo",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 4
+          }
+        },
+        {
+          "id": "light-oil-barrel",
+          "type": "item",
+          "tag": "[item=light-oil-barrel]",
+          "en": "Light oil barrel",
+          "es": "Barril de Petróleo ligero",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 3
+          }
+        },
+        {
+          "id": "heavy-oil-barrel",
+          "type": "item",
+          "tag": "[item=heavy-oil-barrel]",
+          "en": "Heavy oil barrel",
+          "es": "Barril de Petróleo pesado",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 3
+          }
+        },
+        {
+          "id": "lubricant-barrel",
+          "type": "item",
+          "tag": "[item=lubricant-barrel]",
+          "en": "Lubricant barrel",
+          "es": "Barril de Lubricante",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 3
+          }
+        },
+        {
+          "id": "sulfuric-acid-barrel",
+          "type": "item",
+          "tag": "[item=sulfuric-acid-barrel]",
+          "en": "Sulfuric acid barrel",
+          "es": "Barril de Ácido sulfúrico",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 14
+          }
+        },
+        {
+          "id": "fluoroketone-hot-barrel",
+          "type": "item",
+          "tag": "[item=fluoroketone-hot-barrel]",
+          "en": "Fluoroketone (Hot) barrel",
+          "es": "Barril de Fluorocetona (caliente)",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 2
+          }
+        },
+        {
+          "id": "fluoroketone-cold-barrel",
+          "type": "item",
+          "tag": "[item=fluoroketone-cold-barrel]",
+          "en": "Fluoroketone (Cold) barrel",
+          "es": "Barril de Fluorocetona (fría)",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 2
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "fill-barrel",
+      "items": [
+        {
+          "id": "water-barrel",
+          "type": "recipe",
+          "tag": "[recipe=water-barrel]",
+          "en": "Fill Water barrel",
+          "es": "Llenar barril de Agua",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 15
+          }
+        },
+        {
+          "id": "crude-oil-barrel",
+          "type": "recipe",
+          "tag": "[recipe=crude-oil-barrel]",
+          "en": "Fill Crude oil barrel",
+          "es": "Llenar barril de Petróleo crudo",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 1
+          }
+        },
+        {
+          "id": "petroleum-gas-barrel",
+          "type": "recipe",
+          "tag": "[recipe=petroleum-gas-barrel]",
+          "en": "Fill Petroleum gas barrel",
+          "es": "Llenar barril de Gas de petróleo",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 4
+          }
+        },
+        {
+          "id": "light-oil-barrel",
+          "type": "recipe",
+          "tag": "[recipe=light-oil-barrel]",
+          "en": "Fill Light oil barrel",
+          "es": "Llenar barril de Petróleo ligero",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 3
+          }
+        },
+        {
+          "id": "heavy-oil-barrel",
+          "type": "recipe",
+          "tag": "[recipe=heavy-oil-barrel]",
+          "en": "Fill Heavy oil barrel",
+          "es": "Llenar barril de Petróleo pesado",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 3
+          }
+        },
+        {
+          "id": "lubricant-barrel",
+          "type": "recipe",
+          "tag": "[recipe=lubricant-barrel]",
+          "en": "Fill Lubricant barrel",
+          "es": "Llenar barril de Lubricante",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 4
+          }
+        },
+        {
+          "id": "sulfuric-acid-barrel",
+          "type": "recipe",
+          "tag": "[recipe=sulfuric-acid-barrel]",
+          "en": "Fill Sulfuric acid barrel",
+          "es": "Llenar barril de Ácido sulfúrico",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 14
+          }
+        },
+        {
+          "id": "fluoroketone-hot-barrel",
+          "type": "recipe",
+          "tag": "[recipe=fluoroketone-hot-barrel]",
+          "en": "Fill Fluoroketone (Hot) barrel",
+          "es": "Llenar barril de Fluorocetona (caliente)",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 2
+          }
+        },
+        {
+          "id": "fluoroketone-cold-barrel",
+          "type": "recipe",
+          "tag": "[recipe=fluoroketone-cold-barrel]",
+          "en": "Fill Fluoroketone (Cold) barrel",
+          "es": "Llenar barril de Fluorocetona (fría)",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 2
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "empty-barrel",
+      "items": [
+        {
+          "id": "empty-water-barrel",
+          "type": "recipe",
+          "tag": "[recipe=empty-water-barrel]",
+          "en": "Empty Water barrel",
+          "es": "Vaciar barril de Agua",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 2
+          }
+        },
+        {
+          "id": "empty-crude-oil-barrel",
+          "type": "recipe",
+          "tag": "[recipe=empty-crude-oil-barrel]",
+          "en": "Empty Crude oil barrel",
+          "es": "Vaciar barril de Petróleo crudo",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 2
+          }
+        },
+        {
+          "id": "empty-petroleum-gas-barrel",
+          "type": "recipe",
+          "tag": "[recipe=empty-petroleum-gas-barrel]",
+          "en": "Empty Petroleum gas barrel",
+          "es": "Vaciar barril de Gas de petróleo",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 2
+          }
+        },
+        {
+          "id": "empty-light-oil-barrel",
+          "type": "recipe",
+          "tag": "[recipe=empty-light-oil-barrel]",
+          "en": "Empty Light oil barrel",
+          "es": "Vaciar barril de Petróleo ligero",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 2
+          }
+        },
+        {
+          "id": "empty-heavy-oil-barrel",
+          "type": "recipe",
+          "tag": "[recipe=empty-heavy-oil-barrel]",
+          "en": "Empty Heavy oil barrel",
+          "es": "Vaciar barril de Petróleo pesado",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 2
+          }
+        },
+        {
+          "id": "empty-lubricant-barrel",
+          "type": "recipe",
+          "tag": "[recipe=empty-lubricant-barrel]",
+          "en": "Empty Lubricant barrel",
+          "es": "Vaciar barril de Lubricante",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 2
+          }
+        },
+        {
+          "id": "empty-sulfuric-acid-barrel",
+          "type": "recipe",
+          "tag": "[recipe=empty-sulfuric-acid-barrel]",
+          "en": "Empty Sulfuric acid barrel",
+          "es": "Vaciar barril de Ácido sulfúrico",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 2
+          }
+        },
+        {
+          "id": "empty-fluoroketone-hot-barrel",
+          "type": "recipe",
+          "tag": "[recipe=empty-fluoroketone-hot-barrel]",
+          "en": "Empty Fluoroketone (Hot) barrel",
+          "es": "Vaciar barril de Fluorocetona (caliente)",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 2
+          }
+        },
+        {
+          "id": "empty-fluoroketone-cold-barrel",
+          "type": "recipe",
+          "tag": "[recipe=empty-fluoroketone-cold-barrel]",
+          "en": "Empty Fluoroketone (Cold) barrel",
+          "es": "Vaciar barril de Fluorocetona (fría)",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 2
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "intermediate-product",
+      "items": [
+        {
+          "id": "iron-gear-wheel",
+          "type": "item",
+          "tag": "[item=iron-gear-wheel]",
+          "en": "Iron gear wheel",
+          "es": "Engranaje de hierro",
+          "icon": {
+            "sheet": "base",
+            "col": 14,
+            "row": 7
+          }
+        },
+        {
+          "id": "iron-stick",
+          "type": "item",
+          "tag": "[item=iron-stick]",
+          "en": "Iron stick",
+          "es": "Vara de hierro",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 7
+          }
+        },
+        {
+          "id": "copper-cable",
+          "type": "item",
+          "tag": "[item=copper-cable]",
+          "en": "Copper cable",
+          "es": "Cable de cobre",
+          "icon": {
+            "sheet": "base",
+            "col": 17,
+            "row": 3
+          }
+        },
+        {
+          "id": "barrel",
+          "type": "item",
+          "tag": "[item=barrel]",
+          "en": "Barrel",
+          "es": "Barril",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 4
+          }
+        },
+        {
+          "id": "electronic-circuit",
+          "type": "item",
+          "tag": "[item=electronic-circuit]",
+          "en": "Electronic circuit",
+          "es": "Circuito electrónico",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 4
+          }
+        },
+        {
+          "id": "advanced-circuit",
+          "type": "item",
+          "tag": "[item=advanced-circuit]",
+          "en": "Advanced circuit",
+          "es": "Circuito electrónico avanzado",
+          "icon": {
+            "sheet": "base",
+            "col": 5,
+            "row": 0
+          }
+        },
+        {
+          "id": "processing-unit",
+          "type": "item",
+          "tag": "[item=processing-unit]",
+          "en": "Processing unit",
+          "es": "Unidad de procesamiento",
+          "icon": {
+            "sheet": "base",
+            "col": 5,
+            "row": 11
+          }
+        },
+        {
+          "id": "engine-unit",
+          "type": "item",
+          "tag": "[item=engine-unit]",
+          "en": "Engine unit",
+          "es": "Motor",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 5
+          }
+        },
+        {
+          "id": "electric-engine-unit",
+          "type": "item",
+          "tag": "[item=electric-engine-unit]",
+          "en": "Electric engine unit",
+          "es": "Motor eléctrico",
+          "icon": {
+            "sheet": "base",
+            "col": 12,
+            "row": 4
+          }
+        },
+        {
+          "id": "flying-robot-frame",
+          "type": "item",
+          "tag": "[item=flying-robot-frame]",
+          "en": "Flying robot frame",
+          "es": "Estructura de robot volador",
+          "icon": {
+            "sheet": "base",
+            "col": 8,
+            "row": 6
+          }
+        },
+        {
+          "id": "low-density-structure",
+          "type": "item",
+          "tag": "[item=low-density-structure]",
+          "en": "Low density structure",
+          "es": "Estructura de baja densidad",
+          "icon": {
+            "sheet": "base",
+            "col": 21,
+            "row": 8
+          }
+        },
+        {
+          "id": "rocket-fuel",
+          "type": "item",
+          "tag": "[item=rocket-fuel]",
+          "en": "Rocket fuel",
+          "es": "Combustible de cohete",
+          "icon": {
+            "sheet": "base",
+            "col": 22,
+            "row": 23
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "uranium-processing",
+      "items": [
+        {
+          "id": "uranium-235",
+          "type": "item",
+          "tag": "[item=uranium-235]",
+          "en": "Uranium-235",
+          "es": "Uranio 235",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 26
+          }
+        },
+        {
+          "id": "uranium-238",
+          "type": "item",
+          "tag": "[item=uranium-238]",
+          "en": "Uranium-238",
+          "es": "Uranio 238",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 26
+          }
+        },
+        {
+          "id": "uranium-fuel-cell",
+          "type": "item",
+          "tag": "[item=uranium-fuel-cell]",
+          "en": "Uranium fuel cell",
+          "es": "Célula de combustible de uranio",
+          "icon": {
+            "sheet": "base",
+            "col": 21,
+            "row": 26
+          }
+        },
+        {
+          "id": "depleted-uranium-fuel-cell",
+          "type": "item",
+          "tag": "[item=depleted-uranium-fuel-cell]",
+          "en": "Depleted uranium fuel cell",
+          "es": "Célula gastada de combustible de uranio",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 4
+          }
+        },
+        {
+          "id": "nuclear-fuel",
+          "type": "item",
+          "tag": "[item=nuclear-fuel]",
+          "en": "Nuclear fuel",
+          "es": "Combustible nuclear",
+          "icon": {
+            "sheet": "base",
+            "col": 11,
+            "row": 9
+          }
+        },
+        {
+          "id": "uranium-processing",
+          "type": "recipe",
+          "tag": "[recipe=uranium-processing]",
+          "en": "Uranium processing",
+          "es": "Procesamiento de uranio",
+          "icon": {
+            "sheet": "base",
+            "col": 23,
+            "row": 26
+          }
+        },
+        {
+          "id": "nuclear-fuel-reprocessing",
+          "type": "recipe",
+          "tag": "[recipe=nuclear-fuel-reprocessing]",
+          "en": "Nuclear fuel reprocessing",
+          "es": "Reprocesamiento de combustible nuclear",
+          "icon": {
+            "sheet": "base",
+            "col": 12,
+            "row": 9
+          }
+        },
+        {
+          "id": "kovarex-enrichment-process",
+          "type": "recipe",
+          "tag": "[recipe=kovarex-enrichment-process]",
+          "en": "Kovarex enrichment process",
+          "es": "Proceso de enriquecimiento Kovarex",
+          "icon": {
+            "sheet": "base",
+            "col": 24,
+            "row": 7
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "vulcanus-processes",
+      "items": [
+        {
+          "id": "calcite",
+          "type": "item",
+          "tag": "[item=calcite]",
+          "en": "Calcite",
+          "es": "Calcita",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 2
+          }
+        },
+        {
+          "id": "tungsten-ore",
+          "type": "item",
+          "tag": "[item=tungsten-ore]",
+          "en": "Tungsten ore",
+          "es": "Mena de tungsteno",
+          "icon": {
+            "sheet": "base",
+            "col": 11,
+            "row": 26
+          }
+        },
+        {
+          "id": "tungsten-carbide",
+          "type": "item",
+          "tag": "[item=tungsten-carbide]",
+          "en": "Tungsten carbide",
+          "es": "Carburo de tungsteno",
+          "icon": {
+            "sheet": "base",
+            "col": 10,
+            "row": 26
+          }
+        },
+        {
+          "id": "tungsten-plate",
+          "type": "item",
+          "tag": "[item=tungsten-plate]",
+          "en": "Tungsten plate",
+          "es": "Barra de acero de tungsteno",
+          "icon": {
+            "sheet": "base",
+            "col": 12,
+            "row": 26
+          }
+        },
+        {
+          "id": "molten-iron-from-lava",
+          "type": "recipe",
+          "tag": "[recipe=molten-iron-from-lava]",
+          "en": "Molten iron from lava",
+          "es": "Hierro fundido a partir de lava",
+          "icon": {
+            "sheet": "base",
+            "col": 8,
+            "row": 9
+          }
+        },
+        {
+          "id": "molten-copper-from-lava",
+          "type": "recipe",
+          "tag": "[recipe=molten-copper-from-lava]",
+          "en": "Molten copper from lava",
+          "es": "Cobre fundido a partir de lava",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 9
+          }
+        },
+        {
+          "id": "molten-iron",
+          "type": "recipe",
+          "tag": "[recipe=molten-iron]",
+          "en": "molten-iron",
+          "es": "molten-iron",
+          "icon": {
+            "sheet": "base",
+            "col": 16,
+            "row": 7
+          }
+        },
+        {
+          "id": "molten-copper",
+          "type": "recipe",
+          "tag": "[recipe=molten-copper]",
+          "en": "molten-copper",
+          "es": "molten-copper",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 3
+          }
+        },
+        {
+          "id": "casting-iron",
+          "type": "recipe",
+          "tag": "[recipe=casting-iron]",
+          "en": "Casting iron",
+          "es": "Fundición de hierro",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 2
+          }
+        },
+        {
+          "id": "casting-copper",
+          "type": "recipe",
+          "tag": "[recipe=casting-copper]",
+          "en": "Casting copper",
+          "es": "Fundición de cobre",
+          "icon": {
+            "sheet": "base",
+            "col": 17,
+            "row": 2
+          }
+        },
+        {
+          "id": "casting-steel",
+          "type": "recipe",
+          "tag": "[recipe=casting-steel]",
+          "en": "Casting steel",
+          "es": "Fundición de acero",
+          "icon": {
+            "sheet": "base",
+            "col": 25,
+            "row": 2
+          }
+        },
+        {
+          "id": "casting-iron-gear-wheel",
+          "type": "recipe",
+          "tag": "[recipe=casting-iron-gear-wheel]",
+          "en": "Casting iron gear wheel",
+          "es": "Fundición de engranajes de hierro",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 2
+          }
+        },
+        {
+          "id": "casting-iron-stick",
+          "type": "recipe",
+          "tag": "[recipe=casting-iron-stick]",
+          "en": "Casting iron stick",
+          "es": "Fundición de varas de hierro",
+          "icon": {
+            "sheet": "base",
+            "col": 21,
+            "row": 2
+          }
+        },
+        {
+          "id": "casting-low-density-structure",
+          "type": "recipe",
+          "tag": "[recipe=casting-low-density-structure]",
+          "en": "Casting low density structure",
+          "es": "Fundición de estructuras de baja densidad",
+          "icon": {
+            "sheet": "base",
+            "col": 22,
+            "row": 2
+          }
+        },
+        {
+          "id": "concrete-from-molten-iron",
+          "type": "recipe",
+          "tag": "[recipe=concrete-from-molten-iron]",
+          "en": "Concrete from molten iron",
+          "es": "Fundición de hormigón a partir de hierro fundido",
+          "icon": {
+            "sheet": "base",
+            "col": 12,
+            "row": 3
+          }
+        },
+        {
+          "id": "casting-copper-cable",
+          "type": "recipe",
+          "tag": "[recipe=casting-copper-cable]",
+          "en": "Casting copper cable",
+          "es": "Fundición de cable de cobre",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 2
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "fulgora-processes",
+      "items": [
+        {
+          "id": "scrap",
+          "type": "item",
+          "tag": "[item=scrap]",
+          "en": "Scrap",
+          "es": "Chatarra",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 24
+          }
+        },
+        {
+          "id": "holmium-ore",
+          "type": "item",
+          "tag": "[item=holmium-ore]",
+          "en": "Holmium ore",
+          "es": "Mena de holmio",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 7
+          }
+        },
+        {
+          "id": "holmium-plate",
+          "type": "item",
+          "tag": "[item=holmium-plate]",
+          "en": "Holmium plate",
+          "es": "Placa de holmio",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 7
+          }
+        },
+        {
+          "id": "superconductor",
+          "type": "item",
+          "tag": "[item=superconductor]",
+          "en": "Superconductor",
+          "es": "Superconductor",
+          "icon": {
+            "sheet": "base",
+            "col": 21,
+            "row": 25
+          }
+        },
+        {
+          "id": "supercapacitor",
+          "type": "item",
+          "tag": "[item=supercapacitor]",
+          "en": "Supercapacitor",
+          "es": "Supercondensador",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 25
+          }
+        },
+        {
+          "id": "scrap-recycling",
+          "type": "recipe",
+          "tag": "[recipe=scrap-recycling]",
+          "en": "Scrap recycling",
+          "es": "Reciclaje de chatarra",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 22
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "agriculture-processes",
+      "items": [
+        {
+          "id": "yumako-seed",
+          "type": "item",
+          "tag": "[item=yumako-seed]",
+          "en": "Yumako seed",
+          "es": "Semilla de yumako",
+          "icon": {
+            "sheet": "base",
+            "col": 8,
+            "row": 27
+          }
+        },
+        {
+          "id": "jellynut-seed",
+          "type": "item",
+          "tag": "[item=jellynut-seed]",
+          "en": "Jellynut seed",
+          "es": "Semilla de gelanuez",
+          "icon": {
+            "sheet": "base",
+            "col": 22,
+            "row": 7
+          }
+        },
+        {
+          "id": "yumako",
+          "type": "item",
+          "tag": "[item=yumako]",
+          "en": "Yumako",
+          "es": "Yumako",
+          "icon": {
+            "sheet": "base",
+            "col": 5,
+            "row": 27
+          }
+        },
+        {
+          "id": "jellynut",
+          "type": "item",
+          "tag": "[item=jellynut]",
+          "en": "Jellynut",
+          "es": "Gelanuez",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 7
+          }
+        },
+        {
+          "id": "iron-bacteria",
+          "type": "item",
+          "tag": "[item=iron-bacteria]",
+          "en": "Iron bacteria",
+          "es": "Bacteria del hierro",
+          "icon": {
+            "sheet": "base",
+            "col": 11,
+            "row": 7
+          }
+        },
+        {
+          "id": "copper-bacteria",
+          "type": "item",
+          "tag": "[item=copper-bacteria]",
+          "en": "Copper bacteria",
+          "es": "Bacteria del cobre",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 3
+          }
+        },
+        {
+          "id": "spoilage",
+          "type": "item",
+          "tag": "[item=spoilage]",
+          "en": "Spoilage",
+          "es": "Desperdicio",
+          "icon": {
+            "sheet": "base",
+            "col": 1,
+            "row": 25
+          }
+        },
+        {
+          "id": "nutrients",
+          "type": "item",
+          "tag": "[item=nutrients]",
+          "en": "Nutrients",
+          "es": "Nutrientes",
+          "icon": {
+            "sheet": "base",
+            "col": 14,
+            "row": 9
+          }
+        },
+        {
+          "id": "pentapod-egg",
+          "type": "recipe",
+          "tag": "[recipe=pentapod-egg]",
+          "en": "Pentapod egg",
+          "es": "Huevo de pentápodo",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 10
+          }
+        },
+        {
+          "id": "yumako-processing",
+          "type": "recipe",
+          "tag": "[recipe=yumako-processing]",
+          "en": "Yumako processing",
+          "es": "Procesamiento de yumako",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 27
+          }
+        },
+        {
+          "id": "jellynut-processing",
+          "type": "recipe",
+          "tag": "[recipe=jellynut-processing]",
+          "en": "Jellynut processing",
+          "es": "Procesamiento de gelanuez",
+          "icon": {
+            "sheet": "base",
+            "col": 21,
+            "row": 7
+          }
+        },
+        {
+          "id": "iron-bacteria-cultivation",
+          "type": "recipe",
+          "tag": "[recipe=iron-bacteria-cultivation]",
+          "en": "Iron bacteria cultivation",
+          "es": "Cultivo de bacteria del hierro",
+          "icon": {
+            "sheet": "base",
+            "col": 12,
+            "row": 7
+          }
+        },
+        {
+          "id": "copper-bacteria-cultivation",
+          "type": "recipe",
+          "tag": "[recipe=copper-bacteria-cultivation]",
+          "en": "Copper bacteria cultivation",
+          "es": "Cultivo de bacteria del cobre",
+          "icon": {
+            "sheet": "base",
+            "col": 16,
+            "row": 3
+          }
+        },
+        {
+          "id": "nutrients-from-spoilage",
+          "type": "recipe",
+          "tag": "[recipe=nutrients-from-spoilage]",
+          "en": "Nutrients from spoilage",
+          "es": "Nutrientes a partir de desperdicios",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 9
+          }
+        },
+        {
+          "id": "nutrients-from-yumako-mash",
+          "type": "recipe",
+          "tag": "[recipe=nutrients-from-yumako-mash]",
+          "en": "Nutrients from yumako mash",
+          "es": "Nutrientes a partir de puré de yumako",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 9
+          }
+        },
+        {
+          "id": "nutrients-from-bioflux",
+          "type": "recipe",
+          "tag": "[recipe=nutrients-from-bioflux]",
+          "en": "Nutrients from bioflux",
+          "es": "Nutrientes a partir de bioflux",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 9
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "agriculture-products",
+      "items": [
+        {
+          "id": "bioflux",
+          "type": "item",
+          "tag": "[item=bioflux]",
+          "en": "Bioflux",
+          "es": "Bioflux",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 1
+          }
+        },
+        {
+          "id": "yumako-mash",
+          "type": "item",
+          "tag": "[item=yumako-mash]",
+          "en": "Yumako mash",
+          "es": "Puré de yumako",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 27
+          }
+        },
+        {
+          "id": "jelly",
+          "type": "item",
+          "tag": "[item=jelly]",
+          "en": "Jelly",
+          "es": "Gelatina",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 7
+          }
+        },
+        {
+          "id": "carbon-fiber",
+          "type": "item",
+          "tag": "[item=carbon-fiber]",
+          "en": "Carbon fiber",
+          "es": "Fibra de carbono",
+          "icon": {
+            "sheet": "base",
+            "col": 9,
+            "row": 2
+          }
+        },
+        {
+          "id": "biter-egg",
+          "type": "item",
+          "tag": "[item=biter-egg]",
+          "en": "Biter egg",
+          "es": "Huevo de mordedor",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 1
+          }
+        },
+        {
+          "id": "pentapod-egg",
+          "type": "item",
+          "tag": "[item=pentapod-egg]",
+          "en": "Pentapod egg",
+          "es": "Huevo de pentápodo",
+          "icon": {
+            "sheet": "base",
+            "col": 14,
+            "row": 10
+          }
+        },
+        {
+          "id": "rocket-fuel-from-jelly",
+          "type": "recipe",
+          "tag": "[recipe=rocket-fuel-from-jelly]",
+          "en": "Rocket fuel from jelly",
+          "es": "Combustible de cohete a partir de gelatina",
+          "icon": {
+            "sheet": "base",
+            "col": 23,
+            "row": 23
+          }
+        },
+        {
+          "id": "biolubricant",
+          "type": "recipe",
+          "tag": "[recipe=biolubricant]",
+          "en": "Biolubricant",
+          "es": "Biolubricante",
+          "icon": {
+            "sheet": "base",
+            "col": 17,
+            "row": 1
+          }
+        },
+        {
+          "id": "bioplastic",
+          "type": "recipe",
+          "tag": "[recipe=bioplastic]",
+          "en": "Bioplastic",
+          "es": "Bioplástico",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 1
+          }
+        },
+        {
+          "id": "biosulfur",
+          "type": "recipe",
+          "tag": "[recipe=biosulfur]",
+          "en": "Biosulfur",
+          "es": "Bioazufre",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 1
+          }
+        },
+        {
+          "id": "burnt-spoilage",
+          "type": "recipe",
+          "tag": "[recipe=burnt-spoilage]",
+          "en": "Burnt spoilage",
+          "es": "Quema de desperdicios",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 2
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "nauvis-agriculture",
+      "items": [
+        {
+          "id": "wood-processing",
+          "type": "recipe",
+          "tag": "[recipe=wood-processing]",
+          "en": "Wood processing",
+          "es": "Procesamiento de madera",
+          "icon": {
+            "sheet": "base",
+            "col": 8,
+            "row": 26
+          }
+        },
+        {
+          "id": "tree-seed",
+          "type": "item",
+          "tag": "[item=tree-seed]",
+          "en": "Tree seed",
+          "es": "Semilla de árbol",
+          "icon": {
+            "sheet": "base",
+            "col": 9,
+            "row": 26
+          }
+        },
+        {
+          "id": "fish-breeding",
+          "type": "recipe",
+          "tag": "[recipe=fish-breeding]",
+          "en": "Fish breeding",
+          "es": "Crianza de peces",
+          "icon": {
+            "sheet": "base",
+            "col": 23,
+            "row": 5
+          }
+        },
+        {
+          "id": "nutrients-from-fish",
+          "type": "recipe",
+          "tag": "[recipe=nutrients-from-fish]",
+          "en": "Nutrients from fish",
+          "es": "Nutrientes a partir de peces",
+          "icon": {
+            "sheet": "base",
+            "col": 17,
+            "row": 9
+          }
+        },
+        {
+          "id": "nutrients-from-biter-egg",
+          "type": "recipe",
+          "tag": "[recipe=nutrients-from-biter-egg]",
+          "en": "Nutrients from biter egg",
+          "es": "Nutrientes a partir de huevo de mordedor",
+          "icon": {
+            "sheet": "base",
+            "col": 16,
+            "row": 9
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "aquilo-processes",
+      "items": [
+        {
+          "id": "ammoniacal-solution-separation",
+          "type": "recipe",
+          "tag": "[recipe=ammoniacal-solution-separation]",
+          "en": "Ammoniacal solution separation",
+          "es": "Separación de solución de amoníaco",
+          "icon": {
+            "sheet": "base",
+            "col": 16,
+            "row": 0
+          }
+        },
+        {
+          "id": "solid-fuel-from-ammonia",
+          "type": "recipe",
+          "tag": "[recipe=solid-fuel-from-ammonia]",
+          "en": "Solid fuel from ammonia",
+          "es": "Combustible sólido a partir de amoníaco",
+          "icon": {
+            "sheet": "base",
+            "col": 14,
+            "row": 24
+          }
+        },
+        {
+          "id": "ammonia-rocket-fuel",
+          "type": "recipe",
+          "tag": "[recipe=ammonia-rocket-fuel]",
+          "en": "Ammonia rocket fuel",
+          "es": "Combustible de cohete de amoníaco",
+          "icon": {
+            "sheet": "base",
+            "col": 14,
+            "row": 0
+          }
+        },
+        {
+          "id": "fluoroketone-cooling",
+          "type": "recipe",
+          "tag": "[recipe=fluoroketone-cooling]",
+          "en": "Cooling hot fluoroketone",
+          "es": "Enfriado de fluorocetona caliente",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 6
+          }
+        },
+        {
+          "id": "lithium",
+          "type": "item",
+          "tag": "[item=lithium]",
+          "en": "Lithium",
+          "es": "Litio",
+          "icon": {
+            "sheet": "base",
+            "col": 12,
+            "row": 8
+          }
+        },
+        {
+          "id": "lithium-plate",
+          "type": "item",
+          "tag": "[item=lithium-plate]",
+          "en": "Lithium plate",
+          "es": "Placa de litio",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 8
+          }
+        },
+        {
+          "id": "quantum-processor",
+          "type": "item",
+          "tag": "[item=quantum-processor]",
+          "en": "Quantum processor",
+          "es": "Procesador cuántico",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 11
+          }
+        },
+        {
+          "id": "fusion-power-cell",
+          "type": "item",
+          "tag": "[item=fusion-power-cell]",
+          "en": "Fusion power cell",
+          "es": "Célula de energía de fusión",
+          "icon": {
+            "sheet": "base",
+            "col": 14,
+            "row": 6
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "science-pack",
+      "items": [
+        {
+          "id": "automation-science-pack",
+          "type": "item",
+          "tag": "[item=automation-science-pack]",
+          "en": "Automation science pack",
+          "es": "Paquete de ciencia de automatización",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 1
+          }
+        },
+        {
+          "id": "logistic-science-pack",
+          "type": "item",
+          "tag": "[item=logistic-science-pack]",
+          "en": "Logistic science pack",
+          "es": "Paquete de ciencia logística",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 8
+          }
+        },
+        {
+          "id": "military-science-pack",
+          "type": "item",
+          "tag": "[item=military-science-pack]",
+          "en": "Military science pack",
+          "es": "Paquete de ciencia militar",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 9
+          }
+        },
+        {
+          "id": "chemical-science-pack",
+          "type": "item",
+          "tag": "[item=chemical-science-pack]",
+          "en": "Chemical science pack",
+          "es": "Paquete de ciencia química",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 3
+          }
+        },
+        {
+          "id": "production-science-pack",
+          "type": "item",
+          "tag": "[item=production-science-pack]",
+          "en": "Production science pack",
+          "es": "Paquete de ciencia de producción",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 11
+          }
+        },
+        {
+          "id": "utility-science-pack",
+          "type": "item",
+          "tag": "[item=utility-science-pack]",
+          "en": "Utility science pack",
+          "es": "Paquete de ciencia de utilidad",
+          "icon": {
+            "sheet": "base",
+            "col": 25,
+            "row": 26
+          }
+        },
+        {
+          "id": "space-science-pack",
+          "type": "item",
+          "tag": "[item=space-science-pack]",
+          "en": "Space science pack",
+          "es": "Paquete de ciencia espacial",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 24
+          }
+        },
+        {
+          "id": "metallurgic-science-pack",
+          "type": "item",
+          "tag": "[item=metallurgic-science-pack]",
+          "en": "Metallurgic science pack",
+          "es": "Paquete de ciencia metalúrgica",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 9
+          }
+        },
+        {
+          "id": "agricultural-science-pack",
+          "type": "item",
+          "tag": "[item=agricultural-science-pack]",
+          "en": "Agricultural science pack",
+          "es": "Paquete de ciencia agrícola",
+          "icon": {
+            "sheet": "base",
+            "col": 11,
+            "row": 0
+          }
+        },
+        {
+          "id": "cryogenic-science-pack",
+          "type": "item",
+          "tag": "[item=cryogenic-science-pack]",
+          "en": "Cryogenic science pack",
+          "es": "Paquete de ciencia criogénica",
+          "icon": {
+            "sheet": "base",
+            "col": 25,
+            "row": 3
+          }
+        },
+        {
+          "id": "promethium-science-pack",
+          "type": "item",
+          "tag": "[item=promethium-science-pack]",
+          "en": "Promethium science pack",
+          "es": "Paquete de ciencia de prometio",
+          "icon": {
+            "sheet": "base",
+            "col": 12,
+            "row": 11
+          }
+        }
+      ]
+    }
+  ]
+}

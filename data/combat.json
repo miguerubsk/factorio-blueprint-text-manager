@@ -1,0 +1,829 @@
+{
+  "combat": [
+    {
+      "subgroup": "gun",
+      "items": [
+        {
+          "id": "pistol",
+          "type": "item",
+          "tag": "[item=pistol]",
+          "en": "Pistol",
+          "es": "Pistola",
+          "icon": {
+            "sheet": "base",
+            "col": 25,
+            "row": 10
+          }
+        },
+        {
+          "id": "submachine-gun",
+          "type": "item",
+          "tag": "[item=submachine-gun]",
+          "en": "Submachine gun",
+          "es": "Subfusil",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 25
+          }
+        },
+        {
+          "id": "railgun",
+          "type": "item",
+          "tag": "[item=railgun]",
+          "en": "Railgun",
+          "es": "Railgun",
+          "icon": {
+            "sheet": "base",
+            "col": 25,
+            "row": 11
+          }
+        },
+        {
+          "id": "teslagun",
+          "type": "item",
+          "tag": "[item=teslagun]",
+          "en": "Tesla gun",
+          "es": "Arma Tesla",
+          "icon": {
+            "sheet": "base",
+            "col": 0,
+            "row": 26
+          }
+        },
+        {
+          "id": "shotgun",
+          "type": "item",
+          "tag": "[item=shotgun]",
+          "en": "Shotgun",
+          "es": "Escopeta",
+          "icon": {
+            "sheet": "base",
+            "col": 5,
+            "row": 24
+          }
+        },
+        {
+          "id": "combat-shotgun",
+          "type": "item",
+          "tag": "[item=combat-shotgun]",
+          "en": "Combat shotgun",
+          "es": "Escopeta de combate",
+          "icon": {
+            "sheet": "base",
+            "col": 10,
+            "row": 3
+          }
+        },
+        {
+          "id": "rocket-launcher",
+          "type": "item",
+          "tag": "[item=rocket-launcher]",
+          "en": "Rocket launcher",
+          "es": "Lanzacohetes",
+          "icon": {
+            "sheet": "base",
+            "col": 24,
+            "row": 23
+          }
+        },
+        {
+          "id": "flamethrower",
+          "type": "item",
+          "tag": "[item=flamethrower]",
+          "en": "Flamethrower",
+          "es": "Lanzallamas",
+          "icon": {
+            "sheet": "base",
+            "col": 25,
+            "row": 5
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "ammo",
+      "items": [
+        {
+          "id": "firearm-magazine",
+          "type": "item",
+          "tag": "[item=firearm-magazine]",
+          "en": "Firearm magazine",
+          "es": "Cargador de munición",
+          "icon": {
+            "sheet": "base",
+            "col": 21,
+            "row": 5
+          }
+        },
+        {
+          "id": "piercing-rounds-magazine",
+          "type": "item",
+          "tag": "[item=piercing-rounds-magazine]",
+          "en": "Piercing rounds magazine",
+          "es": "Munición penetrante",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 10
+          }
+        },
+        {
+          "id": "uranium-rounds-magazine",
+          "type": "item",
+          "tag": "[item=uranium-rounds-magazine]",
+          "en": "Uranium rounds magazine",
+          "es": "Munición de uranio",
+          "icon": {
+            "sheet": "base",
+            "col": 24,
+            "row": 26
+          }
+        },
+        {
+          "id": "shotgun-shell",
+          "type": "item",
+          "tag": "[item=shotgun-shell]",
+          "en": "Shotgun shells",
+          "es": "Cartuchos de escopeta",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 24
+          }
+        },
+        {
+          "id": "piercing-shotgun-shell",
+          "type": "item",
+          "tag": "[item=piercing-shotgun-shell]",
+          "en": "Piercing shotgun shells",
+          "es": "Cartuchos penetrantes de escopeta",
+          "icon": {
+            "sheet": "base",
+            "col": 21,
+            "row": 10
+          }
+        },
+        {
+          "id": "cannon-shell",
+          "type": "item",
+          "tag": "[item=cannon-shell]",
+          "en": "Cannon shell",
+          "es": "Proyectil de cañón",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 2
+          }
+        },
+        {
+          "id": "explosive-cannon-shell",
+          "type": "item",
+          "tag": "[item=explosive-cannon-shell]",
+          "en": "Explosive cannon shell",
+          "es": "Proyectil explosivo de cañón",
+          "icon": {
+            "sheet": "base",
+            "col": 8,
+            "row": 5
+          }
+        },
+        {
+          "id": "uranium-cannon-shell",
+          "type": "item",
+          "tag": "[item=uranium-cannon-shell]",
+          "en": "Uranium cannon shell",
+          "es": "Proyectil de cañón de uranio",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 26
+          }
+        },
+        {
+          "id": "explosive-uranium-cannon-shell",
+          "type": "item",
+          "tag": "[item=explosive-uranium-cannon-shell]",
+          "en": "Explosive uranium cannon shell",
+          "es": "Proyectil de cañón de uranio explosivo",
+          "icon": {
+            "sheet": "base",
+            "col": 10,
+            "row": 5
+          }
+        },
+        {
+          "id": "artillery-shell",
+          "type": "item",
+          "tag": "[item=artillery-shell]",
+          "en": "Artillery shell",
+          "es": "Proyectil de artillería",
+          "icon": {
+            "sheet": "base",
+            "col": 21,
+            "row": 0
+          }
+        },
+        {
+          "id": "rocket",
+          "type": "item",
+          "tag": "[item=rocket]",
+          "en": "Rocket",
+          "es": "Cohete",
+          "icon": {
+            "sheet": "base",
+            "col": 21,
+            "row": 23
+          }
+        },
+        {
+          "id": "explosive-rocket",
+          "type": "item",
+          "tag": "[item=explosive-rocket]",
+          "en": "Explosive rocket",
+          "es": "Cohete explosivo",
+          "icon": {
+            "sheet": "base",
+            "col": 9,
+            "row": 5
+          }
+        },
+        {
+          "id": "atomic-bomb",
+          "type": "item",
+          "tag": "[item=atomic-bomb]",
+          "en": "Atomic bomb",
+          "es": "Bomba nuclear",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 1
+          }
+        },
+        {
+          "id": "capture-robot-rocket",
+          "type": "item",
+          "tag": "[item=capture-robot-rocket]",
+          "en": "Capture bot rocket",
+          "es": "Cohete de robot capturador",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 2
+          }
+        },
+        {
+          "id": "flamethrower-ammo",
+          "type": "item",
+          "tag": "[item=flamethrower-ammo]",
+          "en": "Flamethrower ammo",
+          "es": "Munición de lanzallamas",
+          "icon": {
+            "sheet": "base",
+            "col": 0,
+            "row": 6
+          }
+        },
+        {
+          "id": "railgun-ammo",
+          "type": "item",
+          "tag": "[item=railgun-ammo]",
+          "en": "Railgun ammo",
+          "es": "Munición de Railgun",
+          "icon": {
+            "sheet": "base",
+            "col": 0,
+            "row": 12
+          }
+        },
+        {
+          "id": "tesla-ammo",
+          "type": "item",
+          "tag": "[item=tesla-ammo]",
+          "en": "Tesla ammo",
+          "es": "Munición de Tesla",
+          "icon": {
+            "sheet": "base",
+            "col": 24,
+            "row": 25
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "capsule",
+      "items": [
+        {
+          "id": "grenade",
+          "type": "item",
+          "tag": "[item=grenade]",
+          "en": "Grenade",
+          "es": "Granada",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 6
+          }
+        },
+        {
+          "id": "cluster-grenade",
+          "type": "item",
+          "tag": "[item=cluster-grenade]",
+          "en": "Cluster grenade",
+          "es": "Granada de racimo",
+          "icon": {
+            "sheet": "base",
+            "col": 5,
+            "row": 3
+          }
+        },
+        {
+          "id": "poison-capsule",
+          "type": "item",
+          "tag": "[item=poison-capsule]",
+          "en": "Poison capsule",
+          "es": "Cápsula de veneno",
+          "icon": {
+            "sheet": "base",
+            "col": 1,
+            "row": 11
+          }
+        },
+        {
+          "id": "slowdown-capsule",
+          "type": "item",
+          "tag": "[item=slowdown-capsule]",
+          "en": "Slowdown capsule",
+          "es": "Cápsula de ralentización",
+          "icon": {
+            "sheet": "base",
+            "col": 8,
+            "row": 24
+          }
+        },
+        {
+          "id": "defender-capsule",
+          "type": "item",
+          "tag": "[item=defender-capsule]",
+          "en": "Defender capsule",
+          "es": "Cápsula de defensor",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 4
+          }
+        },
+        {
+          "id": "distractor-capsule",
+          "type": "item",
+          "tag": "[item=distractor-capsule]",
+          "en": "Distractor capsule",
+          "es": "Cápsula de distractor",
+          "icon": {
+            "sheet": "base",
+            "col": 8,
+            "row": 4
+          }
+        },
+        {
+          "id": "destroyer-capsule",
+          "type": "item",
+          "tag": "[item=destroyer-capsule]",
+          "en": "Destroyer capsule",
+          "es": "Cápsula de destructor",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 4
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "armor",
+      "items": [
+        {
+          "id": "light-armor",
+          "type": "item",
+          "tag": "[item=light-armor]",
+          "en": "Light armor",
+          "es": "Armadura ligera",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 8
+          }
+        },
+        {
+          "id": "heavy-armor",
+          "type": "item",
+          "tag": "[item=heavy-armor]",
+          "en": "Heavy armor",
+          "es": "Armadura pesada",
+          "icon": {
+            "sheet": "base",
+            "col": 0,
+            "row": 7
+          }
+        },
+        {
+          "id": "modular-armor",
+          "type": "item",
+          "tag": "[item=modular-armor]",
+          "en": "Modular armor",
+          "es": "Armadura modular",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 9
+          }
+        },
+        {
+          "id": "power-armor",
+          "type": "item",
+          "tag": "[item=power-armor]",
+          "en": "Power armor",
+          "es": "Servo-armadura",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 11
+          }
+        },
+        {
+          "id": "power-armor-mk2",
+          "type": "item",
+          "tag": "[item=power-armor-mk2]",
+          "en": "Power armor MK2",
+          "es": "Servo-armadura MK2",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 11
+          }
+        },
+        {
+          "id": "mech-armor",
+          "type": "item",
+          "tag": "[item=mech-armor]",
+          "en": "Mech armor",
+          "es": "Mecarmadura",
+          "icon": {
+            "sheet": "base",
+            "col": 23,
+            "row": 8
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "equipment",
+      "items": [
+        {
+          "id": "solar-panel-equipment",
+          "type": "item",
+          "tag": "[item=solar-panel-equipment]",
+          "en": "solar-panel-equipment",
+          "es": "solar-panel-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 12,
+            "row": 24
+          }
+        },
+        {
+          "id": "fission-reactor-equipment",
+          "type": "item",
+          "tag": "[item=fission-reactor-equipment]",
+          "en": "fission-reactor-equipment",
+          "es": "fission-reactor-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 24,
+            "row": 5
+          }
+        },
+        {
+          "id": "fusion-reactor-equipment",
+          "type": "item",
+          "tag": "[item=fusion-reactor-equipment]",
+          "en": "fusion-reactor-equipment",
+          "es": "fusion-reactor-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 16,
+            "row": 6
+          }
+        },
+        {
+          "id": "battery-equipment",
+          "type": "item",
+          "tag": "[item=battery-equipment]",
+          "en": "battery-equipment",
+          "es": "battery-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 1
+          }
+        },
+        {
+          "id": "battery-mk2-equipment",
+          "type": "item",
+          "tag": "[item=battery-mk2-equipment]",
+          "en": "battery-mk2-equipment",
+          "es": "battery-mk2-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 8,
+            "row": 1
+          }
+        },
+        {
+          "id": "battery-mk3-equipment",
+          "type": "item",
+          "tag": "[item=battery-mk3-equipment]",
+          "en": "battery-mk3-equipment",
+          "es": "battery-mk3-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 9,
+            "row": 1
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "utility-equipment",
+      "items": [
+        {
+          "id": "belt-immunity-equipment",
+          "type": "item",
+          "tag": "[item=belt-immunity-equipment]",
+          "en": "Belt immunity equipment",
+          "es": "Equipamiento de inmunidad a cintas",
+          "icon": {
+            "sheet": "base",
+            "col": 11,
+            "row": 1
+          }
+        },
+        {
+          "id": "exoskeleton-equipment",
+          "type": "item",
+          "tag": "[item=exoskeleton-equipment]",
+          "en": "exoskeleton-equipment",
+          "es": "exoskeleton-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 5
+          }
+        },
+        {
+          "id": "personal-roboport-equipment",
+          "type": "item",
+          "tag": "[item=personal-roboport-equipment]",
+          "en": "personal-roboport-equipment",
+          "es": "personal-roboport-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 17,
+            "row": 10
+          }
+        },
+        {
+          "id": "personal-roboport-mk2-equipment",
+          "type": "item",
+          "tag": "[item=personal-roboport-mk2-equipment]",
+          "en": "personal-roboport-mk2-equipment",
+          "es": "personal-roboport-mk2-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 10
+          }
+        },
+        {
+          "id": "night-vision-equipment",
+          "type": "item",
+          "tag": "[item=night-vision-equipment]",
+          "en": "night-vision-equipment",
+          "es": "night-vision-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 10,
+            "row": 9
+          }
+        },
+        {
+          "id": "toolbelt-equipment",
+          "type": "item",
+          "tag": "[item=toolbelt-equipment]",
+          "en": "toolbelt-equipment",
+          "es": "toolbelt-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 26
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "military-equipment",
+      "items": [
+        {
+          "id": "energy-shield-equipment",
+          "type": "item",
+          "tag": "[item=energy-shield-equipment]",
+          "en": "energy-shield-equipment",
+          "es": "energy-shield-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 5
+          }
+        },
+        {
+          "id": "energy-shield-mk2-equipment",
+          "type": "item",
+          "tag": "[item=energy-shield-mk2-equipment]",
+          "en": "energy-shield-mk2-equipment",
+          "es": "energy-shield-mk2-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 5,
+            "row": 5
+          }
+        },
+        {
+          "id": "personal-laser-defense-equipment",
+          "type": "item",
+          "tag": "[item=personal-laser-defense-equipment]",
+          "en": "personal-laser-defense-equipment",
+          "es": "personal-laser-defense-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 16,
+            "row": 10
+          }
+        },
+        {
+          "id": "discharge-defense-equipment",
+          "type": "item",
+          "tag": "[item=discharge-defense-equipment]",
+          "en": "discharge-defense-equipment",
+          "es": "discharge-defense-equipment",
+          "icon": {
+            "sheet": "base",
+            "col": 5,
+            "row": 4
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "defensive-structure",
+      "items": [
+        {
+          "id": "stone-wall",
+          "type": "item",
+          "tag": "[item=stone-wall]",
+          "en": "Wall",
+          "es": "Muro",
+          "icon": {
+            "sheet": "base",
+            "col": 1,
+            "row": 27
+          }
+        },
+        {
+          "id": "gate",
+          "type": "item",
+          "tag": "[item=gate]",
+          "en": "Gate",
+          "es": "Puerta",
+          "icon": {
+            "sheet": "base",
+            "col": 17,
+            "row": 6
+          }
+        },
+        {
+          "id": "radar",
+          "type": "item",
+          "tag": "[item=radar]",
+          "en": "Radar",
+          "es": "Radar",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 11
+          }
+        },
+        {
+          "id": "land-mine",
+          "type": "item",
+          "tag": "[item=land-mine]",
+          "en": "Land mine",
+          "es": "Mina terrestre",
+          "icon": {
+            "sheet": "base",
+            "col": 0,
+            "row": 8
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "turret",
+      "items": [
+        {
+          "id": "gun-turret",
+          "type": "item",
+          "tag": "[item=gun-turret]",
+          "en": "Gun turret",
+          "es": "Torreta ametralladora",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 6
+          }
+        },
+        {
+          "id": "laser-turret",
+          "type": "item",
+          "tag": "[item=laser-turret]",
+          "en": "Laser turret",
+          "es": "Torreta láser",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 8
+          }
+        },
+        {
+          "id": "flamethrower-turret",
+          "type": "item",
+          "tag": "[item=flamethrower-turret]",
+          "en": "Flamethrower turret",
+          "es": "Torreta lanzallamas",
+          "icon": {
+            "sheet": "base",
+            "col": 1,
+            "row": 6
+          }
+        },
+        {
+          "id": "artillery-turret",
+          "type": "item",
+          "tag": "[item=artillery-turret]",
+          "en": "Artillery turret",
+          "es": "Torreta de artillería",
+          "icon": {
+            "sheet": "base",
+            "col": 23,
+            "row": 0
+          }
+        },
+        {
+          "id": "rocket-turret",
+          "type": "item",
+          "tag": "[item=rocket-turret]",
+          "en": "Rocket turret",
+          "es": "Torreta lanzacohetes",
+          "icon": {
+            "sheet": "base",
+            "col": 1,
+            "row": 24
+          }
+        },
+        {
+          "id": "tesla-turret",
+          "type": "item",
+          "tag": "[item=tesla-turret]",
+          "en": "Tesla turret",
+          "es": "Torreta Tesla",
+          "icon": {
+            "sheet": "base",
+            "col": 25,
+            "row": 25
+          }
+        },
+        {
+          "id": "railgun-turret",
+          "type": "item",
+          "tag": "[item=railgun-turret]",
+          "en": "Railgun turret",
+          "es": "Torreta Railgun",
+          "icon": {
+            "sheet": "base",
+            "col": 1,
+            "row": 12
+          }
+        }
+      ]
+    }
+  ]
+}

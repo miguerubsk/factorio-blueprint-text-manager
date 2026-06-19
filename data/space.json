@@ -1,10 +1,322 @@
 {
   "space": [
-    [ { "id": "rocket-silo", "en": "Rocket silo", "es": "Silo de cohete" }, { "id": "rocket-part", "en": "Rocket part", "es": "Parte del cohete" }, { "id": "cargo-landing-pad", "en": "Cargo landing pad", "es": "Plataforma de aterrizaje" }, { "id": "cargo-pod", "en": "Cargo pod", "es": "Cápsula de carga" } ],
-    [ { "id": "space-platform-foundation", "en": "Space platform foundation", "es": "Cimientos de plataforma espacial" }, { "id": "space-platform-hub", "en": "Space platform hub", "es": "Centro de plataforma espacial" }, { "id": "cargo-bay", "en": "Cargo bay", "es": "Bodega de carga" }, { "id": "asteroid-collector", "en": "Asteroid collector", "es": "Recolector de asteroides" }, { "id": "crusher", "en": "Crusher", "es": "Trituradora" }, { "id": "thruster", "en": "Thruster", "es": "Propulsor" }, { "id": "satellite", "en": "Satellite", "es": "Satélite" }, { "id": "space-platform-starter-pack", "en": "Space platform starter pack", "es": "Paquete de inicio de plataforma espacial" } ],
-    [ { "id": "metallic-asteroid-chunk", "en": "Metallic asteroid chunk", "es": "Trozo de asteroide metálico" }, { "id": "carbonic-asteroid-chunk", "en": "Carbonic asteroid chunk", "es": "Trozo de asteroide de carbono" }, { "id": "oxide-asteroid-chunk", "en": "Oxide asteroid chunk", "es": "Trozo de asteroide de óxido" }, { "id": "promethium-asteroid-chunk", "en": "Promethium asteroid chunk", "es": "Trozo de asteroide de prometio" } ],
-    [ { "id": "metallic-asteroid-crushing", "en": "Metallic asteroid crushing", "es": "Trituración de asteroide metálico" }, { "id": "carbonic-asteroid-crushing", "en": "Carbonic asteroid crushing", "es": "Trituración de asteroide de carbono" }, { "id": "oxide-asteroid-crushing", "en": "Oxide asteroid crushing", "es": "Trituración de asteroide de óxido" }, { "id": "metallic-asteroid-reprocessing", "en": "Metallic asteroid reprocessing", "es": "Reprocesamiento de asteroide metálico" }, { "id": "carbonic-asteroid-reprocessing", "en": "Carbonic asteroid reprocessing", "es": "Reprocesamiento de asteroide de carbono" }, { "id": "oxide-asteroid-reprocessing", "en": "Oxide asteroid reprocessing", "es": "Reprocesamiento de asteroide de óxido" } ],
-    [ { "id": "advanced-metallic-asteroid-crushing", "en": "Advanced metallic asteroid crushing", "es": "Trituración de asteroide metálico avanzada" }, { "id": "advanced-carbonic-asteroid-crushing", "en": "Advanced carbonic asteroid crushing", "es": "Trituración de asteroide de carbono avanzada" }, { "id": "advanced-oxide-asteroid-crushing", "en": "Advanced oxide asteroid crushing", "es": "Trituración de asteroide de óxido avanzada" }, { "id": "advanced-thruster-fuel", "en": "Advanced thruster fuel", "es": "Combustible de impulsores avanzado" }, { "id": "advanced-thruster-oxidizer", "en": "Advanced thruster oxidizer", "es": "Oxidante de impulsores avanzado" } ],
-    [ { "id": "nauvis", "en": "Nauvis", "es": "Nauvis" }, { "id": "space-platform", "en": "Space platform", "es": "Plataforma espacial" }, { "id": "vulcanus", "en": "Vulcanus", "es": "Vulcano" }, { "id": "gleba", "en": "Gleba", "es": "Gleba" }, { "id": "fulgora", "en": "Fulgora", "es": "Fulgora" }, { "id": "aquilo", "en": "Aquilo", "es": "Aquilo" }, { "id": "solar-system-edge", "en": "Solar system edge", "es": "Borde del sistema solar" }, { "id": "shattered-planet", "en": "Shattered planet", "es": "Planeta destrozado" } ]
+    {
+      "subgroup": "space-related",
+      "items": [
+        {
+          "id": "rocket-silo",
+          "type": "item",
+          "tag": "[item=rocket-silo]",
+          "en": "Rocket silo",
+          "es": "Silo de Cohete",
+          "icon": {
+            "sheet": "base",
+            "col": 0,
+            "row": 24
+          }
+        },
+        {
+          "id": "cargo-landing-pad",
+          "type": "item",
+          "tag": "[item=cargo-landing-pad]",
+          "en": "Cargo landing pad",
+          "es": "Plataforma de aterrizaje",
+          "icon": {
+            "sheet": "base",
+            "col": 14,
+            "row": 2
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "space-platform",
+      "items": [
+        {
+          "id": "space-platform-foundation",
+          "type": "item",
+          "tag": "[item=space-platform-foundation]",
+          "en": "Space platform foundation",
+          "es": "Cimiento de plataforma espacial",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 24
+          }
+        },
+        {
+          "id": "cargo-bay",
+          "type": "item",
+          "tag": "[item=cargo-bay]",
+          "en": "Cargo bay",
+          "es": "Compartimento de carga",
+          "icon": {
+            "sheet": "base",
+            "col": 13,
+            "row": 2
+          }
+        },
+        {
+          "id": "asteroid-collector",
+          "type": "item",
+          "tag": "[item=asteroid-collector]",
+          "en": "Asteroid collector",
+          "es": "Recolector de asteroides",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 1
+          }
+        },
+        {
+          "id": "crusher",
+          "type": "item",
+          "tag": "[item=crusher]",
+          "en": "Crusher",
+          "es": "Trituradora",
+          "icon": {
+            "sheet": "base",
+            "col": 23,
+            "row": 3
+          }
+        },
+        {
+          "id": "thruster",
+          "type": "item",
+          "tag": "[item=thruster]",
+          "en": "Thruster",
+          "es": "Propulsor",
+          "icon": {
+            "sheet": "base",
+            "col": 1,
+            "row": 26
+          }
+        },
+        {
+          "id": "space-platform-hub",
+          "type": "entity",
+          "tag": "[entity=space-platform-hub]",
+          "en": "Space platform hub",
+          "es": "Centro de mando de la plataforma espacial",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 14
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "space-rocket",
+      "items": [
+        {
+          "id": "space-platform-starter-pack",
+          "type": "item",
+          "tag": "[item=space-platform-starter-pack]",
+          "en": "Space platform starter pack",
+          "es": "Paquete de inicio para la plataforma espacial",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 14
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "space-material",
+      "items": [
+        {
+          "id": "metallic-asteroid-chunk",
+          "type": "item",
+          "tag": "[item=metallic-asteroid-chunk]",
+          "en": "Metallic asteroid chunk",
+          "es": "Trozo de asteroide metálico",
+          "icon": {
+            "sheet": "base",
+            "col": 25,
+            "row": 8
+          }
+        },
+        {
+          "id": "carbonic-asteroid-chunk",
+          "type": "item",
+          "tag": "[item=carbonic-asteroid-chunk]",
+          "en": "Carbonic asteroid chunk",
+          "es": "Trozo de asteroide carbónico",
+          "icon": {
+            "sheet": "base",
+            "col": 10,
+            "row": 2
+          }
+        },
+        {
+          "id": "oxide-asteroid-chunk",
+          "type": "item",
+          "tag": "[item=oxide-asteroid-chunk]",
+          "en": "Oxide asteroid chunk",
+          "es": "Trozo de asteroide de óxido",
+          "icon": {
+            "sheet": "base",
+            "col": 0,
+            "row": 10
+          }
+        },
+        {
+          "id": "promethium-asteroid-chunk",
+          "type": "item",
+          "tag": "[item=promethium-asteroid-chunk]",
+          "en": "Promethium asteroid chunk",
+          "es": "Trozo de asteroide de prometio",
+          "icon": {
+            "sheet": "base",
+            "col": 11,
+            "row": 11
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "space-crushing",
+      "items": [
+        {
+          "id": "metallic-asteroid-crushing",
+          "type": "recipe",
+          "tag": "[recipe=metallic-asteroid-crushing]",
+          "en": "Metallic asteroid crushing",
+          "es": "Trituración de asteroides metálicos",
+          "icon": {
+            "sheet": "base",
+            "col": 0,
+            "row": 9
+          }
+        },
+        {
+          "id": "carbonic-asteroid-crushing",
+          "type": "recipe",
+          "tag": "[recipe=carbonic-asteroid-crushing]",
+          "en": "Carbonic asteroid crushing",
+          "es": "Trituración de asteroides carbónicos",
+          "icon": {
+            "sheet": "base",
+            "col": 11,
+            "row": 2
+          }
+        },
+        {
+          "id": "oxide-asteroid-crushing",
+          "type": "recipe",
+          "tag": "[recipe=oxide-asteroid-crushing]",
+          "en": "Oxide asteroid crushing",
+          "es": "Trituración de asteroides de óxido",
+          "icon": {
+            "sheet": "base",
+            "col": 1,
+            "row": 10
+          }
+        },
+        {
+          "id": "metallic-asteroid-reprocessing",
+          "type": "recipe",
+          "tag": "[recipe=metallic-asteroid-reprocessing]",
+          "en": "Metallic asteroid reprocessing",
+          "es": "Reprocesamiento de asteroides metálicos",
+          "icon": {
+            "sheet": "base",
+            "col": 1,
+            "row": 9
+          }
+        },
+        {
+          "id": "carbonic-asteroid-reprocessing",
+          "type": "recipe",
+          "tag": "[recipe=carbonic-asteroid-reprocessing]",
+          "en": "Carbonic asteroid reprocessing",
+          "es": "Reprocesamiento de asteroides carbónicos",
+          "icon": {
+            "sheet": "base",
+            "col": 12,
+            "row": 2
+          }
+        },
+        {
+          "id": "oxide-asteroid-reprocessing",
+          "type": "recipe",
+          "tag": "[recipe=oxide-asteroid-reprocessing]",
+          "en": "Oxide asteroid reprocessing",
+          "es": "Reprocesamiento de asteroides de óxido",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 10
+          }
+        },
+        {
+          "id": "advanced-metallic-asteroid-crushing",
+          "type": "recipe",
+          "tag": "[recipe=advanced-metallic-asteroid-crushing]",
+          "en": "Advanced metallic asteroid crushing",
+          "es": "Trituración avanzada de asteroides metálicos",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 0
+          }
+        },
+        {
+          "id": "advanced-carbonic-asteroid-crushing",
+          "type": "recipe",
+          "tag": "[recipe=advanced-carbonic-asteroid-crushing]",
+          "en": "Advanced carbonic asteroid crushing",
+          "es": "Trituración avanzada de asteroides carbónicos",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 0
+          }
+        },
+        {
+          "id": "advanced-oxide-asteroid-crushing",
+          "type": "recipe",
+          "tag": "[recipe=advanced-oxide-asteroid-crushing]",
+          "en": "Advanced oxide asteroid crushing",
+          "es": "Trituración avanzada de asteroides de óxido",
+          "icon": {
+            "sheet": "base",
+            "col": 8,
+            "row": 0
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "space-processing",
+      "items": [
+        {
+          "id": "advanced-thruster-fuel",
+          "type": "recipe",
+          "tag": "[recipe=advanced-thruster-fuel]",
+          "en": "Advanced thruster fuel",
+          "es": "Combustible avanzado para propulsor",
+          "icon": {
+            "sheet": "base",
+            "col": 9,
+            "row": 0
+          }
+        },
+        {
+          "id": "advanced-thruster-oxidizer",
+          "type": "recipe",
+          "tag": "[recipe=advanced-thruster-oxidizer]",
+          "en": "Advanced thruster oxidizer",
+          "es": "Oxidante avanzado para propulsor",
+          "icon": {
+            "sheet": "base",
+            "col": 10,
+            "row": 0
+          }
+        }
+      ]
+    }
   ]
 }
