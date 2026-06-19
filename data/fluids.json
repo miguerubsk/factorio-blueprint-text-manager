@@ -1,7 +1,273 @@
 {
   "fluids": [
-    [ { "id": "water", "en": "Water", "es": "Agua" }, { "id": "steam", "en": "Steam", "es": "Vapor" }, { "id": "crude-oil", "en": "Crude oil", "es": "Petróleo crudo" }, { "id": "petroleum-gas", "en": "Petroleum gas", "es": "Gas de petróleo" }, { "id": "light-oil", "en": "Light oil", "es": "Petróleo ligero" }, { "id": "heavy-oil", "en": "Heavy oil", "es": "Petróleo pesado" }, { "id": "lubricant", "en": "Lubricant", "es": "Lubricante" }, { "id": "sulfuric-acid", "en": "Sulfuric acid", "es": "Ácido sulfúrico" } ],
-    [ { "id": "thruster-fuel", "en": "Thruster fuel", "es": "Combustible de propulsor" }, { "id": "thruster-oxidizer", "en": "Thruster oxidizer", "es": "Oxidante de propulsor" } ],
-    [ { "id": "lava", "en": "Lava", "es": "Lava" }, { "id": "molten-iron", "en": "Molten iron", "es": "Hierro fundido" }, { "id": "molten-copper", "en": "Molten copper", "es": "Cobre fundido" }, { "id": "holmium-solution", "en": "Holmium solution", "es": "Solución de holmio" }, { "id": "electrolyte", "en": "Electrolyte", "es": "Electrolito" }, { "id": "ammoniacal-solution", "en": "Ammoniacal solution", "es": "Solución de amoníaco" }, { "id": "ammonia", "en": "Ammonia", "es": "Amoníaco" }, { "id": "fluorine", "en": "Fluorine", "es": "Flúor" }, { "id": "lithium-brine", "en": "Lithium brine", "es": "Solucción de litio" }, { "id": "plasma", "en": "Plasma", "es": "Plasma" } ]
+    {
+      "subgroup": "fluid",
+      "items": [
+        {
+          "id": "water",
+          "type": "fluid",
+          "tag": "[fluid=water]",
+          "en": "Water",
+          "es": "Agua",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 27
+          }
+        },
+        {
+          "id": "steam",
+          "type": "fluid",
+          "tag": "[fluid=steam]",
+          "en": "Steam",
+          "es": "Vapor",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 25
+          }
+        },
+        {
+          "id": "crude-oil",
+          "type": "fluid",
+          "tag": "[fluid=crude-oil]",
+          "en": "Crude oil",
+          "es": "Petróleo crudo",
+          "icon": {
+            "sheet": "base",
+            "col": 21,
+            "row": 3
+          }
+        },
+        {
+          "id": "petroleum-gas",
+          "type": "fluid",
+          "tag": "[fluid=petroleum-gas]",
+          "en": "Petroleum gas",
+          "es": "Gas de petróleo",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 10
+          }
+        },
+        {
+          "id": "light-oil",
+          "type": "fluid",
+          "tag": "[fluid=light-oil]",
+          "en": "Light oil",
+          "es": "Petróleo ligero",
+          "icon": {
+            "sheet": "base",
+            "col": 5,
+            "row": 8
+          }
+        },
+        {
+          "id": "heavy-oil",
+          "type": "fluid",
+          "tag": "[fluid=heavy-oil]",
+          "en": "Heavy oil",
+          "es": "Petróleo pesado",
+          "icon": {
+            "sheet": "base",
+            "col": 1,
+            "row": 7
+          }
+        },
+        {
+          "id": "lubricant",
+          "type": "fluid",
+          "tag": "[fluid=lubricant]",
+          "en": "Lubricant",
+          "es": "Lubricante",
+          "icon": {
+            "sheet": "base",
+            "col": 22,
+            "row": 8
+          }
+        },
+        {
+          "id": "sulfuric-acid",
+          "type": "fluid",
+          "tag": "[fluid=sulfuric-acid]",
+          "en": "Sulfuric acid",
+          "es": "Ácido sulfúrico",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 25
+          }
+        },
+        {
+          "id": "thruster-fuel",
+          "type": "fluid",
+          "tag": "[fluid=thruster-fuel]",
+          "en": "Thruster fuel",
+          "es": "Combustible de propulsor",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 26
+          }
+        },
+        {
+          "id": "thruster-oxidizer",
+          "type": "fluid",
+          "tag": "[fluid=thruster-oxidizer]",
+          "en": "Thruster oxidizer",
+          "es": "Oxidante de propulsor",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 26
+          }
+        },
+        {
+          "id": "lava",
+          "type": "fluid",
+          "tag": "[fluid=lava]",
+          "en": "Lava",
+          "es": "Lava",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 8
+          }
+        },
+        {
+          "id": "molten-iron",
+          "type": "fluid",
+          "tag": "[fluid=molten-iron]",
+          "en": "Molten iron",
+          "es": "Hierro fundido",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 9
+          }
+        },
+        {
+          "id": "molten-copper",
+          "type": "fluid",
+          "tag": "[fluid=molten-copper]",
+          "en": "Molten copper",
+          "es": "Cobre fundido",
+          "icon": {
+            "sheet": "base",
+            "col": 5,
+            "row": 9
+          }
+        },
+        {
+          "id": "holmium-solution",
+          "type": "fluid",
+          "tag": "[fluid=holmium-solution]",
+          "en": "Holmium solution",
+          "es": "Solución de holmio",
+          "icon": {
+            "sheet": "base",
+            "col": 5,
+            "row": 7
+          }
+        },
+        {
+          "id": "electrolyte",
+          "type": "fluid",
+          "tag": "[fluid=electrolyte]",
+          "en": "Electrolyte",
+          "es": "Electrolito",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 4
+          }
+        },
+        {
+          "id": "ammoniacal-solution",
+          "type": "fluid",
+          "tag": "[fluid=ammoniacal-solution]",
+          "en": "Ammoniacal solution",
+          "es": "Solución amoníaca",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 0
+          }
+        },
+        {
+          "id": "ammonia",
+          "type": "fluid",
+          "tag": "[fluid=ammonia]",
+          "en": "Ammonia",
+          "es": "Amoníaco",
+          "icon": {
+            "sheet": "base",
+            "col": 13,
+            "row": 0
+          }
+        },
+        {
+          "id": "fluorine",
+          "type": "fluid",
+          "tag": "[fluid=fluorine]",
+          "en": "Fluorine",
+          "es": "Flúor",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 6
+          }
+        },
+        {
+          "id": "fluoroketone-hot",
+          "type": "fluid",
+          "tag": "[fluid=fluoroketone-hot]",
+          "en": "Fluoroketone (Hot)",
+          "es": "Fluorocetona (caliente)",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 6
+          }
+        },
+        {
+          "id": "fluoroketone-cold",
+          "type": "fluid",
+          "tag": "[fluid=fluoroketone-cold]",
+          "en": "Fluoroketone (Cold)",
+          "es": "Fluorocetona (fría)",
+          "icon": {
+            "sheet": "base",
+            "col": 5,
+            "row": 6
+          }
+        },
+        {
+          "id": "lithium-brine",
+          "type": "fluid",
+          "tag": "[fluid=lithium-brine]",
+          "en": "Lithium brine",
+          "es": "Solución de litio",
+          "icon": {
+            "sheet": "base",
+            "col": 13,
+            "row": 8
+          }
+        },
+        {
+          "id": "fusion-plasma",
+          "type": "fluid",
+          "tag": "[fluid=fusion-plasma]",
+          "en": "Plasma",
+          "es": "Plasma",
+          "icon": {
+            "sheet": "base",
+            "col": 13,
+            "row": 6
+          }
+        }
+      ]
+    }
   ]
 }

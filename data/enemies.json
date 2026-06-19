@@ -1,6 +1,201 @@
 {
   "enemies": [
-    [ { "id": "small-biter", "es": "Mordedor pequeño", "en": "Small biter" }, { "id": "medium-biter", "es": "Mordedor mediano", "en": "Medium biter" }, { "id": "big-biter", "es": "Mordedor grande", "en": "Big biter" }, { "id": "behemoth-biter", "es": "Mordedor behemoth", "en": "Behemoth biter" } ],
-    [ { "id": "small-spitter", "es": "Escupidor pequeño", "en": "Small spitter" }, { "id": "medium-spitter", "es": "Escupidor mediano", "en": "Medium spitter" }, { "id": "big-spitter", "es": "Escupidor grande", "en": "Big spitter" }, { "id": "behemoth-spitter", "es": "Escupidor behemoth", "en": "Behemoth spitter" }, { "id": "demolisher", "es": "Demoledor", "en": "Demolisher" }, { "id": "Stomper", "es": "Acechador", "en": "Stomper" } ]
+    {
+      "subgroup": "enemies",
+      "items": [
+        {
+          "id": "small-biter",
+          "type": "entity",
+          "tag": "[entity=small-biter]",
+          "en": "Small biter",
+          "es": "Biter pequeño",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 14
+          }
+        },
+        {
+          "id": "medium-biter",
+          "type": "entity",
+          "tag": "[entity=medium-biter]",
+          "en": "Medium biter",
+          "es": "Mordedor mediano",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 4
+          }
+        },
+        {
+          "id": "big-biter",
+          "type": "entity",
+          "tag": "[entity=big-biter]",
+          "en": "Big biter",
+          "es": "Mordedor grande",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 0
+          }
+        },
+        {
+          "id": "behemoth-biter",
+          "type": "entity",
+          "tag": "[entity=behemoth-biter]",
+          "en": "Behemoth biter",
+          "es": "Mordedor mastodonte",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 0
+          }
+        },
+        {
+          "id": "small-spitter",
+          "type": "entity",
+          "tag": "[entity=small-spitter]",
+          "en": "Small spitter",
+          "es": "Escupidor pequeño",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 14
+          }
+        },
+        {
+          "id": "medium-spitter",
+          "type": "entity",
+          "tag": "[entity=medium-spitter]",
+          "en": "Medium spitter",
+          "es": "Escupidor mediano",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 4
+          }
+        },
+        {
+          "id": "big-spitter",
+          "type": "entity",
+          "tag": "[entity=big-spitter]",
+          "en": "Big spitter",
+          "es": "Escupidor grande",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 0
+          }
+        },
+        {
+          "id": "behemoth-spitter",
+          "type": "entity",
+          "tag": "[entity=behemoth-spitter]",
+          "en": "Behemoth spitter",
+          "es": "Escupidor mastodonte",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 0
+          }
+        },
+        {
+          "id": "small-worm-turret",
+          "type": "entity",
+          "tag": "[entity=small-worm-turret]",
+          "en": "Small worm",
+          "es": "Gusano pequeño",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 14
+          }
+        },
+        {
+          "id": "medium-worm-turret",
+          "type": "entity",
+          "tag": "[entity=medium-worm-turret]",
+          "en": "Medium worm",
+          "es": "Gusano mediano",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 4
+          }
+        },
+        {
+          "id": "big-worm-turret",
+          "type": "entity",
+          "tag": "[entity=big-worm-turret]",
+          "en": "Big worm",
+          "es": "Gusano grande",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 0
+          }
+        },
+        {
+          "id": "behemoth-worm-turret",
+          "type": "entity",
+          "tag": "[entity=behemoth-worm-turret]",
+          "en": "Behemoth worm",
+          "es": "Gusano mastodonte",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 0
+          }
+        },
+        {
+          "id": "biter-spawner",
+          "type": "entity",
+          "tag": "[entity=biter-spawner]",
+          "en": "Biter spawner",
+          "es": "Nido de mordedores",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 0
+          }
+        },
+        {
+          "id": "spitter-spawner",
+          "type": "entity",
+          "tag": "[entity=spitter-spawner]",
+          "en": "Spitter spawner",
+          "es": "Nido de escupidores",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 14
+          }
+        },
+        {
+          "id": "gleba-spawner",
+          "type": "entity",
+          "tag": "[entity=gleba-spawner]",
+          "en": "Egg raft",
+          "es": "Balsa de huevos",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 3
+          }
+        },
+        {
+          "id": "gleba-spawner-small",
+          "type": "entity",
+          "tag": "[entity=gleba-spawner-small]",
+          "en": "Small egg raft",
+          "es": "Balsa de huevos pequeña",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 3
+          }
+        }
+      ]
+    }
   ]
 }

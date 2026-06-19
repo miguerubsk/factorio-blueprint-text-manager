@@ -1,102 +1,901 @@
 {
   "logistics": [
-    [
-      { "id": "wooden-chest", "en": "Wooden chest", "es": "Cofre de madera" },
-      { "id": "iron-chest", "en": "Iron chest", "es": "Cofre de hierro" },
-      { "id": "steel-chest", "en": "Steel chest", "es": "Cofre de acero" },
-      { "id": "storage-tank", "en": "Storage tank", "es": "Cisterna" }
-    ],
-    [
-      { "id": "transport-belt", "en": "Transport belt", "es": "Cinta transportadora" },
-      { "id": "fast-transport-belt", "en": "Fast transport belt", "es": "Cinta transportadora rápida" },
-      { "id": "express-transport-belt", "en": "Express transport belt", "es": "Cinta transportadora exprés" },
-      { "id": "turbo-transport-belt", "en": "Turbo transport belt", "es": "Cinta transportadora turbo" }
-    ],
-    [
-      { "id": "underground-belt", "en": "Underground belt", "es": "Cinta transportadora subterránea" },
-      { "id": "fast-underground-belt", "en": "Fast underground belt", "es": "Cinta transportadora subterránea rápida" },
-      { "id": "express-underground-belt", "en": "Express underground belt", "es": "Cinta transportadora subterránea exprés" },
-      { "id": "turbo-underground-belt", "en": "Turbo underground belt", "es": "Cinta transportadora subterránea turbo" }
-    ],
-    [
-      { "id": "splitter", "en": "Splitter", "es": "Divisor" },
-      { "id": "fast-splitter", "en": "Fast splitter", "es": "Divisor rápido" },
-      { "id": "express-splitter", "en": "Express splitter", "es": "Divisor exprés" },
-      { "id": "turbo-splitter", "en": "Turbo splitter", "es": "Divisor turbo" }
-    ],
-    [
-      { "id": "burner-inserter", "en": "Burner inserter", "es": "Insertador a combustión" },
-      { "id": "inserter", "en": "Inserter", "es": "Insertador" },
-      { "id": "long-handed-inserter", "en": "Long-handed inserter", "es": "Insertador largo" },
-      { "id": "fast-inserter", "en": "Fast inserter", "es": "Insertador rápido" },
-      { "id": "bulk-inserter", "en": "Bulk inserter", "es": "Insertador de lotes" },
-      { "id": "stack-inserter", "en": "Stack inserter", "es": "Insertador de apilamiento" }
-    ],
-    [
-      { "id": "small-electric-pole", "en": "Small electric pole", "es": "Poste eléctrico pequeño" },
-      { "id": "medium-electric-pole", "en": "Medium electric pole", "es": "Poste eléctrico mediano" },
-      { "id": "big-electric-pole", "en": "Big electric pole", "es": "Poste eléctrico grande" },
-      { "id": "substation", "en": "Substation", "es": "Subestación eléctrica" },
-      { "id": "pipe", "en": "Pipe", "es": "Tubería" },
-      { "id": "pipe-to-ground", "en": "Pipe to ground", "es": "Tubería subterránea" },
-      { "id": "pump", "en": "Pump", "es": "Bomba de fluidos" }
-    ],
-    [
-      { "id": "rail", "en": "Rail", "es": "Vía" },
-      { "id": "rail-ramp", "en": "Rail ramp", "es": "Rampa de vía" },
-      { "id": "rail-support", "en": "Rail support", "es": "Soporte de vía" },
-      { "id": "train-stop", "en": "Train stop", "es": "Parada de tren" },
-      { "id": "rail-signal", "en": "Rail signal", "es": "Semáforo ferroviario" },
-      { "id": "rail-chain-signal", "en": "Rail chain signal", "es": "Semáforo ferroviario en cadena" },
-      { "id": "locomotive", "en": "Locomotive", "es": "Locomotora" },
-      { "id": "cargo-wagon", "en": "Cargo wagon", "es": "Vagón de carga" },
-      { "id": "fluid-wagon", "en": "Fluid wagon", "es": "Vagón cisterna" },
-      { "id": "artillery-wagon", "en": "Artillery wagon", "es": "Vagón de artillería" }
-    ],
-    [
-      { "id": "car", "en": "Car", "es": "Coche" },
-      { "id": "tank", "en": "Tank", "es": "Tanque" },
-      { "id": "spidertron", "en": "Spidertron", "es": "Mecanoaraña" },
-      { "id": "spidertron-remote", "en": "Spidertron remote", "es": "Control remoto de la mecanoaraña" }
-    ],
-    [
-      { "id": "logistic-robot", "en": "Logistic robot", "es": "Robot logístico" },
-      { "id": "construction-robot", "en": "Construction robot", "es": "Robot de construcción" },
-      { "id": "active-provider-chest", "en": "Active provider chest", "es": "Cofre proveedor activo" },
-      { "id": "passive-provider-chest", "en": "Passive provider chest", "es": "Cofre proveedor pasivo" },
-      { "id": "storage-chest", "en": "Storage chest", "es": "Cofre de almacenamiento" },
-      { "id": "buffer-chest", "en": "Buffer chest", "es": "Cofre de reserva" },
-      { "id": "requester-chest", "en": "Requester chest", "es": "Cofre solicitador" },
-      { "id": "roboport", "en": "Roboport", "es": "Robopuerto" }
-    ],
-    [
-      { "id": "small-lamp", "en": "Lamp", "es": "Lámpara" },
-      { "id": "red-wire", "en": "Red wire", "es": "Cable rojo" },
-      { "id": "green-wire", "en": "Green wire", "es": "Cable verde" },
-      { "id": "arithmetic-combinator", "en": "Arithmetic combinator", "es": "Combinador aritmético" },
-      { "id": "decider-combinator", "en": "Decider combinator", "es": "Combinador comparador" },
-      { "id": "selector-combinator", "en": "Selector combinator", "es": "Combinador selector" },
-      { "id": "constant-combinator", "en": "Constant combinator", "es": "Combinador constante" },
-      { "id": "power-switch", "en": "Power switch", "es": "Interruptor" },
-      { "id": "programmable-speaker", "en": "Programmable speaker", "es": "Altavoz programable" },
-      { "id": "display-panel", "en": "Display panel", "es": "Panel de visualización" }
-    ],
-    [
-      { "id": "stone-brick", "en": "Stone brick", "es": "Ladrillo de piedra" },
-      { "id": "concrete", "en": "Concrete", "es": "Hormigón" },
-      { "id": "hazard-concrete", "en": "Hazard concrete", "es": "Hormigón con señal de peligro" },
-      { "id": "refined-concrete", "en": "Refined concrete", "es": "Hormigón refinado" },
-      { "id": "refined-hazard-concrete", "en": "Refined hazard concrete", "es": "Hormigón refinado con señal de peligro" },
-      { "id": "landfill", "en": "Landfill", "es": "Relleno de tierra" },
-      { "id": "cliff-explosives", "en": "Cliff explosives", "es": "Explosivos para acantilados" }
-    ],
-    [
-      { "id": "artificial-yumako-soil", "en": "Artificial yumako soil", "es": "Tierra artificial de yumako" },
-      { "id": "overgrowth-yumako-soil", "en": "Overgrowth yumako soil", "es": "Tierra de yumako en crecimiento excesivo" },
-      { "id": "artificial-jellynut-soil", "en": "Artificial jellynut soil", "es": "Tierra artificial de jellynut" },
-      { "id": "overgrowth-jellynut-soil", "en": "Overgrowth jellynut soil", "es": "Tierra de jellynut en crecimiento excesivo" },
-      { "id": "ice-platform", "en": "Ice platform", "es": "Plataforma de hielo" },
-      { "id": "foundation", "en": "Foundation", "es": "Cimiento" }
-    ]
+    {
+      "subgroup": "storage",
+      "items": [
+        {
+          "id": "wooden-chest",
+          "type": "item",
+          "tag": "[item=wooden-chest]",
+          "en": "Wooden chest",
+          "es": "Cofre de madera",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 27
+          }
+        },
+        {
+          "id": "iron-chest",
+          "type": "item",
+          "tag": "[item=iron-chest]",
+          "en": "Iron chest",
+          "es": "Cofre de hierro",
+          "icon": {
+            "sheet": "base",
+            "col": 13,
+            "row": 7
+          }
+        },
+        {
+          "id": "steel-chest",
+          "type": "item",
+          "tag": "[item=steel-chest]",
+          "en": "Steel chest",
+          "es": "Cofre de acero",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 25
+          }
+        },
+        {
+          "id": "storage-tank",
+          "type": "item",
+          "tag": "[item=storage-tank]",
+          "en": "Storage tank",
+          "es": "Cisterna",
+          "icon": {
+            "sheet": "base",
+            "col": 14,
+            "row": 25
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "belt",
+      "items": [
+        {
+          "id": "transport-belt",
+          "type": "item",
+          "tag": "[item=transport-belt]",
+          "en": "Transport belt",
+          "es": "Cinta transportadora",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 26
+          }
+        },
+        {
+          "id": "fast-transport-belt",
+          "type": "item",
+          "tag": "[item=fast-transport-belt]",
+          "en": "Fast transport belt",
+          "es": "Cinta transportadora rápida",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 5
+          }
+        },
+        {
+          "id": "express-transport-belt",
+          "type": "item",
+          "tag": "[item=express-transport-belt]",
+          "en": "Express transport belt",
+          "es": "Cinta transportadora exprés",
+          "icon": {
+            "sheet": "base",
+            "col": 14,
+            "row": 5
+          }
+        },
+        {
+          "id": "turbo-transport-belt",
+          "type": "item",
+          "tag": "[item=turbo-transport-belt]",
+          "en": "Turbo transport belt",
+          "es": "Cinta transportadora turbo",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 26
+          }
+        },
+        {
+          "id": "underground-belt",
+          "type": "item",
+          "tag": "[item=underground-belt]",
+          "en": "Underground belt",
+          "es": "Cinta transportadora subterránea",
+          "icon": {
+            "sheet": "base",
+            "col": 17,
+            "row": 26
+          }
+        },
+        {
+          "id": "fast-underground-belt",
+          "type": "item",
+          "tag": "[item=fast-underground-belt]",
+          "en": "Fast underground belt",
+          "es": "Cinta transportadora subterránea rápida",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 5
+          }
+        },
+        {
+          "id": "express-underground-belt",
+          "type": "item",
+          "tag": "[item=express-underground-belt]",
+          "en": "Express underground belt",
+          "es": "Cinta transportadora subterránea exprés",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 5
+          }
+        },
+        {
+          "id": "turbo-underground-belt",
+          "type": "item",
+          "tag": "[item=turbo-underground-belt]",
+          "en": "Turbo underground belt",
+          "es": "Cinta transportadora subterránea turbo",
+          "icon": {
+            "sheet": "base",
+            "col": 16,
+            "row": 26
+          }
+        },
+        {
+          "id": "splitter",
+          "type": "item",
+          "tag": "[item=splitter]",
+          "en": "Splitter",
+          "es": "Divisor",
+          "icon": {
+            "sheet": "base",
+            "col": 25,
+            "row": 24
+          }
+        },
+        {
+          "id": "fast-splitter",
+          "type": "item",
+          "tag": "[item=fast-splitter]",
+          "en": "Fast splitter",
+          "es": "Divisor rápido",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 5
+          }
+        },
+        {
+          "id": "express-splitter",
+          "type": "item",
+          "tag": "[item=express-splitter]",
+          "en": "Express splitter",
+          "es": "Divisor exprés",
+          "icon": {
+            "sheet": "base",
+            "col": 13,
+            "row": 5
+          }
+        },
+        {
+          "id": "turbo-splitter",
+          "type": "item",
+          "tag": "[item=turbo-splitter]",
+          "en": "Turbo splitter",
+          "es": "Divisor turbo",
+          "icon": {
+            "sheet": "base",
+            "col": 14,
+            "row": 26
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "inserter",
+      "items": [
+        {
+          "id": "burner-inserter",
+          "type": "item",
+          "tag": "[item=burner-inserter]",
+          "en": "Burner inserter",
+          "es": "Insertador a combustión",
+          "icon": {
+            "sheet": "base",
+            "col": 0,
+            "row": 2
+          }
+        },
+        {
+          "id": "inserter",
+          "type": "item",
+          "tag": "[item=inserter]",
+          "en": "Inserter",
+          "es": "Insertador",
+          "icon": {
+            "sheet": "base",
+            "col": 10,
+            "row": 7
+          }
+        },
+        {
+          "id": "long-handed-inserter",
+          "type": "item",
+          "tag": "[item=long-handed-inserter]",
+          "en": "Long-handed inserter",
+          "es": "Insertador largo",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 8
+          }
+        },
+        {
+          "id": "fast-inserter",
+          "type": "item",
+          "tag": "[item=fast-inserter]",
+          "en": "Fast inserter",
+          "es": "Insertador rápido",
+          "icon": {
+            "sheet": "base",
+            "col": 16,
+            "row": 5
+          }
+        },
+        {
+          "id": "bulk-inserter",
+          "type": "item",
+          "tag": "[item=bulk-inserter]",
+          "en": "Bulk inserter",
+          "es": "Insertador de lotes",
+          "icon": {
+            "sheet": "base",
+            "col": 25,
+            "row": 1
+          }
+        },
+        {
+          "id": "stack-inserter",
+          "type": "item",
+          "tag": "[item=stack-inserter]",
+          "en": "Stack inserter",
+          "es": "Insertador de apilamiento",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 25
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "energy-pipe-distribution",
+      "items": [
+        {
+          "id": "small-electric-pole",
+          "type": "item",
+          "tag": "[item=small-electric-pole]",
+          "en": "Small electric pole",
+          "es": "Poste eléctrico pequeño",
+          "icon": {
+            "sheet": "base",
+            "col": 9,
+            "row": 24
+          }
+        },
+        {
+          "id": "medium-electric-pole",
+          "type": "item",
+          "tag": "[item=medium-electric-pole]",
+          "en": "Medium electric pole",
+          "es": "Poste eléctrico mediano",
+          "icon": {
+            "sheet": "base",
+            "col": 24,
+            "row": 8
+          }
+        },
+        {
+          "id": "big-electric-pole",
+          "type": "item",
+          "tag": "[item=big-electric-pole]",
+          "en": "Big electric pole",
+          "es": "Poste eléctrico grande",
+          "icon": {
+            "sheet": "base",
+            "col": 12,
+            "row": 1
+          }
+        },
+        {
+          "id": "substation",
+          "type": "item",
+          "tag": "[item=substation]",
+          "en": "Substation",
+          "es": "Subestación eléctrica",
+          "icon": {
+            "sheet": "base",
+            "col": 16,
+            "row": 25
+          }
+        },
+        {
+          "id": "pipe",
+          "type": "item",
+          "tag": "[item=pipe]",
+          "en": "Pipe",
+          "es": "Tubería",
+          "icon": {
+            "sheet": "base",
+            "col": 22,
+            "row": 10
+          }
+        },
+        {
+          "id": "pipe-to-ground",
+          "type": "item",
+          "tag": "[item=pipe-to-ground]",
+          "en": "Pipe to ground",
+          "es": "Tubería subterránea",
+          "icon": {
+            "sheet": "base",
+            "col": 24,
+            "row": 10
+          }
+        },
+        {
+          "id": "pump",
+          "type": "item",
+          "tag": "[item=pump]",
+          "en": "Pump",
+          "es": "Bomba de fluidos",
+          "icon": {
+            "sheet": "base",
+            "col": 13,
+            "row": 11
+          }
+        },
+        {
+          "id": "casting-pipe",
+          "type": "recipe",
+          "tag": "[recipe=casting-pipe]",
+          "en": "Casting pipe",
+          "es": "Fundición de tuberías",
+          "icon": {
+            "sheet": "base",
+            "col": 23,
+            "row": 2
+          }
+        },
+        {
+          "id": "casting-pipe-to-ground",
+          "type": "recipe",
+          "tag": "[recipe=casting-pipe-to-ground]",
+          "en": "Casting pipe to ground",
+          "es": "Fundición de tuberías subterráneas",
+          "icon": {
+            "sheet": "base",
+            "col": 24,
+            "row": 2
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "train-transport",
+      "items": [
+        {
+          "id": "rail",
+          "type": "item",
+          "tag": "[item=rail]",
+          "en": "Rail",
+          "es": "Vía",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 11
+          }
+        },
+        {
+          "id": "train-stop",
+          "type": "item",
+          "tag": "[item=train-stop]",
+          "en": "Train stop",
+          "es": "Parada de tren",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 26
+          }
+        },
+        {
+          "id": "rail-signal",
+          "type": "item",
+          "tag": "[item=rail-signal]",
+          "en": "Rail signal",
+          "es": "Semáforo ferroviario",
+          "icon": {
+            "sheet": "base",
+            "col": 23,
+            "row": 11
+          }
+        },
+        {
+          "id": "rail-chain-signal",
+          "type": "item",
+          "tag": "[item=rail-chain-signal]",
+          "en": "Rail chain signal",
+          "es": "Semáforo ferroviario en cadena",
+          "icon": {
+            "sheet": "base",
+            "col": 21,
+            "row": 11
+          }
+        },
+        {
+          "id": "locomotive",
+          "type": "item",
+          "tag": "[item=locomotive]",
+          "en": "Locomotive",
+          "es": "Locomotora",
+          "icon": {
+            "sheet": "base",
+            "col": 17,
+            "row": 8
+          }
+        },
+        {
+          "id": "cargo-wagon",
+          "type": "item",
+          "tag": "[item=cargo-wagon]",
+          "en": "Cargo wagon",
+          "es": "Vagón de carga",
+          "icon": {
+            "sheet": "base",
+            "col": 15,
+            "row": 2
+          }
+        },
+        {
+          "id": "fluid-wagon",
+          "type": "item",
+          "tag": "[item=fluid-wagon]",
+          "en": "Fluid wagon",
+          "es": "Vagón cisterna",
+          "icon": {
+            "sheet": "base",
+            "col": 2,
+            "row": 6
+          }
+        },
+        {
+          "id": "artillery-wagon",
+          "type": "item",
+          "tag": "[item=artillery-wagon]",
+          "en": "Artillery wagon",
+          "es": "Vagón de artillería",
+          "icon": {
+            "sheet": "base",
+            "col": 24,
+            "row": 0
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "transport",
+      "items": [
+        {
+          "id": "car",
+          "type": "item",
+          "tag": "[item=car]",
+          "en": "Car",
+          "es": "Coche",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 2
+          }
+        },
+        {
+          "id": "tank",
+          "type": "item",
+          "tag": "[item=tank]",
+          "en": "Tank",
+          "es": "Tanque",
+          "icon": {
+            "sheet": "base",
+            "col": 22,
+            "row": 25
+          }
+        },
+        {
+          "id": "spidertron",
+          "type": "item",
+          "tag": "[item=spidertron]",
+          "en": "Spidertron",
+          "es": "Mecanoaraña",
+          "icon": {
+            "sheet": "base",
+            "col": 24,
+            "row": 24
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "logistic-network",
+      "items": [
+        {
+          "id": "logistic-robot",
+          "type": "item",
+          "tag": "[item=logistic-robot]",
+          "en": "Logistic robot",
+          "es": "Robot logístico",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 8
+          }
+        },
+        {
+          "id": "construction-robot",
+          "type": "item",
+          "tag": "[item=construction-robot]",
+          "en": "Construction robot",
+          "es": "Robot de construcción",
+          "icon": {
+            "sheet": "base",
+            "col": 14,
+            "row": 3
+          }
+        },
+        {
+          "id": "active-provider-chest",
+          "type": "item",
+          "tag": "[item=active-provider-chest]",
+          "en": "Active provider chest",
+          "es": "Cofre proveedor activo",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 0
+          }
+        },
+        {
+          "id": "passive-provider-chest",
+          "type": "item",
+          "tag": "[item=passive-provider-chest]",
+          "en": "Passive provider chest",
+          "es": "Cofre proveedor pasivo",
+          "icon": {
+            "sheet": "base",
+            "col": 13,
+            "row": 10
+          }
+        },
+        {
+          "id": "storage-chest",
+          "type": "item",
+          "tag": "[item=storage-chest]",
+          "en": "Storage chest",
+          "es": "Cofre de almacenamiento",
+          "icon": {
+            "sheet": "base",
+            "col": 13,
+            "row": 25
+          }
+        },
+        {
+          "id": "buffer-chest",
+          "type": "item",
+          "tag": "[item=buffer-chest]",
+          "en": "Buffer chest",
+          "es": "Cofre de reserva",
+          "icon": {
+            "sheet": "base",
+            "col": 24,
+            "row": 1
+          }
+        },
+        {
+          "id": "requester-chest",
+          "type": "item",
+          "tag": "[item=requester-chest]",
+          "en": "Requester chest",
+          "es": "Cofre solicitador",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 23
+          }
+        },
+        {
+          "id": "roboport",
+          "type": "item",
+          "tag": "[item=roboport]",
+          "en": "Roboport",
+          "es": "Robopuerto",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 23
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "circuit-network",
+      "items": [
+        {
+          "id": "small-lamp",
+          "type": "item",
+          "tag": "[item=small-lamp]",
+          "en": "Lamp",
+          "es": "Lámpara",
+          "icon": {
+            "sheet": "base",
+            "col": 10,
+            "row": 24
+          }
+        },
+        {
+          "id": "arithmetic-combinator",
+          "type": "item",
+          "tag": "[item=arithmetic-combinator]",
+          "en": "Arithmetic combinator",
+          "es": "Combinador aritmético",
+          "icon": {
+            "sheet": "base",
+            "col": 18,
+            "row": 0
+          }
+        },
+        {
+          "id": "decider-combinator",
+          "type": "item",
+          "tag": "[item=decider-combinator]",
+          "en": "Decider combinator",
+          "es": "Combinador comparador",
+          "icon": {
+            "sheet": "base",
+            "col": 0,
+            "row": 4
+          }
+        },
+        {
+          "id": "selector-combinator",
+          "type": "item",
+          "tag": "[item=selector-combinator]",
+          "en": "Selector combinator",
+          "es": "Combinador selector",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 24
+          }
+        },
+        {
+          "id": "constant-combinator",
+          "type": "item",
+          "tag": "[item=constant-combinator]",
+          "en": "Constant combinator",
+          "es": "Combinador constante",
+          "icon": {
+            "sheet": "base",
+            "col": 13,
+            "row": 3
+          }
+        },
+        {
+          "id": "power-switch",
+          "type": "item",
+          "tag": "[item=power-switch]",
+          "en": "Power switch",
+          "es": "Interruptor",
+          "icon": {
+            "sheet": "base",
+            "col": 4,
+            "row": 11
+          }
+        },
+        {
+          "id": "programmable-speaker",
+          "type": "item",
+          "tag": "[item=programmable-speaker]",
+          "en": "Programmable speaker",
+          "es": "Altavoz programable",
+          "icon": {
+            "sheet": "base",
+            "col": 10,
+            "row": 11
+          }
+        },
+        {
+          "id": "display-panel",
+          "type": "item",
+          "tag": "[item=display-panel]",
+          "en": "Display panel",
+          "es": "Panel de visualización",
+          "icon": {
+            "sheet": "base",
+            "col": 7,
+            "row": 4
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "terrain",
+      "items": [
+        {
+          "id": "stone-brick",
+          "type": "item",
+          "tag": "[item=stone-brick]",
+          "en": "Stone brick",
+          "es": "Ladrillo de piedra",
+          "icon": {
+            "sheet": "base",
+            "col": 11,
+            "row": 25
+          }
+        },
+        {
+          "id": "concrete",
+          "type": "item",
+          "tag": "[item=concrete]",
+          "en": "Concrete",
+          "es": "Hormigón",
+          "icon": {
+            "sheet": "base",
+            "col": 11,
+            "row": 3
+          }
+        },
+        {
+          "id": "hazard-concrete",
+          "type": "item",
+          "tag": "[item=hazard-concrete]",
+          "en": "Hazard concrete",
+          "es": "Hormigón con señal de peligro",
+          "icon": {
+            "sheet": "base",
+            "col": 21,
+            "row": 6
+          }
+        },
+        {
+          "id": "refined-concrete",
+          "type": "item",
+          "tag": "[item=refined-concrete]",
+          "en": "Refined concrete",
+          "es": "Hormigón refinado",
+          "icon": {
+            "sheet": "base",
+            "col": 16,
+            "row": 23
+          }
+        },
+        {
+          "id": "refined-hazard-concrete",
+          "type": "item",
+          "tag": "[item=refined-hazard-concrete]",
+          "en": "Refined hazard concrete",
+          "es": "Hormigón refinado con señal de peligro",
+          "icon": {
+            "sheet": "base",
+            "col": 17,
+            "row": 23
+          }
+        },
+        {
+          "id": "landfill",
+          "type": "item",
+          "tag": "[item=landfill]",
+          "en": "Landfill",
+          "es": "Relleno de tierra",
+          "icon": {
+            "sheet": "base",
+            "col": 1,
+            "row": 8
+          }
+        },
+        {
+          "id": "artificial-yumako-soil",
+          "type": "item",
+          "tag": "[item=artificial-yumako-soil]",
+          "en": "Artificial yumako soil",
+          "es": "Tierra artificial de yumako",
+          "icon": {
+            "sheet": "base",
+            "col": 20,
+            "row": 0
+          }
+        },
+        {
+          "id": "overgrowth-yumako-soil",
+          "type": "item",
+          "tag": "[item=overgrowth-yumako-soil]",
+          "en": "Overgrowth yumako soil",
+          "es": "Tierra densa de yumako",
+          "icon": {
+            "sheet": "base",
+            "col": 25,
+            "row": 9
+          }
+        },
+        {
+          "id": "artificial-jellynut-soil",
+          "type": "item",
+          "tag": "[item=artificial-jellynut-soil]",
+          "en": "Artificial jellynut soil",
+          "es": "Tierra artificial de gelanuez",
+          "icon": {
+            "sheet": "base",
+            "col": 19,
+            "row": 0
+          }
+        },
+        {
+          "id": "overgrowth-jellynut-soil",
+          "type": "item",
+          "tag": "[item=overgrowth-jellynut-soil]",
+          "en": "Overgrowth jellynut soil",
+          "es": "Tierra densa de gelanuez",
+          "icon": {
+            "sheet": "base",
+            "col": 24,
+            "row": 9
+          }
+        },
+        {
+          "id": "ice-platform",
+          "type": "item",
+          "tag": "[item=ice-platform]",
+          "en": "Ice platform",
+          "es": "Plataforma de hielo",
+          "icon": {
+            "sheet": "base",
+            "col": 8,
+            "row": 7
+          }
+        },
+        {
+          "id": "foundation",
+          "type": "item",
+          "tag": "[item=foundation]",
+          "en": "Foundation",
+          "es": "Cimiento",
+          "icon": {
+            "sheet": "base",
+            "col": 9,
+            "row": 6
+          }
+        },
+        {
+          "id": "cliff-explosives",
+          "type": "item",
+          "tag": "[item=cliff-explosives]",
+          "en": "Cliff explosives",
+          "es": "Explosivos para acantilados",
+          "icon": {
+            "sheet": "base",
+            "col": 3,
+            "row": 3
+          }
+        }
+      ]
+    }
   ]
 }

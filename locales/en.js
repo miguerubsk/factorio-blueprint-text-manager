@@ -43,4 +43,6 @@ const locale_en = {
   msg_copied: "Copied!",
   lbl_tab_space: "Space",
   lbl_tab_enemies: "Enemies",
+  lbl_tab_fluids: "Fluids",
+  lbl_tab_other: "Other",
 };

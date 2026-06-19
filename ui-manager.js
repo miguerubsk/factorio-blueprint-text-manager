@@ -63,6 +63,40 @@ export function translateStaticUi() {
   }
 }
 
+let iconSheetMeta = null; // { base: {file,width,height,cell}, ext: {...} }
+
+// Tamaño visual del icono en pantalla; independiente de la celda nativa de
+// cada hoja, para poder mezclar hojas de distinta resolución (la hoja "ext"
+// guarda sus recortes a 64px, su resolución nativa, en vez de reducirlos a
+// 32px como la hoja "base" reusada).
+const DISPLAY_CELL = 32;
+
+async function getIconSheetMeta() {
+  if (!iconSheetMeta) {
+    const response = await fetch("./data/icon-map.json");
+    const data = await response.json();
+    iconSheetMeta = data.sheets;
+  }
+  return iconSheetMeta;
+}
+
+function applySpriteBackground(imgEl, icon, sheets, displayCell) {
+  const sheet = sheets[icon.sheet];
+  if (!sheet) return false;
+  const nativeCell = sheet.cell;
+  const scale = displayCell / nativeCell;
+  imgEl.style.width = `${displayCell}px`;
+  imgEl.style.height = `${displayCell}px`;
+  imgEl.style.backgroundImage = `url(${sheet.file})`;
+  imgEl.style.backgroundPosition = `-${icon.col * nativeCell * scale}px -${icon.row * nativeCell * scale}px`;
+  imgEl.style.backgroundSize = `${sheet.width * scale}px ${sheet.height * scale}px`;
+  // Solo tiene sentido un escalado "pixelado" (nearest-neighbor) cuando se
+  // amplía pixel art; aquí casi siempre se reduce arte con detalle/gradientes,
+  // así que el escalado suave por defecto del navegador se ve mejor.
+  imgEl.style.imageRendering = scale < 1 ? "auto" : "pixelated";
+  return true;
+}
+
 export async function renderCatalogCategory(category, filterText = "") {
   const grid = document.getElementById("catalogGrid");
   if (!grid) return;
@@ -80,16 +114,17 @@ export async function renderCatalogCategory(category, filterText = "") {
     }
   }
 
+  const sheets = await getIconSheetMeta();
   grid.innerHTML = "";
-  const groups = FACTORIO_ICONS_DATA[category] || [];
+  const subgroups = FACTORIO_ICONS_DATA[category] || [];
   const lang = currentLanguage;
 
-  groups.forEach((rowItems) => {
+  subgroups.forEach((group) => {
     const rowContainer = document.createElement("div");
     rowContainer.className = "catalog-row";
 
     let itemsInRowAdded = 0;
-    rowItems.forEach((item) => {
+    group.items.forEach((item) => {
       const displayName = lang === "es" ? item.es : item.en;
       if (
         filterText &&
@@ -101,46 +136,26 @@ export async function renderCatalogCategory(category, filterText = "") {
       itemsInRowAdded++;
       const card = document.createElement("div");
       card.className = "icon-card";
-      let tagPrefix = "item";
-      if (category === "signals") tagPrefix = "virtual-signal";
-      if (category === "enemies") tagPrefix = "entity";
-      if (category === "fluids") tagPrefix = "fluid";
-      const fullTag = `[${tagPrefix}=${item.id}]`;
       card.title = displayName;
 
-      let wikiName = "";
-      const chestOverrides = {
-        "logistic-chest-active-provider": "Active_provider_chest",
-        "logistic-chest-passive-provider": "Passive_provider_chest",
-        "logistic-chest-storage": "Storage_chest",
-        "logistic-chest-buffer": "Buffer_chest",
-        "logistic-chest-requester": "Requester_chest",
-      };
-      if (chestOverrides[item.id]) wikiName = chestOverrides[item.id];
-      else if (item.id === "long-handed-inserter")
-        wikiName = "Long-handed_inserter";
-      else {
-        let processed = item.id.replace(/-/g, "_");
-        wikiName = processed.charAt(0).toUpperCase() + processed.slice(1);
+      const imgEl = document.createElement("div");
+      imgEl.className = "sprite-icon";
+      if (!applySpriteBackground(imgEl, item.icon, sheets, DISPLAY_CELL)) {
+        imgEl.classList.add("sprite-icon-missing");
+        imgEl.innerText = "⚙️";
       }
-      if (item.id === "signal-everything") wikiName = "Everything_signal";
-      if (item.id === "signal-anything") wikiName = "Anything_signal";
-      if (item.id === "signal-each") wikiName = "Each_signal";
-      if (item.id.startsWith("signal-") && item.id.length === 8)
-        wikiName = `Signal_${item.id.charAt(7).toUpperCase()}`;
+      card.appendChild(imgEl);
 
-      const imgUrl = `https://wiki.factorio.com/images/${wikiName}.png`;
-      card.innerHTML = `<img src="${imgUrl}" alt="${displayName}" loading="lazy" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 fill=%22%23242322%22 stroke=%22%23413f3e%22 stroke-width=%221%22/><text x=%2250%%22 y=%2260%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23ff9f1c%22 font-size=%2214%22 font-family=%22monospace%22 font-weight=%22bold%22>⚙️</text></svg>';">`;
       card.addEventListener("click", () => {
-        navigator.clipboard.writeText(fullTag);
+        navigator.clipboard.writeText(item.tag);
         if (lastFocusedInput) {
           const input = lastFocusedInput;
           const startPos = input.selectionStart;
           const endPos = input.selectionEnd;
           const text = input.value;
           input.value =
-            text.substring(0, startPos) + fullTag + text.substring(endPos);
-          const newCursorPos = startPos + fullTag.length;
+            text.substring(0, startPos) + item.tag + text.substring(endPos);
+          const newCursorPos = startPos + item.tag.length;
           input.setSelectionRange(newCursorPos, newCursorPos);
           input.focus();
           if (
@@ -154,7 +169,9 @@ export async function renderCatalogCategory(category, filterText = "") {
       });
       rowContainer.appendChild(card);
     });
-    if (itemsInRowAdded > 0) grid.appendChild(rowContainer);
+    if (itemsInRowAdded > 0) {
+      grid.appendChild(rowContainer);
+    }
   });
 }
 

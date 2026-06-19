@@ -1,0 +1,348 @@
+{
+  "environment": [
+    {
+      "subgroup": "creatures",
+      "items": [
+        {
+          "id": "character",
+          "type": "entity",
+          "tag": "[entity=character]",
+          "en": "Character",
+          "es": "Personaje",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 1
+          }
+        },
+        {
+          "id": "fish",
+          "type": "entity",
+          "tag": "[entity=fish]",
+          "en": "Fish",
+          "es": "Pez",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 2
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "trees",
+      "items": [
+        {
+          "id": "yumako-tree",
+          "type": "entity",
+          "tag": "[entity=yumako-tree]",
+          "en": "Yumako tree",
+          "es": "Árbol de yumako",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 15
+          }
+        },
+        {
+          "id": "jellystem",
+          "type": "entity",
+          "tag": "[entity=jellystem]",
+          "en": "Jellystem",
+          "es": "Tallo gelatinoso",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 3
+          }
+        },
+        {
+          "id": "dead-dry-hairy-tree",
+          "type": "entity",
+          "tag": "[entity=dead-dry-hairy-tree]",
+          "en": "Dead dry hairy tree",
+          "es": "Árbol musgoso seco muerto",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 1
+          }
+        },
+        {
+          "id": "dead-grey-trunk",
+          "type": "entity",
+          "tag": "[entity=dead-grey-trunk]",
+          "en": "Dead grey trunk",
+          "es": "Tronco gris muerto",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 1
+          }
+        },
+        {
+          "id": "dead-tree-desert",
+          "type": "entity",
+          "tag": "[entity=dead-tree-desert]",
+          "en": "Dead tree - desert",
+          "es": "Árbol desértico muerto",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 1
+          }
+        },
+        {
+          "id": "dry-hairy-tree",
+          "type": "entity",
+          "tag": "[entity=dry-hairy-tree]",
+          "en": "Dry hairy tree",
+          "es": "Árbol musgoso seco",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 1
+          }
+        },
+        {
+          "id": "dry-tree",
+          "type": "entity",
+          "tag": "[entity=dry-tree]",
+          "en": "Dry tree",
+          "es": "Árbol seco",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 1
+          }
+        },
+        {
+          "id": "ashland-lichen-tree",
+          "type": "entity",
+          "tag": "[entity=ashland-lichen-tree]",
+          "en": "Ashland tree",
+          "es": "Árbol de ceniza",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 0
+          }
+        },
+        {
+          "id": "ashland-lichen-tree-flaming",
+          "type": "entity",
+          "tag": "[entity=ashland-lichen-tree-flaming]",
+          "en": "Flaming ashland tree",
+          "es": "Árbol de ceniza en llamas",
+          "icon": {
+            "sheet": "ext",
+            "col": 1,
+            "row": 0
+          }
+        },
+        {
+          "id": "slipstack",
+          "type": "entity",
+          "tag": "[entity=slipstack]",
+          "en": "Slipstack",
+          "es": "Deslizacoral",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 14
+          }
+        },
+        {
+          "id": "funneltrunk",
+          "type": "entity",
+          "tag": "[entity=funneltrunk]",
+          "en": "Funneltrunk",
+          "es": "Troncoembudo",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 3
+          }
+        },
+        {
+          "id": "hairyclubnub",
+          "type": "entity",
+          "tag": "[entity=hairyclubnub]",
+          "en": "Hairy clubnub",
+          "es": "Pelomaza",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 3
+          }
+        },
+        {
+          "id": "teflilly",
+          "type": "entity",
+          "tag": "[entity=teflilly]",
+          "en": "Teflilly",
+          "es": "Teflirio",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 15
+          }
+        },
+        {
+          "id": "lickmaw",
+          "type": "entity",
+          "tag": "[entity=lickmaw]",
+          "en": "Lickmaw",
+          "es": "Lamebocas",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 3
+          }
+        },
+        {
+          "id": "stingfrond",
+          "type": "entity",
+          "tag": "[entity=stingfrond]",
+          "en": "Stingfrond",
+          "es": "Aguifronda",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 14
+          }
+        },
+        {
+          "id": "boompuff",
+          "type": "entity",
+          "tag": "[entity=boompuff]",
+          "en": "Boompuff",
+          "es": "Fungipum",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 0
+          }
+        },
+        {
+          "id": "sunnycomb",
+          "type": "entity",
+          "tag": "[entity=sunnycomb]",
+          "en": "Sunnycomb",
+          "es": "Crestasol",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 14
+          }
+        },
+        {
+          "id": "cuttlepop",
+          "type": "entity",
+          "tag": "[entity=cuttlepop]",
+          "en": "Cuttlepop",
+          "es": "Sepiaplaf",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 1
+          }
+        },
+        {
+          "id": "water-cane",
+          "type": "entity",
+          "tag": "[entity=water-cane]",
+          "en": "Water cane",
+          "es": "Caña de agua",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 15
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "mineable-fluids",
+      "items": [
+        {
+          "id": "crude-oil",
+          "type": "entity",
+          "tag": "[entity=crude-oil]",
+          "en": "Crude oil",
+          "es": "Petróleo crudo",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 1
+          }
+        },
+        {
+          "id": "sulfuric-acid-geyser",
+          "type": "entity",
+          "tag": "[entity=sulfuric-acid-geyser]",
+          "en": "Sulfuric acid geyser",
+          "es": "Géiser de ácido sulfúrico",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 14
+          }
+        },
+        {
+          "id": "lithium-brine",
+          "type": "entity",
+          "tag": "[entity=lithium-brine]",
+          "en": "Lithium brine",
+          "es": "Solución de litio",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 3
+          }
+        },
+        {
+          "id": "fluorine-vent",
+          "type": "entity",
+          "tag": "[entity=fluorine-vent]",
+          "en": "Fluorine vent",
+          "es": "Fumarola de flúor",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 2
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "corpses",
+      "items": [
+        {
+          "id": "biter-spawner-corpse",
+          "type": "entity",
+          "tag": "[entity=biter-spawner-corpse]",
+          "en": "Biter spawner corpse",
+          "es": "Restos de nido de mordedores",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 0
+          }
+        },
+        {
+          "id": "spitter-spawner-corpse",
+          "type": "entity",
+          "tag": "[entity=spitter-spawner-corpse]",
+          "en": "Spitter spawner corpse",
+          "es": "Restos de nido de escupidores",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 14
+          }
+        }
+      ]
+    }
+  ]
+}

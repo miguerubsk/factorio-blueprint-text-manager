@@ -1,0 +1,151 @@
+{
+  "other": [
+    {
+      "subgroup": "parameters",
+      "items": [
+        {
+          "id": "signal-item-parameter",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-item-parameter]",
+          "en": "Item parameter",
+          "es": "Parámetro de objeto",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-fuel-parameter",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-fuel-parameter]",
+          "en": "Fuel parameter",
+          "es": "Parámetro de combustible",
+          "icon": {
+            "sheet": "ext",
+            "col": 4,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-fluid-parameter",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-fluid-parameter]",
+          "en": "Fluid parameter",
+          "es": "Parámetro de fluido",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 10
+          }
+        },
+        {
+          "id": "signal-signal-parameter",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-signal-parameter]",
+          "en": "Signal parameter",
+          "es": "Parámetro de señal",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 12
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "qualities",
+      "items": [
+        {
+          "id": "signal-any-quality",
+          "type": "virtual-signal",
+          "tag": "[virtual-signal=signal-any-quality]",
+          "en": "Any quality",
+          "es": "Cualquier calidad",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 8
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "spawnables",
+      "items": [
+        {
+          "id": "copper-wire",
+          "type": "item",
+          "tag": "[item=copper-wire]",
+          "en": "Copper wire",
+          "es": "Cable de cobre",
+          "icon": {
+            "sheet": "ext",
+            "col": 3,
+            "row": 1
+          }
+        },
+        {
+          "id": "green-wire",
+          "type": "item",
+          "tag": "[item=green-wire]",
+          "en": "Green wire",
+          "es": "Cable verde",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 3
+          }
+        },
+        {
+          "id": "red-wire",
+          "type": "item",
+          "tag": "[item=red-wire]",
+          "en": "Red wire",
+          "es": "Cable rojo",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 4
+          }
+        },
+        {
+          "id": "spidertron-remote",
+          "type": "item",
+          "tag": "[item=spidertron-remote]",
+          "en": "Spidertron remote",
+          "es": "Control remoto de la mecanoaraña",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 14
+          }
+        },
+        {
+          "id": "discharge-defense-remote",
+          "type": "item",
+          "tag": "[item=discharge-defense-remote]",
+          "en": "Discharge defense remote",
+          "es": "Control remoto de defensa eléctrica",
+          "icon": {
+            "sheet": "base",
+            "col": 6,
+            "row": 4
+          }
+        },
+        {
+          "id": "artillery-targeting-remote",
+          "type": "item",
+          "tag": "[item=artillery-targeting-remote]",
+          "en": "Artillery targeting remote",
+          "es": "Objetivo remoto de artillería",
+          "icon": {
+            "sheet": "base",
+            "col": 22,
+            "row": 0
+          }
+        }
+      ]
+    }
+  ]
+}
