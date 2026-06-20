@@ -9,6 +9,12 @@
       type="image/x-icon"
       href="https://cdn.factorio.com/assets/img/favicon.ico"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="locales/es.js"></script>
     <script src="locales/en.js"></script>
@@ -152,6 +158,13 @@
           data-i18n-title="lbl_tab_enemies"
         >
           <img src="./assets/groups/enemies.png" alt="E" />
+        </button>
+        <button
+          class="catalog-tab-link"
+          onclick="switchCatalogTab('environment')"
+          data-i18n-title="lbl_tab_environment"
+        >
+          <img src="./assets/groups/environment.png" alt="N" />
         </button>
         <button
           class="catalog-tab-link"

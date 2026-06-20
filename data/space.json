@@ -100,8 +100,8 @@
           "es": "Centro de mando de la plataforma espacial",
           "icon": {
             "sheet": "ext",
-            "col": 5,
-            "row": 14
+            "col": 6,
+            "row": 17
           }
         }
       ]
@@ -117,8 +117,8 @@
           "es": "Paquete de inicio para la plataforma espacial",
           "icon": {
             "sheet": "ext",
-            "col": 6,
-            "row": 14
+            "col": 7,
+            "row": 17
           }
         }
       ]
