@@ -8,7 +8,12 @@ window.dictionaries = {
 
 window.processBlueprintString = async () => {
   const input = document.getElementById("inputString").value.trim();
+  const MAX_CHARS = 20000000;
+
   if (!input.startsWith("0")) return alert(UI.translate("err_invalid_string"));
+  if (input.length > MAX_CHARS) {
+    return alert(`Blueprint string exceeds maximum length (${input.length.toLocaleString()} / ${MAX_CHARS.toLocaleString()} characters)`);
+  }
 
   try {
     const json = await Processor.decompressBlueprintString(input.substring(1));

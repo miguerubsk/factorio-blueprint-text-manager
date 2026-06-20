@@ -211,7 +211,8 @@ export function registerTextReference(type, objectRef, key) {
   if (key === "station_name") shortKey = "s";
 
   const uniqueId = `[${shortType}-${globalIdCounter}-${shortKey}]`;
-  globalReferenceMap[uniqueId] = {
+  const normalizedId = uniqueId.toLowerCase();
+  globalReferenceMap[normalizedId] = {
     targetObject: objectRef,
     targetProperty: key,
   };
