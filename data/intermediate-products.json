@@ -386,8 +386,8 @@
           "es": "Barril de Agua",
           "icon": {
             "sheet": "ext",
-            "col": 5,
-            "row": 15
+            "col": 1,
+            "row": 19
           }
         },
         {
@@ -399,7 +399,7 @@
           "icon": {
             "sheet": "ext",
             "col": 5,
-            "row": 1
+            "row": 3
           }
         },
         {
@@ -410,8 +410,8 @@
           "es": "Barril de Gas de petróleo",
           "icon": {
             "sheet": "ext",
-            "col": 7,
-            "row": 4
+            "col": 16,
+            "row": 8
           }
         },
         {
@@ -422,8 +422,8 @@
           "es": "Barril de Petróleo ligero",
           "icon": {
             "sheet": "ext",
-            "col": 12,
-            "row": 3
+            "col": 3,
+            "row": 7
           }
         },
         {
@@ -434,8 +434,8 @@
           "es": "Barril de Petróleo pesado",
           "icon": {
             "sheet": "ext",
-            "col": 7,
-            "row": 3
+            "col": 9,
+            "row": 6
           }
         },
         {
@@ -446,8 +446,8 @@
           "es": "Barril de Lubricante",
           "icon": {
             "sheet": "ext",
-            "col": 15,
-            "row": 3
+            "col": 10,
+            "row": 7
           }
         },
         {
@@ -458,8 +458,8 @@
           "es": "Barril de Ácido sulfúrico",
           "icon": {
             "sheet": "ext",
-            "col": 12,
-            "row": 14
+            "col": 3,
+            "row": 18
           }
         },
         {
@@ -470,8 +470,8 @@
           "es": "Barril de Fluorocetona (caliente)",
           "icon": {
             "sheet": "ext",
-            "col": 14,
-            "row": 2
+            "col": 11,
+            "row": 5
           }
         },
         {
@@ -482,8 +482,8 @@
           "es": "Barril de Fluorocetona (fría)",
           "icon": {
             "sheet": "ext",
-            "col": 12,
-            "row": 2
+            "col": 9,
+            "row": 5
           }
         }
       ]
@@ -499,8 +499,8 @@
           "es": "Llenar barril de Agua",
           "icon": {
             "sheet": "ext",
-            "col": 6,
-            "row": 15
+            "col": 2,
+            "row": 19
           }
         },
         {
@@ -512,7 +512,7 @@
           "icon": {
             "sheet": "ext",
             "col": 6,
-            "row": 1
+            "row": 3
           }
         },
         {
@@ -523,8 +523,8 @@
           "es": "Llenar barril de Gas de petróleo",
           "icon": {
             "sheet": "ext",
-            "col": 8,
-            "row": 4
+            "col": 17,
+            "row": 8
           }
         },
         {
@@ -535,8 +535,8 @@
           "es": "Llenar barril de Petróleo ligero",
           "icon": {
             "sheet": "ext",
-            "col": 13,
-            "row": 3
+            "col": 4,
+            "row": 7
           }
         },
         {
@@ -547,8 +547,8 @@
           "es": "Llenar barril de Petróleo pesado",
           "icon": {
             "sheet": "ext",
-            "col": 8,
-            "row": 3
+            "col": 10,
+            "row": 6
           }
         },
         {
@@ -559,8 +559,8 @@
           "es": "Llenar barril de Lubricante",
           "icon": {
             "sheet": "ext",
-            "col": 0,
-            "row": 4
+            "col": 11,
+            "row": 7
           }
         },
         {
@@ -571,8 +571,8 @@
           "es": "Llenar barril de Ácido sulfúrico",
           "icon": {
             "sheet": "ext",
-            "col": 13,
-            "row": 14
+            "col": 4,
+            "row": 18
           }
         },
         {
@@ -583,8 +583,8 @@
           "es": "Llenar barril de Fluorocetona (caliente)",
           "icon": {
             "sheet": "ext",
-            "col": 15,
-            "row": 2
+            "col": 12,
+            "row": 5
           }
         },
         {
@@ -595,8 +595,8 @@
           "es": "Llenar barril de Fluorocetona (fría)",
           "icon": {
             "sheet": "ext",
-            "col": 13,
-            "row": 2
+            "col": 10,
+            "row": 5
           }
         }
       ]
@@ -612,8 +612,8 @@
           "es": "Vaciar barril de Agua",
           "icon": {
             "sheet": "ext",
-            "col": 9,
-            "row": 2
+            "col": 1,
+            "row": 5
           }
         },
         {
@@ -624,8 +624,8 @@
           "es": "Vaciar barril de Petróleo crudo",
           "icon": {
             "sheet": "ext",
-            "col": 1,
-            "row": 2
+            "col": 14,
+            "row": 4
           }
         },
         {
@@ -636,8 +636,8 @@
           "es": "Vaciar barril de Gas de petróleo",
           "icon": {
             "sheet": "ext",
-            "col": 7,
-            "row": 2
+            "col": 20,
+            "row": 4
           }
         },
         {
@@ -648,8 +648,8 @@
           "es": "Vaciar barril de Petróleo ligero",
           "icon": {
             "sheet": "ext",
-            "col": 5,
-            "row": 2
+            "col": 18,
+            "row": 4
           }
         },
         {
@@ -660,8 +660,8 @@
           "es": "Vaciar barril de Petróleo pesado",
           "icon": {
             "sheet": "ext",
-            "col": 4,
-            "row": 2
+            "col": 17,
+            "row": 4
           }
         },
         {
@@ -672,8 +672,8 @@
           "es": "Vaciar barril de Lubricante",
           "icon": {
             "sheet": "ext",
-            "col": 6,
-            "row": 2
+            "col": 19,
+            "row": 4
           }
         },
         {
@@ -684,8 +684,8 @@
           "es": "Vaciar barril de Ácido sulfúrico",
           "icon": {
             "sheet": "ext",
-            "col": 8,
-            "row": 2
+            "col": 0,
+            "row": 5
           }
         },
         {
@@ -696,8 +696,8 @@
           "es": "Vaciar barril de Fluorocetona (caliente)",
           "icon": {
             "sheet": "ext",
-            "col": 3,
-            "row": 2
+            "col": 16,
+            "row": 4
           }
         },
         {
@@ -708,8 +708,8 @@
           "es": "Vaciar barril de Fluorocetona (fría)",
           "icon": {
             "sheet": "ext",
-            "col": 2,
-            "row": 2
+            "col": 15,
+            "row": 4
           }
         }
       ]

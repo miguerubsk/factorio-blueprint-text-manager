@@ -45,6 +45,7 @@ const locale_es = {
   msg_copied: "¡Copiado!",
   lbl_tab_space: "Espacio",
   lbl_tab_enemies: "Enemigos",
+  lbl_tab_environment: "Entorno",
   lbl_tab_fluids: "Fluidos",
   lbl_tab_other: "Otros",
 };

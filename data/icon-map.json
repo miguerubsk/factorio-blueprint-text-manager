@@ -8,8 +8,8 @@
     },
     "ext": {
       "file": "assets/sprites/sprite-sheet-ext.png",
-      "width": 1024,
-      "height": 1024,
+      "width": 1344,
+      "height": 1280,
       "cell": 64
     }
   },
@@ -3239,1250 +3239,2035 @@
       "col": 8,
       "row": 27
     },
-    "entity:ashland-lichen-tree": {
+    "entity:accumulator": {
       "sheet": "ext",
       "col": 0,
+      "row": 0
+    },
+    "entity:active-provider-chest": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 0
+    },
+    "entity:agricultural-tower": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 0
+    },
+    "entity:artillery-flare": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 0
+    },
+    "entity:artillery-turret": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 0
+    },
+    "entity:artillery-wagon": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 0
+    },
+    "entity:ashland-lichen-tree": {
+      "sheet": "ext",
+      "col": 6,
       "row": 0
     },
     "entity:ashland-lichen-tree-flaming": {
       "sheet": "ext",
-      "col": 1,
+      "col": 7,
       "row": 0
     },
     "entity:ashland-lichen-tree-stump": {
       "sheet": "ext",
-      "col": 2,
+      "col": 8,
+      "row": 0
+    },
+    "entity:assembling-machine-1": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 0
+    },
+    "entity:assembling-machine-2": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 0
+    },
+    "entity:assembling-machine-3": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 0
+    },
+    "entity:asteroid-collector": {
+      "sheet": "ext",
+      "col": 12,
       "row": 0
     },
     "entity:atomic-nuke-shockwave": {
       "sheet": "ext",
-      "col": 3,
+      "col": 13,
+      "row": 0
+    },
+    "entity:beacon": {
+      "sheet": "ext",
+      "col": 14,
       "row": 0
     },
     "entity:behemoth-biter": {
       "sheet": "ext",
-      "col": 4,
+      "col": 15,
+      "row": 0
+    },
+    "entity:behemoth-biter-corpse": {
+      "sheet": "ext",
+      "col": 16,
       "row": 0
     },
     "entity:behemoth-spitter": {
       "sheet": "ext",
-      "col": 5,
+      "col": 17,
+      "row": 0
+    },
+    "entity:behemoth-spitter-corpse": {
+      "sheet": "ext",
+      "col": 18,
       "row": 0
     },
     "entity:behemoth-worm-turret": {
       "sheet": "ext",
-      "col": 6,
+      "col": 19,
       "row": 0
     },
     "entity:big-biter": {
       "sheet": "ext",
-      "col": 7,
+      "col": 20,
       "row": 0
     },
-    "entity:big-mining-drill-remnants": {
-      "sheet": "ext",
-      "col": 8,
-      "row": 0
-    },
-    "entity:big-spitter": {
-      "sheet": "ext",
-      "col": 9,
-      "row": 0
-    },
-    "entity:big-worm-turret": {
-      "sheet": "ext",
-      "col": 10,
-      "row": 0
-    },
-    "entity:biolab": {
-      "sheet": "ext",
-      "col": 11,
-      "row": 0
-    },
-    "entity:biter-spawner": {
-      "sheet": "ext",
-      "col": 12,
-      "row": 0
-    },
-    "entity:biter-spawner-corpse": {
-      "sheet": "ext",
-      "col": 13,
-      "row": 0
-    },
-    "entity:boompuff": {
-      "sheet": "ext",
-      "col": 14,
-      "row": 0
-    },
-    "item:bottomless-chest": {
-      "sheet": "ext",
-      "col": 15,
-      "row": 0
-    },
-    "entity:captive-biter-spawner": {
+    "entity:big-biter-corpse": {
       "sheet": "ext",
       "col": 0,
       "row": 1
     },
-    "entity:character": {
+    "entity:big-electric-pole": {
       "sheet": "ext",
       "col": 1,
       "row": 1
     },
-    "entity:cluster-nuke-explosion": {
+    "entity:big-mining-drill": {
       "sheet": "ext",
       "col": 2,
       "row": 1
     },
-    "item:copper-wire": {
+    "entity:big-mining-drill-remnants": {
       "sheet": "ext",
       "col": 3,
       "row": 1
+    },
+    "entity:big-spitter": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 1
+    },
+    "entity:big-spitter-corpse": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 1
+    },
+    "entity:big-worm-turret": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 1
+    },
+    "entity:biochamber": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 1
+    },
+    "entity:biolab": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 1
+    },
+    "entity:biter-spawner": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 1
+    },
+    "entity:biter-spawner-corpse": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 1
+    },
+    "entity:boiler": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 1
+    },
+    "entity:boompuff": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 1
+    },
+    "item:bottomless-chest": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 1
+    },
+    "entity:buffer-chest": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 1
+    },
+    "entity:bulk-inserter": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 1
+    },
+    "entity:burner-generator": {
+      "sheet": "ext",
+      "col": 16,
+      "row": 1
+    },
+    "entity:burner-inserter": {
+      "sheet": "ext",
+      "col": 17,
+      "row": 1
+    },
+    "entity:burner-mining-drill": {
+      "sheet": "ext",
+      "col": 18,
+      "row": 1
+    },
+    "entity:captive-biter-spawner": {
+      "sheet": "ext",
+      "col": 19,
+      "row": 1
+    },
+    "entity:car": {
+      "sheet": "ext",
+      "col": 20,
+      "row": 1
+    },
+    "entity:cargo-bay": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 2
+    },
+    "entity:cargo-landing-pad": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 2
+    },
+    "entity:cargo-pod": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 2
+    },
+    "entity:cargo-pod-container": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 2
+    },
+    "entity:cargo-wagon": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 2
+    },
+    "entity:centrifuge": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 2
+    },
+    "entity:character": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 2
+    },
+    "entity:character-corpse": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 2
+    },
+    "entity:chemical-plant": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 2
+    },
+    "entity:cluster-nuke-explosion": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 2
+    },
+    "item:copper-wire": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 2
+    },
+    "entity:crash-site-chest-1": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 2
+    },
+    "entity:crash-site-chest-2": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 2
+    },
+    "entity:crash-site-spaceship": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 2
+    },
+    "entity:crash-site-spaceship-wreck-big-1": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 2
+    },
+    "entity:crash-site-spaceship-wreck-big-2": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 2
+    },
+    "entity:crash-site-spaceship-wreck-medium-1": {
+      "sheet": "ext",
+      "col": 16,
+      "row": 2
+    },
+    "entity:crash-site-spaceship-wreck-medium-2": {
+      "sheet": "ext",
+      "col": 17,
+      "row": 2
+    },
+    "entity:crash-site-spaceship-wreck-medium-3": {
+      "sheet": "ext",
+      "col": 18,
+      "row": 2
+    },
+    "entity:crash-site-spaceship-wreck-small-1": {
+      "sheet": "ext",
+      "col": 19,
+      "row": 2
+    },
+    "entity:crash-site-spaceship-wreck-small-2": {
+      "sheet": "ext",
+      "col": 20,
+      "row": 2
+    },
+    "entity:crash-site-spaceship-wreck-small-3": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 3
+    },
+    "entity:crash-site-spaceship-wreck-small-4": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 3
+    },
+    "entity:crash-site-spaceship-wreck-small-5": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 3
+    },
+    "entity:crash-site-spaceship-wreck-small-6": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 3
     },
     "entity:crude-oil": {
       "sheet": "ext",
       "col": 4,
-      "row": 1
+      "row": 3
     },
     "item:crude-oil-barrel": {
       "sheet": "ext",
       "col": 5,
-      "row": 1
+      "row": 3
     },
     "recipe:crude-oil-barrel": {
       "sheet": "ext",
       "col": 6,
-      "row": 1
+      "row": 3
+    },
+    "entity:crusher": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 3
+    },
+    "entity:cryogenic-plant": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 3
+    },
+    "entity:curved-rail-a": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 3
+    },
+    "entity:curved-rail-b": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 3
     },
     "entity:cuttlepop": {
       "sheet": "ext",
-      "col": 7,
-      "row": 1
+      "col": 11,
+      "row": 3
     },
     "entity:dead-dry-hairy-tree": {
       "sheet": "ext",
-      "col": 8,
-      "row": 1
+      "col": 12,
+      "row": 3
     },
     "entity:dead-grey-trunk": {
       "sheet": "ext",
-      "col": 9,
-      "row": 1
+      "col": 13,
+      "row": 3
     },
     "entity:dead-tree-desert": {
       "sheet": "ext",
-      "col": 10,
-      "row": 1
+      "col": 14,
+      "row": 3
     },
     "virtual-signal:down-arrow": {
       "sheet": "ext",
-      "col": 11,
-      "row": 1
+      "col": 15,
+      "row": 3
     },
     "virtual-signal:down-left-arrow": {
       "sheet": "ext",
-      "col": 12,
-      "row": 1
+      "col": 16,
+      "row": 3
     },
     "virtual-signal:down-right-arrow": {
       "sheet": "ext",
-      "col": 13,
-      "row": 1
+      "col": 17,
+      "row": 3
     },
     "entity:dry-hairy-tree": {
       "sheet": "ext",
-      "col": 14,
-      "row": 1
+      "col": 18,
+      "row": 3
     },
     "entity:dry-tree": {
       "sheet": "ext",
-      "col": 15,
-      "row": 1
+      "col": 19,
+      "row": 3
+    },
+    "entity:dummy-elevated-curved-rail-a": {
+      "sheet": "ext",
+      "col": 20,
+      "row": 3
+    },
+    "entity:dummy-elevated-curved-rail-b": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 4
+    },
+    "entity:dummy-elevated-half-diagonal-rail": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 4
+    },
+    "entity:dummy-elevated-straight-rail": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 4
+    },
+    "entity:dummy-rail-ramp": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 4
+    },
+    "entity:dummy-rail-support": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 4
+    },
+    "entity:dummy-spider-unit": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 4
     },
     "entity:electric-energy-interface": {
       "sheet": "ext",
-      "col": 0,
-      "row": 2
+      "col": 6,
+      "row": 4
+    },
+    "entity:electric-furnace": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 4
+    },
+    "entity:electric-mining-drill": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 4
+    },
+    "entity:electromagnetic-plant": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 4
+    },
+    "entity:elevated-curved-rail-a": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 4
+    },
+    "entity:elevated-curved-rail-b": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 4
+    },
+    "entity:elevated-half-diagonal-rail": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 4
+    },
+    "entity:elevated-straight-rail": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 4
     },
     "recipe:empty-crude-oil-barrel": {
       "sheet": "ext",
-      "col": 1,
-      "row": 2
+      "col": 14,
+      "row": 4
     },
     "recipe:empty-fluoroketone-cold-barrel": {
       "sheet": "ext",
-      "col": 2,
-      "row": 2
+      "col": 15,
+      "row": 4
     },
     "recipe:empty-fluoroketone-hot-barrel": {
       "sheet": "ext",
-      "col": 3,
-      "row": 2
+      "col": 16,
+      "row": 4
     },
     "recipe:empty-heavy-oil-barrel": {
       "sheet": "ext",
-      "col": 4,
-      "row": 2
+      "col": 17,
+      "row": 4
     },
     "recipe:empty-light-oil-barrel": {
       "sheet": "ext",
-      "col": 5,
-      "row": 2
+      "col": 18,
+      "row": 4
     },
     "recipe:empty-lubricant-barrel": {
       "sheet": "ext",
-      "col": 6,
-      "row": 2
+      "col": 19,
+      "row": 4
     },
     "recipe:empty-petroleum-gas-barrel": {
       "sheet": "ext",
-      "col": 7,
-      "row": 2
+      "col": 20,
+      "row": 4
     },
     "recipe:empty-sulfuric-acid-barrel": {
       "sheet": "ext",
-      "col": 8,
-      "row": 2
+      "col": 0,
+      "row": 5
     },
     "recipe:empty-water-barrel": {
       "sheet": "ext",
-      "col": 9,
-      "row": 2
+      "col": 1,
+      "row": 5
+    },
+    "entity:entity-ghost": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 5
+    },
+    "entity:factorio-logo-11tiles": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 5
+    },
+    "entity:fast-inserter": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 5
     },
     "entity:fish": {
       "sheet": "ext",
-      "col": 10,
-      "row": 2
+      "col": 5,
+      "row": 5
+    },
+    "entity:flamethrower-turret": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 5
+    },
+    "entity:fluid-wagon": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 5
     },
     "entity:fluorine-vent": {
       "sheet": "ext",
-      "col": 11,
-      "row": 2
+      "col": 8,
+      "row": 5
     },
     "item:fluoroketone-cold-barrel": {
       "sheet": "ext",
-      "col": 12,
-      "row": 2
+      "col": 9,
+      "row": 5
     },
     "recipe:fluoroketone-cold-barrel": {
       "sheet": "ext",
-      "col": 13,
-      "row": 2
+      "col": 10,
+      "row": 5
     },
     "item:fluoroketone-hot-barrel": {
       "sheet": "ext",
-      "col": 14,
-      "row": 2
+      "col": 11,
+      "row": 5
     },
     "recipe:fluoroketone-hot-barrel": {
       "sheet": "ext",
-      "col": 15,
-      "row": 2
+      "col": 12,
+      "row": 5
+    },
+    "entity:foundry": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 5
     },
     "entity:funneltrunk": {
       "sheet": "ext",
-      "col": 0,
-      "row": 3
+      "col": 14,
+      "row": 5
+    },
+    "entity:fusion-generator": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 5
+    },
+    "entity:fusion-reactor": {
+      "sheet": "ext",
+      "col": 16,
+      "row": 5
+    },
+    "entity:gate": {
+      "sheet": "ext",
+      "col": 17,
+      "row": 5
     },
     "entity:gleba-spawner": {
       "sheet": "ext",
-      "col": 1,
-      "row": 3
+      "col": 18,
+      "row": 5
     },
     "entity:gleba-spawner-corpse": {
       "sheet": "ext",
-      "col": 2,
-      "row": 3
+      "col": 19,
+      "row": 5
     },
     "entity:gleba-spawner-corpse-small": {
       "sheet": "ext",
-      "col": 3,
-      "row": 3
+      "col": 20,
+      "row": 5
     },
     "entity:gleba-spawner-small": {
       "sheet": "ext",
-      "col": 4,
-      "row": 3
+      "col": 0,
+      "row": 6
     },
     "item:green-wire": {
       "sheet": "ext",
-      "col": 5,
-      "row": 3
+      "col": 1,
+      "row": 6
+    },
+    "entity:gun-turret": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 6
     },
     "entity:hairyclubnub": {
       "sheet": "ext",
+      "col": 3,
+      "row": 6
+    },
+    "entity:half-diagonal-rail": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 6
+    },
+    "entity:heat-exchanger": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 6
+    },
+    "entity:heat-interface": {
+      "sheet": "ext",
       "col": 6,
-      "row": 3
+      "row": 6
+    },
+    "entity:heat-pipe": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 6
+    },
+    "entity:heating-tower": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 6
     },
     "item:heavy-oil-barrel": {
       "sheet": "ext",
-      "col": 7,
-      "row": 3
+      "col": 9,
+      "row": 6
     },
     "recipe:heavy-oil-barrel": {
       "sheet": "ext",
-      "col": 8,
-      "row": 3
+      "col": 10,
+      "row": 6
+    },
+    "entity:hidden-electric-energy-interface": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 6
+    },
+    "entity:inserter": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 6
+    },
+    "entity:iron-chest": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 6
+    },
+    "entity:item-on-ground": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 6
+    },
+    "entity:item-request-proxy": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 6
     },
     "entity:jellystem": {
       "sheet": "ext",
-      "col": 9,
-      "row": 3
+      "col": 16,
+      "row": 6
+    },
+    "entity:lab": {
+      "sheet": "ext",
+      "col": 17,
+      "row": 6
+    },
+    "entity:land-mine": {
+      "sheet": "ext",
+      "col": 18,
+      "row": 6
+    },
+    "entity:laser-turret": {
+      "sheet": "ext",
+      "col": 19,
+      "row": 6
     },
     "virtual-signal:left-arrow": {
       "sheet": "ext",
-      "col": 10,
-      "row": 3
+      "col": 20,
+      "row": 6
+    },
+    "entity:legacy-curved-rail": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 7
+    },
+    "entity:legacy-straight-rail": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 7
     },
     "entity:lickmaw": {
       "sheet": "ext",
-      "col": 11,
-      "row": 3
+      "col": 2,
+      "row": 7
     },
     "item:light-oil-barrel": {
       "sheet": "ext",
-      "col": 12,
-      "row": 3
+      "col": 3,
+      "row": 7
     },
     "recipe:light-oil-barrel": {
       "sheet": "ext",
-      "col": 13,
-      "row": 3
+      "col": 4,
+      "row": 7
+    },
+    "entity:lightning-collector": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 7
+    },
+    "entity:lightning-rod": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 7
     },
     "entity:lithium-brine": {
       "sheet": "ext",
-      "col": 14,
-      "row": 3
+      "col": 7,
+      "row": 7
+    },
+    "entity:locomotive": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 7
+    },
+    "entity:long-handed-inserter": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 7
     },
     "item:lubricant-barrel": {
       "sheet": "ext",
-      "col": 15,
-      "row": 3
+      "col": 10,
+      "row": 7
     },
     "recipe:lubricant-barrel": {
       "sheet": "ext",
-      "col": 0,
-      "row": 4
+      "col": 11,
+      "row": 7
     },
     "entity:market": {
       "sheet": "ext",
-      "col": 1,
-      "row": 4
+      "col": 12,
+      "row": 7
     },
     "entity:medium-biter": {
       "sheet": "ext",
-      "col": 2,
-      "row": 4
+      "col": 13,
+      "row": 7
+    },
+    "entity:medium-biter-corpse": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 7
+    },
+    "entity:medium-electric-pole": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 7
     },
     "entity:medium-spitter": {
       "sheet": "ext",
-      "col": 3,
-      "row": 4
+      "col": 16,
+      "row": 7
+    },
+    "entity:medium-spitter-corpse": {
+      "sheet": "ext",
+      "col": 17,
+      "row": 7
     },
     "entity:medium-worm-turret": {
       "sheet": "ext",
-      "col": 4,
-      "row": 4
+      "col": 18,
+      "row": 7
     },
     "item:no-item": {
       "sheet": "ext",
-      "col": 5,
-      "row": 4
+      "col": 19,
+      "row": 7
+    },
+    "entity:nuclear-reactor": {
+      "sheet": "ext",
+      "col": 20,
+      "row": 7
     },
     "entity:nuclear-smouldering-smoke-source": {
       "sheet": "ext",
+      "col": 0,
+      "row": 8
+    },
+    "entity:offshore-pump": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 8
+    },
+    "entity:oil-refinery": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 8
+    },
+    "entity:one-way-valve": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 8
+    },
+    "entity:overflow-valve": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 8
+    },
+    "item:parameter-0": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 8
+    },
+    "item:parameter-1": {
+      "sheet": "ext",
       "col": 6,
-      "row": 4
+      "row": 8
+    },
+    "item:parameter-2": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 8
+    },
+    "item:parameter-3": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 8
+    },
+    "item:parameter-4": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 8
+    },
+    "item:parameter-5": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 8
+    },
+    "item:parameter-6": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 8
+    },
+    "item:parameter-7": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 8
+    },
+    "item:parameter-8": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 8
+    },
+    "item:parameter-9": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 8
+    },
+    "entity:passive-provider-chest": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 8
     },
     "item:petroleum-gas-barrel": {
       "sheet": "ext",
-      "col": 7,
-      "row": 4
+      "col": 16,
+      "row": 8
     },
     "recipe:petroleum-gas-barrel": {
       "sheet": "ext",
-      "col": 8,
-      "row": 4
+      "col": 17,
+      "row": 8
+    },
+    "entity:pipe": {
+      "sheet": "ext",
+      "col": 18,
+      "row": 8
+    },
+    "entity:pipe-to-ground": {
+      "sheet": "ext",
+      "col": 19,
+      "row": 8
+    },
+    "entity:pump": {
+      "sheet": "ext",
+      "col": 20,
+      "row": 8
+    },
+    "entity:pumpjack": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 9
+    },
+    "entity:radar": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 9
+    },
+    "entity:rail-chain-signal": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 9
+    },
+    "entity:rail-ramp": {
+      "sheet": "ext",
+      "col": 3,
+      "row": 9
+    },
+    "entity:rail-signal": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 9
+    },
+    "entity:rail-support": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 9
+    },
+    "entity:railgun-turret": {
+      "sheet": "ext",
+      "col": 6,
+      "row": 9
     },
     "item:red-wire": {
       "sheet": "ext",
-      "col": 9,
-      "row": 4
+      "col": 7,
+      "row": 9
+    },
+    "entity:requester-chest": {
+      "sheet": "ext",
+      "col": 8,
+      "row": 9
     },
     "virtual-signal:right-arrow": {
       "sheet": "ext",
+      "col": 9,
+      "row": 9
+    },
+    "entity:roboport": {
+      "sheet": "ext",
       "col": 10,
-      "row": 4
+      "row": 9
+    },
+    "entity:rocket-silo": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 9
+    },
+    "entity:rocket-turret": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 9
     },
     "item:satellite": {
       "sheet": "ext",
-      "col": 11,
-      "row": 4
+      "col": 13,
+      "row": 9
     },
     "recipe:satellite": {
       "sheet": "ext",
-      "col": 12,
-      "row": 4
+      "col": 14,
+      "row": 9
     },
     "item:selection-tool": {
       "sheet": "ext",
-      "col": 13,
-      "row": 4
+      "col": 15,
+      "row": 9
     },
     "virtual-signal:shape-circle": {
       "sheet": "ext",
-      "col": 14,
-      "row": 4
+      "col": 16,
+      "row": 9
     },
     "virtual-signal:shape-corner": {
       "sheet": "ext",
-      "col": 15,
-      "row": 4
+      "col": 17,
+      "row": 9
     },
     "virtual-signal:shape-corner-2": {
       "sheet": "ext",
-      "col": 0,
-      "row": 5
+      "col": 18,
+      "row": 9
     },
     "virtual-signal:shape-corner-3": {
       "sheet": "ext",
-      "col": 1,
-      "row": 5
+      "col": 19,
+      "row": 9
     },
     "virtual-signal:shape-corner-4": {
       "sheet": "ext",
-      "col": 2,
-      "row": 5
+      "col": 20,
+      "row": 9
     },
     "virtual-signal:shape-cross": {
       "sheet": "ext",
-      "col": 3,
-      "row": 5
+      "col": 0,
+      "row": 10
     },
     "virtual-signal:shape-curve": {
       "sheet": "ext",
-      "col": 4,
-      "row": 5
+      "col": 1,
+      "row": 10
     },
     "virtual-signal:shape-curve-2": {
       "sheet": "ext",
-      "col": 5,
-      "row": 5
+      "col": 2,
+      "row": 10
     },
     "virtual-signal:shape-curve-3": {
       "sheet": "ext",
-      "col": 6,
-      "row": 5
+      "col": 3,
+      "row": 10
     },
     "virtual-signal:shape-curve-4": {
       "sheet": "ext",
-      "col": 7,
-      "row": 5
+      "col": 4,
+      "row": 10
     },
     "virtual-signal:shape-diagonal": {
       "sheet": "ext",
-      "col": 8,
-      "row": 5
+      "col": 5,
+      "row": 10
     },
     "virtual-signal:shape-diagonal-2": {
       "sheet": "ext",
-      "col": 9,
-      "row": 5
+      "col": 6,
+      "row": 10
     },
     "virtual-signal:shape-diagonal-cross": {
       "sheet": "ext",
-      "col": 10,
-      "row": 5
+      "col": 7,
+      "row": 10
     },
     "virtual-signal:shape-horizontal": {
       "sheet": "ext",
-      "col": 11,
-      "row": 5
+      "col": 8,
+      "row": 10
     },
     "virtual-signal:shape-t": {
       "sheet": "ext",
-      "col": 12,
-      "row": 5
+      "col": 9,
+      "row": 10
     },
     "virtual-signal:shape-t-2": {
       "sheet": "ext",
-      "col": 13,
-      "row": 5
+      "col": 10,
+      "row": 10
     },
     "virtual-signal:shape-t-3": {
       "sheet": "ext",
-      "col": 14,
-      "row": 5
+      "col": 11,
+      "row": 10
     },
     "virtual-signal:shape-t-4": {
       "sheet": "ext",
-      "col": 15,
-      "row": 5
+      "col": 12,
+      "row": 10
     },
     "virtual-signal:shape-vertical": {
       "sheet": "ext",
-      "col": 0,
-      "row": 6
+      "col": 13,
+      "row": 10
     },
     "virtual-signal:signal-0": {
       "sheet": "ext",
-      "col": 1,
-      "row": 6
+      "col": 14,
+      "row": 10
     },
     "virtual-signal:signal-1": {
       "sheet": "ext",
-      "col": 2,
-      "row": 6
+      "col": 15,
+      "row": 10
     },
     "virtual-signal:signal-2": {
       "sheet": "ext",
-      "col": 3,
-      "row": 6
+      "col": 16,
+      "row": 10
     },
     "virtual-signal:signal-3": {
       "sheet": "ext",
-      "col": 4,
-      "row": 6
+      "col": 17,
+      "row": 10
     },
     "virtual-signal:signal-4": {
       "sheet": "ext",
-      "col": 5,
-      "row": 6
+      "col": 18,
+      "row": 10
     },
     "virtual-signal:signal-5": {
       "sheet": "ext",
-      "col": 6,
-      "row": 6
+      "col": 19,
+      "row": 10
     },
     "virtual-signal:signal-6": {
       "sheet": "ext",
-      "col": 7,
-      "row": 6
+      "col": 20,
+      "row": 10
     },
     "virtual-signal:signal-7": {
       "sheet": "ext",
-      "col": 8,
-      "row": 6
+      "col": 0,
+      "row": 11
     },
     "virtual-signal:signal-8": {
       "sheet": "ext",
-      "col": 9,
-      "row": 6
+      "col": 1,
+      "row": 11
     },
     "virtual-signal:signal-9": {
       "sheet": "ext",
-      "col": 10,
-      "row": 6
+      "col": 2,
+      "row": 11
     },
     "virtual-signal:signal-A": {
       "sheet": "ext",
-      "col": 11,
-      "row": 6
+      "col": 3,
+      "row": 11
     },
     "virtual-signal:signal-B": {
       "sheet": "ext",
-      "col": 12,
-      "row": 6
+      "col": 4,
+      "row": 11
     },
     "virtual-signal:signal-C": {
       "sheet": "ext",
-      "col": 13,
-      "row": 6
+      "col": 5,
+      "row": 11
     },
     "virtual-signal:signal-D": {
       "sheet": "ext",
-      "col": 14,
-      "row": 6
+      "col": 6,
+      "row": 11
     },
     "virtual-signal:signal-E": {
       "sheet": "ext",
-      "col": 15,
-      "row": 6
+      "col": 7,
+      "row": 11
     },
     "virtual-signal:signal-F": {
       "sheet": "ext",
-      "col": 0,
-      "row": 7
+      "col": 8,
+      "row": 11
     },
     "virtual-signal:signal-G": {
       "sheet": "ext",
-      "col": 1,
-      "row": 7
+      "col": 9,
+      "row": 11
     },
     "virtual-signal:signal-H": {
       "sheet": "ext",
-      "col": 2,
-      "row": 7
+      "col": 10,
+      "row": 11
     },
     "virtual-signal:signal-I": {
       "sheet": "ext",
-      "col": 3,
-      "row": 7
+      "col": 11,
+      "row": 11
     },
     "virtual-signal:signal-J": {
       "sheet": "ext",
-      "col": 4,
-      "row": 7
+      "col": 12,
+      "row": 11
     },
     "virtual-signal:signal-K": {
       "sheet": "ext",
-      "col": 5,
-      "row": 7
+      "col": 13,
+      "row": 11
     },
     "virtual-signal:signal-L": {
       "sheet": "ext",
-      "col": 6,
-      "row": 7
+      "col": 14,
+      "row": 11
     },
     "virtual-signal:signal-M": {
       "sheet": "ext",
-      "col": 7,
-      "row": 7
+      "col": 15,
+      "row": 11
     },
     "virtual-signal:signal-N": {
       "sheet": "ext",
-      "col": 8,
-      "row": 7
+      "col": 16,
+      "row": 11
     },
     "virtual-signal:signal-O": {
       "sheet": "ext",
-      "col": 9,
-      "row": 7
+      "col": 17,
+      "row": 11
     },
     "virtual-signal:signal-P": {
       "sheet": "ext",
-      "col": 10,
-      "row": 7
+      "col": 18,
+      "row": 11
     },
     "virtual-signal:signal-Q": {
       "sheet": "ext",
-      "col": 11,
-      "row": 7
+      "col": 19,
+      "row": 11
     },
     "virtual-signal:signal-R": {
       "sheet": "ext",
-      "col": 12,
-      "row": 7
+      "col": 20,
+      "row": 11
     },
     "virtual-signal:signal-S": {
       "sheet": "ext",
-      "col": 13,
-      "row": 7
+      "col": 0,
+      "row": 12
     },
     "virtual-signal:signal-T": {
       "sheet": "ext",
-      "col": 14,
-      "row": 7
+      "col": 1,
+      "row": 12
     },
     "virtual-signal:signal-U": {
       "sheet": "ext",
-      "col": 15,
-      "row": 7
+      "col": 2,
+      "row": 12
     },
     "virtual-signal:signal-V": {
       "sheet": "ext",
-      "col": 0,
-      "row": 8
+      "col": 3,
+      "row": 12
     },
     "virtual-signal:signal-W": {
       "sheet": "ext",
-      "col": 1,
-      "row": 8
+      "col": 4,
+      "row": 12
     },
     "virtual-signal:signal-X": {
       "sheet": "ext",
-      "col": 2,
-      "row": 8
+      "col": 5,
+      "row": 12
     },
     "virtual-signal:signal-Y": {
       "sheet": "ext",
-      "col": 3,
-      "row": 8
+      "col": 6,
+      "row": 12
     },
     "virtual-signal:signal-Z": {
       "sheet": "ext",
-      "col": 4,
-      "row": 8
+      "col": 7,
+      "row": 12
     },
     "virtual-signal:signal-alarm": {
       "sheet": "ext",
-      "col": 5,
-      "row": 8
+      "col": 8,
+      "row": 12
     },
     "virtual-signal:signal-alert": {
       "sheet": "ext",
-      "col": 6,
-      "row": 8
+      "col": 9,
+      "row": 12
     },
     "virtual-signal:signal-ampersand": {
       "sheet": "ext",
-      "col": 7,
-      "row": 8
+      "col": 10,
+      "row": 12
     },
     "virtual-signal:signal-anticlockwise-circle-arrow": {
       "sheet": "ext",
-      "col": 8,
-      "row": 8
+      "col": 11,
+      "row": 12
     },
     "virtual-signal:signal-any-quality": {
       "sheet": "ext",
-      "col": 9,
-      "row": 8
+      "col": 12,
+      "row": 12
     },
     "virtual-signal:signal-anything": {
       "sheet": "ext",
-      "col": 10,
-      "row": 8
+      "col": 13,
+      "row": 12
     },
     "virtual-signal:signal-apostrophe": {
       "sheet": "ext",
-      "col": 11,
-      "row": 8
+      "col": 14,
+      "row": 12
     },
     "virtual-signal:signal-battery-full": {
       "sheet": "ext",
-      "col": 12,
-      "row": 8
+      "col": 15,
+      "row": 12
     },
     "virtual-signal:signal-battery-low": {
       "sheet": "ext",
-      "col": 13,
-      "row": 8
+      "col": 16,
+      "row": 12
     },
     "virtual-signal:signal-battery-mid-level": {
       "sheet": "ext",
-      "col": 14,
-      "row": 8
+      "col": 17,
+      "row": 12
     },
     "virtual-signal:signal-black": {
       "sheet": "ext",
-      "col": 15,
-      "row": 8
+      "col": 18,
+      "row": 12
     },
     "virtual-signal:signal-blue": {
       "sheet": "ext",
-      "col": 0,
-      "row": 9
+      "col": 19,
+      "row": 12
     },
     "virtual-signal:signal-check": {
       "sheet": "ext",
-      "col": 1,
-      "row": 9
+      "col": 20,
+      "row": 12
     },
     "virtual-signal:signal-circumflex-accent": {
       "sheet": "ext",
-      "col": 2,
-      "row": 9
+      "col": 0,
+      "row": 13
     },
     "virtual-signal:signal-clock": {
       "sheet": "ext",
-      "col": 3,
-      "row": 9
+      "col": 1,
+      "row": 13
     },
     "virtual-signal:signal-clockwise-circle-arrow": {
       "sheet": "ext",
-      "col": 4,
-      "row": 9
+      "col": 2,
+      "row": 13
     },
     "virtual-signal:signal-colon": {
       "sheet": "ext",
-      "col": 5,
-      "row": 9
+      "col": 3,
+      "row": 13
     },
     "virtual-signal:signal-comma": {
       "sheet": "ext",
-      "col": 6,
-      "row": 9
+      "col": 4,
+      "row": 13
     },
     "virtual-signal:signal-cyan": {
       "sheet": "ext",
-      "col": 7,
-      "row": 9
+      "col": 5,
+      "row": 13
     },
     "virtual-signal:signal-damage": {
       "sheet": "ext",
-      "col": 8,
-      "row": 9
+      "col": 6,
+      "row": 13
     },
     "virtual-signal:signal-deny": {
       "sheet": "ext",
-      "col": 9,
-      "row": 9
+      "col": 7,
+      "row": 13
     },
     "virtual-signal:signal-division": {
       "sheet": "ext",
-      "col": 10,
-      "row": 9
+      "col": 8,
+      "row": 13
     },
     "virtual-signal:signal-dot": {
       "sheet": "ext",
-      "col": 11,
-      "row": 9
+      "col": 9,
+      "row": 13
     },
     "virtual-signal:signal-each": {
       "sheet": "ext",
-      "col": 12,
-      "row": 9
+      "col": 10,
+      "row": 13
     },
     "virtual-signal:signal-equal": {
       "sheet": "ext",
-      "col": 13,
-      "row": 9
+      "col": 11,
+      "row": 13
     },
     "virtual-signal:signal-everything": {
       "sheet": "ext",
-      "col": 14,
-      "row": 9
+      "col": 12,
+      "row": 13
     },
     "virtual-signal:signal-exclamation-mark": {
       "sheet": "ext",
-      "col": 15,
-      "row": 9
+      "col": 13,
+      "row": 13
     },
     "virtual-signal:signal-explosion": {
       "sheet": "ext",
-      "col": 0,
-      "row": 10
+      "col": 14,
+      "row": 13
     },
     "virtual-signal:signal-fire": {
       "sheet": "ext",
-      "col": 1,
-      "row": 10
+      "col": 15,
+      "row": 13
     },
     "virtual-signal:signal-fluid-parameter": {
       "sheet": "ext",
-      "col": 2,
-      "row": 10
+      "col": 16,
+      "row": 13
     },
     "virtual-signal:signal-fuel": {
       "sheet": "ext",
-      "col": 3,
-      "row": 10
+      "col": 17,
+      "row": 13
     },
     "virtual-signal:signal-fuel-parameter": {
       "sheet": "ext",
-      "col": 4,
-      "row": 10
+      "col": 18,
+      "row": 13
     },
     "virtual-signal:signal-ghost": {
       "sheet": "ext",
-      "col": 5,
-      "row": 10
+      "col": 19,
+      "row": 13
     },
     "virtual-signal:signal-greater-than": {
       "sheet": "ext",
-      "col": 6,
-      "row": 10
+      "col": 20,
+      "row": 13
     },
     "virtual-signal:signal-greater-than-or-equal-to": {
       "sheet": "ext",
-      "col": 7,
-      "row": 10
+      "col": 0,
+      "row": 14
     },
     "virtual-signal:signal-green": {
       "sheet": "ext",
-      "col": 8,
-      "row": 10
+      "col": 1,
+      "row": 14
     },
     "virtual-signal:signal-grey": {
       "sheet": "ext",
-      "col": 9,
-      "row": 10
+      "col": 2,
+      "row": 14
     },
     "virtual-signal:signal-heart": {
       "sheet": "ext",
-      "col": 10,
-      "row": 10
+      "col": 3,
+      "row": 14
     },
     "virtual-signal:signal-hourglass": {
       "sheet": "ext",
-      "col": 11,
-      "row": 10
+      "col": 4,
+      "row": 14
     },
     "virtual-signal:signal-info": {
       "sheet": "ext",
-      "col": 12,
-      "row": 10
+      "col": 5,
+      "row": 14
     },
     "virtual-signal:signal-input": {
       "sheet": "ext",
-      "col": 13,
-      "row": 10
+      "col": 6,
+      "row": 14
     },
     "virtual-signal:signal-item-parameter": {
       "sheet": "ext",
-      "col": 14,
-      "row": 10
+      "col": 7,
+      "row": 14
     },
     "virtual-signal:signal-left-parenthesis": {
       "sheet": "ext",
-      "col": 15,
-      "row": 10
+      "col": 8,
+      "row": 14
     },
     "virtual-signal:signal-left-right-arrow": {
       "sheet": "ext",
-      "col": 0,
-      "row": 11
+      "col": 9,
+      "row": 14
     },
     "virtual-signal:signal-left-square-bracket": {
       "sheet": "ext",
-      "col": 1,
-      "row": 11
+      "col": 10,
+      "row": 14
     },
     "virtual-signal:signal-less-than": {
       "sheet": "ext",
-      "col": 2,
-      "row": 11
+      "col": 11,
+      "row": 14
     },
     "virtual-signal:signal-less-than-or-equal-to": {
       "sheet": "ext",
-      "col": 3,
-      "row": 11
+      "col": 12,
+      "row": 14
     },
     "virtual-signal:signal-letter-dot": {
       "sheet": "ext",
-      "col": 4,
-      "row": 11
+      "col": 13,
+      "row": 14
     },
     "virtual-signal:signal-lightning": {
       "sheet": "ext",
-      "col": 5,
-      "row": 11
+      "col": 14,
+      "row": 14
     },
     "virtual-signal:signal-liquid": {
       "sheet": "ext",
-      "col": 6,
-      "row": 11
+      "col": 15,
+      "row": 14
     },
     "virtual-signal:signal-lock": {
       "sheet": "ext",
-      "col": 7,
-      "row": 11
+      "col": 16,
+      "row": 14
     },
     "virtual-signal:signal-map-marker": {
       "sheet": "ext",
-      "col": 8,
-      "row": 11
+      "col": 17,
+      "row": 14
     },
     "virtual-signal:signal-mining": {
       "sheet": "ext",
-      "col": 9,
-      "row": 11
+      "col": 18,
+      "row": 14
     },
     "virtual-signal:signal-minus": {
       "sheet": "ext",
-      "col": 10,
-      "row": 11
+      "col": 19,
+      "row": 14
     },
     "virtual-signal:signal-moon": {
       "sheet": "ext",
-      "col": 11,
-      "row": 11
+      "col": 20,
+      "row": 14
     },
     "virtual-signal:signal-multiplication": {
       "sheet": "ext",
-      "col": 12,
-      "row": 11
+      "col": 0,
+      "row": 15
     },
     "virtual-signal:signal-no-entry": {
       "sheet": "ext",
-      "col": 13,
-      "row": 11
+      "col": 1,
+      "row": 15
     },
     "virtual-signal:signal-not-equal": {
       "sheet": "ext",
-      "col": 14,
-      "row": 11
+      "col": 2,
+      "row": 15
     },
     "virtual-signal:signal-number-sign": {
       "sheet": "ext",
-      "col": 15,
-      "row": 11
+      "col": 3,
+      "row": 15
     },
     "virtual-signal:signal-output": {
       "sheet": "ext",
-      "col": 0,
-      "row": 12
+      "col": 4,
+      "row": 15
     },
     "virtual-signal:signal-percent": {
       "sheet": "ext",
-      "col": 1,
-      "row": 12
+      "col": 5,
+      "row": 15
     },
     "virtual-signal:signal-pink": {
       "sheet": "ext",
-      "col": 2,
-      "row": 12
+      "col": 6,
+      "row": 15
     },
     "virtual-signal:signal-plus": {
       "sheet": "ext",
-      "col": 3,
-      "row": 12
+      "col": 7,
+      "row": 15
     },
     "virtual-signal:signal-question-mark": {
       "sheet": "ext",
-      "col": 4,
-      "row": 12
+      "col": 8,
+      "row": 15
     },
     "virtual-signal:signal-quotation-mark": {
       "sheet": "ext",
-      "col": 5,
-      "row": 12
+      "col": 9,
+      "row": 15
     },
     "virtual-signal:signal-radioactivity": {
       "sheet": "ext",
-      "col": 6,
-      "row": 12
+      "col": 10,
+      "row": 15
     },
     "virtual-signal:signal-recycle": {
       "sheet": "ext",
-      "col": 7,
-      "row": 12
+      "col": 11,
+      "row": 15
     },
     "virtual-signal:signal-red": {
       "sheet": "ext",
-      "col": 8,
-      "row": 12
+      "col": 12,
+      "row": 15
     },
     "virtual-signal:signal-right-parenthesis": {
       "sheet": "ext",
-      "col": 9,
-      "row": 12
+      "col": 13,
+      "row": 15
     },
     "virtual-signal:signal-right-square-bracket": {
       "sheet": "ext",
-      "col": 10,
-      "row": 12
+      "col": 14,
+      "row": 15
     },
     "virtual-signal:signal-rightwards-leftwards-arrow": {
       "sheet": "ext",
-      "col": 11,
-      "row": 12
+      "col": 15,
+      "row": 15
     },
     "virtual-signal:signal-science-pack": {
       "sheet": "ext",
-      "col": 12,
-      "row": 12
+      "col": 16,
+      "row": 15
     },
     "virtual-signal:signal-shuffle": {
       "sheet": "ext",
-      "col": 13,
-      "row": 12
+      "col": 17,
+      "row": 15
     },
     "virtual-signal:signal-signal-parameter": {
       "sheet": "ext",
-      "col": 14,
-      "row": 12
+      "col": 18,
+      "row": 15
     },
     "virtual-signal:signal-skull": {
       "sheet": "ext",
-      "col": 15,
-      "row": 12
+      "col": 19,
+      "row": 15
     },
     "virtual-signal:signal-slash": {
       "sheet": "ext",
-      "col": 0,
-      "row": 13
+      "col": 20,
+      "row": 15
     },
     "virtual-signal:signal-snowflake": {
       "sheet": "ext",
-      "col": 1,
-      "row": 13
+      "col": 0,
+      "row": 16
     },
     "virtual-signal:signal-speed": {
       "sheet": "ext",
-      "col": 2,
-      "row": 13
+      "col": 1,
+      "row": 16
     },
     "virtual-signal:signal-stack-size": {
       "sheet": "ext",
-      "col": 3,
-      "row": 13
+      "col": 2,
+      "row": 16
     },
     "virtual-signal:signal-star": {
       "sheet": "ext",
-      "col": 4,
-      "row": 13
+      "col": 3,
+      "row": 16
     },
     "virtual-signal:signal-sun": {
       "sheet": "ext",
-      "col": 5,
-      "row": 13
+      "col": 4,
+      "row": 16
     },
     "virtual-signal:signal-thermometer-blue": {
       "sheet": "ext",
-      "col": 6,
-      "row": 13
+      "col": 5,
+      "row": 16
     },
     "virtual-signal:signal-thermometer-red": {
       "sheet": "ext",
-      "col": 7,
-      "row": 13
+      "col": 6,
+      "row": 16
     },
     "virtual-signal:signal-trash-bin": {
       "sheet": "ext",
-      "col": 8,
-      "row": 13
+      "col": 7,
+      "row": 16
     },
     "virtual-signal:signal-unlock": {
       "sheet": "ext",
-      "col": 9,
-      "row": 13
+      "col": 8,
+      "row": 16
     },
     "virtual-signal:signal-up-down-arrow": {
       "sheet": "ext",
-      "col": 10,
-      "row": 13
+      "col": 9,
+      "row": 16
     },
     "virtual-signal:signal-upwards-downwards-arrow": {
       "sheet": "ext",
-      "col": 11,
-      "row": 13
+      "col": 10,
+      "row": 16
     },
     "virtual-signal:signal-weapon": {
       "sheet": "ext",
-      "col": 12,
-      "row": 13
+      "col": 11,
+      "row": 16
     },
     "virtual-signal:signal-white": {
       "sheet": "ext",
-      "col": 13,
-      "row": 13
+      "col": 12,
+      "row": 16
     },
     "virtual-signal:signal-white-flag": {
       "sheet": "ext",
-      "col": 14,
-      "row": 13
+      "col": 13,
+      "row": 16
     },
     "virtual-signal:signal-yellow": {
       "sheet": "ext",
+      "col": 14,
+      "row": 16
+    },
+    "entity:simple-entity-with-force": {
+      "sheet": "ext",
       "col": 15,
-      "row": 13
+      "row": 16
+    },
+    "entity:simple-entity-with-owner": {
+      "sheet": "ext",
+      "col": 16,
+      "row": 16
     },
     "entity:slipstack": {
       "sheet": "ext",
-      "col": 0,
-      "row": 14
+      "col": 17,
+      "row": 16
     },
     "entity:small-biter": {
       "sheet": "ext",
-      "col": 1,
-      "row": 14
+      "col": 18,
+      "row": 16
+    },
+    "entity:small-biter-corpse": {
+      "sheet": "ext",
+      "col": 19,
+      "row": 16
+    },
+    "entity:small-electric-pole": {
+      "sheet": "ext",
+      "col": 20,
+      "row": 16
+    },
+    "entity:small-lamp": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 17
     },
     "entity:small-spitter": {
       "sheet": "ext",
+      "col": 1,
+      "row": 17
+    },
+    "entity:small-spitter-corpse": {
+      "sheet": "ext",
       "col": 2,
-      "row": 14
+      "row": 17
     },
     "entity:small-worm-turret": {
       "sheet": "ext",
       "col": 3,
-      "row": 14
+      "row": 17
+    },
+    "entity:solar-panel": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 17
     },
     "item:space-platform-hub": {
       "sheet": "ext",
-      "col": 4,
-      "row": 14
+      "col": 5,
+      "row": 17
     },
     "entity:space-platform-hub": {
       "sheet": "ext",
-      "col": 5,
-      "row": 14
+      "col": 6,
+      "row": 17
     },
     "item:space-platform-starter-pack": {
       "sheet": "ext",
-      "col": 6,
-      "row": 14
+      "col": 7,
+      "row": 17
     },
     "recipe:space-platform-starter-pack": {
       "sheet": "ext",
-      "col": 7,
-      "row": 14
+      "col": 8,
+      "row": 17
     },
     "item:spidertron-remote": {
       "sheet": "ext",
-      "col": 8,
-      "row": 14
+      "col": 9,
+      "row": 17
     },
     "entity:spitter-spawner": {
       "sheet": "ext",
-      "col": 9,
-      "row": 14
+      "col": 10,
+      "row": 17
     },
     "entity:spitter-spawner-corpse": {
       "sheet": "ext",
-      "col": 10,
-      "row": 14
+      "col": 11,
+      "row": 17
+    },
+    "entity:stack-inserter": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 17
+    },
+    "entity:steam-engine": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 17
+    },
+    "entity:steam-turbine": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 17
+    },
+    "entity:steel-chest": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 17
+    },
+    "entity:steel-furnace": {
+      "sheet": "ext",
+      "col": 16,
+      "row": 17
     },
     "entity:stingfrond": {
       "sheet": "ext",
-      "col": 11,
-      "row": 14
+      "col": 17,
+      "row": 17
+    },
+    "entity:stone-furnace": {
+      "sheet": "ext",
+      "col": 18,
+      "row": 17
+    },
+    "entity:stone-wall": {
+      "sheet": "ext",
+      "col": 19,
+      "row": 17
+    },
+    "entity:storage-chest": {
+      "sheet": "ext",
+      "col": 20,
+      "row": 17
+    },
+    "entity:storage-tank": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 18
+    },
+    "entity:straight-rail": {
+      "sheet": "ext",
+      "col": 1,
+      "row": 18
+    },
+    "entity:substation": {
+      "sheet": "ext",
+      "col": 2,
+      "row": 18
     },
     "item:sulfuric-acid-barrel": {
       "sheet": "ext",
-      "col": 12,
-      "row": 14
+      "col": 3,
+      "row": 18
     },
     "recipe:sulfuric-acid-barrel": {
       "sheet": "ext",
-      "col": 13,
-      "row": 14
+      "col": 4,
+      "row": 18
     },
     "entity:sulfuric-acid-geyser": {
       "sheet": "ext",
-      "col": 14,
-      "row": 14
+      "col": 5,
+      "row": 18
     },
     "entity:sunnycomb": {
       "sheet": "ext",
-      "col": 15,
-      "row": 14
+      "col": 6,
+      "row": 18
+    },
+    "entity:tank": {
+      "sheet": "ext",
+      "col": 7,
+      "row": 18
     },
     "entity:teflilly": {
       "sheet": "ext",
-      "col": 0,
-      "row": 15
+      "col": 8,
+      "row": 18
+    },
+    "entity:tesla-turret": {
+      "sheet": "ext",
+      "col": 9,
+      "row": 18
+    },
+    "entity:thruster": {
+      "sheet": "ext",
+      "col": 10,
+      "row": 18
+    },
+    "entity:tile-ghost": {
+      "sheet": "ext",
+      "col": 11,
+      "row": 18
+    },
+    "entity:tile-proxy": {
+      "sheet": "ext",
+      "col": 12,
+      "row": 18
+    },
+    "entity:top-up-valve": {
+      "sheet": "ext",
+      "col": 13,
+      "row": 18
+    },
+    "entity:train-stop": {
+      "sheet": "ext",
+      "col": 14,
+      "row": 18
+    },
+    "entity:tree-dying-proxy": {
+      "sheet": "ext",
+      "col": 15,
+      "row": 18
+    },
+    "entity:tree-proxy": {
+      "sheet": "ext",
+      "col": 16,
+      "row": 18
     },
     "virtual-signal:up-arrow": {
       "sheet": "ext",
-      "col": 1,
-      "row": 15
+      "col": 17,
+      "row": 18
     },
     "virtual-signal:up-left-arrow": {
       "sheet": "ext",
-      "col": 2,
-      "row": 15
+      "col": 18,
+      "row": 18
     },
     "virtual-signal:up-right-arrow": {
       "sheet": "ext",
-      "col": 3,
-      "row": 15
+      "col": 19,
+      "row": 18
     },
     "item:upgrade-planner": {
       "sheet": "ext",
-      "col": 4,
-      "row": 15
+      "col": 20,
+      "row": 18
+    },
+    "entity:uranium-ore": {
+      "sheet": "ext",
+      "col": 0,
+      "row": 19
     },
     "item:water-barrel": {
       "sheet": "ext",
-      "col": 5,
-      "row": 15
+      "col": 1,
+      "row": 19
     },
     "recipe:water-barrel": {
       "sheet": "ext",
-      "col": 6,
-      "row": 15
+      "col": 2,
+      "row": 19
     },
     "entity:water-cane": {
       "sheet": "ext",
-      "col": 7,
-      "row": 15
+      "col": 3,
+      "row": 19
+    },
+    "entity:wooden-chest": {
+      "sheet": "ext",
+      "col": 4,
+      "row": 19
+    },
+    "entity:wube-logo-space-platform": {
+      "sheet": "ext",
+      "col": 5,
+      "row": 19
     },
     "entity:yumako-tree": {
       "sheet": "ext",
-      "col": 8,
-      "row": 15
+      "col": 6,
+      "row": 19
     }
   }
 }

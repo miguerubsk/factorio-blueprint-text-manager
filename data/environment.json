@@ -11,8 +11,8 @@
           "es": "Personaje",
           "icon": {
             "sheet": "ext",
-            "col": 1,
-            "row": 1
+            "col": 6,
+            "row": 2
           }
         },
         {
@@ -23,8 +23,8 @@
           "es": "Pez",
           "icon": {
             "sheet": "ext",
-            "col": 10,
-            "row": 2
+            "col": 5,
+            "row": 5
           }
         }
       ]
@@ -40,8 +40,8 @@
           "es": "Árbol de yumako",
           "icon": {
             "sheet": "ext",
-            "col": 8,
-            "row": 15
+            "col": 6,
+            "row": 19
           }
         },
         {
@@ -52,8 +52,8 @@
           "es": "Tallo gelatinoso",
           "icon": {
             "sheet": "ext",
-            "col": 9,
-            "row": 3
+            "col": 16,
+            "row": 6
           }
         },
         {
@@ -64,8 +64,8 @@
           "es": "Árbol musgoso seco muerto",
           "icon": {
             "sheet": "ext",
-            "col": 8,
-            "row": 1
+            "col": 12,
+            "row": 3
           }
         },
         {
@@ -76,8 +76,8 @@
           "es": "Tronco gris muerto",
           "icon": {
             "sheet": "ext",
-            "col": 9,
-            "row": 1
+            "col": 13,
+            "row": 3
           }
         },
         {
@@ -88,8 +88,8 @@
           "es": "Árbol desértico muerto",
           "icon": {
             "sheet": "ext",
-            "col": 10,
-            "row": 1
+            "col": 14,
+            "row": 3
           }
         },
         {
@@ -100,8 +100,8 @@
           "es": "Árbol musgoso seco",
           "icon": {
             "sheet": "ext",
-            "col": 14,
-            "row": 1
+            "col": 18,
+            "row": 3
           }
         },
         {
@@ -112,8 +112,8 @@
           "es": "Árbol seco",
           "icon": {
             "sheet": "ext",
-            "col": 15,
-            "row": 1
+            "col": 19,
+            "row": 3
           }
         },
         {
@@ -124,7 +124,7 @@
           "es": "Árbol de ceniza",
           "icon": {
             "sheet": "ext",
-            "col": 0,
+            "col": 6,
             "row": 0
           }
         },
@@ -136,7 +136,7 @@
           "es": "Árbol de ceniza en llamas",
           "icon": {
             "sheet": "ext",
-            "col": 1,
+            "col": 7,
             "row": 0
           }
         },
@@ -148,8 +148,8 @@
           "es": "Deslizacoral",
           "icon": {
             "sheet": "ext",
-            "col": 0,
-            "row": 14
+            "col": 17,
+            "row": 16
           }
         },
         {
@@ -160,8 +160,8 @@
           "es": "Troncoembudo",
           "icon": {
             "sheet": "ext",
-            "col": 0,
-            "row": 3
+            "col": 14,
+            "row": 5
           }
         },
         {
@@ -172,8 +172,8 @@
           "es": "Pelomaza",
           "icon": {
             "sheet": "ext",
-            "col": 6,
-            "row": 3
+            "col": 3,
+            "row": 6
           }
         },
         {
@@ -184,8 +184,8 @@
           "es": "Teflirio",
           "icon": {
             "sheet": "ext",
-            "col": 0,
-            "row": 15
+            "col": 8,
+            "row": 18
           }
         },
         {
@@ -196,8 +196,8 @@
           "es": "Lamebocas",
           "icon": {
             "sheet": "ext",
-            "col": 11,
-            "row": 3
+            "col": 2,
+            "row": 7
           }
         },
         {
@@ -208,8 +208,8 @@
           "es": "Aguifronda",
           "icon": {
             "sheet": "ext",
-            "col": 11,
-            "row": 14
+            "col": 17,
+            "row": 17
           }
         },
         {
@@ -220,8 +220,8 @@
           "es": "Fungipum",
           "icon": {
             "sheet": "ext",
-            "col": 14,
-            "row": 0
+            "col": 12,
+            "row": 1
           }
         },
         {
@@ -232,8 +232,8 @@
           "es": "Crestasol",
           "icon": {
             "sheet": "ext",
-            "col": 15,
-            "row": 14
+            "col": 6,
+            "row": 18
           }
         },
         {
@@ -244,8 +244,8 @@
           "es": "Sepiaplaf",
           "icon": {
             "sheet": "ext",
-            "col": 7,
-            "row": 1
+            "col": 11,
+            "row": 3
           }
         },
         {
@@ -256,8 +256,8 @@
           "es": "Caña de agua",
           "icon": {
             "sheet": "ext",
-            "col": 7,
-            "row": 15
+            "col": 3,
+            "row": 19
           }
         }
       ]
@@ -274,7 +274,7 @@
           "icon": {
             "sheet": "ext",
             "col": 4,
-            "row": 1
+            "row": 3
           }
         },
         {
@@ -285,8 +285,8 @@
           "es": "Géiser de ácido sulfúrico",
           "icon": {
             "sheet": "ext",
-            "col": 14,
-            "row": 14
+            "col": 5,
+            "row": 18
           }
         },
         {
@@ -297,8 +297,8 @@
           "es": "Solución de litio",
           "icon": {
             "sheet": "ext",
-            "col": 14,
-            "row": 3
+            "col": 7,
+            "row": 7
           }
         },
         {
@@ -309,8 +309,8 @@
           "es": "Fumarola de flúor",
           "icon": {
             "sheet": "ext",
-            "col": 11,
-            "row": 2
+            "col": 8,
+            "row": 5
           }
         }
       ]
@@ -319,6 +319,54 @@
       "subgroup": "corpses",
       "items": [
         {
+          "id": "small-biter-corpse",
+          "type": "entity",
+          "tag": "[entity=small-biter-corpse]",
+          "en": "Small biter corpse",
+          "es": "Cadáver de mordedor pequeño",
+          "icon": {
+            "sheet": "ext",
+            "col": 19,
+            "row": 16
+          }
+        },
+        {
+          "id": "medium-biter-corpse",
+          "type": "entity",
+          "tag": "[entity=medium-biter-corpse]",
+          "en": "Medium biter corpse",
+          "es": "Cadáver de mordedor mediano",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 7
+          }
+        },
+        {
+          "id": "big-biter-corpse",
+          "type": "entity",
+          "tag": "[entity=big-biter-corpse]",
+          "en": "Big biter corpse",
+          "es": "Cadáver de mordedor grande",
+          "icon": {
+            "sheet": "ext",
+            "col": 0,
+            "row": 1
+          }
+        },
+        {
+          "id": "behemoth-biter-corpse",
+          "type": "entity",
+          "tag": "[entity=behemoth-biter-corpse]",
+          "en": "Behemoth biter corpse",
+          "es": "Cadáver de mordedor mastodonte",
+          "icon": {
+            "sheet": "ext",
+            "col": 16,
+            "row": 0
+          }
+        },
+        {
           "id": "biter-spawner-corpse",
           "type": "entity",
           "tag": "[entity=biter-spawner-corpse]",
@@ -326,7 +374,55 @@
           "es": "Restos de nido de mordedores",
           "icon": {
             "sheet": "ext",
-            "col": 13,
+            "col": 10,
+            "row": 1
+          }
+        },
+        {
+          "id": "small-spitter-corpse",
+          "type": "entity",
+          "tag": "[entity=small-spitter-corpse]",
+          "en": "Small spitter corpse",
+          "es": "Cadáver de escupidor pequeño",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 17
+          }
+        },
+        {
+          "id": "medium-spitter-corpse",
+          "type": "entity",
+          "tag": "[entity=medium-spitter-corpse]",
+          "en": "Medium spitter corpse",
+          "es": "Cadáver de escupidor mediano",
+          "icon": {
+            "sheet": "ext",
+            "col": 17,
+            "row": 7
+          }
+        },
+        {
+          "id": "big-spitter-corpse",
+          "type": "entity",
+          "tag": "[entity=big-spitter-corpse]",
+          "en": "Big spitter corpse",
+          "es": "Cadáver de escupidor grande",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 1
+          }
+        },
+        {
+          "id": "behemoth-spitter-corpse",
+          "type": "entity",
+          "tag": "[entity=behemoth-spitter-corpse]",
+          "en": "Behemoth spitter corpse",
+          "es": "Cadáver de escupidor mastodonte",
+          "icon": {
+            "sheet": "ext",
+            "col": 18,
             "row": 0
           }
         },
@@ -338,8 +434,8 @@
           "es": "Restos de nido de escupidores",
           "icon": {
             "sheet": "ext",
-            "col": 10,
-            "row": 14
+            "col": 11,
+            "row": 17
           }
         }
       ]

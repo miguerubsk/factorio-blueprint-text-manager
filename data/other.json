@@ -4,6 +4,126 @@
       "subgroup": "parameters",
       "items": [
         {
+          "id": "parameter-0",
+          "type": "item",
+          "tag": "[item=parameter-0]",
+          "en": "Parameter 0",
+          "es": "Parámetro 0",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 8
+          }
+        },
+        {
+          "id": "parameter-1",
+          "type": "item",
+          "tag": "[item=parameter-1]",
+          "en": "Parameter 1",
+          "es": "Parámetro 1",
+          "icon": {
+            "sheet": "ext",
+            "col": 6,
+            "row": 8
+          }
+        },
+        {
+          "id": "parameter-2",
+          "type": "item",
+          "tag": "[item=parameter-2]",
+          "en": "Parameter 2",
+          "es": "Parámetro 2",
+          "icon": {
+            "sheet": "ext",
+            "col": 7,
+            "row": 8
+          }
+        },
+        {
+          "id": "parameter-3",
+          "type": "item",
+          "tag": "[item=parameter-3]",
+          "en": "Parameter 3",
+          "es": "Parámetro 3",
+          "icon": {
+            "sheet": "ext",
+            "col": 8,
+            "row": 8
+          }
+        },
+        {
+          "id": "parameter-4",
+          "type": "item",
+          "tag": "[item=parameter-4]",
+          "en": "Parameter 4",
+          "es": "Parámetro 4",
+          "icon": {
+            "sheet": "ext",
+            "col": 9,
+            "row": 8
+          }
+        },
+        {
+          "id": "parameter-5",
+          "type": "item",
+          "tag": "[item=parameter-5]",
+          "en": "Parameter 5",
+          "es": "Parámetro 5",
+          "icon": {
+            "sheet": "ext",
+            "col": 10,
+            "row": 8
+          }
+        },
+        {
+          "id": "parameter-6",
+          "type": "item",
+          "tag": "[item=parameter-6]",
+          "en": "Parameter 6",
+          "es": "Parámetro 6",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 8
+          }
+        },
+        {
+          "id": "parameter-7",
+          "type": "item",
+          "tag": "[item=parameter-7]",
+          "en": "Parameter 7",
+          "es": "Parámetro 7",
+          "icon": {
+            "sheet": "ext",
+            "col": 12,
+            "row": 8
+          }
+        },
+        {
+          "id": "parameter-8",
+          "type": "item",
+          "tag": "[item=parameter-8]",
+          "en": "Parameter 8",
+          "es": "Parámetro 8",
+          "icon": {
+            "sheet": "ext",
+            "col": 13,
+            "row": 8
+          }
+        },
+        {
+          "id": "parameter-9",
+          "type": "item",
+          "tag": "[item=parameter-9]",
+          "en": "Parameter 9",
+          "es": "Parámetro 9",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 8
+          }
+        },
+        {
           "id": "signal-item-parameter",
           "type": "virtual-signal",
           "tag": "[virtual-signal=signal-item-parameter]",
@@ -11,8 +131,8 @@
           "es": "Parámetro de objeto",
           "icon": {
             "sheet": "ext",
-            "col": 14,
-            "row": 10
+            "col": 7,
+            "row": 14
           }
         },
         {
@@ -23,8 +143,8 @@
           "es": "Parámetro de combustible",
           "icon": {
             "sheet": "ext",
-            "col": 4,
-            "row": 10
+            "col": 18,
+            "row": 13
           }
         },
         {
@@ -35,8 +155,8 @@
           "es": "Parámetro de fluido",
           "icon": {
             "sheet": "ext",
-            "col": 2,
-            "row": 10
+            "col": 16,
+            "row": 13
           }
         },
         {
@@ -47,8 +167,8 @@
           "es": "Parámetro de señal",
           "icon": {
             "sheet": "ext",
-            "col": 14,
-            "row": 12
+            "col": 18,
+            "row": 15
           }
         }
       ]
@@ -64,8 +184,8 @@
           "es": "Cualquier calidad",
           "icon": {
             "sheet": "ext",
-            "col": 9,
-            "row": 8
+            "col": 12,
+            "row": 12
           }
         }
       ]
@@ -81,8 +201,8 @@
           "es": "Cable de cobre",
           "icon": {
             "sheet": "ext",
-            "col": 3,
-            "row": 1
+            "col": 10,
+            "row": 2
           }
         },
         {
@@ -93,8 +213,8 @@
           "es": "Cable verde",
           "icon": {
             "sheet": "ext",
-            "col": 5,
-            "row": 3
+            "col": 1,
+            "row": 6
           }
         },
         {
@@ -105,8 +225,8 @@
           "es": "Cable rojo",
           "icon": {
             "sheet": "ext",
-            "col": 9,
-            "row": 4
+            "col": 7,
+            "row": 9
           }
         },
         {
@@ -117,8 +237,8 @@
           "es": "Control remoto de la mecanoaraña",
           "icon": {
             "sheet": "ext",
-            "col": 8,
-            "row": 14
+            "col": 9,
+            "row": 17
           }
         },
         {
@@ -143,6 +263,71 @@
             "sheet": "base",
             "col": 22,
             "row": 0
+          }
+        }
+      ]
+    },
+    {
+      "subgroup": "other",
+      "items": [
+        {
+          "id": "entity-ghost",
+          "type": "entity",
+          "tag": "[entity=entity-ghost]",
+          "en": "Entity ghost",
+          "es": "Fantasma de entidad",
+          "icon": {
+            "sheet": "ext",
+            "col": 2,
+            "row": 5
+          }
+        },
+        {
+          "id": "item-on-ground",
+          "type": "entity",
+          "tag": "[entity=item-on-ground]",
+          "en": "Item on ground",
+          "es": "Objeto en el suelo",
+          "icon": {
+            "sheet": "ext",
+            "col": 14,
+            "row": 6
+          }
+        },
+        {
+          "id": "item-request-proxy",
+          "type": "entity",
+          "tag": "[entity=item-request-proxy]",
+          "en": "Item request slot",
+          "es": "Solicitud de elementos en curso",
+          "icon": {
+            "sheet": "ext",
+            "col": 15,
+            "row": 6
+          }
+        },
+        {
+          "id": "tile-ghost",
+          "type": "entity",
+          "tag": "[entity=tile-ghost]",
+          "en": "Tile ghost",
+          "es": "Fantasma de baldosa",
+          "icon": {
+            "sheet": "ext",
+            "col": 11,
+            "row": 18
+          }
+        },
+        {
+          "id": "wube-logo-space-platform",
+          "type": "entity",
+          "tag": "[entity=wube-logo-space-platform]",
+          "en": "Wube logo (space platform)",
+          "es": "Logo de Wube (plataforma espacial)",
+          "icon": {
+            "sheet": "ext",
+            "col": 5,
+            "row": 19
           }
         }
       ]
