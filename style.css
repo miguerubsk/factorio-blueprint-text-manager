@@ -22,10 +22,6 @@ html, body {
 
 html {
     background-color: var(--bg-main);
-    /* Reserva siempre el ancho de la scrollbar vertical, haya o no
-       contenido que la necesite: evita el salto/desplazamiento al
-       aparecer/desaparecer cuando el alto de la pagina cruza el limite
-       del viewport (p.ej. al escribir en los textareas). */
     scrollbar-gutter: stable;
 }
 
@@ -41,8 +37,6 @@ body {
     min-height: 100vh;
 }
 
-/* Scrollbar oscuro consistente con el resto de la UI (el scrollbar nativo
-   claro del sistema desentona muchisimo con el tema industrial oscuro). */
 * {
     scrollbar-color: var(--border-light) var(--bg-slot);
     scrollbar-width: thin;
@@ -349,11 +343,6 @@ hr { border: 0; border-top: 2px solid var(--border-dark); margin: 20px 0; }
 }
 
 .catalog-row {
-    /* Grid de 10 columnas fijas, igual que el selector real del juego.
-       Con flex-wrap el numero de iconos por fila dependia del ancho del
-       cajon (aqui entraban 11), asi que una fila larga cortaba en un punto
-       distinto al del juego y un icono "se subia" a la fila de arriba
-       respecto a lo que el usuario esperaba ver. */
     display: grid;
     grid-template-columns: repeat(10, 44px);
     gap: 2px;

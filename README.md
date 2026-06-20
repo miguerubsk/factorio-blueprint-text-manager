@@ -2,7 +2,7 @@
 
 Web tool to manage and translate texts within Factorio blueprint strings.
 
-[![Deploy to GitHub Pages](https://github.com/miguerubsk/factorio-blueprint-text-manager/actions/workflows/ghpages.yml/badge.svg?branch=master)](https://github.com/miguerubsk/factorio-blueprint-text-manager/actions/workflows/ghpages.yml)
+[![Deploy to GitHub Pages](https://github.com/miguerubsk/factorio-blueprint-text-manager/actions/workflows/ghpages.yml/badge.svg?branch=master)](https://github.com/miguerubsk/factorio-blueprint-text-manager/actions/workflows/ghpages.yml) [![CodeQL](https://github.com/miguerubsk/factorio-blueprint-text-manager/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/miguerubsk/factorio-blueprint-text-manager/actions/workflows/github-code-scanning/codeql)
 
 ## Features
 
