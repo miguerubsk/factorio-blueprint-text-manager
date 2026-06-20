@@ -96,6 +96,8 @@ h2 {
     padding: 0 15px;
     z-index: 1000;
     box-sizing: border-box;
+    will-change: transform;
+    flex-shrink: 0;
 }
 .top-bar-left, .top-bar-right { 
     display: flex; 
@@ -147,7 +149,7 @@ textarea:focus {
     outline: 1px solid var(--factorio-orange); 
 }
 
-button { border: 1px solid var(--border-dark); padding: 5px 12px; cursor: pointer; font-weight: bold; border-radius: 3px; font-size: 0.82em; text-transform: uppercase; box-shadow: 0 1px 0 var(--border-dark), inset 0 1px 0 rgba(255,255,255,0.15); position: relative; color: white; }
+button { border: 1px solid var(--border-dark); padding: 5px 12px; cursor: pointer; font-weight: bold; border-radius: 3px; font-size: 0.82em; text-transform: uppercase; box-shadow: 0 1px 0 var(--border-dark), inset 0 1px 0 rgba(255,255,255,0.15); position: relative; color: white; min-height: 26px; display: inline-flex; align-items: center; }
 button:active { top: 1px; box-shadow: none; }
 button.primary { background: linear-gradient(to bottom, #e67e22, #d35400); }
 button.primary:hover { background: linear-gradient(to bottom, #f39c12, #e67e22); }
