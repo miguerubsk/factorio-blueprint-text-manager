@@ -55,6 +55,14 @@
           id="btnGenCopy"
           data-i18n="btn_generate_copy"
         ></button>
+        <button
+          id="btnOpenHelp"
+          class="secondary help-btn"
+          data-i18n-title="lbl_help_btn"
+          aria-haspopup="dialog"
+        >
+          ?
+        </button>
         <div class="lang-selector-container">
           <select id="langSelect" onchange="changeLanguage(this.value)">
             <option value="es">ES</option>
@@ -112,85 +120,113 @@
       <div class="catalog-tabs">
         <button
           class="catalog-tab-link active"
-          onclick="switchCatalogTab('logistics')"
+          onclick="switchCatalogTab('logistics', event)"
           data-i18n-title="lbl_tab_logistics"
         >
-          <img src="./assets/groups/logistics.png" alt="L" />
+          <img src="./assets/groups/logistics.png" alt="" />
         </button>
         <button
           class="catalog-tab-link"
-          onclick="switchCatalogTab('production')"
+          onclick="switchCatalogTab('production', event)"
           data-i18n-title="lbl_tab_production"
         >
-          <img src="./assets/groups/production.png" alt="P" />
+          <img src="./assets/groups/production.png" alt="" />
         </button>
         <button
           class="catalog-tab-link"
-          onclick="switchCatalogTab('intermediate-products')"
+          onclick="switchCatalogTab('intermediate-products', event)"
           data-i18n-title="lbl_tab_intermediates"
         >
-          <img src="./assets/groups/intermediate-products.png" alt="I" />
+          <img src="./assets/groups/intermediate-products.png" alt="" />
         </button>
         <button
           class="catalog-tab-link"
-          onclick="switchCatalogTab('combat')"
+          onclick="switchCatalogTab('combat', event)"
           data-i18n-title="lbl_tab_military"
         >
-          <img src="./assets/groups/combat.png" alt="M" />
+          <img src="./assets/groups/combat.png" alt="" />
         </button>
         <button
           class="catalog-tab-link"
-          onclick="switchCatalogTab('fluids')"
+          onclick="switchCatalogTab('fluids', event)"
           data-i18n-title="lbl_tab_fluids"
         >
-          <img src="./assets/groups/fluids.png" alt="F" />
+          <img src="./assets/groups/fluids.png" alt="" />
         </button>
         <button
           class="catalog-tab-link"
-          onclick="switchCatalogTab('signals')"
+          onclick="switchCatalogTab('signals', event)"
           data-i18n-title="lbl_tab_signals"
         >
-          <img src="./assets/groups/signals.png" alt="X" />
+          <img src="./assets/groups/signals.png" alt="" />
         </button>
         <button
           class="catalog-tab-link"
-          onclick="switchCatalogTab('enemies')"
+          onclick="switchCatalogTab('enemies', event)"
           data-i18n-title="lbl_tab_enemies"
         >
-          <img src="./assets/groups/enemies.png" alt="E" />
+          <img src="./assets/groups/enemies.png" alt="" />
         </button>
         <button
           class="catalog-tab-link"
-          onclick="switchCatalogTab('environment')"
+          onclick="switchCatalogTab('environment', event)"
           data-i18n-title="lbl_tab_environment"
         >
-          <img src="./assets/groups/environment.png" alt="N" />
+          <img src="./assets/groups/environment.png" alt="" />
         </button>
         <button
           class="catalog-tab-link"
-          onclick="switchCatalogTab('space')"
+          onclick="switchCatalogTab('space', event)"
           data-i18n-title="lbl_tab_space"
         >
-          <img src="./assets/groups/space.png" alt="S" />
+          <img src="./assets/groups/space.png" alt="" />
         </button>
         <button
           class="catalog-tab-link"
-          onclick="switchCatalogTab('other')"
+          onclick="switchCatalogTab('other', event)"
           data-i18n-title="lbl_tab_other"
         >
-          <img src="./assets/groups/other.png" alt="O" />
+          <img src="./assets/groups/other.png" alt="" />
         </button>
       </div>
 
       <div id="catalogGrid" class="catalog-grid"></div>
     </div>
 
-    <div
+    <div id="catalogHintBubble" class="catalog-hint-bubble" hidden>
+      <span data-i18n="hint_open_catalog"></span>
+    </div>
+    <button
       id="btnOpenCatalog"
       class="catalog-floating-trigger"
       data-i18n-title="lbl_catalog_btn"
     >
-      ⚙️
+      <span aria-hidden="true">⚙️</span>
+      <span class="catalog-floating-trigger-label" data-i18n="lbl_catalog_btn_short"></span>
+    </button>
+
+    <div
+      id="helpModal"
+      class="help-modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="helpModalTitle"
+      hidden
+    >
+      <div class="help-modal">
+        <div class="catalog-header">
+          <h3 id="helpModalTitle" data-i18n="lbl_help_title"></h3>
+          <button id="btnCloseHelp" class="secondary" aria-label="Close">X</button>
+        </div>
+        <ol class="help-steps">
+          <li data-i18n="help_step_1"></li>
+          <li data-i18n="help_step_2"></li>
+          <li data-i18n="help_step_3"></li>
+          <li data-i18n="help_step_4"></li>
+          <li data-i18n="help_step_5"></li>
+        </ol>
+        <p class="help-note" data-i18n="help_note"></p>
+      </div>
     </div>
 
     <script type="module" src="./app.js"></script>

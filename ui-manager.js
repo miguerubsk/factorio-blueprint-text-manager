@@ -46,7 +46,11 @@ export function translateStaticUi() {
 
   document.querySelectorAll("[data-i18n-title]").forEach((el) => {
     const key = el.getAttribute("data-i18n-title");
-    el.title = translate(key);
+    const text = translate(key);
+    el.title = text;
+    // Para botones cuyo unico contenido visible es un icono, el title no
+    // basta como nombre accesible para lectores de pantalla.
+    el.setAttribute("aria-label", text);
   });
 
   if (translate("ui_page_title")) {

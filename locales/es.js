@@ -48,4 +48,20 @@ const locale_es = {
   lbl_tab_environment: "Entorno",
   lbl_tab_fluids: "Fluidos",
   lbl_tab_other: "Otros",
+  lbl_catalog_btn_short: "Iconos",
+  hint_open_catalog: "👉 Pulsa aquí para insertar iconos en el texto",
+  lbl_help_btn: "Ayuda",
+  lbl_help_title: "¿Cómo funciona esta herramienta?",
+  help_step_1:
+    "Pega tu cadena de plano de Factorio (empieza por \"0\") en el primer cuadro.",
+  help_step_2:
+    "Edita los textos (nombre, descripción, parámetros...) en el modo de lote o en el árbol estructurado.",
+  help_step_3:
+    "Coloca el cursor donde quieras insertar un icono y pulsa el botón ⚙️ Iconos para abrir el catálogo.",
+  help_step_4:
+    "Haz clic en cualquier icono del catálogo: se insertará su etiqueta (p. ej. [item=hierro-en-placas]) en la posición del cursor.",
+  help_step_5:
+    "Cuando termines, pulsa \"Generar y Copiar\" para obtener tu nueva cadena de plano modificada.",
+  help_note:
+    "Los iconos se cargan desde una copia local de los gráficos del juego: no se descarga nada de internet al usarlos.",
 };
