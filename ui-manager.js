@@ -212,7 +212,7 @@ export function registerTextReference(type, objectRef, key) {
   if (key === "name") shortKey = "n";
   if (key === "alert_message" || key === "circuit_alert_message")
     shortKey = "a";
-  if (key === "station_name") shortKey = "s";
+  if (key === "station") shortKey = "s";
 
   const uniqueId = `[${shortType}-${globalIdCounter}-${shortKey}]`;
   const normalizedId = uniqueId.toLowerCase();
@@ -433,21 +433,47 @@ export function renderFailsafeTreeAndMapping(rootObj) {
             });
           }
 
-          if (entity.station_name !== undefined) {
+          if (entity.station !== undefined) {
             const entityRefId = registerTextReference(
               "ENTIDAD",
               entity,
-              "station_name",
+              "station",
             );
             const divEntityItem = createEntityTreeBlock(
               translate("lbl_estacion"),
               entity,
-              "station_name",
+              "station",
               entityRefId,
               null,
             );
             divSublist.appendChild(divEntityItem);
           }
+        });
+      }
+
+      // Factorio >=2.0 tambien guarda el nombre de cada parada dentro del
+      // horario de cada tren (factorioNode.schedules[].schedule.records[]),
+      // independiente del campo `station` de la propia entidad train-stop.
+      if (factorioNode.schedules && Array.isArray(factorioNode.schedules)) {
+        factorioNode.schedules.forEach((scheduleEntry, schIdx) => {
+          const records = scheduleEntry.schedule && scheduleEntry.schedule.records;
+          if (!Array.isArray(records)) return;
+          records.forEach((record, recIdx) => {
+            if (record.station === undefined) return;
+            const entityRefId = registerTextReference(
+              "ENTIDAD",
+              record,
+              "station",
+            );
+            const divEntityItem = createEntityTreeBlock(
+              `${translate("lbl_estacion_horario")} #${schIdx + 1}.${recIdx + 1}`,
+              record,
+              "station",
+              entityRefId,
+              null,
+            );
+            divSublist.appendChild(divEntityItem);
+          });
         });
       }
 

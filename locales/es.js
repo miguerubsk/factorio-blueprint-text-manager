@@ -25,6 +25,7 @@ const locale_es = {
   lbl_sirena: "Alerta de Sirena",
   lbl_grupo_logistico: "Grupo Logístico",
   lbl_estacion: "Estación / Parada de tren",
+  lbl_estacion_horario: "Parada de tren (horario)",
   msg_sincronizado: "¡Sincronizado! Se han actualizado {count} variables.",
   lbl_visits: "VISITAS:",
   err_invalid_string:
