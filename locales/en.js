@@ -24,6 +24,7 @@ const locale_en = {
   lbl_sirena: "Speaker Alert",
   lbl_grupo_logistico: "Logistic Group",
   lbl_estacion: "Station / Train stop",
+  lbl_estacion_horario: "Train stop (schedule)",
   msg_sincronizado: "Synced! {count} variables have been updated.",
   lbl_visits: "VISITS:",
   err_invalid_string: "Invalid blueprint string (must start with 0).",
@@ -46,4 +47,36 @@ const locale_en = {
   lbl_tab_environment: "Environment",
   lbl_tab_fluids: "Fluids",
   lbl_tab_other: "Other",
+  lbl_catalog_btn_short: "Icons",
+  hint_open_catalog: "👉 Click here to insert icons into the text",
+  lbl_help_btn: "Help",
+  lbl_help_title: "How does this tool work?",
+  help_step_1:
+    "Paste your Factorio blueprint string (starts with \"0\") into the first box.",
+  help_step_2:
+    "Edit the texts (name, description, parameters...) in batch mode or in the structured tree.",
+  help_step_3:
+    "Place your cursor where you want an icon and click the ⚙️ Icons button to open the catalog.",
+  help_step_4:
+    "Click any icon in the catalog: its tag (e.g. [item=iron-plate]) will be inserted at the cursor position.",
+  help_step_5:
+    "When done, click \"Generate & Copy\" to get your new modified blueprint string.",
+  help_note:
+    "Icons are loaded from a local copy of the game graphics: nothing is downloaded from the internet when you use them.",
+  lbl_find_replace_btn: "Find and replace",
+  lbl_find_replace_btn_short: "Find",
+  lbl_find_replace_title: "Find and replace",
+  lbl_fr_search: "Find",
+  ph_fr_search: "Text to find...",
+  lbl_fr_replace: "Replace with",
+  ph_fr_replace: "New text...",
+  lbl_fr_case_insensitive: "Ignore case",
+  lbl_fr_use_regex: "Use regular expression (advanced)",
+  btn_fr_apply: "Apply to whole blueprint",
+  btn_fr_delete_saved: "Delete",
+  lbl_fr_saved_title: "Saved replacements",
+  btn_fr_save: "Save this replacement",
+  fr_match_count: "{count} match(es) found.",
+  fr_invalid_regex: "Invalid regular expression: {message}",
+  msg_fr_applied: "Done. {count} text(s) modified.",
 };
