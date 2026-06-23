@@ -213,6 +213,7 @@ export function registerTextReference(type, objectRef, key) {
   if (key === "alert_message" || key === "circuit_alert_message")
     shortKey = "a";
   if (key === "station") shortKey = "s";
+  if (key === "group") shortKey = "g";
 
   const uniqueId = `[${shortType}-${globalIdCounter}-${shortKey}]`;
   const normalizedId = uniqueId.toLowerCase();
@@ -404,33 +405,71 @@ export function renderFailsafeTreeAndMapping(rootObj) {
             divSublist.appendChild(divEntityItem);
           }
 
-          if (entity.logistic_sections && entity.logistic_sections.sections) {
-            entity.logistic_sections.sections.forEach((section, sIdx) => {
-              if (section.name === undefined) section.name = "";
+          // El nombre editable de un grupo logistico (cofres
+          // requester/buffer/storage) vive en entity.request_filters
+          // (no logistic_sections, que es el nombre del concepto en la
+          // Lua API pero no la clave real del blueprint) y se llama
+          // `group`, no `name`. Mostramos todas las secciones, con o sin
+          // nombre todavia: el campo vacio es justo lo que permite
+          // ponerle uno, y la vista previa de su contenido ayuda a
+          // identificar cual es cual antes de nombrarla.
+          const buildFilterPreview = (section) => {
+            if (!section.filters || !Array.isArray(section.filters))
+              return null;
+            const activeFilters = section.filters
+              .filter((f) => f && f.name)
+              .map((f) => f.name);
+            if (activeFilters.length === 0) return null;
+            return `Filtros: ${activeFilters.slice(0, 3).join(", ")}${activeFilters.length > 3 ? "..." : ""}`;
+          };
+
+          const logisticSections =
+            entity.request_filters || entity.logistic_sections;
+          if (logisticSections && logisticSections.sections) {
+            logisticSections.sections.forEach((section, sIdx) => {
+              if (section.group === undefined) section.group = "";
               const entityRefId = registerTextReference(
                 "ENTIDAD",
                 section,
-                "name",
+                "group",
               );
-
-              let filterPreview = "";
-              if (section.filters && Array.isArray(section.filters)) {
-                const activeFilters = section.filters
-                  .filter((f) => f.value && f.value.name)
-                  .map((f) => f.value.name);
-                if (activeFilters.length > 0)
-                  filterPreview = `Filtros: ${activeFilters.slice(0, 2).join(", ")}...`;
-              }
-
               const divEntityItem = createEntityTreeBlock(
                 `${translate("lbl_grupo_logistico")} #${sIdx + 1} [${entity.name}]`,
                 section,
-                "name",
+                "group",
                 entityRefId,
-                filterPreview,
+                buildFilterPreview(section),
               );
               divSublist.appendChild(divEntityItem);
             });
+          }
+
+          // Los combinadores constantes usan la misma estructura de
+          // secciones con nombre, pero bajo control_behavior.sections en
+          // vez de logistic_sections/request_filters.
+          if (
+            entity.control_behavior &&
+            entity.control_behavior.sections &&
+            entity.control_behavior.sections.sections
+          ) {
+            entity.control_behavior.sections.sections.forEach(
+              (section, sIdx) => {
+                if (section.group === undefined) section.group = "";
+                const entityRefId = registerTextReference(
+                  "ENTIDAD",
+                  section,
+                  "group",
+                );
+                const divEntityItem = createEntityTreeBlock(
+                  `${translate("lbl_grupo_logistico")} #${sIdx + 1} [${entity.name}]`,
+                  section,
+                  "group",
+                  entityRefId,
+                  buildFilterPreview(section),
+                );
+                divSublist.appendChild(divEntityItem);
+              },
+            );
           }
 
           if (entity.station !== undefined) {
@@ -456,7 +495,8 @@ export function renderFailsafeTreeAndMapping(rootObj) {
       // independiente del campo `station` de la propia entidad train-stop.
       if (factorioNode.schedules && Array.isArray(factorioNode.schedules)) {
         factorioNode.schedules.forEach((scheduleEntry, schIdx) => {
-          const records = scheduleEntry.schedule && scheduleEntry.schedule.records;
+          const records =
+            scheduleEntry.schedule && scheduleEntry.schedule.records;
           if (!Array.isArray(records)) return;
           records.forEach((record, recIdx) => {
             if (record.station === undefined) return;
