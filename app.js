@@ -7,7 +7,9 @@ window.dictionaries = {
 };
 
 window.processBlueprintString = async () => {
-  const input = document.getElementById("inputString").value.trim();
+  const inputEl = document.getElementById("inputString");
+  if (!inputEl) return;
+  const input = inputEl.value.trim();
   const MAX_CHARS = 20000000;
 
   if (!input.startsWith("0")) return alert(UI.translate("err_invalid_string"));
@@ -52,8 +54,9 @@ window.changeLanguage = (newLang) => {
 };
 
 window.applyBatchChanges = () => {
-  const batchRawText = document.getElementById("batchTextarea").value;
-  const lines = batchRawText.split(/\r?\n/);
+  const batchEl = document.getElementById("batchTextarea");
+  if (!batchEl) return;
+  const lines = batchEl.value.split(/\r?\n/);
   let processedCount = 0;
 
   lines.forEach((line) => {
@@ -84,12 +87,14 @@ window.applyBatchChanges = () => {
 window.generateAndCopyString = async () => {
   if (!UI.blueprintRootJson) return alert(UI.translate("err_no_data"));
   const btn = document.getElementById("btnGenCopy");
+  if (!btn) return;
 
   try {
     const generatedString = await Processor.compressBlueprintJson(
       UI.blueprintRootJson,
     );
-    document.getElementById("outputString").value = generatedString;
+    const outputEl = document.getElementById("outputString");
+    if (outputEl) outputEl.value = generatedString;
 
     await navigator.clipboard.writeText(generatedString);
 
@@ -114,25 +119,28 @@ window.switchCatalogTab = (tabId) => {
   if (event && event.currentTarget) {
     event.currentTarget.classList.add("active");
   }
-  document.getElementById("catalogSearch").value = "";
+  const searchEl = document.getElementById("catalogSearch");
+  if (searchEl) searchEl.value = "";
   UI.renderCatalogCategory(tabId);
 };
 
 window.filterCatalog = () => {
-  const text = document.getElementById("catalogSearch").value;
-  UI.renderCatalogCategory(UI.currentCatalogTab, text);
+  const searchEl = document.getElementById("catalogSearch");
+  UI.renderCatalogCategory(UI.currentCatalogTab, searchEl ? searchEl.value : "");
 };
 
 window.addEventListener("DOMContentLoaded", () => {
   const savedLang =
     localStorage.getItem("fbp_lang") ||
     (navigator.language.startsWith("es") ? "es" : "en");
-  document.getElementById("langSelect").value = savedLang;
+  const langSelectEl = document.getElementById("langSelect");
+  if (langSelectEl) langSelectEl.value = savedLang;
   window.changeLanguage(savedLang);
 
   const btnOpen = document.getElementById("btnOpenCatalog");
   const btnClose = document.getElementById("btnCloseCatalog");
   const catalog = document.getElementById("factorioCatalog");
+  if (!btnOpen || !btnClose || !catalog) return;
 
   btnOpen.addEventListener("click", () => {
     if (!catalog.classList.contains("active")) {
