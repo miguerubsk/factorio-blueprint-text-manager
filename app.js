@@ -16,7 +16,7 @@ window.processBlueprintString = async () => {
   }
 
   try {
-    const json = await Processor.decompressBlueprintString(input.substring(1));
+    const json = await Processor.decompressBlueprintString(input);
     UI.setBlueprintRootJson(json);
     UI.setGlobalReferenceMap({});
     UI.setGlobalIdCounter(0);
