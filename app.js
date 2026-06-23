@@ -105,14 +105,14 @@ window.generateAndCopyString = async () => {
   }
 };
 
-window.switchCatalogTab = (tabId) => {
+window.switchCatalogTab = (tabId, clickEvent) => {
   UI.setCurrentCatalogTab(tabId);
   document
     .querySelectorAll(".catalog-tab-link")
     .forEach((btn) => btn.classList.remove("active"));
 
-  if (event && event.currentTarget) {
-    event.currentTarget.classList.add("active");
+  if (clickEvent && clickEvent.currentTarget) {
+    clickEvent.currentTarget.classList.add("active");
   }
   document.getElementById("catalogSearch").value = "";
   UI.renderCatalogCategory(tabId);
@@ -133,8 +133,20 @@ window.addEventListener("DOMContentLoaded", () => {
   const btnOpen = document.getElementById("btnOpenCatalog");
   const btnClose = document.getElementById("btnCloseCatalog");
   const catalog = document.getElementById("factorioCatalog");
+  const hintBubble = document.getElementById("catalogHintBubble");
+
+  const dismissHint = () => {
+    hintBubble.hidden = true;
+    localStorage.setItem("fbp_seen_catalog_hint", "1");
+  };
+
+  if (!localStorage.getItem("fbp_seen_catalog_hint")) {
+    hintBubble.hidden = false;
+    setTimeout(dismissHint, 8000);
+  }
 
   btnOpen.addEventListener("click", () => {
+    dismissHint();
     if (!catalog.classList.contains("active")) {
       UI.renderCatalogCategory(UI.currentCatalogTab);
     }
@@ -146,9 +158,37 @@ window.addEventListener("DOMContentLoaded", () => {
     if (
       catalog.classList.contains("active") &&
       !catalog.contains(e.target) &&
-      e.target !== btnOpen
+      !btnOpen.contains(e.target)
     ) {
       catalog.classList.remove("active");
+    }
+  });
+
+  const btnOpenHelp = document.getElementById("btnOpenHelp");
+  const btnCloseHelp = document.getElementById("btnCloseHelp");
+  const helpModal = document.getElementById("helpModal");
+
+  const openHelp = () => {
+    helpModal.hidden = false;
+    btnCloseHelp.focus();
+  };
+  const closeHelp = () => {
+    helpModal.hidden = true;
+    btnOpenHelp.focus();
+  };
+
+  btnOpenHelp.addEventListener("click", openHelp);
+  btnCloseHelp.addEventListener("click", closeHelp);
+  helpModal.addEventListener("click", (e) => {
+    if (e.target === helpModal) closeHelp();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    if (!helpModal.hidden) closeHelp();
+    else if (catalog.classList.contains("active")) {
+      catalog.classList.remove("active");
+      btnOpen.focus();
     }
   });
 });

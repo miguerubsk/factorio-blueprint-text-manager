@@ -46,4 +46,20 @@ const locale_en = {
   lbl_tab_environment: "Environment",
   lbl_tab_fluids: "Fluids",
   lbl_tab_other: "Other",
+  lbl_catalog_btn_short: "Icons",
+  hint_open_catalog: "👉 Click here to insert icons into the text",
+  lbl_help_btn: "Help",
+  lbl_help_title: "How does this tool work?",
+  help_step_1:
+    "Paste your Factorio blueprint string (starts with \"0\") into the first box.",
+  help_step_2:
+    "Edit the texts (name, description, parameters...) in batch mode or in the structured tree.",
+  help_step_3:
+    "Place your cursor where you want an icon and click the ⚙️ Icons button to open the catalog.",
+  help_step_4:
+    "Click any icon in the catalog: its tag (e.g. [item=iron-plate]) will be inserted at the cursor position.",
+  help_step_5:
+    "When done, click \"Generate & Copy\" to get your new modified blueprint string.",
+  help_note:
+    "Icons are loaded from a local copy of the game graphics: nothing is downloaded from the internet when you use them.",
 };
