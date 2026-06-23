@@ -36,7 +36,7 @@ Click the **?** button in the top bar at any time for an in-app walkthrough of t
 - Detects text fields that don't always use the property names you'd expect from Factorio's documentation (e.g. a train stop's name is `entity.station`, not `station_name`; a logistic group's name is `section.group` under `entity.request_filters`, not `entity.logistic_sections.sections[].name`) — found and fixed by decoding real-world blueprints rather than guessing from the wiki.
 - All icons are served from two local sprite sheets (`assets/sprites/`) addressed via `data/icon-map.json`; no per-icon HTTP request and no dependency on any external image host at runtime.
 
-### Regenerating the icon catalog
+<!-- ### Regenerating the icon catalog
 
 The icon catalog (`data/*.json`, `data/icon-map.json`, `assets/sprites/`, `assets/groups/`) is generated, not hand-written. The generator scripts live in `tools/` (Python + Pillow, no Node involved) and are documented by their own docstrings:
 
@@ -45,7 +45,7 @@ The icon catalog (`data/*.json`, `data/icon-map.json`, `assets/sprites/`, `asset
 3. `tools/build_categories.py` — groups everything into the game's own categories (logistics, production, combat, fluids, signals, enemies, environment, space, etc.), using Factorio's official locale files for the English/Spanish display names.
 4. `tools/validate_catalog.py` — sanity-checks the generated `data/*.json` against `data/icon-map.json` before you ship it.
 
-Running this pipeline requires a local copy of the Factorio game files (not included in this repo); it only needs to be re-run when targeting a new Factorio version.
+Running this pipeline requires a local copy of the Factorio game files (not included in this repo); it only needs to be re-run when targeting a new Factorio version. -->
 
 ## License
 
