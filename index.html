@@ -197,6 +197,14 @@
       <span data-i18n="hint_open_catalog"></span>
     </div>
     <button
+      id="btnOpenFindReplace"
+      class="catalog-floating-trigger find-replace-trigger"
+      data-i18n-title="lbl_find_replace_btn"
+    >
+      <span aria-hidden="true">🔍</span>
+      <span class="catalog-floating-trigger-label" data-i18n="lbl_find_replace_btn_short"></span>
+    </button>
+    <button
       id="btnOpenCatalog"
       class="catalog-floating-trigger"
       data-i18n-title="lbl_catalog_btn"
@@ -204,6 +212,55 @@
       <span aria-hidden="true">⚙️</span>
       <span class="catalog-floating-trigger-label" data-i18n="lbl_catalog_btn_short"></span>
     </button>
+
+    <div
+      id="findReplaceModal"
+      class="help-modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="findReplaceModalTitle"
+      hidden
+    >
+      <div class="help-modal find-replace-modal">
+        <div class="catalog-header">
+          <h3 id="findReplaceModalTitle" data-i18n="lbl_find_replace_title"></h3>
+          <button id="btnCloseFindReplace" class="secondary" aria-label="Close">X</button>
+        </div>
+
+        <div class="fr-field">
+          <label for="frSearch" data-i18n="lbl_fr_search"></label>
+          <input type="text" id="frSearch" data-i18n-ph="ph_fr_search" />
+        </div>
+        <div class="fr-field">
+          <label for="frReplace" data-i18n="lbl_fr_replace"></label>
+          <input type="text" id="frReplace" data-i18n-ph="ph_fr_replace" />
+        </div>
+
+        <div class="fr-options">
+          <label class="fr-checkbox">
+            <input type="checkbox" id="frCaseInsensitive" checked />
+            <span data-i18n="lbl_fr_case_insensitive"></span>
+          </label>
+          <label class="fr-checkbox">
+            <input type="checkbox" id="frUseRegex" />
+            <span data-i18n="lbl_fr_use_regex"></span>
+          </label>
+        </div>
+
+        <p id="frMatchCount" class="fr-match-count"></p>
+        <p id="frError" class="fr-error" hidden></p>
+
+        <button id="btnApplyFindReplace" class="primary" data-i18n="btn_fr_apply"></button>
+
+        <hr />
+
+        <div class="fr-saved-section">
+          <h4 data-i18n="lbl_fr_saved_title"></h4>
+          <div id="frSavedList" class="fr-saved-list"></div>
+          <button id="btnSaveFindReplace" class="secondary" data-i18n="btn_fr_save"></button>
+        </div>
+      </div>
+    </div>
 
     <div
       id="helpModal"

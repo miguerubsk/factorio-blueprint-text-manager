@@ -123,6 +123,65 @@ window.filterCatalog = () => {
   UI.renderCatalogCategory(UI.currentCatalogTab, text);
 };
 
+const FR_STORAGE_KEY = "fbp_saved_replacements";
+const FR_MAX_SAVED = 20;
+
+function frGetSaved() {
+  try {
+    const raw = localStorage.getItem(FR_STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function frSetSaved(list) {
+  localStorage.setItem(FR_STORAGE_KEY, JSON.stringify(list.slice(0, FR_MAX_SAVED)));
+}
+
+// Construye el RegExp a partir de los campos del panel. En modo simple
+// (sin "usar regex") se escapan los caracteres especiales para que el
+// usuario novel pueda buscar texto literal sin sorpresas.
+function frBuildRegex(searchValue, useRegex, caseInsensitive) {
+  if (!searchValue) return null;
+  const flags = "g" + (caseInsensitive ? "i" : "");
+  if (useRegex) {
+    return new RegExp(searchValue, flags);
+  }
+  const escaped = searchValue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(escaped, flags);
+}
+
+function frCountMatches(regex) {
+  if (!regex) return 0;
+  let total = 0;
+  for (const ref of Object.values(UI.globalReferenceMap)) {
+    const text = ref.targetObject[ref.targetProperty] || "";
+    const matches = text.match(regex);
+    if (matches) total += matches.length;
+  }
+  return total;
+}
+
+function frApply(regex, replaceValue) {
+  // String.replace() con un regex global reinicia lastIndex internamente,
+  // así que es seguro reutilizar el mismo objeto RegExp en cada iteración
+  // (a diferencia de regex.test()/exec(), que arrastrarían el lastIndex
+  // de una entrada a la siguiente y se saltarían coincidencias).
+  let changedRefs = 0;
+  for (const uniqueId in UI.globalReferenceMap) {
+    const ref = UI.globalReferenceMap[uniqueId];
+    const text = ref.targetObject[ref.targetProperty] || "";
+    const newText = text.replace(regex, replaceValue);
+    if (newText === text) continue;
+    ref.targetObject[ref.targetProperty] = newText;
+    const inlineInput = document.getElementById(`tree-${uniqueId}`);
+    if (inlineInput) inlineInput.value = newText;
+    changedRefs++;
+  }
+  return changedRefs;
+}
+
 window.addEventListener("DOMContentLoaded", () => {
   const savedLang =
     localStorage.getItem("fbp_lang") ||
@@ -183,9 +242,135 @@ window.addEventListener("DOMContentLoaded", () => {
     if (e.target === helpModal) closeHelp();
   });
 
+  // --- Buscar y reemplazar ---
+  const btnOpenFR = document.getElementById("btnOpenFindReplace");
+  const btnCloseFR = document.getElementById("btnCloseFindReplace");
+  const frModal = document.getElementById("findReplaceModal");
+  const frSearch = document.getElementById("frSearch");
+  const frReplace = document.getElementById("frReplace");
+  const frCaseInsensitive = document.getElementById("frCaseInsensitive");
+  const frUseRegex = document.getElementById("frUseRegex");
+  const frMatchCount = document.getElementById("frMatchCount");
+  const frError = document.getElementById("frError");
+  const frSavedList = document.getElementById("frSavedList");
+  const btnApplyFR = document.getElementById("btnApplyFindReplace");
+  const btnSaveFR = document.getElementById("btnSaveFindReplace");
+
+  function frUpdatePreview() {
+    frError.hidden = true;
+    const searchValue = frSearch.value;
+    if (!searchValue) {
+      frMatchCount.innerText = "";
+      return;
+    }
+    try {
+      const regex = frBuildRegex(
+        searchValue,
+        frUseRegex.checked,
+        frCaseInsensitive.checked,
+      );
+      const count = frCountMatches(regex);
+      frMatchCount.innerText = UI.translate("fr_match_count", { count });
+    } catch (e) {
+      frMatchCount.innerText = "";
+      frError.innerText = UI.translate("fr_invalid_regex", { message: e.message });
+      frError.hidden = false;
+    }
+  }
+
+  function frRenderSavedList() {
+    const saved = frGetSaved();
+    frSavedList.innerHTML = "";
+    saved.forEach((item, idx) => {
+      const row = document.createElement("div");
+      row.className = "fr-saved-item";
+
+      const label = document.createElement("span");
+      label.className = "fr-saved-item-label";
+      label.title = `${item.search} -> ${item.replace}`;
+      label.innerText = `${item.search} -> ${item.replace}`;
+      label.addEventListener("click", () => {
+        frSearch.value = item.search;
+        frReplace.value = item.replace;
+        frCaseInsensitive.checked = !!item.caseInsensitive;
+        frUseRegex.checked = !!item.regex;
+        frUpdatePreview();
+      });
+      row.appendChild(label);
+
+      const btnDelete = document.createElement("button");
+      btnDelete.className = "secondary";
+      btnDelete.innerText = "X";
+      btnDelete.setAttribute("aria-label", UI.translate("btn_fr_delete_saved"));
+      btnDelete.addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        const list = frGetSaved();
+        list.splice(idx, 1);
+        frSetSaved(list);
+        frRenderSavedList();
+      });
+      row.appendChild(btnDelete);
+
+      frSavedList.appendChild(row);
+    });
+  }
+
+  const openFR = () => {
+    frModal.hidden = false;
+    frRenderSavedList();
+    frUpdatePreview();
+    frSearch.focus();
+  };
+  const closeFR = () => {
+    frModal.hidden = true;
+    btnOpenFR.focus();
+  };
+
+  btnOpenFR.addEventListener("click", openFR);
+  btnCloseFR.addEventListener("click", closeFR);
+  frModal.addEventListener("click", (e) => {
+    if (e.target === frModal) closeFR();
+  });
+
+  frSearch.addEventListener("input", UI.debounce(frUpdatePreview, 250));
+  frReplace.addEventListener("input", UI.debounce(frUpdatePreview, 250));
+  frCaseInsensitive.addEventListener("change", frUpdatePreview);
+  frUseRegex.addEventListener("change", frUpdatePreview);
+
+  btnApplyFR.addEventListener("click", () => {
+    if (!UI.blueprintRootJson) return alert(UI.translate("err_no_data"));
+    if (!frSearch.value) return;
+    let regex;
+    try {
+      regex = frBuildRegex(frSearch.value, frUseRegex.checked, frCaseInsensitive.checked);
+    } catch (e) {
+      frError.innerText = UI.translate("fr_invalid_regex", { message: e.message });
+      frError.hidden = false;
+      return;
+    }
+    const changedRefs = frApply(regex, frReplace.value);
+    UI.synchronizeTreeToBatchField();
+    frUpdatePreview();
+    alert(UI.translate("msg_fr_applied", { count: changedRefs }));
+  });
+
+  btnSaveFR.addEventListener("click", () => {
+    if (!frSearch.value) return;
+    const saved = frGetSaved();
+    saved.unshift({
+      search: frSearch.value,
+      replace: frReplace.value,
+      regex: frUseRegex.checked,
+      caseInsensitive: frCaseInsensitive.checked,
+    });
+    frSetSaved(saved);
+    frRenderSavedList();
+  });
+
   document.addEventListener("keydown", (e) => {
     if (e.key !== "Escape") return;
-    if (!helpModal.hidden) closeHelp();
+    if (!frModal.hidden) closeFR();
+    else if (!helpModal.hidden) closeHelp();
     else if (catalog.classList.contains("active")) {
       catalog.classList.remove("active");
       btnOpen.focus();
