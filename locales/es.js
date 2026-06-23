@@ -25,6 +25,7 @@ const locale_es = {
   lbl_sirena: "Alerta de Sirena",
   lbl_grupo_logistico: "Grupo Logístico",
   lbl_estacion: "Estación / Parada de tren",
+  lbl_estacion_horario: "Parada de tren (horario)",
   msg_sincronizado: "¡Sincronizado! Se han actualizado {count} variables.",
   lbl_visits: "VISITAS:",
   err_invalid_string:
@@ -48,4 +49,36 @@ const locale_es = {
   lbl_tab_environment: "Entorno",
   lbl_tab_fluids: "Fluidos",
   lbl_tab_other: "Otros",
+  lbl_catalog_btn_short: "Iconos",
+  hint_open_catalog: "👉 Pulsa aquí para insertar iconos en el texto",
+  lbl_help_btn: "Ayuda",
+  lbl_help_title: "¿Cómo funciona esta herramienta?",
+  help_step_1:
+    "Pega tu cadena de plano de Factorio (empieza por \"0\") en el primer cuadro.",
+  help_step_2:
+    "Edita los textos (nombre, descripción, parámetros...) en el modo de lote o en el árbol estructurado.",
+  help_step_3:
+    "Coloca el cursor donde quieras insertar un icono y pulsa el botón ⚙️ Iconos para abrir el catálogo.",
+  help_step_4:
+    "Haz clic en cualquier icono del catálogo: se insertará su etiqueta (p. ej. [item=hierro-en-placas]) en la posición del cursor.",
+  help_step_5:
+    "Cuando termines, pulsa \"Generar y Copiar\" para obtener tu nueva cadena de plano modificada.",
+  help_note:
+    "Los iconos se cargan desde una copia local de los gráficos del juego: no se descarga nada de internet al usarlos.",
+  lbl_find_replace_btn: "Buscar y reemplazar",
+  lbl_find_replace_btn_short: "Buscar",
+  lbl_find_replace_title: "Buscar y reemplazar",
+  lbl_fr_search: "Buscar",
+  ph_fr_search: "Texto a buscar...",
+  lbl_fr_replace: "Reemplazar con",
+  ph_fr_replace: "Texto nuevo...",
+  lbl_fr_case_insensitive: "Ignorar mayúsculas/minúsculas",
+  lbl_fr_use_regex: "Usar expresión regular (avanzado)",
+  btn_fr_apply: "Aplicar a todo el plano",
+  btn_fr_delete_saved: "Eliminar",
+  lbl_fr_saved_title: "Reemplazos guardados",
+  btn_fr_save: "Guardar este reemplazo",
+  fr_match_count: "{count} coincidencia(s) encontradas.",
+  fr_invalid_regex: "Expresión regular no válida: {message}",
+  msg_fr_applied: "Hecho. Se han modificado {count} texto(s).",
 };
