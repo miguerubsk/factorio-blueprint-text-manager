@@ -24,6 +24,7 @@ const locale_en = {
   lbl_sirena: "Speaker Alert",
   lbl_grupo_logistico: "Logistic Group",
   lbl_estacion: "Station / Train stop",
+  lbl_estacion_horario: "Train stop (schedule)",
   msg_sincronizado: "Synced! {count} variables have been updated.",
   lbl_visits: "VISITS:",
   err_invalid_string: "Invalid blueprint string (must start with 0).",
