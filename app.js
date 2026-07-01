@@ -204,7 +204,20 @@ window.addEventListener("DOMContentLoaded", () => {
   const btnOpen = document.getElementById("btnOpenCatalog");
   const btnClose = document.getElementById("btnCloseCatalog");
   const catalog = document.getElementById("factorioCatalog");
+  const hintBubble = document.getElementById("catalogHintBubble");
   if (!btnOpen || !btnClose || !catalog) return;
+
+  const dismissHint = () => {
+    if (hintBubble) {
+      hintBubble.hidden = true;
+      localStorage.setItem("fbp_seen_catalog_hint", "1");
+    }
+  };
+
+  if (hintBubble && !localStorage.getItem("fbp_seen_catalog_hint")) {
+    hintBubble.hidden = false;
+    setTimeout(dismissHint, 8000);
+  }
 
   btnOpen.addEventListener("click", () => {
     dismissHint();
