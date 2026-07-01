@@ -447,6 +447,76 @@ button:focus-visible,
     bottom: 90px !important;
 }
 
+/* ===== HINT BUBBLES SYSTEM ===== */
+.hint-bubble {
+    position: absolute;
+    max-width: 220px;
+    background: #2b2a29;
+    color: var(--text-main);
+    border: 1px solid var(--factorio-orange);
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 0.8em;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    z-index: 9999;
+    animation: hint-bounce 1.6s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.hint-bubble[hidden] {
+    display: none;
+}
+
+/* Arrow pointing down (bubble above element) */
+.hint-bubble--arrow-down::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid transparent;
+    border-top-color: var(--factorio-orange);
+}
+
+/* Arrow pointing up (bubble below element) */
+.hint-bubble--arrow-up::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid transparent;
+    border-bottom-color: var(--factorio-orange);
+}
+
+/* Arrow pointing right (bubble left of element) */
+.hint-bubble--arrow-right::after {
+    content: "";
+    position: absolute;
+    right: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 7px solid transparent;
+    border-left-color: var(--factorio-orange);
+}
+
+/* Arrow pointing left (bubble right of element) */
+.hint-bubble--arrow-left::after {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 7px solid transparent;
+    border-right-color: var(--factorio-orange);
+}
+
+/* Fixed position hints (for floating buttons) */
+.hint-bubble--fixed {
+    position: fixed;
+}
+
+/* Catalog hint - fixed bottom right */
 .catalog-hint-bubble {
     position: fixed;
     bottom: 148px;
@@ -460,7 +530,8 @@ button:focus-visible,
     font-size: 0.8em;
     box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     z-index: 9999;
-    animation: catalog-hint-bounce 1.6s ease-in-out infinite;
+    animation: hint-bounce 1.6s ease-in-out infinite;
+    pointer-events: none;
 }
 
 .catalog-hint-bubble::after {
@@ -472,7 +543,127 @@ button:focus-visible,
     border-top-color: var(--factorio-orange);
 }
 
-@keyframes catalog-hint-bounce {
+/* Find/Replace hint - fixed bottom right, higher */
+.fr-hint-bubble {
+    position: fixed;
+    bottom: 208px;
+    right: 30px;
+}
+
+.fr-hint-bubble::after {
+    right: 18px;
+}
+
+/* Scan button hint - positioned below top bar buttons */
+.scan-hint-bubble {
+    position: fixed;
+    top: 52px;
+    left: 200px;
+}
+
+.scan-hint-bubble::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 30px;
+    border: 7px solid transparent;
+    border-bottom-color: var(--factorio-orange);
+}
+
+/* Batch apply hint */
+.batch-hint-bubble {
+    position: fixed;
+    top: 52px;
+    left: 420px;
+}
+
+.batch-hint-bubble::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 30px;
+    border: 7px solid transparent;
+    border-bottom-color: var(--factorio-orange);
+}
+
+/* Hints inside catalog drawer */
+.catalog-search-hint {
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    margin-top: 8px;
+}
+
+.catalog-search-hint::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 20px;
+    border: 7px solid transparent;
+    border-bottom-color: var(--factorio-orange);
+}
+
+.catalog-grid-hint {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Hints inside find/replace modal */
+.fr-search-hint {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    margin-bottom: 8px;
+}
+
+.fr-search-hint::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 20px;
+    border: 7px solid transparent;
+    border-top-color: var(--factorio-orange);
+}
+
+.fr-regex-hint {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    max-width: 180px;
+}
+
+.fr-regex-hint::after {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 7px solid transparent;
+    border-right-color: var(--factorio-orange);
+}
+
+.fr-saved-hint {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    margin-bottom: 8px;
+}
+
+.fr-saved-hint::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 20px;
+    border: 7px solid transparent;
+    border-top-color: var(--factorio-orange);
+}
+
+@keyframes hint-bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-4px); }
 }
