@@ -248,21 +248,24 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Dismiss scan hint and show catalog/FR hints after scanning
   const originalProcessBlueprint = window.processBlueprintString;
-  window.processBlueprintString = async () => {
-    await originalProcessBlueprint();
-    dismissHint("hintScan");
-    // Show floating button hints after successful scan
-    if (UI.blueprintRootJson) {
+  window.processBlueprintString = async (...args) => {
+    const prevJson = UI.blueprintRootJson;
+    const result = await originalProcessBlueprint(...args);
+    // Only dismiss/show hints if scan succeeded (new data loaded)
+    if (UI.blueprintRootJson && UI.blueprintRootJson !== prevJson) {
+      dismissHint("hintScan");
       showHint("hintCatalog");
       showHint("hintFindReplace");
     }
+    return result;
   };
 
   // Dismiss batch apply hint when applied
   const originalApplyBatch = window.applyBatchChanges;
-  window.applyBatchChanges = () => {
-    originalApplyBatch();
+  window.applyBatchChanges = (...args) => {
+    const result = originalApplyBatch(...args);
     dismissHint("hintBatchApply");
+    return result;
   };
 
   // ===== CATALOG =====
