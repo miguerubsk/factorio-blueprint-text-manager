@@ -108,13 +108,16 @@
         <h3 data-i18n="lbl_catalog_title">CATÁLOGO DE ICONOS</h3>
         <button id="btnCloseCatalog" class="secondary">X</button>
       </div>
-      <div class="catalog-search-container">
+      <div class="catalog-search-container" style="position: relative;">
         <input
           type="text"
           id="catalogSearch"
           data-i18n-ph="ph_search_icon"
           oninput="filterCatalog()"
         />
+        <div id="hintCatalogSearch" class="hint-bubble hint-bubble--arrow-up catalog-search-hint" hidden>
+          <span data-i18n="hint_catalog_search"></span>
+        </div>
       </div>
 
       <div class="catalog-tabs">
@@ -190,12 +193,27 @@
         </button>
       </div>
 
-      <div id="catalogGrid" class="catalog-grid"></div>
+      <div id="catalogGrid" class="catalog-grid" style="position: relative;">
+        <div id="hintCatalogGrid" class="hint-bubble catalog-grid-hint" hidden>
+          <span data-i18n="hint_catalog_grid"></span>
+        </div>
+      </div>
     </div>
 
-    <div id="catalogHintBubble" class="catalog-hint-bubble" hidden>
+    <!-- Hint bubbles for onboarding -->
+    <div id="hintFindReplace" class="hint-bubble hint-bubble--fixed hint-bubble--arrow-down fr-hint-bubble" hidden>
+      <span data-i18n="hint_open_fr"></span>
+    </div>
+    <div id="hintCatalog" class="catalog-hint-bubble" hidden>
       <span data-i18n="hint_open_catalog"></span>
     </div>
+    <div id="hintScan" class="hint-bubble hint-bubble--fixed hint-bubble--arrow-up scan-hint-bubble" hidden>
+      <span data-i18n="hint_scan"></span>
+    </div>
+    <div id="hintBatchApply" class="hint-bubble hint-bubble--fixed hint-bubble--arrow-up batch-hint-bubble" hidden>
+      <span data-i18n="hint_batch_apply"></span>
+    </div>
+
     <button
       id="btnOpenFindReplace"
       class="catalog-floating-trigger find-replace-trigger"
@@ -227,16 +245,19 @@
           <button id="btnCloseFindReplace" class="secondary" aria-label="Close">X</button>
         </div>
 
-        <div class="fr-field">
+        <div class="fr-field" style="position: relative;">
           <label for="frSearch" data-i18n="lbl_fr_search"></label>
           <input type="text" id="frSearch" data-i18n-ph="ph_fr_search" />
+          <div id="hintFrSearch" class="hint-bubble hint-bubble--arrow-down fr-search-hint" hidden>
+            <span data-i18n="hint_fr_search"></span>
+          </div>
         </div>
         <div class="fr-field">
           <label for="frReplace" data-i18n="lbl_fr_replace"></label>
           <input type="text" id="frReplace" data-i18n-ph="ph_fr_replace" />
         </div>
 
-        <div class="fr-options">
+        <div class="fr-options" style="position: relative;">
           <label class="fr-checkbox">
             <input type="checkbox" id="frCaseInsensitive" checked />
             <span data-i18n="lbl_fr_case_insensitive"></span>
@@ -245,6 +266,9 @@
             <input type="checkbox" id="frUseRegex" />
             <span data-i18n="lbl_fr_use_regex"></span>
           </label>
+          <div id="hintFrRegex" class="hint-bubble hint-bubble--arrow-left fr-regex-hint" hidden>
+            <span data-i18n="hint_fr_regex"></span>
+          </div>
         </div>
 
         <p id="frMatchCount" class="fr-match-count"></p>
@@ -254,10 +278,13 @@
 
         <hr />
 
-        <div class="fr-saved-section">
+        <div class="fr-saved-section" style="position: relative;">
           <h4 data-i18n="lbl_fr_saved_title"></h4>
           <div id="frSavedList" class="fr-saved-list"></div>
           <button id="btnSaveFindReplace" class="secondary" data-i18n="btn_fr_save"></button>
+          <div id="hintFrSaved" class="hint-bubble hint-bubble--arrow-down fr-saved-hint" hidden>
+            <span data-i18n="hint_fr_saved"></span>
+          </div>
         </div>
       </div>
     </div>

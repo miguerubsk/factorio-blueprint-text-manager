@@ -201,32 +201,91 @@ window.addEventListener("DOMContentLoaded", () => {
   if (langSelectEl) langSelectEl.value = savedLang;
   window.changeLanguage(savedLang);
 
-  const btnOpen = document.getElementById("btnOpenCatalog");
-  const btnClose = document.getElementById("btnCloseCatalog");
-  const catalog = document.getElementById("factorioCatalog");
-  const hintBubble = document.getElementById("catalogHintBubble");
-  if (!btnOpen || !btnClose || !catalog) return;
+  // ===== HINT SYSTEM =====
+  const HINT_STORAGE_PREFIX = "fbp_hint_";
+  const HINT_TIMEOUT = 8000;
 
-  const dismissHint = () => {
-    if (hintBubble) {
-      hintBubble.hidden = true;
-      localStorage.setItem("fbp_seen_catalog_hint", "1");
+  const showHint = (hintId, timeout = HINT_TIMEOUT) => {
+    const el = document.getElementById(hintId);
+    const storageKey = HINT_STORAGE_PREFIX + hintId;
+    if (!el || localStorage.getItem(storageKey)) return;
+    el.hidden = false;
+    if (timeout > 0) {
+      setTimeout(() => dismissHint(hintId), timeout);
     }
   };
 
-  if (hintBubble && !localStorage.getItem("fbp_seen_catalog_hint")) {
-    hintBubble.hidden = false;
-    setTimeout(dismissHint, 8000);
+  const dismissHint = (hintId) => {
+    const el = document.getElementById(hintId);
+    const storageKey = HINT_STORAGE_PREFIX + hintId;
+    if (el) el.hidden = true;
+    localStorage.setItem(storageKey, "1");
+  };
+
+  const dismissAllHints = (...hintIds) => {
+    hintIds.forEach(dismissHint);
+  };
+
+  // Show scan hint when user pastes text in input
+  const inputString = document.getElementById("inputString");
+  if (inputString) {
+    inputString.addEventListener("input", () => {
+      if (inputString.value.trim().startsWith("0")) {
+        showHint("hintScan");
+      }
+    });
   }
 
+  // Show batch apply hint when user edits batch textarea
+  const batchTextarea = document.getElementById("batchTextarea");
+  if (batchTextarea) {
+    batchTextarea.addEventListener("input", () => {
+      if (batchTextarea.value.trim()) {
+        showHint("hintBatchApply");
+      }
+    });
+  }
+
+  // Dismiss scan hint and show catalog/FR hints after scanning
+  const originalProcessBlueprint = window.processBlueprintString;
+  window.processBlueprintString = async () => {
+    await originalProcessBlueprint();
+    dismissHint("hintScan");
+    // Show floating button hints after successful scan
+    if (UI.blueprintRootJson) {
+      showHint("hintCatalog");
+      showHint("hintFindReplace");
+    }
+  };
+
+  // Dismiss batch apply hint when applied
+  const originalApplyBatch = window.applyBatchChanges;
+  window.applyBatchChanges = () => {
+    originalApplyBatch();
+    dismissHint("hintBatchApply");
+  };
+
+  // ===== CATALOG =====
+  const btnOpen = document.getElementById("btnOpenCatalog");
+  const btnClose = document.getElementById("btnCloseCatalog");
+  const catalog = document.getElementById("factorioCatalog");
+  if (!btnOpen || !btnClose || !catalog) return;
+
   btnOpen.addEventListener("click", () => {
-    dismissHint();
-    if (!catalog.classList.contains("active")) {
+    dismissHint("hintCatalog");
+    const wasActive = catalog.classList.contains("active");
+    if (!wasActive) {
       UI.renderCatalogCategory(UI.currentCatalogTab);
+      // Show internal catalog hints on first open
+      showHint("hintCatalogSearch");
+      showHint("hintCatalogGrid");
     }
     catalog.classList.toggle("active");
   });
-  btnClose.addEventListener("click", () => catalog.classList.remove("active"));
+  btnClose.addEventListener("click", () => {
+    catalog.classList.remove("active");
+    dismissAllHints("hintCatalogSearch", "hintCatalogGrid");
+  });
 
   document.addEventListener("click", (e) => {
     if (
@@ -337,13 +396,19 @@ window.addEventListener("DOMContentLoaded", () => {
     frRenderSavedList();
     frUpdatePreview();
     frSearch.focus();
+    // Show internal FR hints on first open
+    showHint("hintFrSearch");
+    showHint("hintFrRegex");
+    showHint("hintFrSaved");
   };
   const closeFR = () => {
     frModal.hidden = true;
     btnOpenFR.focus();
+    dismissAllHints("hintFrSearch", "hintFrRegex", "hintFrSaved");
   };
 
   btnOpenFR.addEventListener("click", () => {
+    dismissHint("hintFindReplace");
     if (frModal.hidden) openFR();
     else closeFR();
   });
