@@ -14,7 +14,9 @@ window.processBlueprintString = async () => {
 
   if (!input.startsWith("0")) return alert(UI.translate("err_invalid_string"));
   if (input.length > MAX_CHARS) {
-    return alert(`Blueprint string exceeds maximum length (${input.length.toLocaleString()} / ${MAX_CHARS.toLocaleString()} characters)`);
+    return alert(
+      `Blueprint string exceeds maximum length (${input.length.toLocaleString()} / ${MAX_CHARS.toLocaleString()} characters)`,
+    );
   }
 
   try {
@@ -142,7 +144,10 @@ function frGetSaved() {
 }
 
 function frSetSaved(list) {
-  localStorage.setItem(FR_STORAGE_KEY, JSON.stringify(list.slice(0, FR_MAX_SAVED)));
+  localStorage.setItem(
+    FR_STORAGE_KEY,
+    JSON.stringify(list.slice(0, FR_MAX_SAVED)),
+  );
 }
 
 // Construye el RegExp a partir de los campos del panel. En modo simple
@@ -270,7 +275,9 @@ window.addEventListener("DOMContentLoaded", () => {
       frMatchCount.innerText = UI.translate("fr_match_count", { count });
     } catch (e) {
       frMatchCount.innerText = "";
-      frError.innerText = UI.translate("fr_invalid_regex", { message: e.message });
+      frError.innerText = UI.translate("fr_invalid_regex", {
+        message: e.message,
+      });
       frError.hidden = false;
     }
   }
@@ -323,7 +330,10 @@ window.addEventListener("DOMContentLoaded", () => {
     btnOpenFR.focus();
   };
 
-  btnOpenFR.addEventListener("click", openFR);
+  btnOpenFR.addEventListener("click", () => {
+    if (frModal.hidden) openFR();
+    else closeFR();
+  });
   btnCloseFR.addEventListener("click", closeFR);
   frModal.addEventListener("click", (e) => {
     if (e.target === frModal) closeFR();
@@ -339,9 +349,15 @@ window.addEventListener("DOMContentLoaded", () => {
     if (!frSearch.value) return;
     let regex;
     try {
-      regex = frBuildRegex(frSearch.value, frUseRegex.checked, frCaseInsensitive.checked);
+      regex = frBuildRegex(
+        frSearch.value,
+        frUseRegex.checked,
+        frCaseInsensitive.checked,
+      );
     } catch (e) {
-      frError.innerText = UI.translate("fr_invalid_regex", { message: e.message });
+      frError.innerText = UI.translate("fr_invalid_regex", {
+        message: e.message,
+      });
       frError.hidden = false;
       return;
     }
